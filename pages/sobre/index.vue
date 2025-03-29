@@ -1,9 +1,12 @@
 <template>
   <navbar>
-    <h1>Pagina para minis </h1>
+    sobre nós
   </navbar>
 </template>
 
 <script setup>
 import Navbar from "~/layouts/navbar.vue";
 </script>
+
+<style scoped>
+</style>
