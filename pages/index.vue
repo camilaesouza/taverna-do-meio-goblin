@@ -1,11 +1,9 @@
 <template>
-  <div>
+  <navbar>
     <h1>Bem-vindo à Taverna do Meio Goblin!</h1>
-    <p>Esta é a página inicial do seu site.</p>
-
-    <NuxtLink to="/miniaturas">Ir para os Titans</NuxtLink>
-  </div>
+  </navbar>
 </template>
 
 <script setup>
+import Navbar from "~/layouts/navbar.vue";
 </script>

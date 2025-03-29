@@ -1,8 +1,9 @@
 <template>
-  <div>
+  <navbar>
     <h1>Pagina para minis </h1>
-  </div>
+  </navbar>
 </template>
 
 <script setup>
+import Navbar from "~/layouts/navbar.vue";
 </script>
