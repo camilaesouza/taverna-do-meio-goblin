@@ -134,14 +134,21 @@ const typeOptions = [
 ]
 
 const filteredCatalog = computed(() => {
+  const searchWords = searchTerm.value
+      .toLowerCase()
+      .split(' ')
+      .filter(word => word.trim() !== '')
+
   return catalog.filter(item => {
     const matchesType =
         !selectedType.value || !selectedType.value.key || item.type === selectedType.value.key
 
-    const search = searchTerm.value.toLowerCase()
-    const matchesSearch =
-        item.name.toLowerCase().includes(search) ||
-        item.tag.toLowerCase().includes(search)
+    const name = item.name.toLowerCase()
+    const tags = item.tag.toLowerCase()
+
+    const matchesSearch = searchWords.every(word =>
+        name.includes(word) || tags.includes(word)
+    )
 
     return matchesType && matchesSearch
   })

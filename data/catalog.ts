@@ -19,7 +19,7 @@ export const catalog: CatalogItem[] = [
         size: '28mm|33mm',
         price: 20.00,
         type: TypeEnum.EVERDARK_ELVES,
-        tag: 'assassino élfico, elfo, feminino, feminina, mulher',
+        tag: 'assassino, élfico, elfo, feminino, feminina, mulher',
         observation: 'Na compra de no mínimo 3 o preço diminui para 16 R$',
         image: '/img/catalog/everdark-elves/elves-assassin.png',
     },
@@ -29,7 +29,7 @@ export const catalog: CatalogItem[] = [
         size: '28mm|33mm',
         price: 20.00,
         type: TypeEnum.EVERDARK_ELVES,
-        tag: 'assassinos voadores, feminino, feminina, mulher, elfo',
+        tag: 'assassinos, voadores, fada, feminino, feminina, mulher, elfo',
         observation: 'Na compra de no mínimo 3 o preço diminui para 16 R$',
         image: '/img/catalog/everdark-elves/flying-assassins.png'
     },
@@ -251,7 +251,7 @@ export const catalog: CatalogItem[] = [
         size: '28mm|33mm',
         price: 18.00,
         type: TypeEnum.BADLANDS,
-        tag: 'guerreiro, feminino, feminina, mulher',
+        tag: 'guerreiro, guerreira, feminino, feminina, mulher',
         observation: null,
         image: '/img/catalog/badlands/kairn-fighter-2.png'
     },
@@ -261,7 +261,7 @@ export const catalog: CatalogItem[] = [
         size: '28mm|33mm',
         price: 18.00,
         type: TypeEnum.BADLANDS,
-        tag: 'guerreiro, feminino, feminina, mulher',
+        tag: 'guerreiro, guerreira, feminino, feminina, mulher',
         observation: null,
         image: '/img/catalog/badlands/kairn-fighter-3.png'
     },
