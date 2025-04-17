@@ -29,7 +29,7 @@ export const catalog: CatalogItem[] = [
         size: '28mm|33mm',
         price: 20.00,
         type: TypeEnum.EVERDARK_ELVES,
-        tag: 'assassinos, voadores, fada, feminino, feminina, mulher, elfo',
+        tag: 'assassinos, assassina, voadores, fada, feminino, feminina, mulher, elfo',
         observation: 'Na compra de no mínimo 3 o preço diminui para 16 R$',
         image: '/img/catalog/everdark-elves/flying-assassins.png'
     },
@@ -39,7 +39,7 @@ export const catalog: CatalogItem[] = [
         size: '28mm|33mm',
         price: 25.00,
         type: TypeEnum.EVERDARK_ELVES,
-        tag: 'mestre das feras, elfo, feminino, feminina, mulher',
+        tag: 'mestre das feras, assassinos, elfo, feminino, feminina, mulher',
         observation: null,
         image: '/img/catalog/everdark-elves/beast-master.png'
     },
@@ -49,7 +49,7 @@ export const catalog: CatalogItem[] = [
         size: '28mm|33mm',
         price: 70.00,
         type: TypeEnum.EVERDARK_ELVES,
-        tag: 'feiticeiro selvagem com balista, elfo',
+        tag: 'feiticeiro, selvagem, balista, elfo',
         observation: null,
         image: '/img/catalog/everdark-elves/wild-sorcerer-full.png'
     },
@@ -59,7 +59,7 @@ export const catalog: CatalogItem[] = [
         size: '28mm|33mm',
         price: 18.00,
         type: TypeEnum.EVERDARK_ELVES,
-        tag: 'feiticeiro selvagem, elfo',
+        tag: 'feiticeiro, selvagem, elfo',
         observation: null,
         image: '/img/catalog/everdark-elves/wild-sorcerer-elfs.png'
     },
@@ -69,7 +69,7 @@ export const catalog: CatalogItem[] = [
         size: '28mm|33mm',
         price: 40.00,
         type: TypeEnum.EVERDARK_ELVES,
-        tag: 'balista do feiticeiro selvagem, masculino, homem, feminino, feminina, mulher',
+        tag: 'Balista, item',
         observation: null,
         image: '/img/catalog/everdark-elves/wild-sorcerer-balista.png'
     },
@@ -79,7 +79,7 @@ export const catalog: CatalogItem[] = [
         size: '28mm|33mm',
         price: 60.00,
         type: TypeEnum.EVERDARK_ELVES,
-        tag: 'pégaso negro, cavalo, animal',
+        tag: 'cavalo, animal, voador, asa',
         observation: null,
         image: '/img/catalog/everdark-elves/dark-pegassus.png'
     },
@@ -129,7 +129,7 @@ export const catalog: CatalogItem[] = [
         size: '28mm|33mm',
         price: 45.00,
         type: TypeEnum.EVERDARK_ELVES,
-        tag: 'cavaleiros, elfo, montaria, animal, cavalo',
+        tag: 'cavaleiros, cavaleiro, elfo, montaria, animal, cavalo',
         observation: null,
         image: '/img/catalog/everdark-elves/dread-knights.png'
     },
@@ -149,7 +149,7 @@ export const catalog: CatalogItem[] = [
         size: '28mm|33mm',
         price: 20.00,
         type: TypeEnum.EVERDARK_ELVES,
-        tag: 'devorador de mentes',
+        tag: 'devorador de mentes, criatura',
         observation: null,
         image: '/img/catalog/everdark-elves/mindflayer-ab.png'
     },
@@ -159,7 +159,7 @@ export const catalog: CatalogItem[] = [
         size: '28mm|33mm',
         price: 25.00,
         type: TypeEnum.EVERDARK_ELVES,
-        tag: 'devorador de mentes',
+        tag: 'devorador de mentes, criatura',
         observation: null,
         image: '/img/catalog/everdark-elves/mindflayer-c.png'
     },
@@ -199,7 +199,7 @@ export const catalog: CatalogItem[] = [
         size: 'especial',
         price: 200.00,
         type: TypeEnum.EVERDARK_ELVES,
-        tag: 'criatura, cenário, cenario',
+        tag: 'criatura, cenário',
         observation: 'Todas as peças inclusas',
         image: '/img/catalog/everdark-elves/kraken-diorama.png'
     },

@@ -134,21 +134,18 @@ const typeOptions = [
 ]
 
 const filteredCatalog = computed(() => {
-  const searchWords = searchTerm.value
-      .toLowerCase()
-      .split(' ')
-      .filter(word => word.trim() !== '')
+  const search = removeAccents(searchTerm.value.toLowerCase().trim())
+  const searchWords = search.split(/\s+/).filter(Boolean)
 
   return catalog.filter(item => {
+    const name = removeAccents(item.name.toLowerCase())
+    const tags = removeAccents(item.tag.toLowerCase().replace(/,\s*/g, ' '))
+    const combined = `${name} ${tags}`
+
     const matchesType =
         !selectedType.value || !selectedType.value.key || item.type === selectedType.value.key
 
-    const name = item.name.toLowerCase()
-    const tags = item.tag.toLowerCase()
-
-    const matchesSearch = searchWords.every(word =>
-        name.includes(word) || tags.includes(word)
-    )
+    const matchesSearch = searchWords.every(word => combined.includes(word))
 
     return matchesType && matchesSearch
   })
@@ -162,6 +159,10 @@ function openModal(image: string, name: string) {
 
 function closeModal() {
   showModal.value = false
+}
+
+function removeAccents(str: string) {
+  return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "")
 }
 </script>
 
