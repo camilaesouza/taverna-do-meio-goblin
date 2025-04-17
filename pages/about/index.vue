@@ -1,7 +1,7 @@
 <template>
-  <navbar>
+  <Navbar>
     sobre nós
-  </navbar>
+  </Navbar>
 </template>
 
 <script setup>

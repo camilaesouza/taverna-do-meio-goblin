@@ -1,20 +1,29 @@
 <template>
-  <div class="bg-yellow-1 h-screen w-screen bg-img relative overflow-hidden">
-
-    <div class="flex justify-center items-center pt-4">
-      <img src="/assets/img/goblin-logo-redondo.png" alt="logo" class="md:w-200px w-100px">
-      <span class="font-railey md:text-55px text-2xl text-brown-1 text-shadow-1 md:-ml-2 -ml-0">Taverna do meio goblin</span>
+  <div class="bg-yellow-1 min-h-screen w-screen relative overflow-hidden flex flex-col items-center pt-20">
+    <div class="absolute top-0 left-0 w-full z-0">
+      <svg viewBox="0 0 1440 150" class="w-full h-[100px]" preserveAspectRatio="none">
+        <path d="M0,0 L0,50 L720,100 L1440,50 L1440,0 Z" fill="#6E7B5E" />
+      </svg>
     </div>
 
-    <div class="flex flex-col items-center justify-center h-full relative z-10 md-mt-9 -mt-6">
-      <nav class="flex flex-col md:flex-row gap-10 items-center">
-        <NuxtLink to="/catalogo" class="text-brown-1 text-2xl font-bold hover:text-shadow-1">Catálogo</NuxtLink>
-        <NuxtLink to="/sobre" class="text-brown-1 text-2xl font-bold hover:text-shadow-1">Sobre Nós</NuxtLink>
-      </nav>
-
-      <div class="hidden md:block w-570px h-2px bg-brown-1 rounded mt-1"></div>
+    <div class="z-10 mt-[-67px]">
+      <img
+          src="/assets/img/goblin-logo-escrita.png"
+          alt="Logo"
+          class="w-[150px] h-auto"
+      />
     </div>
 
+    <div class="flex flex-col items-center gap-[30px] mt-[70px] z-10">
+      <NuxtLink to="/catalog" class="btn-goblin text-center w-[250px] h-[50px]">Catálogo</NuxtLink>
+      <NuxtLink to="/about" class="btn-goblin text-center w-[250px] h-[50px]">Sobre nós</NuxtLink>
+      <a href="https://www.instagram.com/taverna_do_meio_goblin" target="_blank" class="btn-goblin text-center w-[250px] h-[50px]">Instagram</a>
+    </div>
+
+    <p class="text-brown-1 font-railey text-[30px] mt-[60px] z-10 leading-snug text-center">
+      Os melhores preços,<br />
+      de qualquer lugar!
+    </p>
   </div>
 </template>
 
@@ -22,12 +31,7 @@
 </script>
 
 <style scoped>
-.bg-img {
-  height: 100vh !important;
-  background-repeat: no-repeat;
-  background-image: url('../assets/img/home-bg.png');
-  background-position: 50% 19%;
-  background-size: cover;
-  width: 100vw !important;
+.btn-goblin {
+  @apply bg-[#6E7B5E] text-white font-semibold py-3 px-8 rounded-full shadow-md hover:brightness-110 transition;
 }
 </style>
