@@ -19,7 +19,7 @@ export const catalog: CatalogItem[] = [
         size: '28mm|33mm',
         price: 20.00,
         type: TypeEnum.EVERDARK_ELVES,
-        tag: 'assassino élfico, elfo, feminino',
+        tag: 'assassino élfico, elfo, feminino, feminina, mulher',
         observation: 'Na compra de no mínimo 3 o preço diminui para 16 R$',
         image: '/img/catalog/everdark-elves/elves-assassin.png',
     },
@@ -29,7 +29,7 @@ export const catalog: CatalogItem[] = [
         size: '28mm|33mm',
         price: 20.00,
         type: TypeEnum.EVERDARK_ELVES,
-        tag: 'assassinos voadores, feminino, elfo',
+        tag: 'assassinos voadores, feminino, feminina, mulher, elfo',
         observation: 'Na compra de no mínimo 3 o preço diminui para 16 R$',
         image: '/img/catalog/everdark-elves/flying-assassins.png'
     },
@@ -39,7 +39,7 @@ export const catalog: CatalogItem[] = [
         size: '28mm|33mm',
         price: 25.00,
         type: TypeEnum.EVERDARK_ELVES,
-        tag: 'mestre das feras, elfo, feminino',
+        tag: 'mestre das feras, elfo, feminino, feminina, mulher',
         observation: null,
         image: '/img/catalog/everdark-elves/beast-master.png'
     },
@@ -69,7 +69,7 @@ export const catalog: CatalogItem[] = [
         size: '28mm|33mm',
         price: 40.00,
         type: TypeEnum.EVERDARK_ELVES,
-        tag: 'balista do feiticeiro selvagem, masculino, feminino',
+        tag: 'balista do feiticeiro selvagem, masculino, homem, feminino, feminina, mulher',
         observation: null,
         image: '/img/catalog/everdark-elves/wild-sorcerer-balista.png'
     },
@@ -89,7 +89,7 @@ export const catalog: CatalogItem[] = [
         size: '28mm|33mm',
         price: 20.00,
         type: TypeEnum.EVERDARK_ELVES,
-        tag: 'bruxa, feminino',
+        tag: 'bruxa, feminino, feminina, mulher',
         observation: null,
         image: '/img/catalog/everdark-elves/witch.png'
     },
@@ -119,7 +119,7 @@ export const catalog: CatalogItem[] = [
         size: '28mm|33mm',
         price: 20.00,
         type: TypeEnum.EVERDARK_ELVES,
-        tag: 'elfo, guerreiro, masculino',
+        tag: 'elfo, guerreiro, masculino, homem',
         observation: 'Na compra de no mínimo 3 o preço diminui para 16 R$',
         image: '/img/catalog/everdark-elves/archmage.png'
     },
@@ -169,7 +169,7 @@ export const catalog: CatalogItem[] = [
         size: 'especial',
         price: 110.00,
         type: TypeEnum.EVERDARK_ELVES,
-        tag: 'estandarte, elfo, feminino, criatura',
+        tag: 'estandarte, elfo, feminino, feminina, mulher, criatura',
         observation: null,
         image: '/img/catalog/everdark-elves/avatar-banner.png'
     },
@@ -179,7 +179,7 @@ export const catalog: CatalogItem[] = [
         size: 'especial',
         price: 110.00,
         type: TypeEnum.EVERDARK_ELVES,
-        tag: 'lança, elfo, feminino, criatura',
+        tag: 'lança, elfo, feminino, feminina, mulher, criatura',
         observation: null,
         image: '/img/catalog/everdark-elves/avatar-spear.png'
     },
@@ -241,7 +241,7 @@ export const catalog: CatalogItem[] = [
         size: '28mm|33mm',
         price: 18.00,
         type: TypeEnum.BADLANDS,
-        tag: 'guerreiro, masculino',
+        tag: 'guerreiro, masculino, homem',
         observation: null,
         image: '/img/catalog/badlands/kairn-fighter-1.png'
     },
@@ -251,7 +251,7 @@ export const catalog: CatalogItem[] = [
         size: '28mm|33mm',
         price: 18.00,
         type: TypeEnum.BADLANDS,
-        tag: 'guerreiro, feminino',
+        tag: 'guerreiro, feminino, feminina, mulher',
         observation: null,
         image: '/img/catalog/badlands/kairn-fighter-2.png'
     },
@@ -261,7 +261,7 @@ export const catalog: CatalogItem[] = [
         size: '28mm|33mm',
         price: 18.00,
         type: TypeEnum.BADLANDS,
-        tag: 'guerreiro, feminino',
+        tag: 'guerreiro, feminino, feminina, mulher',
         observation: null,
         image: '/img/catalog/badlands/kairn-fighter-3.png'
     },
@@ -271,7 +271,7 @@ export const catalog: CatalogItem[] = [
         size: '28mm|33mm',
         price: 18.00,
         type: TypeEnum.BADLANDS,
-        tag: 'guerreiro, feminino',
+        tag: 'guerreiro, feminino, feminina, mulher',
         observation: null,
         image: '/img/catalog/badlands/kairn-fighter-4.png'
     },
@@ -281,7 +281,7 @@ export const catalog: CatalogItem[] = [
         size: '28mm|33mm',
         price: 18.00,
         type: TypeEnum.BADLANDS,
-        tag: 'guerreiro, feminino',
+        tag: 'guerreiro, feminino, feminina, mulher',
         observation: null,
         image: '/img/catalog/badlands/kairn-fighter-5.png'
     },
@@ -291,7 +291,7 @@ export const catalog: CatalogItem[] = [
         size: '28mm|33mm',
         price: 18.00,
         type: TypeEnum.BADLANDS,
-        tag: 'guerreiro, masculino',
+        tag: 'guerreiro, masculino, homem',
         observation: null,
         image: '/img/catalog/badlands/kairn-fighter-6.png'
     },
@@ -301,7 +301,7 @@ export const catalog: CatalogItem[] = [
         size: '28mm|33mm',
         price: 18.00,
         type: TypeEnum.BADLANDS,
-        tag: 'guerreiro, masculino',
+        tag: 'guerreiro, masculino, homem',
         observation: null,
         image: '/img/catalog/badlands/kairn-fighter-7.png'
     },
@@ -311,7 +311,7 @@ export const catalog: CatalogItem[] = [
         size: '28mm|33mm',
         price: 18.00,
         type: TypeEnum.BADLANDS,
-        tag: 'guerreiro, masculino',
+        tag: 'guerreiro, masculino, homem',
         observation: null,
         image: '/img/catalog/badlands/kairn-fighter-8.png'
     },
@@ -321,7 +321,7 @@ export const catalog: CatalogItem[] = [
         size: '28mm|33mm',
         price: 18.00,
         type: TypeEnum.BADLANDS,
-        tag: 'guerreiro, masculino',
+        tag: 'guerreiro, masculino, homem',
         observation: null,
         image: '/img/catalog/badlands/kairn-fighter-9.png'
     },
@@ -331,7 +331,7 @@ export const catalog: CatalogItem[] = [
         size: '28mm|33mm',
         price: 18.00,
         type: TypeEnum.BADLANDS,
-        tag: 'guerreiro, masculino',
+        tag: 'guerreiro, masculino, homem',
         observation: null,
         image: '/img/catalog/badlands/kairn-fighter-10.png'
     },
@@ -341,7 +341,7 @@ export const catalog: CatalogItem[] = [
         size: '28mm|33mm',
         price: 35.00,
         type: TypeEnum.BADLANDS,
-        tag: 'feminino, montaria, animal',
+        tag: 'feminino, feminina, mulher, montaria, animal',
         observation: null,
         image: '/img/catalog/badlands/sabertooth-warrior-1.png'
     },
@@ -351,7 +351,7 @@ export const catalog: CatalogItem[] = [
         size: '28mm|33mm',
         price: 35.00,
         type: TypeEnum.BADLANDS,
-        tag: 'feminino, montaria, animal',
+        tag: 'feminino, feminina, mulher, montaria, animal',
         observation: null,
         image: '/img/catalog/badlands/sabertooth-warrior-2.png'
     },
@@ -361,7 +361,7 @@ export const catalog: CatalogItem[] = [
         size: '28mm|33mm',
         price: 18.00,
         type: TypeEnum.BADLANDS,
-        tag: 'cabeça, feminino, caçadora',
+        tag: 'cabeça, feminino, feminina, mulher, caçadora',
         observation: null,
         image: '/img/catalog/badlands/headhuntress.png'
     },
@@ -391,7 +391,7 @@ export const catalog: CatalogItem[] = [
         size: 'especial',
         price: 65.00,
         type: TypeEnum.BADLANDS,
-        tag: 'criatura, montaria, masculino',
+        tag: 'criatura, montaria, masculino, homem',
         observation: null,
         image: '/img/catalog/badlands/warlord.png'
     },
@@ -401,7 +401,7 @@ export const catalog: CatalogItem[] = [
         size: '28mm|33mm',
         price: 18.00,
         type: TypeEnum.BADLANDS,
-        tag: 'guerreiro, masculino',
+        tag: 'guerreiro, masculino, homem',
         observation: null,
         image: '/img/catalog/badlands/warmonger.png'
     },
@@ -411,7 +411,7 @@ export const catalog: CatalogItem[] = [
         size: 'especial',
         price: 145.00,
         type: TypeEnum.BADLANDS,
-        tag: 'criatura, montaria, feminino',
+        tag: 'criatura, montaria, feminino, feminina, mulher',
         observation: null,
         image: '/img/catalog/badlands/warrior-queen.png'
     },
@@ -423,7 +423,7 @@ export const catalog: CatalogItem[] = [
         size: '28mm|33mm',
         price: 18.00,
         type: TypeEnum.BARBARIANS,
-        tag: 'guerreira, feminino, guerreiro',
+        tag: 'guerreira, feminino, feminina, mulher, guerreiro',
         observation: null,
         image: '/img/catalog/barbarians/zofuriana.png'
     },
@@ -433,7 +433,7 @@ export const catalog: CatalogItem[] = [
         size: '28mm|33mm',
         price: 18.00,
         type: TypeEnum.BARBARIANS,
-        tag: 'guerreiro, masculino',
+        tag: 'guerreiro, masculino, homem',
         observation: null,
         image: '/img/catalog/barbarians/gyratos.png'
     },
@@ -443,7 +443,7 @@ export const catalog: CatalogItem[] = [
         size: '28mm|33mm',
         price: 18.00,
         type: TypeEnum.BARBARIANS,
-        tag: 'guerreiro, masculino',
+        tag: 'guerreiro, masculino, homem',
         observation: null,
         image: '/img/catalog/barbarians/tehnar.png'
     },
@@ -453,7 +453,7 @@ export const catalog: CatalogItem[] = [
         size: 'especial',
         price: 75.00,
         type: TypeEnum.BARBARIANS,
-        tag: 'guerreiro, feminino, guerreira',
+        tag: 'guerreiro, feminino, feminina, mulher, guerreira',
         observation: null,
         image: '/img/catalog/barbarians/vindicta-raid-queen.png'
     },
@@ -463,7 +463,7 @@ export const catalog: CatalogItem[] = [
         size: '28mm|33mm',
         price: 45.00,
         type: TypeEnum.BARBARIANS,
-        tag: 'troll, feminino',
+        tag: 'troll, feminino, feminina, mulher',
         observation: null,
         image: '/img/catalog/barbarians/ferin.png'
     },
@@ -473,7 +473,7 @@ export const catalog: CatalogItem[] = [
         size: '28mm|33mm',
         price: 45.00,
         type: TypeEnum.BARBARIANS,
-        tag: 'troll, masculino',
+        tag: 'troll, masculino, homem',
         observation: null,
         image: '/img/catalog/barbarians/roogarin.png'
     },
@@ -483,7 +483,7 @@ export const catalog: CatalogItem[] = [
         size: '28mm|33mm',
         price: 18.00,
         type: TypeEnum.BARBARIANS,
-        tag: 'bárbaro, guerreiro, masculino',
+        tag: 'bárbaro, guerreiro, masculino, homem',
         observation: null,
         image: '/img/catalog/barbarians/bjorn.png'
     },
@@ -493,7 +493,7 @@ export const catalog: CatalogItem[] = [
         size: '28mm|33mm',
         price: 18.00,
         type: TypeEnum.BARBARIANS,
-        tag: 'bárbaro, guerreiro, masculino',
+        tag: 'bárbaro, guerreiro, masculino, homem',
         observation: null,
         image: '/img/catalog/barbarians/eric.png'
     },
@@ -503,7 +503,7 @@ export const catalog: CatalogItem[] = [
         size: '28mm|33mm',
         price: 18.00,
         type: TypeEnum.BARBARIANS,
-        tag: 'bárbaro, guerreiro, masculino',
+        tag: 'bárbaro, guerreiro, masculino, homem',
         observation: null,
         image: '/img/catalog/barbarians/olaf.png'
     },
@@ -513,7 +513,7 @@ export const catalog: CatalogItem[] = [
         size: '28mm|33mm',
         price: 35.00,
         type: TypeEnum.BARBARIANS,
-        tag: 'bruxa, feminino',
+        tag: 'bruxa, feminino, feminina, mulher',
         observation: null,
         image: '/img/catalog/barbarians/martha-bogmaiden.png'
     },
@@ -523,7 +523,7 @@ export const catalog: CatalogItem[] = [
         size: 'especial',
         price: 65.00,
         type: TypeEnum.BARBARIANS,
-        tag: 'montaria, criatura, bárbaro, guerreiro, masculino',
+        tag: 'montaria, criatura, bárbaro, guerreiro, masculino, homem',
         observation: null,
         image: '/img/catalog/barbarians/griz-the-hungry.png'
     },
@@ -533,7 +533,7 @@ export const catalog: CatalogItem[] = [
         size: '28mm|33mm',
         price: 25.00,
         type: TypeEnum.BARBARIANS,
-        tag: 'alce, criatura, masculino',
+        tag: 'alce, criatura, masculino, homem',
         observation: null,
         image: '/img/catalog/barbarians/elknar-the-calm.png'
     },
@@ -678,7 +678,7 @@ export const catalog: CatalogItem[] = [
         size: '28mm|33mm',
         price: 20.00,
         type: TypeEnum.CARNIVAL_AND_ORCS,
-        tag: 'orc de carnaval, masculino',
+        tag: 'orc de carnaval, masculino, homem',
         observation: 'Na compra de no mínimo 3 o preço diminui para 18R$',
         image: '/img/catalog/carnival-and-orcs/orc-1.png'
     },
@@ -688,7 +688,7 @@ export const catalog: CatalogItem[] = [
         size: '28mm|33mm',
         price: 20.00,
         type: TypeEnum.CARNIVAL_AND_ORCS,
-        tag: 'orc de carnaval, masculino',
+        tag: 'orc de carnaval, masculino, homem',
         observation: 'Na compra de no mínimo 3 o preço diminui para 18R$',
         image: '/img/catalog/carnival-and-orcs/orc-2.png'
     },
@@ -698,7 +698,7 @@ export const catalog: CatalogItem[] = [
         size: '28mm|33mm',
         price: 20.00,
         type: TypeEnum.CARNIVAL_AND_ORCS,
-        tag: 'orc de carnaval, masculino',
+        tag: 'orc de carnaval, masculino, homem',
         observation: 'Na compra de no mínimo 3 o preço diminui para 18R$',
         image: '/img/catalog/carnival-and-orcs/orc-3.png'
     },
@@ -778,7 +778,7 @@ export const catalog: CatalogItem[] = [
         size: '28mm|33mm',
         price: 20.00,
         type: TypeEnum.CARNIVAL_AND_ORCS,
-        tag: 'circo, masculino, criatura',
+        tag: 'circo, masculino, homem, criatura',
         observation: null,
         image: '/img/catalog/carnival-and-orcs/carnival-carnie-1.png'
     },
@@ -788,7 +788,7 @@ export const catalog: CatalogItem[] = [
         size: '28mm|33mm',
         price: 15.00,
         type: TypeEnum.CARNIVAL_AND_ORCS,
-        tag: 'circo, masculino, criatura, anão',
+        tag: 'circo, masculino, homem, criatura, anão',
         observation: null,
         image: '/img/catalog/carnival-and-orcs/carnival-carnie-2.png'
     },
@@ -798,7 +798,7 @@ export const catalog: CatalogItem[] = [
         size: '28mm|33mm',
         price: 18.00,
         type: TypeEnum.CARNIVAL_AND_ORCS,
-        tag: 'circo, masculino, criatura',
+        tag: 'circo, masculino, homem, criatura',
         observation: null,
         image: '/img/catalog/carnival-and-orcs/carnival-carnie-3.png'
     },
@@ -808,7 +808,7 @@ export const catalog: CatalogItem[] = [
         size: '28mm|33mm',
         price: 15.00,
         type: TypeEnum.CARNIVAL_AND_ORCS,
-        tag: 'circo, masculino, criatura',
+        tag: 'circo, masculino, homem, criatura',
         observation: null,
         image: '/img/catalog/carnival-and-orcs/carnival-carnie-4.png'
     },
@@ -818,7 +818,7 @@ export const catalog: CatalogItem[] = [
         size: '28mm|33mm',
         price: 20.00,
         type: TypeEnum.CARNIVAL_AND_ORCS,
-        tag: 'circo, masculino, criatura, duas cabeças',
+        tag: 'circo, masculino, homem, criatura, duas cabeças',
         observation: null,
         image: '/img/catalog/carnival-and-orcs/carnival-carnie-5.png'
     },
@@ -828,7 +828,7 @@ export const catalog: CatalogItem[] = [
         size: 'especial',
         price: 240.00,
         type: TypeEnum.CARNIVAL_AND_ORCS,
-        tag: 'circo, masculino, criatura, aberração, demônio',
+        tag: 'circo, masculino, homem, criatura, aberração, demônio',
         observation: null,
         image: '/img/catalog/carnival-and-orcs/filth-father.png'
     },
@@ -851,7 +851,7 @@ export const catalog: CatalogItem[] = [
         size: 'especial',
         price: 50.00,
         type: TypeEnum.CARNIVAL_AND_ORCS_2,
-        tag: 'guerreiro, masculino, orc, montaria',
+        tag: 'guerreiro, masculino, homem, orc, montaria',
         observation: null,
         image: '/img/catalog/carnival-and-orcs-2/warchief-on-boar.png'
     },
@@ -861,7 +861,7 @@ export const catalog: CatalogItem[] = [
         size: '28mm|33mm',
         price: 30.00,
         type: TypeEnum.CARNIVAL_AND_ORCS_2,
-        tag: 'guerreiro, masculino, orc',
+        tag: 'guerreiro, masculino, homem, orc',
         observation: null,
         image: '/img/catalog/carnival-and-orcs-2/warrior-chieftain.png'
     },
@@ -871,7 +871,7 @@ export const catalog: CatalogItem[] = [
         size: '28mm|33mm',
         price: 45.00,
         type: TypeEnum.CARNIVAL_AND_ORCS_2,
-        tag: 'guerreiro, masculino, orc, montaria',
+        tag: 'guerreiro, masculino, homem, orc, montaria',
         observation: 'Na compra de no mínimo 3 o preço diminui para 40 R$',
         image: '/img/catalog/carnival-and-orcs-2/boar-riders.png'
     },
@@ -881,7 +881,7 @@ export const catalog: CatalogItem[] = [
         size: '28mm|33mm',
         price: 20.00,
         type: TypeEnum.CARNIVAL_AND_ORCS_2,
-        tag: 'guerreiro, masculino, orc',
+        tag: 'guerreiro, masculino, homem, orc',
         observation: 'Na compra de no mínimo 3 o preço diminui para 18 R$',
         image: '/img/catalog/carnival-and-orcs-2/wild-orcs-1.png'
     },
@@ -891,7 +891,7 @@ export const catalog: CatalogItem[] = [
         size: '28mm|33mm',
         price: 20.00,
         type: TypeEnum.CARNIVAL_AND_ORCS_2,
-        tag: 'guerreiro, masculino, orc',
+        tag: 'guerreiro, masculino, homem, orc',
         observation: 'Na compra de no mínimo 3 o preço diminui para 18 R$',
         image: '/img/catalog/carnival-and-orcs-2/wild-orcs-2.png'
     },
@@ -901,7 +901,7 @@ export const catalog: CatalogItem[] = [
         size: 'especial',
         price: 160.00,
         type: TypeEnum.CARNIVAL_AND_ORCS_2,
-        tag: 'guerreiro, masculino, orc, montaria',
+        tag: 'guerreiro, masculino, homem, orc, montaria',
         observation: null,
         image: '/img/catalog/carnival-and-orcs-2/warchief-on-wyvern.png'
     },
@@ -951,7 +951,7 @@ export const catalog: CatalogItem[] = [
         size: '28mm|33mm',
         price: 25.00,
         type: TypeEnum.CARNIVAL_AND_ORCS_2,
-        tag: 'mago, orc, masculino, circo',
+        tag: 'mago, orc, masculino, homem, circo',
         observation: null,
         image: '/img/catalog/carnival-and-orcs-2/mage.png'
     },
@@ -961,7 +961,7 @@ export const catalog: CatalogItem[] = [
         size: 'especial',
         price: 180.00,
         type: TypeEnum.CARNIVAL_AND_ORCS_2,
-        tag: 'mago, orc, masculino, circo, montaria, sapo',
+        tag: 'mago, orc, masculino, homem, circo, montaria, sapo',
         observation: null,
         image: '/img/catalog/carnival-and-orcs-2/norse-knights.png'
     },
@@ -1611,7 +1611,7 @@ export const catalog: CatalogItem[] = [
         size: '33mm',
         price: 20.00,
         type: TypeEnum.DAYBREAK,
-        tag: 'paladino, humano, masculino',
+        tag: 'paladino, humano, masculino, homem',
         observation: 'Estúdio DayBreak - Disponível no tamanho 54mm com aumento de 10 R$',
         image: '/img/catalog/daybreak/chlodvig-du-marteau-lourd.png'
     },
@@ -1621,7 +1621,7 @@ export const catalog: CatalogItem[] = [
         size: '33mm',
         price: 20.00,
         type: TypeEnum.DAYBREAK,
-        tag: 'paladino, humano, masculino',
+        tag: 'paladino, humano, masculino, homem',
         observation: 'Estúdio DayBreak - Disponível no tamanho 54mm com aumento de 10 R$',
         image: '/img/catalog/daybreak/colonel-thierry-du-lion-dargent.png'
     },
@@ -1631,7 +1631,7 @@ export const catalog: CatalogItem[] = [
         size: '33mm',
         price: 20.00,
         type: TypeEnum.DAYBREAK,
-        tag: 'paladino, humano, masculino',
+        tag: 'paladino, humano, masculino, homem',
         observation: 'Estúdio DayBreak - Disponível no tamanho 54mm com aumento de 10 R$',
         image: '/img/catalog/daybreak/erasmus-du-tranchant.png'
     },
@@ -1641,7 +1641,7 @@ export const catalog: CatalogItem[] = [
         size: 'especial',
         price: 50.00,
         type: TypeEnum.DAYBREAK,
-        tag: 'paladino, humano, montaria, masculino',
+        tag: 'paladino, humano, montaria, masculino, homem',
         observation: 'Estúdio DayBreak',
         image: '/img/catalog/daybreak/grand-pretre-ferdinand-du-lion-dargent.png'
     },
@@ -1651,7 +1651,7 @@ export const catalog: CatalogItem[] = [
         size: 'especial',
         price: 50.00,
         type: TypeEnum.DAYBREAK,
-        tag: 'paladino, paladina, humano, humana, feminino, montaria',
+        tag: 'paladino, paladina, humano, humana, feminino, feminina, mulher, montaria',
         observation: 'Estúdio DayBreak',
         image: '/img/catalog/daybreak/grande-pretresse-salome-du-lion-dargent.png'
     },
@@ -1661,7 +1661,7 @@ export const catalog: CatalogItem[] = [
         size: '33mm',
         price: 20.00,
         type: TypeEnum.DAYBREAK,
-        tag: 'paladino, paladina, humano, humana, feminino',
+        tag: 'paladino, paladina, humano, humana, feminino, feminina, mulher',
         observation: 'Estúdio DayBreak - Disponível no tamanho 54mm com aumento de 10 R$',
         image: '/img/catalog/daybreak/isabelle-du-lion-dargent.png'
     },
@@ -1671,7 +1671,7 @@ export const catalog: CatalogItem[] = [
         size: 'especial',
         price: 50.00,
         type: TypeEnum.DAYBREAK,
-        tag: 'paladino, humano, montaria, masculino',
+        tag: 'paladino, humano, montaria, masculino, homem',
         observation: 'Estúdio DayBreak',
         image: '/img/catalog/daybreak/le-chevalier-florian-de-lancienne-bataille.png'
     },
@@ -1681,7 +1681,7 @@ export const catalog: CatalogItem[] = [
         size: '33mm',
         price: 20.00,
         type: TypeEnum.DAYBREAK,
-        tag: 'paladino, paladina, humano, humana, feminino',
+        tag: 'paladino, paladina, humano, humana, feminino, feminina, mulher',
         observation: 'Estúdio DayBreak - Disponível no tamanho 54mm com aumento de 10 R$',
         image: '/img/catalog/daybreak/marie-du-lion-dargent.png'
     },
@@ -1691,7 +1691,7 @@ export const catalog: CatalogItem[] = [
         size: '33mm',
         price: 20.00,
         type: TypeEnum.DAYBREAK,
-        tag: 'paladino, humano, masculino',
+        tag: 'paladino, humano, masculino, homem',
         observation: 'Estúdio DayBreak - Disponível no tamanho 54mm com aumento de 10 R$',
         image: '/img/catalog/daybreak/mattias-du-lion-tuant-01.png'
     },

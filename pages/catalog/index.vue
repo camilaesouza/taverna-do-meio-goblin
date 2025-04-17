@@ -57,12 +57,13 @@
         </div>
       </div>
 
-      <div class="mt-[-11px] mb-[13px] md:text-[13px] text-[11px]">
-        <h5 class="text-green-600 font-semibold">Observações para os pedidos:</h5>
-        <p>- Os pedidos podem ser feitos pelo nosso <a class="font-semibold underline" href="https://www.instagram.com/taverna_do_meio_goblin">instagram</a>, só entrar em contato com a gente!</p>
-        <p>- Miniaturas de valores acima de R$40 podem fugir do tamanho de 28|33mm e também sua qualidade é melhor.</p>
-        <p>- Miniaturas com tamanhos especiais, normalmente são grandes, podem ter no mínimo 300mm (30cm) de altura, consultar com a gente o tamanho real.</p>
-        <p>- Na compra de miniaturas em grandes quantidades podemos oferecer um descontinho! Não perca a chance de garantir suas minis!</p>
+      <div class="mt-[-11px] mb-[13px] md:text-[14px] text-[12px]">
+        <h5 class="text-green-600 font-semibold">Observações sobre os pedidos:</h5>
+        <p class="mt-1">- Os pedidos podem ser feitos pelo nosso <a class="font-semibold underline" href="https://www.instagram.com/taverna_do_meio_goblin">instagram</a>, só entrar em contato com a gente!</p>
+        <p class="mt-1">- Miniaturas de valores acima de R$40 podem fugir do tamanho de 28|33mm e também sua qualidade é melhor.</p>
+        <p class="mt-1">- Miniaturas com tamanhos especiais, normalmente são grandes, podem ter no mínimo 300mm (30cm) de altura, consultar com a gente o tamanho real.</p>
+        <p class="mt-1">- Na compra de miniaturas em grandes quantidades podemos oferecer um descontinho! Não perca a chance de garantir suas minis!</p>
+        <p class="mt-1">- Não encontrou o que procurava? Podemos fazer miniaturas ou trabalhos com impressão 3D personalizados, entra em contato com a gente!</p>
 
         <p class="mt-[13px] md:text-[24px] text-[18px] font-railey md:text-start text-center">Os melhores preços, de qualquer lugar!</p>
       </div>
