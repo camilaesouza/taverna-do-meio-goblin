@@ -139,13 +139,22 @@ const filteredCatalog = computed(() => {
 
   return catalog.filter(item => {
     const name = removeAccents(item.name.toLowerCase())
-    const tags = removeAccents(item.tag.toLowerCase().replace(/,\s*/g, ' '))
+    const tags = removeAccents(item.tag.toLowerCase().replace(/,/g, ''))
     const combined = `${name} ${tags}`
+    const combinedWords = combined.split(/\s+/).filter(Boolean)
 
     const matchesType =
         !selectedType.value || !selectedType.value.key || item.type === selectedType.value.key
 
-    const matchesSearch = searchWords.every(word => combined.includes(word))
+    const matchesSearch = searchWords.every(searchWord =>
+        combinedWords.some(combinedWord =>
+            (
+                combinedWord.length >= 4 && searchWord.length >= 4 && (
+                    combinedWord.includes(searchWord) || searchWord.includes(combinedWord)
+                )
+            ) || combinedWord === searchWord
+        )
+    )
 
     return matchesType && matchesSearch
   })

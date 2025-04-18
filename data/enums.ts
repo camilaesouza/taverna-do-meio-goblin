@@ -9,6 +9,8 @@ export const TypeEnum = {
     DARK_WOOD_BEASTS_AND_SWAMPS_2: 'dark_wood_beasts_and_swamps_2',
     DARK_WOOD_BEASTS_AND_WOLF_ORDER: 'dark_wood_beasts_and_wolf_order',
     DAYBREAK: 'daybreak',
+    DEATH_KNIGHTS: 'death_knights',
+    HIGHBORN_ELVES_AND_VAMPIRE_PIRATES: 'highborn_elves_and_vampire_pirates',
 
     TITANS_OF_ADVENTURE: 'titans_of_adventure',
 } as const;
@@ -16,16 +18,18 @@ export const TypeEnum = {
 export type TypeEnumKey = (typeof TypeEnum)[keyof typeof TypeEnum];
 
 export const TypeEnumOptions = [
+    { key: TypeEnum.EVERDARK_ELVES, label: 'Everdark Elves' },
     { key: TypeEnum.BADLANDS, label: 'Badlands' },
     { key: TypeEnum.BARBARIANS, label: 'Barbarians' },
     { key: TypeEnum.BLOODSAIL_OGRES, label: 'Bloodsail ogres' },
     { key: TypeEnum.CARNIVAL_AND_ORCS, label: 'Carnival and orcs' },
     { key: TypeEnum.CARNIVAL_AND_ORCS_2, label: 'Carnival and orcs 2' },
-    { key: TypeEnum.EVERDARK_ELVES, label: 'Everdark Elves' },
     { key: TypeEnum.DARK_WOOD_BEASTS_AND_SWAMPS, label: 'Dark wood beasts and swamps' },
     { key: TypeEnum.DARK_WOOD_BEASTS_AND_SWAMPS_2, label: 'Dark wood beasts and swamps 2' },
     { key: TypeEnum.DARK_WOOD_BEASTS_AND_WOLF_ORDER, label: 'Dark wood beasts and wolf order' },
     { key: TypeEnum.DAYBREAK, label: 'Daybreak' },
+    { key: TypeEnum.DEATH_KNIGHTS, label: 'Death knights' },
+    { key: TypeEnum.HIGHBORN_ELVES_AND_VAMPIRE_PIRATES, label: 'Highborn elves and vampire pirates' },
 
     { key: TypeEnum.TITANS_OF_ADVENTURE, label: 'Titans of Adventure' },
 ];
