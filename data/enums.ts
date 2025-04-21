@@ -11,6 +11,16 @@ export const TypeEnum = {
     DAYBREAK: 'daybreak',
     DEATH_KNIGHTS: 'death_knights',
     HIGHBORN_ELVES_AND_VAMPIRE_PIRATES: 'highborn_elves_and_vampire_pirates',
+    KINGDOM_OF_EQUITAINE_VOL_2: 'kingdom_of_equitaine_vol_2',
+    METAL_BEARDS: 'metal_beards',
+    OGRES_AND_AMAZONS: 'ogres_and_amazons',
+    OLD_CITY: 'old_city',
+    OGRES_AND_WIZARDS: 'ogres_and_wizards',
+    ORCS_AND_WOLF_ORDER: 'orcs_and_wolf_order',
+    PITFIGHTER: 'pitfighter',
+    SONS_OF_KASHAN: 'sons_of_kashan',
+    SPELL_BLADES: 'spell_blades',
+    SWAMPS: 'swamps',
 
     TITANS_OF_ADVENTURE: 'titans_of_adventure',
 } as const;
@@ -30,6 +40,16 @@ export const TypeEnumOptions = [
     { key: TypeEnum.DAYBREAK, label: 'Daybreak' },
     { key: TypeEnum.DEATH_KNIGHTS, label: 'Death knights' },
     { key: TypeEnum.HIGHBORN_ELVES_AND_VAMPIRE_PIRATES, label: 'Highborn elves and vampire pirates' },
+    { key: TypeEnum.KINGDOM_OF_EQUITAINE_VOL_2, label: 'Kingdom of equitaine vol 2' },
+    { key: TypeEnum.METAL_BEARDS, label: 'Metal beards' },
+    { key: TypeEnum.OGRES_AND_AMAZONS, label: 'Ogres and amazons' },
+    { key: TypeEnum.OLD_CITY, label: 'Old city' },
+    { key: TypeEnum.OGRES_AND_WIZARDS, label: 'Ogres and wizards' },
+    { key: TypeEnum.ORCS_AND_WOLF_ORDER, label: 'Orcs and wolf order' },
+    { key: TypeEnum.PITFIGHTER, label: 'Pitfighter' },
+    { key: TypeEnum.SONS_OF_KASHAN, label: 'Sons of kashan' },
+    { key: TypeEnum.SPELL_BLADES, label: 'Spell blades' },
+    { key: TypeEnum.SWAMPS, label: 'Swamps' },
 
     { key: TypeEnum.TITANS_OF_ADVENTURE, label: 'Titans of Adventure' },
 ];

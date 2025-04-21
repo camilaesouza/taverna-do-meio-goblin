@@ -4,7 +4,7 @@
       <breadcrumb label="Catálogo"></breadcrumb>
 
       <div class="mt-[30px] flex flex-col md:flex-row md:items-end gap-4 mb-8">
-        <div class="md:w-[200px] w-full">
+        <div class="md:w-[335px] w-full">
           <label class="block text-sm font-semibold text-green-600 mb-1">Categoria</label>
 
           <multiselect
@@ -27,7 +27,7 @@
         <div class="flex-1">
           <label for="search" class="text-sm font-semibold text-green-600 mb-1 block">Pesquisar</label>
           <div
-              class="flex items-center bg-[#D2C5AB] h-[43px] md:w-[290px] w-full border border-[#cdc2ae] rounded text-black overflow-hidden">
+              class="flex items-center bg-[#D2C5AB] h-[43px] md:w-[377px] w-full border border-[#cdc2ae] rounded text-black overflow-hidden">
             <input
                 id="search"
                 v-model="searchTerm"
@@ -57,7 +57,7 @@
         </div>
       </div>
 
-      <div class="mt-[-11px] mb-[13px] md:text-[14px] text-[12px]">
+      <div class="bg-[#E2D6BF] rounded-lg shadow-lg p-3 border border-[#cac1ad] mt-[-11px] mb-[20px] md:text-[14px] text-[12px]">
         <h5 class="text-green-600 font-semibold">Observações sobre os pedidos:</h5>
         <p class="mt-1">- Os pedidos podem ser feitos pelo nosso <a class="font-semibold underline" href="https://www.instagram.com/taverna_do_meio_goblin">instagram</a>, só entrar em contato com a gente!</p>
         <p class="mt-1">- Miniaturas de valores acima de R$40 podem fugir do tamanho de 28|33mm e também sua qualidade é melhor.</p>
@@ -99,14 +99,18 @@
           class="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50"
           @click.self="closeModal"
       >
-        <div class="relative max-w-3xl w-full p-4">
+        <div class="relative max-w-3xl w-full flex items-center justify-center p-4">
           <button
               class="absolute top-2 right-2 text-white text-2xl font-bold"
               @click="closeModal"
           >
             &times;
           </button>
-          <img :src="selectedImage" class="w-full h-auto max-h-[80vh] object-contain rounded-lg shadow-2xl" :alt="selectedImage.name"/>
+          <img
+              :src="selectedImage"
+              class="max-w-full max-h-[80vh] object-contain rounded-lg shadow-2xl"
+              :alt="selectedImage.name"
+          />
         </div>
       </div>
     </div>

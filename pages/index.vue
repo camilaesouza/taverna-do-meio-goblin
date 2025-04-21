@@ -15,8 +15,8 @@
     </div>
 
     <div class="flex flex-col items-center gap-[30px] mt-[70px] z-10">
-      <NuxtLink to="/catalog" class="btn-goblin text-center w-[250px] h-[50px]">Catálogo</NuxtLink>
-      <NuxtLink to="/about" class="btn-goblin text-center w-[250px] h-[50px]">Sobre nós</NuxtLink>
+      <NuxtLink to="/catalogo" class="btn-goblin text-center w-[250px] h-[50px]">Catálogo</NuxtLink>
+      <NuxtLink to="/sobre-nos" class="btn-goblin text-center w-[250px] h-[50px]">Sobre nós</NuxtLink>
       <a href="https://www.instagram.com/taverna_do_meio_goblin" target="_blank" class="btn-goblin text-center w-[250px] h-[50px]">Instagram</a>
     </div>
 
