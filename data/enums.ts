@@ -21,6 +21,8 @@ export const TypeEnum = {
     SONS_OF_KASHAN: 'sons_of_kashan',
     SPELL_BLADES: 'spell_blades',
     SWAMPS: 'swamps',
+    TOWNFOLK: 'townfolk',
+    UNDYING_DYNASTIES: 'undying_dynasties',
 
     TITANS_OF_ADVENTURE: 'titans_of_adventure',
 } as const;
@@ -50,6 +52,8 @@ export const TypeEnumOptions = [
     { key: TypeEnum.SONS_OF_KASHAN, label: 'Sons of kashan' },
     { key: TypeEnum.SPELL_BLADES, label: 'Spell blades' },
     { key: TypeEnum.SWAMPS, label: 'Swamps' },
+    { key: TypeEnum.TOWNFOLK, label: 'Townfolk' },
+    { key: TypeEnum.UNDYING_DYNASTIES, label: 'Undying dynasties' },
 
     { key: TypeEnum.TITANS_OF_ADVENTURE, label: 'Titans of Adventure' },
 ];

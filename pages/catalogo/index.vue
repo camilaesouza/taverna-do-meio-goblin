@@ -77,15 +77,15 @@
         >
           <div class="w-full aspect-[4/5] mb-2 overflow-hidden rounded">
             <img
-                class="w-full h-full object-contain cursor-pointer"
-                :src="item.image"
-                :alt="item.name"
-                @click="openModal(item.image, item.name)"
-                onerror="this.style.display='none'"
+                class="w-full h-full object-cover cursor-pointer"
+            :src="item.image"
+            :alt="item.name"
+            @click="openModal(item.image, item.name)"
+            onerror="this.style.display='none'"
             />
           </div>
           <div class="text-center">
-            <p class="font-semibold text-green-1 text-sm line-clamp-2 md:mt-[-25px] mt-[-15px]">{{ item.name }}</p>
+            <p class="font-semibold text-green-1 text-sm line-clamp-2">{{item.id}} - {{ item.name }}</p>
             <p class="font-semibold text-green-1 md:text-sm text-[11px] line-clamp-2 mt-1">Tamanho: {{ item.size }}</p>
             <p class="text-green-1 md:text-sm text-[11px] mt-[15px]">{{ item.observation }}</p>
             <p class="font-semibold text-green-1 mt-[15px] md:text-[18px] text-[16px]">R$ {{ item.price.toFixed(2) }}</p>
@@ -134,7 +134,7 @@ const selectedImageName = ref('')
 
 const typeOptions = [
   {key: '', label: 'Todas'},
-  ...TypeEnumOptions
+  ...TypeEnumOptions.sort((a, b) => a.label.localeCompare(b.label))
 ]
 
 const filteredCatalog = computed(() => {
