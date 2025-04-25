@@ -23,6 +23,8 @@ export const TypeEnum = {
     SWAMPS: 'swamps',
     TOWNFOLK: 'townfolk',
     UNDYING_DYNASTIES: 'undying_dynasties',
+    VAMPIRE_PIRATES_AND_DARK_WOOD_BEASTS: 'vampire_pirates_and_dark_wood_beasts',
+    VAMPIRES: 'vampires',
 
     TITANS_OF_ADVENTURE: 'titans_of_adventure',
 } as const;
@@ -54,6 +56,8 @@ export const TypeEnumOptions = [
     { key: TypeEnum.SWAMPS, label: 'Swamps' },
     { key: TypeEnum.TOWNFOLK, label: 'Townfolk' },
     { key: TypeEnum.UNDYING_DYNASTIES, label: 'Undying dynasties' },
+    { key: TypeEnum.VAMPIRE_PIRATES_AND_DARK_WOOD_BEASTS, label: 'Vampire Pirates and Dark Wood Beasts' },
+    { key: TypeEnum.VAMPIRES, label: 'Vampires' },
 
     { key: TypeEnum.TITANS_OF_ADVENTURE, label: 'Titans of Adventure' },
 ];
