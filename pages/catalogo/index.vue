@@ -86,6 +86,7 @@
           </div>
           <div class="text-center">
             <p class="font-semibold text-green-1 text-sm line-clamp-2">{{item.id}} - {{ item.name }}</p>
+            <p class="font-semibold text-green-1 md:text-sm text-[11px] line-clamp-2 mt-1">{{ getTypeLabel(item.type) }}</p>
             <p class="font-semibold text-green-1 md:text-sm text-[11px] line-clamp-2 mt-1">Tamanho: {{ item.size }}</p>
             <p class="text-green-1 md:text-sm text-[11px] mt-[15px]">{{ item.observation }}</p>
             <p class="font-semibold text-green-1 mt-[15px] md:text-[18px] text-[16px]">R$ {{ item.price.toFixed(2) }}</p>
@@ -176,6 +177,12 @@ function closeModal() {
 
 function removeAccents(str: string) {
   return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+}
+
+function getTypeLabel(typeKey: unknown): string {
+  if (typeof typeKey !== 'string') return '';
+  const found = TypeEnumOptions.find(option => option.key === typeKey);
+  return found ? found.label : typeKey;
 }
 </script>
 
