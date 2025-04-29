@@ -21,12 +21,15 @@ export const TypeEnum = {
     SONS_OF_KASHAN: 'sons_of_kashan',
     SPELL_BLADES: 'spell_blades',
     SWAMPS: 'swamps',
+    TITANS_OF_ADVENTURE: 'titans_of_adventure',
     TOWNFOLK: 'townfolk',
     UNDYING_DYNASTIES: 'undying_dynasties',
     VAMPIRE_PIRATES_AND_DARK_WOOD_BEASTS: 'vampire_pirates_and_dark_wood_beasts',
     VAMPIRES: 'vampires',
-
-    TITANS_OF_ADVENTURE: 'titans_of_adventure',
+    WARRIORS_AND_GNOMES: 'warriors_and_gnomes',
+    WARRIORS_AND_WIZARDS: 'warriors_and_wizards',
+    WILDWOOD_SANCTUM: 'wildwood_sanctum',
+    OTHERS: 'others',
 } as const;
 
 export type TypeEnumKey = (typeof TypeEnum)[keyof typeof TypeEnum];
@@ -54,10 +57,13 @@ export const TypeEnumOptions = [
     { key: TypeEnum.SONS_OF_KASHAN, label: 'Sons of kashan' },
     { key: TypeEnum.SPELL_BLADES, label: 'Spell blades' },
     { key: TypeEnum.SWAMPS, label: 'Swamps' },
+    { key: TypeEnum.TITANS_OF_ADVENTURE, label: 'Titans of Adventure' },
     { key: TypeEnum.TOWNFOLK, label: 'Townfolk' },
     { key: TypeEnum.UNDYING_DYNASTIES, label: 'Undying dynasties' },
     { key: TypeEnum.VAMPIRE_PIRATES_AND_DARK_WOOD_BEASTS, label: 'Vampire Pirates and Dark Wood Beasts' },
     { key: TypeEnum.VAMPIRES, label: 'Vampires' },
-
-    { key: TypeEnum.TITANS_OF_ADVENTURE, label: 'Titans of Adventure' },
+    { key: TypeEnum.WARRIORS_AND_GNOMES, label: 'Warriors and gnomes' },
+    { key: TypeEnum.WARRIORS_AND_WIZARDS, label: 'Warriors and wizards' },
+    { key: TypeEnum.WILDWOOD_SANCTUM, label: 'Wildwood sanctum' },
+    { key: TypeEnum.OTHERS, label: 'Outros' },
 ];

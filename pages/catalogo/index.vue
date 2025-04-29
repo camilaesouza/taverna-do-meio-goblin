@@ -4,7 +4,7 @@
       <breadcrumb label="Catálogo"></breadcrumb>
 
       <div class="mt-[30px] flex flex-col md:flex-row md:items-end gap-4 mb-8">
-        <div class="md:w-[335px] w-full">
+        <div class="md:w-[360px] w-full">
           <label class="block text-sm font-semibold text-green-600 mb-1">Categoria</label>
 
           <multiselect
@@ -14,26 +14,35 @@
               label="label"
               placeholder="Todas"
               class="multiselect-custom"
-              :searchable="false"
+              :searchable="true"
               :allow-empty="true"
               :show-labels="false"
               :close-on-select="true"
               :clear-on-select="false"
               :hide-selected="true"
               :show-clear="true"
-          />
+          >
+            <template #noResult>
+              Nenhuma categoria encontrada
+            </template>
+          </multiselect>
         </div>
 
         <div class="flex-1">
-          <label for="search" class="text-sm font-semibold text-green-600 mb-1 block">Pesquisar</label>
+          <label for="search" class="gap-1 flex md:flex-row flex-col text-sm font-semibold text-green-600 mb-1 block">
+            Pesquisar
+            <span class="text-[11px] text-[#000000] font-normal">
+              *(Dica: use palavras-chaves como elfo, guerreiro, mulher ou homem)
+            </span>
+          </label>
           <div
-              class="flex items-center bg-[#D2C5AB] h-[43px] md:w-[377px] w-full border border-[#cdc2ae] rounded text-black overflow-hidden">
+              class="flex items-center bg-[#D2C5AB] h-[43px] md:w-[435px] w-full border border-[#cdc2ae] rounded text-black overflow-hidden">
             <input
                 id="search"
                 v-model="searchTerm"
                 type="text"
                 autocomplete="off"
-                placeholder="Buscar por miniatura"
+                placeholder="Pesquisar miniaturas"
                 class="flex-1 px-3 py-2 text-sm outline-none bg-[#D2C5AB] text-black placeholder-black"
             />
             <span class="px-3">
@@ -75,7 +84,7 @@
             :key="item.id"
             class="bg-[#E2D6BF] rounded shadow-lg p-3 flex flex-col border border-[#cac1ad]"
         >
-          <div class="w-full aspect-[4/5] mb-2 overflow-hidden rounded">
+          <div class="w-full aspect-[4/5] mb-2 overflow-hidden rounded md:h-[270px] h-[160px]">
             <img
                 class="w-full h-full object-cover cursor-pointer"
             :src="item.image"
@@ -100,20 +109,28 @@
           class="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50"
           @click.self="closeModal"
       >
-        <div class="relative max-w-3xl w-full flex items-center justify-center p-4">
+        <div class="relative max-w-3xl w-full p-4 overflow-hidden">
           <button
-              class="absolute top-2 right-2 text-white text-2xl font-bold"
+              class="absolute md:top-2 top-[63px] md:right-[50px] right-2 text-white text-2xl font-bold z-10"
               @click="closeModal"
           >
             &times;
           </button>
-          <img
-              :src="selectedImage"
-              class="max-w-full max-h-[80vh] object-contain rounded-lg shadow-2xl"
-              :alt="selectedImage.name"
-          />
+
+          <div class="w-full h-[80vh] relative overflow-hidden flex items-center justify-center">
+            <img
+                v-if="selectedImage"
+                :src="selectedImage"
+                class="zoomable-image"
+                :alt="selectedImageName"
+                @click="toggleZoom"
+                :class="{'zoomed': zoomActive}"
+                :style="zoomDisabled ? 'pointer-events: none;' : ''"
+            />
+          </div>
         </div>
       </div>
+
     </div>
   </Navbar>
 </template>
@@ -122,7 +139,7 @@
 <script setup lang="ts">
 import {ref, computed} from 'vue'
 import {catalog} from '~/data/catalog'
-import {TypeEnumOptions} from '~/data/enums'
+import {TypeEnumOptions, TypeEnum} from '~/data/enums'
 import Navbar from '~/layouts/navbar.vue'
 import Multiselect from 'vue-multiselect'
 import 'vue-multiselect/dist/vue-multiselect.css'
@@ -132,11 +149,17 @@ const searchTerm = ref('')
 const showModal = ref(false)
 const selectedImage = ref('')
 const selectedImageName = ref('')
+const zoomActive = ref(false)
+const zoomDisabled = ref(false)
 
 const typeOptions = [
-  {key: '', label: 'Todas'},
-  ...TypeEnumOptions.sort((a, b) => a.label.localeCompare(b.label))
-]
+  { key: '', label: 'Todas' },
+  ...TypeEnumOptions.sort((a, b) => {
+    if (a.key === TypeEnum.OTHERS) return 1;
+    if (b.key === TypeEnum.OTHERS) return -1;
+    return a.key.localeCompare(b.key);
+  }),
+];
 
 const filteredCatalog = computed(() => {
   const search = removeAccents(searchTerm.value.toLowerCase().trim())
@@ -173,7 +196,20 @@ function openModal(image: string, name: string) {
 
 function closeModal() {
   showModal.value = false
+  zoomActive.value = false
 }
+
+function toggleZoom() {
+  if (!zoomDisabled.value) {
+    zoomActive.value = !zoomActive.value
+  }
+}
+
+onMounted(() => {
+  if (window.innerWidth <= 768) {
+    zoomDisabled.value = true
+  }
+})
 
 function removeAccents(str: string) {
   return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "")
@@ -193,6 +229,7 @@ function getTypeLabel(typeKey: unknown): string {
   background-color: #D2C5AB !important;
   border-color: #cdc2ae !important;
   color: #000000 !important;
+  min-height: 43px !important;
 }
 
 /* Opções da lista */
@@ -256,5 +293,33 @@ function getTypeLabel(typeKey: unknown): string {
 
 .multiselect-custom .multiselect__clear {
   display: block !important;
+}
+
+/* Estilos do modal e da imagem */
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.zoomable-image {
+  max-width: 100%;
+  max-height: 80vh;
+  object-fit: contain;
+  cursor: zoom-in;
+  transition: transform 0.3s ease;
+}
+
+/* Zoom ativado */
+.zoomable-image.zoomed {
+  transform: scale(1.5);
+  cursor: zoom-out;
 }
 </style>
