@@ -5,7 +5,7 @@
 
       <div class="mt-[30px] flex flex-col md:flex-row md:items-end gap-4 mb-8">
         <div class="md:w-[360px] w-full">
-          <label class="block text-sm font-semibold text-green-600 mb-1">Categoria</label>
+          <label class="block text-sm font-semibold text-green-2 mb-1">Categoria</label>
 
           <multiselect
               v-model="selectedType"
@@ -29,7 +29,7 @@
         </div>
 
         <div class="flex-1">
-          <label for="search" class="gap-1 flex md:flex-row flex-col text-sm font-semibold text-green-600 mb-1 block">
+          <label for="search" class="gap-1 flex md:flex-row flex-col text-sm font-semibold text-green-2 mb-1 block">
             Pesquisar
             <span class="text-[11px] text-[#000000] font-normal">
               *(Dica: use palavras-chaves como elfo, guerreiro, mulher ou homem)
@@ -67,7 +67,7 @@
       </div>
 
       <div class="bg-[#E2D6BF] rounded-lg shadow-lg p-3 border border-[#cac1ad] mt-[-11px] mb-[20px] md:text-[14px] text-[12px]">
-        <h5 class="text-green-600 font-semibold">Observações sobre os pedidos:</h5>
+        <h5 class="text-green-2 font-semibold">Observações sobre os pedidos:</h5>
         <p class="mt-1">- Os pedidos podem ser feitos pelo nosso <a class="font-semibold underline" href="https://www.instagram.com/taverna_do_meio_goblin">instagram</a>, só entrar em contato com a gente!</p>
         <p class="mt-1">- Miniaturas de valores acima de R$40 podem fugir do tamanho de 28|33mm e também sua qualidade é melhor.</p>
         <p class="mt-1">- Miniaturas com tamanhos especiais, normalmente são grandes, podem ter no mínimo 300mm (30cm) de altura, consultar com a gente o tamanho real.</p>
@@ -84,12 +84,12 @@
             :key="item.id"
             class="bg-[#E2D6BF] rounded shadow-lg p-3 flex flex-col border border-[#cac1ad]"
         >
-          <div class="w-full aspect-[4/5] mb-2 overflow-hidden rounded md:h-[270px] h-[160px]">
+          <div class="w-full aspect-[5/5] mb-2 overflow-hidden rounded">
             <img
                 class="w-full h-full object-cover cursor-pointer"
             :src="item.image"
-            :alt="item.name"
-            @click="openModal(item.image, item.name)"
+            :alt="item.tag"
+            @click="openModal(item.image, item.name, item.tag)"
             onerror="this.style.display='none'"
             />
           </div>
@@ -111,18 +111,18 @@
       >
         <div class="relative max-w-3xl w-full p-4 overflow-hidden">
           <button
-              class="absolute md:top-2 top-[63px] md:right-[50px] right-2 text-white text-2xl font-bold z-10"
+              class="absolute md:top-2 top-[-12px] md:right-[50px] right-2 text-white text-2xl font-bold z-10"
               @click="closeModal"
           >
             &times;
           </button>
 
-          <div class="w-full h-[80vh] relative overflow-hidden flex items-center justify-center">
+          <div class="w-full md:h-[80vh] relative overflow-hidden flex items-center justify-center">
             <img
                 v-if="selectedImage"
                 :src="selectedImage"
                 class="zoomable-image"
-                :alt="selectedImageName"
+                :alt="selectedImageTag"
                 @click="toggleZoom"
                 :class="{'zoomed': zoomActive}"
                 :style="zoomDisabled ? 'pointer-events: none;' : ''"
@@ -149,6 +149,7 @@ const searchTerm = ref('')
 const showModal = ref(false)
 const selectedImage = ref('')
 const selectedImageName = ref('')
+const selectedImageTag = ref('')
 const zoomActive = ref(false)
 const zoomDisabled = ref(false)
 
@@ -188,9 +189,10 @@ const filteredCatalog = computed(() => {
   })
 })
 
-function openModal(image: string, name: string) {
+function openModal(image: string, name: string, tag: string) {
   selectedImage.value = image
   selectedImageName.value = name
+  selectedImageTag.value = tag
   showModal.value = true
 }
 

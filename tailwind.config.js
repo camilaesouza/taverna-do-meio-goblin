@@ -16,6 +16,7 @@ export default {
         },
         green: {
           1: '#6E7B5E',
+          2: '#586647',
         },
         brown: {
           1: '#251F11',

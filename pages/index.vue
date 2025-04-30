@@ -8,7 +8,7 @@
 
     <div class="z-10 mt-[-67px]">
       <img
-          src="/assets/img/goblin-logo-escrita.png"
+          src="/assets/img/goblin-logo-escrita.webp"
           alt="Logo"
           class="w-[150px] h-auto"
       />

@@ -1,75 +1,29 @@
-# Nuxt Minimal Starter
+# About project
+This project was build using nuxt 3 with tailwindcss 4. This 
+project is for a catalog of a rpg miniature store.
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
-## Setup
+## Install Npm
 
-Make sure to install dependencies:
+Look at the [Documentation](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) for install.
+
+## First Setup
 
 ```bash
-# npm
 npm install
 
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
+npm run dev
 ```
 
-## Development Server
+## Start project
 
 Start the development server on `http://localhost:3000`:
 
 ```bash
-# npm
 npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
 ```
 
 ## Production
 
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+The project is running on CloudFlare server page, the deploy build 
+is automatic by push on branch `main`
