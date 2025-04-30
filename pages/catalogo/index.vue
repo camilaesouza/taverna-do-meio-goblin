@@ -112,45 +112,68 @@
         <div class="relative max-w-3xl w-full p-4 overflow-hidden">
           <!-- Botão de fechar -->
           <button
-              class="absolute md:top-2 top-[-5px] md:right-[50px] right-2 text-white text-2xl font-bold z-10"
+              class="absolute md:top-2 top-[-9px] md:right-[50px] right-2 text-white text-2xl font-bold z-10"
               @click="closeModal"
           >
             &times;
           </button>
 
           <div class="flex justify-center flex-col items-center text-white mb-1 text-center">
-            <p class="font-bold md:text-base text-sm">{{selectedItemForModal?.id}} - {{ selectedItemForModal?.name }} {{ "(" + getTypeLabel(selectedItemForModal?.type) + " - " + selectedItemForModal?.size + ")" }}</p>
-            <p class="text-sm font-medium"> R$ {{ selectedItemForModal?.price.toFixed(2) }}</p>
+            <p class="font-bold md:text-base text-sm">
+              {{ selectedItemForModal?.id }} - {{ selectedItemForModal?.name }}
+              {{ "(" + getTypeLabel(selectedItemForModal?.type) + " - " + selectedItemForModal?.size + ")" }}
+            </p>
+            <p class="text-sm font-medium">R$ {{ selectedItemForModal?.price.toFixed(2) }}</p>
             <p class="md:text-sm text-xs">{{ selectedItemForModal?.observation }}</p>
           </div>
 
+          <!-- Imagem + setas adaptadas -->
           <!-- Imagem + setas -->
           <div class="w-full md:h-[70vh] relative overflow-hidden">
             <div class="flex items-center justify-center w-full h-full">
-              <!-- Seta esquerda -->
+              <!-- Seta esquerda (desktop) -->
               <button
                   @click.stop="prevImage"
                   :disabled="currentIndex === 0"
-                  class="absolute left-2 md:left-0 text-black text-3xl font-bold bg-white/40 hover:bg-white/60 pb-[10px] pl-[8px] pr-[8px] rounded-full z-10 disabled:opacity-30"
+                  class="hidden md:flex absolute left-2 text-black text-3xl font-bold bg-white/40 hover:bg-white/60 pb-[11px] pl-[9px] pr-[9px] rounded-full z-10 disabled:opacity-30"
               >
                 ←
               </button>
+
               <!-- Imagem -->
               <img
                   v-if="selectedItemForModal.image"
                   :src="selectedItemForModal.image"
-                  class="zoomable-image"
+                  class="zoomable-image z-0"
                   :alt="selectedItemForModal.tag"
                   @click="toggleZoom"
                   :class="{ 'zoomed': zoomActive }"
                   :style="zoomDisabled ? 'pointer-events: none;' : ''"
               />
 
-              <!-- Seta direita -->
+              <!-- Seta direita (desktop) -->
               <button
                   @click.stop="nextImage"
                   :disabled="currentIndex === filteredCatalog.length - 1"
-                  class="absolute right-4 md:right-0 top-1/2 -translate-y-1/2 text-black text-3xl font-bold bg-white/40 hover:bg-white/60 pb-[10px] pl-[8px] pr-[8px] rounded-full z-10 disabled:opacity-30"
+                  class="hidden md:flex absolute right-2 text-black text-3xl font-bold bg-white/40 hover:bg-white/60 pb-[11px] pl-[9px] pr-[9px] rounded-full z-10 disabled:opacity-30"
+              >
+                →
+              </button>
+            </div>
+
+            <!-- Setas mobile abaixo -->
+            <div class="flex md:hidden justify-between mt-4 px-10">
+              <button
+                  @click.stop="prevImage"
+                  :disabled="currentIndex === 0"
+                  class="text-black text-2xl font-bold bg-white/40 hover:bg-white/60 pb-[8px] pl-[9px] pr-[9px] rounded-full disabled:opacity-30"
+              >
+                ←
+              </button>
+              <button
+                  @click.stop="nextImage"
+                  :disabled="currentIndex === filteredCatalog.length - 1"
+                  class="text-black text-2xl font-bold bg-white/40 hover:bg-white/60 pb-[8px] pl-[9px] pr-[9px] rounded-full disabled:opacity-30"
               >
                 →
               </button>
