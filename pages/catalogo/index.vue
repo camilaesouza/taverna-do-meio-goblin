@@ -147,11 +147,11 @@
               />
 
               <!-- Seta direita -->
-                <button
-                    @click.stop="nextImage"
-                    :disabled="currentIndex === filteredCatalog.length - 1"
-                    class="absolute right-2 md:right-0 text-black text-3xl font-bold bg-white/40 hover:bg-white/60 pb-[10px] pl-[8px] pr-[8px] rounded-full z-10 disabled:opacity-30"
-                >
+              <button
+                  @click.stop="nextImage"
+                  :disabled="currentIndex === filteredCatalog.length - 1"
+                  class="absolute right-4 md:right-0 top-1/2 -translate-y-1/2 text-black text-3xl font-bold bg-white/40 hover:bg-white/60 pb-[10px] pl-[8px] pr-[8px] rounded-full z-10 disabled:opacity-30"
+              >
                 →
               </button>
             </div>
@@ -358,11 +358,16 @@ function getTypeLabel(typeKey: unknown): string {
   cursor: zoom-in;
   max-height: 100%;
   max-width: 100%;
-  touch-action: none; /* necessário para alguns navegadores */
+  touch-action: none;
 }
 
 .zoomable-image.zoomed {
   transform: scale(2);
   cursor: zoom-out;
+}
+
+button {
+  z-index: 10;
+  pointer-events: auto;
 }
 </style>
