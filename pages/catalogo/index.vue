@@ -89,7 +89,7 @@
                 class="w-full h-full object-cover cursor-pointer"
             :src="item.image"
             :alt="item.tag"
-            @click="openModal(item.image, item.name, item.tag)"
+            @click="openModal(item)"
             onerror="this.style.display='none'"
             />
           </div>
@@ -110,6 +110,7 @@
           @click.self="closeModal"
       >
         <div class="relative max-w-3xl w-full p-4 overflow-hidden">
+          <!-- Botão de fechar -->
           <button
               class="absolute md:top-2 top-[-12px] md:right-[50px] right-2 text-white text-2xl font-bold z-10"
               @click="closeModal"
@@ -117,16 +118,43 @@
             &times;
           </button>
 
-          <div class="w-full md:h-[80vh] relative overflow-hidden flex items-center justify-center">
-            <img
-                v-if="selectedImage"
-                :src="selectedImage"
-                class="zoomable-image"
-                :alt="selectedImageTag"
-                @click="toggleZoom"
-                :class="{'zoomed': zoomActive}"
-                :style="zoomDisabled ? 'pointer-events: none;' : ''"
-            />
+          <div class="flex justify-center flex-col items-center text-white mb-1 text-center">
+            <p class="font-bold md:text-base text-sm">{{selectedItemForModal?.id}} - {{ selectedItemForModal?.name }} {{ "(" + getTypeLabel(selectedItemForModal?.type) + " - " + selectedItemForModal?.size + ")" }}</p>
+            <p class="text-sm font-medium"> R$ {{ selectedItemForModal?.price.toFixed(2) }}</p>
+            <p class="md:text-sm text-xs">{{ selectedItemForModal?.observation }}</p>
+          </div>
+
+          <!-- Imagem + setas -->
+          <div class="w-full md:h-[70vh] relative overflow-hidden">
+            <div class="flex items-center justify-center w-full h-full">
+              <!-- Seta esquerda -->
+              <button
+                  @click.stop="prevImage"
+                  :disabled="currentIndex === 0"
+                  class="absolute left-2 md:left-0 text-black text-3xl font-bold bg-white/40 hover:bg-white/60 pb-[10px] pl-[8px] pr-[8px] rounded-full z-10 disabled:opacity-30"
+              >
+                ←
+              </button>
+              <!-- Imagem -->
+              <img
+                  v-if="selectedItemForModal.image"
+                  :src="selectedItemForModal.image"
+                  class="zoomable-image"
+                  :alt="selectedItemForModal.tag"
+                  @click="toggleZoom"
+                  :class="{ 'zoomed': zoomActive }"
+                  :style="zoomDisabled ? 'pointer-events: none;' : ''"
+              />
+
+              <!-- Seta direita -->
+              <button
+                  @click.stop="nextImage"
+                  :disabled="currentIndex === filteredCatalog.length - 1"
+                  class="absolute right-2 md:right-0 text-black text-3xl font-bold bg-white/40 hover:bg-white/60 pb-[10px] pl-[8px] pr-[8px] rounded-full z-10 disabled:opacity-30"
+              >
+                →
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -137,9 +165,9 @@
 
 
 <script setup lang="ts">
-import {ref, computed} from 'vue'
+import {computed, ref} from 'vue'
 import {catalog} from '~/data/catalog'
-import {TypeEnumOptions, TypeEnum} from '~/data/enums'
+import {TypeEnum, TypeEnumOptions} from '~/data/enums'
 import Navbar from '~/layouts/navbar.vue'
 import Multiselect from 'vue-multiselect'
 import 'vue-multiselect/dist/vue-multiselect.css'
@@ -147,11 +175,10 @@ import 'vue-multiselect/dist/vue-multiselect.css'
 const selectedType = ref(null)
 const searchTerm = ref('')
 const showModal = ref(false)
-const selectedImage = ref('')
-const selectedImageName = ref('')
-const selectedImageTag = ref('')
+const selectedItemForModal = ref(null)
 const zoomActive = ref(false)
 const zoomDisabled = ref(false)
+const currentIndex = ref(0)
 
 const typeOptions = [
   { key: '', label: 'Todas' },
@@ -189,11 +216,28 @@ const filteredCatalog = computed(() => {
   })
 })
 
-function openModal(image: string, name: string, tag: string) {
-  selectedImage.value = image
-  selectedImageName.value = name
-  selectedImageTag.value = tag
+function openModal(item) {
+  currentIndex.value = filteredCatalog.value.findIndex(itemCatalog => itemCatalog.id === item.id)
+  updateModalData()
   showModal.value = true
+}
+
+function updateModalData() {
+  selectedItemForModal.value = filteredCatalog.value[currentIndex.value]
+}
+
+function nextImage() {
+  if (currentIndex.value < filteredCatalog.value.length - 1) {
+    currentIndex.value++
+    updateModalData()
+  }
+}
+
+function prevImage() {
+  if (currentIndex.value > 0) {
+    currentIndex.value--
+    updateModalData()
+  }
 }
 
 function closeModal() {
@@ -208,9 +252,7 @@ function toggleZoom() {
 }
 
 onMounted(() => {
-  if (window.innerWidth <= 768) {
-    zoomDisabled.value = true
-  }
+  zoomDisabled.value = 'ontouchstart' in window || navigator.maxTouchPoints > 0
 })
 
 function removeAccents(str: string) {
@@ -312,16 +354,15 @@ function getTypeLabel(typeKey: unknown): string {
 }
 
 .zoomable-image {
-  max-width: 100%;
-  max-height: 80vh;
-  object-fit: contain;
-  cursor: zoom-in;
   transition: transform 0.3s ease;
+  cursor: zoom-in;
+  max-height: 100%;
+  max-width: 100%;
+  touch-action: none; /* necessário para alguns navegadores */
 }
 
-/* Zoom ativado */
 .zoomable-image.zoomed {
-  transform: scale(1.5);
+  transform: scale(2);
   cursor: zoom-out;
 }
 </style>
