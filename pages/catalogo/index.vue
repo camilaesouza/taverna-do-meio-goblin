@@ -129,15 +129,18 @@
 
           <!-- Imagem + setas adaptadas -->
           <!-- Imagem + setas -->
+          <!-- Imagem + setas -->
           <div class="w-full md:h-[70vh] relative overflow-hidden">
             <div class="flex items-center justify-center w-full h-full">
               <!-- Seta esquerda (desktop) -->
               <button
                   @click.stop="prevImage"
                   :disabled="currentIndex === 0"
-                  class="hidden md:flex absolute left-2 text-black text-3xl font-bold bg-white/40 hover:bg-white/60 pb-[11px] pl-[9px] pr-[9px] rounded-full z-10 disabled:opacity-30"
+                  class="hidden md:flex absolute left-2 text-black bg-white/40 hover:bg-white/60 p-2 rounded-full z-10 disabled:opacity-30"
               >
-                ←
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                </svg>
               </button>
 
               <!-- Imagem -->
@@ -155,9 +158,11 @@
               <button
                   @click.stop="nextImage"
                   :disabled="currentIndex === filteredCatalog.length - 1"
-                  class="hidden md:flex absolute right-2 text-black text-3xl font-bold bg-white/40 hover:bg-white/60 pb-[11px] pl-[9px] pr-[9px] rounded-full z-10 disabled:opacity-30"
+                  class="hidden md:flex absolute right-2 text-black bg-white/40 hover:bg-white/60 p-2 rounded-full z-10 disabled:opacity-30"
               >
-                →
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                </svg>
               </button>
             </div>
 
@@ -166,16 +171,21 @@
               <button
                   @click.stop="prevImage"
                   :disabled="currentIndex === 0"
-                  class="text-black text-2xl font-bold bg-white/40 hover:bg-white/60 pb-[8px] pl-[9px] pr-[9px] rounded-full disabled:opacity-30"
+                  class="text-black bg-white/40 hover:bg-white/60 p-2 rounded-full disabled:opacity-30"
               >
-                ←
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                </svg>
               </button>
+
               <button
                   @click.stop="nextImage"
                   :disabled="currentIndex === filteredCatalog.length - 1"
-                  class="text-black text-2xl font-bold bg-white/40 hover:bg-white/60 pb-[8px] pl-[9px] pr-[9px] rounded-full disabled:opacity-30"
+                  class="text-black bg-white/40 hover:bg-white/60 p-2 rounded-full disabled:opacity-30"
               >
-                →
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                </svg>
               </button>
             </div>
           </div>
