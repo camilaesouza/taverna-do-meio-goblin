@@ -66,15 +66,23 @@
         </div>
       </div>
 
-      <div class="bg-[#E2D6BF] rounded-lg shadow-lg p-3 border border-[#cac1ad] mt-[-11px] mb-[20px] md:text-[14px] text-[12px]">
+      <div
+          class="bg-[#E2D6BF] rounded-lg shadow-lg p-3 border border-[#cac1ad] mt-[-11px] mb-[20px] md:text-[14px] text-[12px]">
         <h5 class="text-green-2 font-semibold">Observações sobre os pedidos:</h5>
-        <p class="mt-1">- Os pedidos podem ser feitos pelo nosso <a class="font-semibold underline" href="https://www.instagram.com/taverna_do_meio_goblin">instagram</a>, só entrar em contato com a gente!</p>
-        <p class="mt-1">- Miniaturas de valores acima de R$40 podem fugir do tamanho de 28|33mm e também sua qualidade é melhor.</p>
-        <p class="mt-1">- Miniaturas com tamanhos especiais, normalmente são grandes, podem ter no mínimo 300mm (30cm) de altura, consultar com a gente o tamanho real.</p>
-        <p class="mt-1">- Na compra de miniaturas em grandes quantidades podemos oferecer um descontinho! Não perca a chance de garantir suas minis!</p>
-        <p class="mt-1">- Não encontrou o que procurava? Podemos fazer miniaturas ou trabalhos com impressão 3D personalizados, entra em contato com a gente!</p>
+        <p class="mt-1">- Os pedidos podem ser feitos pelo nosso <a class="font-semibold underline"
+                                                                    href="https://www.instagram.com/taverna_do_meio_goblin">instagram</a>,
+          só entrar em contato com a gente!</p>
+        <p class="mt-1">- Miniaturas de valores acima de R$40 podem fugir do tamanho de 28|33mm e também sua qualidade é
+          melhor.</p>
+        <p class="mt-1">- Miniaturas com tamanhos especiais, normalmente são grandes, podem ter no mínimo 300mm (30cm)
+          de altura, consultar com a gente o tamanho real.</p>
+        <p class="mt-1">- Na compra de miniaturas em grandes quantidades podemos oferecer um descontinho! Não perca a
+          chance de garantir suas minis!</p>
+        <p class="mt-1">- Não encontrou o que procurava? Podemos fazer miniaturas ou trabalhos com impressão 3D
+          personalizados, entra em contato com a gente!</p>
 
-        <p class="mt-[13px] md:text-[24px] text-[18px] font-railey md:text-start text-center">Os melhores preços, de qualquer lugar!</p>
+        <p class="mt-[13px] md:text-[24px] text-[18px] font-railey md:text-start text-center">Os melhores preços, de
+          qualquer lugar!</p>
       </div>
 
       <!-- Grid de cards -->
@@ -87,18 +95,22 @@
           <div class="w-full aspect-[5/5] mb-2 overflow-hidden rounded">
             <img
                 class="w-full h-full object-cover cursor-pointer"
-            :src="item.image"
-            :alt="item.tag"
-            @click="openModal(item)"
-            onerror="this.style.display='none'"
+                :src="item.image"
+                :alt="item.tag"
+                @click="openModal(item)"
+                onerror="this.style.display='none'"
             />
           </div>
           <div class="text-center">
-            <p class="font-semibold text-green-1 text-sm line-clamp-2">{{item.id}} - {{ item.name }}</p>
-            <p class="font-semibold text-green-1 md:text-sm text-[11px] line-clamp-2 mt-1">{{ getTypeLabel(item.type) }}</p>
+            <p class="font-semibold text-green-1 text-sm line-clamp-2">{{ item.id }} - {{ item.name }}</p>
+            <p class="font-semibold text-green-1 md:text-sm text-[11px] line-clamp-2 mt-1">{{
+                getTypeLabel(item.type)
+              }}</p>
             <p class="font-semibold text-green-1 md:text-sm text-[11px] line-clamp-2 mt-1">Tamanho: {{ item.size }}</p>
             <p class="text-green-1 md:text-sm text-[11px] mt-[15px]">{{ item.observation }}</p>
-            <p class="font-semibold text-green-1 mt-[15px] md:text-[18px] text-[16px]">R$ {{ item.price.toFixed(2) }}</p>
+            <p class="font-semibold text-green-1 mt-[15px] md:text-[18px] text-[16px]">R$ {{
+                item.price.toFixed(2)
+              }}</p>
           </div>
         </div>
       </div>
@@ -119,7 +131,8 @@
           </button>
 
           <div class="flex justify-center flex-col items-center text-white mb-1 text-center">
-            <p class="font-bold md:text-base text-sm">{{selectedItemForModal?.id}} - {{ selectedItemForModal?.name }} {{ "(" + getTypeLabel(selectedItemForModal?.type) + " - " + selectedItemForModal?.size + ")" }}</p>
+            <p class="font-bold md:text-base text-sm">{{ selectedItemForModal?.id }} - {{ selectedItemForModal?.name }}
+              {{ "(" + getTypeLabel(selectedItemForModal?.type) + " - " + selectedItemForModal?.size + ")" }}</p>
             <p class="text-sm font-medium"> R$ {{ selectedItemForModal?.price.toFixed(2) }}</p>
             <p class="md:text-sm text-xs">{{ selectedItemForModal?.observation }}</p>
           </div>
@@ -150,7 +163,7 @@
               <button
                   @click.stop="nextImage"
                   :disabled="currentIndex === filteredCatalog.length - 1"
-                  class="absolute right-2 md:right-0 text-black text-3xl font-bold bg-white/40 hover:bg-white/60 pb-[10px] pl-[8px] pr-[8px] rounded-full z-10 disabled:opacity-30"
+                  class="absolute left-2 md:left-0 text-black text-3xl font-bold bg-white/40 hover:bg-white/60 pb-[10px] pl-[8px] pr-[8px] rounded-full z-10 disabled:opacity-30"
               >
                 →
               </button>
@@ -181,7 +194,7 @@ const zoomDisabled = ref(false)
 const currentIndex = ref(0)
 
 const typeOptions = [
-  { key: '', label: 'Todas' },
+  {key: '', label: 'Todas'},
   ...TypeEnumOptions.sort((a, b) => {
     if (a.key === TypeEnum.OTHERS) return 1;
     if (b.key === TypeEnum.OTHERS) return -1;
