@@ -68,7 +68,8 @@
 
       <div class="bg-[#E2D6BF] rounded-lg shadow-lg p-3 border border-[#cac1ad] mt-[-11px] mb-[20px] md:text-[14px] text-[12px]">
         <h5 class="text-green-2 font-semibold">Observações sobre os pedidos:</h5>
-        <p class="mt-1">- Os pedidos podem ser feitos pelo nosso <a class="font-semibold underline" href="https://www.instagram.com/taverna_do_meio_goblin">instagram</a>, só entrar em contato com a gente!</p>
+        <p class="mt-1">- Os pedidos podem ser feitos pelo nosso <a class="font-semibold underline" href="https://www.instagram.com/taverna_do_meio_goblin">Instagram</a> ou
+          <a class="font-semibold underline" target="_blank" href="https://wa.me/554288642843">Whatapp</a>, só entrar em contato com a gente!</p>
         <p class="mt-1">- Miniaturas de valores acima de R$40 podem fugir do tamanho de 28|33mm e também sua qualidade é melhor.</p>
         <p class="mt-1">- Miniaturas com tamanhos especiais, normalmente são grandes, podem ter no mínimo 300mm (30cm) de altura, consultar com a gente o tamanho real.</p>
         <p class="mt-1">- Na compra de miniaturas em grandes quantidades podemos oferecer um descontinho! Não perca a chance de garantir suas minis!</p>
@@ -77,31 +78,41 @@
         <p class="mt-[13px] md:text-[24px] text-[18px] font-railey md:text-start text-center">Os melhores preços, de qualquer lugar!</p>
       </div>
 
-      <!-- Grid de cards -->
+      <!-- Card minis -->
       <div class="grid gap-6 grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
         <div
             v-for="item in filteredCatalog"
             :key="item.id"
-            class="bg-[#E2D6BF] rounded shadow-lg p-3 flex flex-col border border-[#cac1ad]"
+            class="bg-[#E2D6BF] rounded shadow-lg p-3 flex flex-col justify-between h-full border border-[#cac1ad]"
         >
-          <div class="w-full aspect-[5/5] mb-2 overflow-hidden rounded">
-            <img
-                class="w-full h-full object-cover cursor-pointer"
-            :src="item.image"
-            :alt="item.tag"
-            @click="openModal(item)"
-            onerror="this.style.display='none'"
-            />
-          </div>
+          <!-- Conteúdo -->
           <div class="text-center">
-            <p class="font-semibold text-green-1 text-sm line-clamp-2">{{item.id}} - {{ item.name }}</p>
+            <div class="w-full aspect-[5/5] mb-2 overflow-hidden rounded">
+              <img
+                  class="w-full h-full object-cover cursor-pointer"
+                  :src="item.image"
+                  :alt="item.tag"
+                  @click="openModal(item)"
+                  onerror="this.style.display='none'"
+              />
+            </div>
+            <p class="font-semibold text-green-1 text-sm line-clamp-2">{{ item.id }} - {{ item.name }}</p>
             <p class="font-semibold text-green-1 md:text-sm text-[11px] line-clamp-2 mt-1">{{ getTypeLabel(item.type) }}</p>
             <p class="font-semibold text-green-1 md:text-sm text-[11px] line-clamp-2 mt-1">Tamanho: {{ item.size }}</p>
             <p class="text-green-1 md:text-sm text-[11px] mt-[15px]">{{ item.observation }}</p>
             <p class="font-semibold text-green-1 mt-[15px] md:text-[18px] text-[16px]">R$ {{ item.price.toFixed(2) }}</p>
           </div>
+
+          <!-- Botão fixado no final -->
+          <div class="mt-4">
+            <AddToCartButton :item="item" />
+          </div>
         </div>
       </div>
+
+      <!-- Botão flutuante do carrinho -->
+      <CartButton />
+
 
       <!-- Modal de imagem -->
       <div
@@ -204,6 +215,8 @@ import {TypeEnum, TypeEnumOptions} from '~/data/enums'
 import Navbar from '~/layouts/navbar.vue'
 import Multiselect from 'vue-multiselect'
 import 'vue-multiselect/dist/vue-multiselect.css'
+import AddToCartButton from '~/components/AddToCartButton.vue'
+import CartButton from '~/components/CartButton.vue'
 
 const selectedType = ref(null)
 const searchTerm = ref('')
