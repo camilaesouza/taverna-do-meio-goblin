@@ -46,7 +46,7 @@ export const catalog: Catalogitem[] = [
     {
         id: 4,
         name: 'Wild Sorcerer (Elfos + Balista)',
-        size: '28mm|33mm',
+        size: 'especial',
         price: 70.00,
         type: TypeEnum.EVERDARK_ELVES,
         tag: 'feiticeiro, selvagem, balista, elfo, flecha, lança, longo',
@@ -66,7 +66,7 @@ export const catalog: Catalogitem[] = [
     {
         id: 6,
         name: 'Wild Sorcerer (Somente Balista)',
-        size: '28mm|33mm',
+        size: 'especial',
         price: 40.00,
         type: TypeEnum.EVERDARK_ELVES,
         tag: 'Balista, item, itens, flecha, cenário',
