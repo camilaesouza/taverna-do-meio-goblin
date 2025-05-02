@@ -64,7 +64,10 @@ function gerarMensagemPedido() {
     const precoFinal = calcularPrecoComDesconto(item)
     const totalItem = (precoFinal * item.quantity).toFixed(2)
     const precoUnitario = precoFinal.toFixed(2)
-    return `• ${item.name} (${item.size}) x${item.quantity} — R$ ${totalItem} (R$ ${precoUnitario} cada)`
+
+    const opcaoTexto = item.option ? ` - Opção: ${item.option.toUpperCase()}` : ''
+
+    return `• ${item.name} (${item.size})${opcaoTexto} x${item.quantity} — R$ ${totalItem} (R$ ${precoUnitario} cada)`
   }).join('\n')
 
   const totalGeral = `\n💰 Total do pedido: R$ ${Number(cart.totalPrice).toFixed(2)}`
@@ -103,7 +106,7 @@ async function copiarPedido() {
     Swal.fire({
       icon: 'success',
       title: 'Copiado!',
-      text: 'Mensagem copiada com sucesso. Agora é só colar onde quiser.',
+      text: 'Mensagem copiada com sucesso. Agora é só encaminhar ao nosso Whatsapp.',
       toast: true,
       position: 'top-end',
       timer: 3000,
