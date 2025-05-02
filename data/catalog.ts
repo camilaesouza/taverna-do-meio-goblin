@@ -21,6 +21,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.EVERDARK_ELVES,
         tag: 'assassino, élfico, elfo, feminino, feminina, mulher, chicote, corda',
         observation: 'Na compra de no mínimo 3 o preço diminui para 16 R$',
+        options: ['a', 'b', 'c'],
         image: '/img/catalog/everdark-elves/elves-assassin.webp',
     },
     {
@@ -31,6 +32,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.EVERDARK_ELVES,
         tag: 'assassinos, assassina, voadores, fada, feminino, feminina, mulher, elfo, asa, voador',
         observation: 'Na compra de no mínimo 3 o preço diminui para 16 R$',
+        options: ['a', 'b', 'c'],
         image: '/img/catalog/everdark-elves/flying-assassins.webp'
     },
     {
@@ -41,6 +43,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.EVERDARK_ELVES,
         tag: 'mestre das feras, assassinos, elfo, feminino, feminina, mulher, longo, espada',
         observation: null,
+        options: null,
         image: '/img/catalog/everdark-elves/beast-master.webp'
     },
     {
@@ -51,6 +54,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.EVERDARK_ELVES,
         tag: 'feiticeiro, selvagem, balista, elfo, flecha, lança, longo',
         observation: null,
+        options: null,
         image: '/img/catalog/everdark-elves/wild-sorcerer-full.webp'
     },
     {
@@ -61,6 +65,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.EVERDARK_ELVES,
         tag: 'feiticeiro, selvagem, elfo, flecha, lança, longo, homem, masculino',
         observation: null,
+        options: ['a', 'b'],
         image: '/img/catalog/everdark-elves/wild-sorcerer-elfs.webp'
     },
     {
@@ -71,6 +76,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.EVERDARK_ELVES,
         tag: 'Balista, item, itens, flecha, cenário',
         observation: null,
+        options: null,
         image: '/img/catalog/everdark-elves/wild-sorcerer-balista.webp'
     },
     {
@@ -81,6 +87,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.EVERDARK_ELVES,
         tag: 'cavalo, animal, animais, animais, voador, asa, montaria, criatura',
         observation: null,
+        options: null,
         image: '/img/catalog/everdark-elves/dark-pegassus.webp'
     },
     {
@@ -91,6 +98,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.EVERDARK_ELVES,
         tag: 'bruxa, feminino, feminina, mulher, longo, espada',
         observation: null,
+        options: null,
         image: '/img/catalog/everdark-elves/witch.webp'
     },
     {
@@ -101,6 +109,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.EVERDARK_ELVES,
         tag: 'carroça, carruagem, animal, animais, animais, cavalo, montaria, item, itens, cenário',
         observation: null,
+        options: null,
         image: '/img/catalog/everdark-elves/chariot-crossbow.webp'
     },
     {
@@ -111,6 +120,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.EVERDARK_ELVES,
         tag: 'carroça, carruagem, lança, cavalo, montaria, item, itens, cenário',
         observation: null,
+        options: null,
         image: '/img/catalog/everdark-elves/chariot-lancer.webp'
     },
     {
@@ -121,6 +131,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.EVERDARK_ELVES,
         tag: 'elfo, guerreiro, masculino, homem, espada, bandeira',
         observation: 'Na compra de no mínimo 3 o preço diminui para 16 R$',
+        options: ['a', 'b', 'c', 'd', 'e'],
         image: '/img/catalog/everdark-elves/archmage.webp'
     },
     {
@@ -131,6 +142,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.EVERDARK_ELVES,
         tag: 'cavaleiros, cavaleiro, elfo, montaria, animal, animais, animais, cavalo, espada',
         observation: null,
+        options: ['a', 'b', 'c', 'd', 'e', 'f'],
         image: '/img/catalog/everdark-elves/dread-knights.webp'
     },
     {
@@ -141,6 +153,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.EVERDARK_ELVES,
         tag: 'cérebro, criatura, monstro',
         observation: null,
+        options: ['a', 'b', 'c'],
         image: '/img/catalog/everdark-elves/brain.webp'
     },
     {
@@ -151,6 +164,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.EVERDARK_ELVES,
         tag: 'devorador de mentes, criatura, monstro,',
         observation: null,
+        options: ['a', 'b', 'c'],
         image: '/img/catalog/everdark-elves/mindflayer-ab.webp'
     },
     {
@@ -161,6 +175,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.EVERDARK_ELVES,
         tag: 'devorador de mentes, criatura, monstro,',
         observation: null,
+        options: ['a', 'b', 'c'],
         image: '/img/catalog/everdark-elves/mindflayer-c.webp'
     },
     {
@@ -171,6 +186,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.EVERDARK_ELVES,
         tag: 'estandarte, elfo, feminino, feminina, mulher, criatura, monstro,',
         observation: null,
+        options: null,
         image: '/img/catalog/everdark-elves/avatar-banner.webp'
     },
     {
@@ -181,6 +197,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.EVERDARK_ELVES,
         tag: 'lança, elfo, feminino, feminina, mulher, criatura, monstro,',
         observation: null,
+        options: null,
         image: '/img/catalog/everdark-elves/avatar-spear.webp'
     },
     {
@@ -191,6 +208,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.EVERDARK_ELVES,
         tag: 'criatura, monstro, cenário, oceano',
         observation: null,
+        options: null,
         image: '/img/catalog/everdark-elves/kraken.webp'
     },
     {
@@ -201,6 +219,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.EVERDARK_ELVES,
         tag: 'criatura, monstro, cenário, oceano',
         observation: 'Todas as peças inclusas',
+        options: null,
         image: '/img/catalog/everdark-elves/kraken-diorama.webp'
     },
     {
@@ -211,6 +230,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.EVERDARK_ELVES,
         tag: 'criatura, monstro, cenario, item, itens',
         observation: 'Todas as peças inclusas',
+        options: null,
         image: '/img/catalog/everdark-elves/terrain-diorama.webp'
     },
 
@@ -223,6 +243,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.BADLANDS,
         tag: 'goblin, masculino, homem, cajado, mascara',
         observation: null,
+        options: null,
         image: '/img/catalog/badlands/beast-whisperer.webp'
     },
     {
@@ -233,6 +254,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.BADLANDS,
         tag: 'bruxa, criatura, monstro, mulher, feminino, animal, animais, animais, mascara',
         observation: null,
+        options: null,
         image: '/img/catalog/badlands/kairn-den-mother.webp'
     },
     {
@@ -243,6 +265,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.BADLANDS,
         tag: 'guerreiro, masculino, homem, machado, mascara, chifre',
         observation: null,
+        options: null,
         image: '/img/catalog/badlands/kairn-fighter-1.webp'
     },
     {
@@ -253,6 +276,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.BADLANDS,
         tag: 'guerreiro, guerreira, feminino, feminina, mulher, machado',
         observation: null,
+        options: null,
         image: '/img/catalog/badlands/kairn-fighter-2.webp'
     },
     {
@@ -263,6 +287,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.BADLANDS,
         tag: 'guerreiro, guerreira, feminino, feminina, mulher, machado, escudo',
         observation: null,
+        options: null,
         image: '/img/catalog/badlands/kairn-fighter-3.webp'
     },
     {
@@ -273,6 +298,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.BADLANDS,
         tag: 'guerreiro, guerreira, feminino, feminina, mulher',
         observation: null,
+        options: null,
         image: '/img/catalog/badlands/kairn-fighter-4.webp'
     },
     {
@@ -283,6 +309,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.BADLANDS,
         tag: 'guerreiro, guerreira, feminino, feminina, mulher, mascara, chifre',
         observation: null,
+        options: null,
         image: '/img/catalog/badlands/kairn-fighter-5.webp'
     },
     {
@@ -293,6 +320,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.BADLANDS,
         tag: 'guerreiro, masculino, homem, escudo, espada',
         observation: null,
+        options: null,
         image: '/img/catalog/badlands/kairn-fighter-6.webp'
     },
     {
@@ -303,6 +331,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.BADLANDS,
         tag: 'guerreiro, masculino, homem',
         observation: null,
+        options: null,
         image: '/img/catalog/badlands/kairn-fighter-7.webp'
     },
     {
@@ -313,6 +342,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.BADLANDS,
         tag: 'guerreiro, masculino, homem',
         observation: null,
+        options: null,
         image: '/img/catalog/badlands/kairn-fighter-8.webp'
     },
     {
@@ -323,6 +353,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.BADLANDS,
         tag: 'guerreiro, masculino, homem',
         observation: null,
+        options: null,
         image: '/img/catalog/badlands/kairn-fighter-9.webp'
     },
     {
@@ -333,6 +364,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.BADLANDS,
         tag: 'guerreiro, masculino, homem',
         observation: null,
+        options: null,
         image: '/img/catalog/badlands/kairn-fighter-10.webp'
     },
     {
@@ -343,6 +375,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.BADLANDS,
         tag: 'feminino, feminina, mulher, montaria, animal, animais, animais, longo',
         observation: null,
+        options: null,
         image: '/img/catalog/badlands/sabertooth-warrior-1.webp'
     },
     {
@@ -353,6 +386,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.BADLANDS,
         tag: 'feminino, feminina, mulher, montaria, animal, animais, animais,',
         observation: null,
+        options: null,
         image: '/img/catalog/badlands/sabertooth-warrior-2.webp'
     },
     {
@@ -363,6 +397,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.BADLANDS,
         tag: 'cabeça, feminino, feminina, mulher, caçadora',
         observation: null,
+        options: null,
         image: '/img/catalog/badlands/headhuntress.webp'
     },
     {
@@ -373,6 +408,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.BADLANDS,
         tag: 'dinossauro, animal, animais, animais, criatura, monstro,',
         observation: null,
+        options: null,
         image: '/img/catalog/badlands/raptors.webp'
     },
     {
@@ -383,6 +419,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.BADLANDS,
         tag: 'criatura, monstro, animal, animais, animais,',
         observation: null,
+        options: null,
         image: '/img/catalog/badlands/sloth.webp'
     },
     {
@@ -393,6 +430,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.BADLANDS,
         tag: 'criatura, monstro, montaria, masculino, homem, guerreiro',
         observation: null,
+        options: null,
         image: '/img/catalog/badlands/warlord.webp'
     },
     {
@@ -403,6 +441,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.BADLANDS,
         tag: 'guerreiro, masculino, homem',
         observation: null,
+        options: null,
         image: '/img/catalog/badlands/warmonger.webp'
     },
     {
@@ -413,6 +452,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.BADLANDS,
         tag: 'criatura, monstro, montaria, feminino, feminina, mulher, dinossauro, guerreira, guerreiro',
         observation: null,
+        options: null,
         image: '/img/catalog/badlands/warrior-queen.webp'
     },
 
@@ -425,6 +465,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.BARBARIANS,
         tag: 'guerreira, feminino, feminina, mulher, guerreiro',
         observation: null,
+        options: null,
         image: '/img/catalog/barbarians/zofuriana.webp'
     },
     {
@@ -435,6 +476,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.BARBARIANS,
         tag: 'guerreiro, masculino, homem',
         observation: null,
+        options: null,
         image: '/img/catalog/barbarians/gyratos.webp'
     },
     {
@@ -445,6 +487,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.BARBARIANS,
         tag: 'guerreiro, masculino, homem',
         observation: null,
+        options: null,
         image: '/img/catalog/barbarians/tehnar.webp'
     },
     {
@@ -455,6 +498,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.BARBARIANS,
         tag: 'guerreiro, feminino, feminina, mulher, guerreira',
         observation: null,
+        options: null,
         image: '/img/catalog/barbarians/vindicta-raid-queen.webp'
     },
     {
@@ -465,6 +509,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.BARBARIANS,
         tag: 'troll, feminino, feminina, mulher',
         observation: null,
+        options: null,
         image: '/img/catalog/barbarians/ferin.webp'
     },
     {
@@ -475,6 +520,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.BARBARIANS,
         tag: 'troll, masculino, homem',
         observation: null,
+        options: null,
         image: '/img/catalog/barbarians/roogarin.webp'
     },
     {
@@ -485,6 +531,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.BARBARIANS,
         tag: 'bárbaro, guerreiro, masculino, homem',
         observation: null,
+        options: null,
         image: '/img/catalog/barbarians/bjorn.webp'
     },
     {
@@ -495,6 +542,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.BARBARIANS,
         tag: 'bárbaro, guerreiro, masculino, homem',
         observation: null,
+        options: null,
         image: '/img/catalog/barbarians/eric.webp'
     },
     {
@@ -505,6 +553,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.BARBARIANS,
         tag: 'bárbaro, guerreiro, masculino, homem',
         observation: null,
+        options: null,
         image: '/img/catalog/barbarians/olaf.webp'
     },
     {
@@ -515,6 +564,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.BARBARIANS,
         tag: 'bruxa, feminino, mulher, invocador, alma, magia, magico, chifre',
         observation: null,
+        options: null,
         image: '/img/catalog/barbarians/martha-bogmaiden.webp'
     },
     {
@@ -525,6 +575,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.BARBARIANS,
         tag: 'montaria, criatura, monstro, bárbaro, guerreiro, masculino, homem',
         observation: null,
+        options: null,
         image: '/img/catalog/barbarians/griz-the-hungry.webp'
     },
     {
@@ -535,6 +586,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.BARBARIANS,
         tag: 'alce, criatura, monstro, masculino, homem',
         observation: null,
+        options: null,
         image: '/img/catalog/barbarians/elknar-the-calm.webp'
     },
     {
@@ -545,6 +597,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.BARBARIANS,
         tag: 'gigante, deus',
         observation: null,
+        options: null,
         image: '/img/catalog/barbarians/ice-giant.webp'
     },
 
@@ -557,6 +610,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.BLOODSAIL_OGRES,
         tag: 'Ogro, pescador, ocenado, mar, âncora',
         observation: 'Na compra de no mínimo 3 o preço diminui para 20 R$',
+        options: ['a', 'b', 'c'],
         image: '/img/catalog/bloodsail-ogres/anchor-bashers-1.webp'
     },
     {
@@ -567,6 +621,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.BLOODSAIL_OGRES,
         tag: 'ogros batedores de âncora, ocenado, mar',
         observation: 'Na compra de no mínimo 3 o preço diminui para 25 R$',
+        options: ['a', 'b', 'c'],
         image: '/img/catalog/bloodsail-ogres/anchor-bashers-2.webp'
     },
     {
@@ -577,6 +632,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.BLOODSAIL_OGRES,
         tag: 'Ogro, Dreadnought, âncora, oceano, mar',
         observation: null,
+        options: null,
         image: '/img/catalog/bloodsail-ogres/anchor-basher-hero.webp'
     },
     {
@@ -587,6 +643,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.BLOODSAIL_OGRES,
         tag: 'Ogro, caçador, chapeu, passaro, animal, animais, animais,',
         observation: null,
+        options: null,
         image: '/img/catalog/bloodsail-ogres/hunter.webp'
     },
     {
@@ -597,6 +654,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.BLOODSAIL_OGRES,
         tag: 'Ogro, bruxo, voodoo',
         observation: null,
+        options: null,
         image: '/img/catalog/bloodsail-ogres/voodoo-doctor.webp'
     },
     {
@@ -607,6 +665,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.BLOODSAIL_OGRES,
         tag: 'humano, pirata',
         observation: 'Na compra de no mínimo 3 o preço diminui para 17 R$',
+        options: ['a', 'b', 'c', 'd', 'e'],
         image: '/img/catalog/bloodsail-ogres/tribesman.webp'
     },
     {
@@ -617,6 +676,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.BLOODSAIL_OGRES,
         tag: 'humano, caçador, montaria',
         observation: null,
+        options: ['a', 'b', 'c'],
         image: '/img/catalog/bloodsail-ogres/pirate-hippos.webp'
     },
     {
@@ -627,6 +687,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.BLOODSAIL_OGRES,
         tag: 'crocodilo, animal, animais, animais,',
         observation: null,
+        options: ['a', 'b', 'c'],
         image: '/img/catalog/bloodsail-ogres/elemental-golem.webp'
     },
     {
@@ -637,6 +698,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.BLOODSAIL_OGRES,
         tag: 'Yeti, pirata, criatura, monstro,',
         observation: null,
+        options: ['a', 'b', 'c'],
         image: '/img/catalog/bloodsail-ogres/hipirate-yetis.webp'
     },
     {
@@ -647,6 +709,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.BLOODSAIL_OGRES,
         tag: 'aboleth, criatura, monstro, mar',
         observation: null,
+        options: null,
         image: '/img/catalog/bloodsail-ogres/aboleth.webp'
     },
     {
@@ -657,6 +720,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.BLOODSAIL_OGRES,
         tag: 'Chuul, mar, profundezas',
         observation: null,
+        options: ['a', 'b'],
         image: '/img/catalog/bloodsail-ogres/archmage.webp'
     },
     {
@@ -667,6 +731,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.BLOODSAIL_OGRES,
         tag: 'animal, animais, animais, macaco, gorila',
         observation: null,
+        options: null,
         image: '/img/catalog/bloodsail-ogres/king-kong.webp'
     },
 
@@ -680,6 +745,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.CARNIVAL_AND_ORCS,
         tag: 'orc de carnaval, masculino, homem',
         observation: 'Na compra de no mínimo 3 o preço diminui para 18R$',
+        options: ['a', 'b', 'c', 'd', 'e'],
         image: '/img/catalog/carnival-and-orcs/orc-1.webp'
     },
     {
@@ -690,6 +756,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.CARNIVAL_AND_ORCS,
         tag: 'orc de carnaval, masculino, homem',
         observation: 'Na compra de no mínimo 3 o preço diminui para 18R$',
+        options: ['a', 'b', 'c', 'd', 'e'],
         image: '/img/catalog/carnival-and-orcs/orc-2.webp'
     },
     {
@@ -700,6 +767,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.CARNIVAL_AND_ORCS,
         tag: 'orc de carnaval, masculino, homem',
         observation: 'Na compra de no mínimo 3 o preço diminui para 18R$',
+        options: ['a', 'b', 'c', 'd', 'e'],
         image: '/img/catalog/carnival-and-orcs/orc-3.webp'
     },
     {
@@ -710,6 +778,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.CARNIVAL_AND_ORCS,
         tag: 'troll, feiticeiro, criatura, monstro,',
         observation: null,
+        options: null,
         image: '/img/catalog/carnival-and-orcs/troll-wizard.webp'
     },
     {
@@ -720,6 +789,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.CARNIVAL_AND_ORCS,
         tag: 'xamã, orc, criatura, monstro,',
         observation: null,
+        options: null,
         image: '/img/catalog/carnival-and-orcs/shaman.webp'
     },
     {
@@ -730,6 +800,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.CARNIVAL_AND_ORCS,
         tag: 'xamã, orc, montaria, javali, criatura, monstro,',
         observation: null,
+        options: null,
         image: '/img/catalog/carnival-and-orcs/orc-shaman-on-boar.webp'
     },
     {
@@ -740,6 +811,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.CARNIVAL_AND_ORCS,
         tag: 'aberração, aberrações, circo',
         observation: null,
+        options: ['a', 'b', 'c'],
         image: '/img/catalog/carnival-and-orcs/strongman.webp'
     },
     {
@@ -750,6 +822,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.CARNIVAL_AND_ORCS,
         tag: 'acrobata, circo',
         observation: null,
+        options: ['a', 'b', 'c', 'd', 'e'],
         image: '/img/catalog/carnival-and-orcs/acrobats.webp'
     },
     {
@@ -760,6 +833,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.CARNIVAL_AND_ORCS,
         tag: 'criatura, monstro, bufão',
         observation: null,
+        options: null,
         image: '/img/catalog/carnival-and-orcs/ring-master-1.webp'
     },
     {
@@ -770,6 +844,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.CARNIVAL_AND_ORCS,
         tag: 'criatura, monstro, bufão, montaria',
         observation: null,
+        options: null,
         image: '/img/catalog/carnival-and-orcs/ring-master-2.webp'
     },
     {
@@ -780,6 +855,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.CARNIVAL_AND_ORCS,
         tag: 'circo, masculino, homem, criatura, monstro,',
         observation: null,
+        options: null,
         image: '/img/catalog/carnival-and-orcs/carnival-carnie-1.webp'
     },
     {
@@ -790,6 +866,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.CARNIVAL_AND_ORCS,
         tag: 'circo, masculino, homem, criatura, monstro, anão, anões,',
         observation: null,
+        options: null,
         image: '/img/catalog/carnival-and-orcs/carnival-carnie-2.webp'
     },
     {
@@ -800,6 +877,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.CARNIVAL_AND_ORCS,
         tag: 'circo, masculino, homem, criatura, monstro,',
         observation: null,
+        options: null,
         image: '/img/catalog/carnival-and-orcs/carnival-carnie-3.webp'
     },
     {
@@ -810,6 +888,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.CARNIVAL_AND_ORCS,
         tag: 'circo, masculino, homem, criatura, monstro,',
         observation: null,
+        options: null,
         image: '/img/catalog/carnival-and-orcs/carnival-carnie-4.webp'
     },
     {
@@ -820,6 +899,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.CARNIVAL_AND_ORCS,
         tag: 'circo, masculino, homem, criatura, monstro, duas cabeças',
         observation: null,
+        options: null,
         image: '/img/catalog/carnival-and-orcs/carnival-carnie-5.webp'
     },
     {
@@ -830,6 +910,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.CARNIVAL_AND_ORCS,
         tag: 'circo, masculino, homem, criatura, monstro, aberração, demônio',
         observation: null,
+        options: null,
         image: '/img/catalog/carnival-and-orcs/filth-father.webp'
     },
     {
@@ -840,6 +921,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.CARNIVAL_AND_ORCS,
         tag: 'dinossauro, criatura, monstro,',
         observation: null,
+        options: ['a', 'b'],
         image: '/img/catalog/carnival-and-orcs/dinosaur.webp'
     },
 
@@ -853,6 +935,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.CARNIVAL_AND_ORCS_2,
         tag: 'guerreiro, masculino, homem, orc, montaria',
         observation: null,
+        options: null,
         image: '/img/catalog/carnival-and-orcs-2/warchief-on-boar.webp'
     },
     {
@@ -863,6 +946,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.CARNIVAL_AND_ORCS_2,
         tag: 'guerreiro, masculino, homem, orc',
         observation: null,
+        options: null,
         image: '/img/catalog/carnival-and-orcs-2/warrior-chieftain.webp'
     },
     {
@@ -873,6 +957,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.CARNIVAL_AND_ORCS_2,
         tag: 'guerreiro, masculino, homem, orc, montaria',
         observation: 'Na compra de no mínimo 3 o preço diminui para 40 R$',
+        options: ['a', 'b', 'c', 'd', 'e', 'f'],
         image: '/img/catalog/carnival-and-orcs-2/boar-riders.webp'
     },
     {
@@ -883,6 +968,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.CARNIVAL_AND_ORCS_2,
         tag: 'guerreiro, masculino, homem, orc',
         observation: 'Na compra de no mínimo 3 o preço diminui para 18 R$',
+        options: ['a', 'b', 'c', 'd', 'e'],
         image: '/img/catalog/carnival-and-orcs-2/wild-orcs-1.webp'
     },
     {
@@ -893,6 +979,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.CARNIVAL_AND_ORCS_2,
         tag: 'guerreiro, masculino, homem, orc',
         observation: 'Na compra de no mínimo 3 o preço diminui para 18 R$',
+        options: ['a', 'b', 'c', 'd', 'e'],
         image: '/img/catalog/carnival-and-orcs-2/wild-orcs-2.webp'
     },
     {
@@ -903,6 +990,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.CARNIVAL_AND_ORCS_2,
         tag: 'guerreiro, masculino, homem, orc, montaria',
         observation: null,
+        options: null,
         image: '/img/catalog/carnival-and-orcs-2/warchief-on-wyvern.webp'
     },
     {
@@ -913,6 +1001,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.CARNIVAL_AND_ORCS_2,
         tag: 'montaria, criatura, monstro,',
         observation: null,
+        options: null,
         image: '/img/catalog/carnival-and-orcs-2/wyvern.webp'
     },
     {
@@ -923,6 +1012,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.CARNIVAL_AND_ORCS_2,
         tag: 'criatura, monstro, carnaval, aberração',
         observation: null,
+        options: ['a', 'b'],
         image: '/img/catalog/carnival-and-orcs-2/beasts.webp'
     },
     {
@@ -933,6 +1023,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.CARNIVAL_AND_ORCS_2,
         tag: 'demônio',
         observation: null,
+        options: null,
         image: '/img/catalog/carnival-and-orcs-2/lord.webp'
     },
     {
@@ -943,6 +1034,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.CARNIVAL_AND_ORCS_2,
         tag: 'demônio, demônios',
         observation: 'Na compra de no mínimo 3 o preço diminui para 21 R$',
+        options: ['a', 'b', 'c', 'd', 'e'],
         image: '/img/catalog/carnival-and-orcs-2/filth-demons.webp'
     },
     {
@@ -953,6 +1045,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.CARNIVAL_AND_ORCS_2,
         tag: 'mago, orc, masculino, homem, circo',
         observation: null,
+        options: null,
         image: '/img/catalog/carnival-and-orcs-2/mage.webp'
     },
     {
@@ -963,6 +1056,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.CARNIVAL_AND_ORCS_2,
         tag: 'mago, orc, masculino, homem, circo, montaria, sapo',
         observation: null,
+        options: null,
         image: '/img/catalog/carnival-and-orcs-2/norse-knights.webp'
     },
     {
@@ -973,6 +1067,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.CARNIVAL_AND_ORCS_2,
         tag: 'carroça',
         observation: null,
+        options: null,
         image: '/img/catalog/carnival-and-orcs-2/cart.webp'
     },
     {
@@ -983,6 +1078,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.CARNIVAL_AND_ORCS_2,
         tag: 'sapos, sapos, carnaval',
         observation: null,
+        options: ['a', 'b', 'c', 'd', 'e'],
         image: '/img/catalog/carnival-and-orcs-2/toads-1.webp'
     },
     {
@@ -993,6 +1089,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.CARNIVAL_AND_ORCS_2,
         tag: 'sapos, sapos, carnaval',
         observation: null,
+        options: ['a', 'b'],
         image: '/img/catalog/carnival-and-orcs-2/toads-2.webp'
     },
     {
@@ -1003,6 +1100,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.CARNIVAL_AND_ORCS_2,
         tag: 'criatura, monstro, mar, oceano',
         observation: 'Na compra de no mínimo 3 o preço diminui para 21 R$',
+        options: ['a', 'b', 'c', 'd'],
         image: '/img/catalog/carnival-and-orcs-2/slaads.webp'
     },
 
@@ -1016,6 +1114,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.DARK_WOOD_BEASTS_AND_SWAMPS,
         tag: 'xamã, bode',
         observation: null,
+        options: null,
         image: '/img/catalog/dark-wood-beasts-and-swamps/goatman-shaman.webp'
     },
     {
@@ -1026,6 +1125,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.DARK_WOOD_BEASTS_AND_SWAMPS,
         tag: 'centauro, criatura, monstro,',
         observation: null,
+        options: null,
         image: '/img/catalog/dark-wood-beasts-and-swamps/drakonkin-warlord.webp'
     },
     {
@@ -1036,6 +1136,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.DARK_WOOD_BEASTS_AND_SWAMPS,
         tag: 'centauro, criatura, monstro,',
         observation: null,
+        options: ['a', 'b', 'c'],
         image: '/img/catalog/dark-wood-beasts-and-swamps/drakonkin.webp'
     },
     {
@@ -1046,6 +1147,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.DARK_WOOD_BEASTS_AND_SWAMPS,
         tag: 'guerreiros, bode',
         observation: 'Na compra de no mínimo 3 o preço diminui para 19 R$',
+        options: ['a', 'b', 'c', 'd', 'e'],
         image: '/img/catalog/dark-wood-beasts-and-swamps/goatman-warriors.webp'
     },
     {
@@ -1056,6 +1158,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.DARK_WOOD_BEASTS_AND_SWAMPS,
         tag: 'minotauro',
         observation: 'Na compra de no mínimo 3 o preço diminui para 19 R$',
+        options: ['a', 'b', 'c', 'd', 'e'],
         image: '/img/catalog/dark-wood-beasts-and-swamps/gnomes-infantry-gunners.webp'
     },
     {
@@ -1066,6 +1169,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.DARK_WOOD_BEASTS_AND_SWAMPS,
         tag: 'cogumelos, myconid',
         observation: 'Na compra de no mínimo 3 o preço diminui para 12 R$',
+        options: ['a', 'b', 'c', 'd', 'e'],
         image: '/img/catalog/dark-wood-beasts-and-swamps/shrooms-1.webp'
     },
     {
@@ -1076,6 +1180,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.DARK_WOOD_BEASTS_AND_SWAMPS,
         tag: 'cogumelos, myconid',
         observation: 'Na compra de no mínimo 3 o preço diminui para 12 R$',
+        options: ['a', 'b', 'c', 'd', 'e'],
         image: '/img/catalog/dark-wood-beasts-and-swamps/shrooms-2.webp'
     },
     {
@@ -1086,6 +1191,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.DARK_WOOD_BEASTS_AND_SWAMPS,
         tag: 'cogumelos, myconid',
         observation: null,
+        options: ['a', 'b'],
         image: '/img/catalog/dark-wood-beasts-and-swamps/shroom-golems.webp'
     },
     {
@@ -1096,6 +1202,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.DARK_WOOD_BEASTS_AND_SWAMPS,
         tag: 'lagarta, criatura, monstro,',
         observation: null,
+        options: null,
         image: '/img/catalog/dark-wood-beasts-and-swamps/caterpillar.webp'
     },
     {
@@ -1106,6 +1213,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.DARK_WOOD_BEASTS_AND_SWAMPS,
         tag: 'dragão, dragões, pântano, criatura, monstro,',
         observation: null,
+        options: null,
         image: '/img/catalog/dark-wood-beasts-and-swamps/swamp-dragon.webp'
     },
     {
@@ -1116,6 +1224,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.DARK_WOOD_BEASTS_AND_SWAMPS,
         tag: 'gárgulas, criatura, monstro,',
         observation: null,
+        options: ['a', 'b', 'c'],
         image: '/img/catalog/dark-wood-beasts-and-swamps/gargoyles.webp'
     },
     {
@@ -1126,6 +1235,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.DARK_WOOD_BEASTS_AND_SWAMPS,
         tag: 'morto vivo, golem',
         observation: null,
+        options: null,
         image: '/img/catalog/dark-wood-beasts-and-swamps/grave-golem.webp'
     },
 
@@ -1139,6 +1249,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.DARK_WOOD_BEASTS_AND_SWAMPS_2,
         tag: 'guerreiro, minotauro',
         observation: null,
+        options: null,
         image: '/img/catalog/dark-wood-beasts-and-swamps-2/goatman-champion-1.webp'
     },
     {
@@ -1149,6 +1260,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.DARK_WOOD_BEASTS_AND_SWAMPS_2,
         tag: 'guerreiro, minotauro',
         observation: null,
+        options: null,
         image: '/img/catalog/dark-wood-beasts-and-swamps-2/goatman-champion-2.webp'
     },
     {
@@ -1159,6 +1271,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.DARK_WOOD_BEASTS_AND_SWAMPS_2,
         tag: 'guerreiro, minotauro, carruagem, criatura, monstro,',
         observation: null,
+        options: null,
         image: '/img/catalog/dark-wood-beasts-and-swamps-2/razor-beast-chariot.webp'
     },
     {
@@ -1169,6 +1282,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.DARK_WOOD_BEASTS_AND_SWAMPS_2,
         tag: 'guerreiro, minotauro',
         observation: 'Na compra de no mínimo 3 o preço diminui para 18 R$',
+        options: ['a', 'b', 'c', 'd', 'e'],
         image: '/img/catalog/dark-wood-beasts-and-swamps-2/deathknights.webp'
     },
     {
@@ -1179,6 +1293,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.DARK_WOOD_BEASTS_AND_SWAMPS_2,
         tag: 'guerreiro, minotauro',
         observation: 'Na compra de no mínimo 3 o preço diminui para 18 R$',
+        options: ['a', 'b', 'c', 'd', 'e'],
         image: '/img/catalog/dark-wood-beasts-and-swamps-2/goatman-light-warriors.webp'
     },
     {
@@ -1189,6 +1304,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.DARK_WOOD_BEASTS_AND_SWAMPS_2,
         tag: 'guerreiro, minotauro',
         observation: null,
+        options: null,
         image: '/img/catalog/dark-wood-beasts-and-swamps-2/minotaur-warlord-1.webp'
     },
     {
@@ -1199,6 +1315,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.DARK_WOOD_BEASTS_AND_SWAMPS_2,
         tag: 'guerreiro, minotauro',
         observation: null,
+        options: null,
         image: '/img/catalog/dark-wood-beasts-and-swamps-2/minotaur-warlord-2.webp'
     },
     {
@@ -1209,6 +1326,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.DARK_WOOD_BEASTS_AND_SWAMPS_2,
         tag: 'criatura, monstro, voador, demônio',
         observation: null,
+        options: null,
         image: '/img/catalog/dark-wood-beasts-and-swamps-2/giant-beast.webp'
     },
     {
@@ -1219,6 +1337,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.DARK_WOOD_BEASTS_AND_SWAMPS_2,
         tag: 'sapo, arqueiro, criatura, monstro,',
         observation: null,
+        options: ['a', 'b', 'c'],
         image: '/img/catalog/dark-wood-beasts-and-swamps-2/frog-archers.webp'
     },
     {
@@ -1229,6 +1348,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.DARK_WOOD_BEASTS_AND_SWAMPS_2,
         tag: 'sapo, guerreiro, criatura, monstro,',
         observation: null,
+        options: null,
         image: '/img/catalog/dark-wood-beasts-and-swamps-2/frog-centurion.webp'
     },
     {
@@ -1239,6 +1359,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.DARK_WOOD_BEASTS_AND_SWAMPS_2,
         tag: 'sapo, carruagem, criatura, monstro,',
         observation: null,
+        options: ['a', 'b'],
         image: '/img/catalog/dark-wood-beasts-and-swamps-2/frog-chariot.webp'
     },
     {
@@ -1249,6 +1370,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.DARK_WOOD_BEASTS_AND_SWAMPS_2,
         tag: 'sapo, guerreiro, criatura, monstro,',
         observation: 'Na compra de no mínimo 3 o preço diminui para 15 R$',
+        options: ['a', 'b', 'c', 'd', 'e'],
         image: '/img/catalog/dark-wood-beasts-and-swamps-2/frog-guardians-1.webp'
     },
     {
@@ -1259,6 +1381,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.DARK_WOOD_BEASTS_AND_SWAMPS_2,
         tag: 'sapo, montaria',
         observation: null,
+        options: ['a', 'b'],
         image: '/img/catalog/dark-wood-beasts-and-swamps-2/frog-guardians-2.webp'
     },
     {
@@ -1269,6 +1392,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.DARK_WOOD_BEASTS_AND_SWAMPS_2,
         tag: 'morto vivo, guerreiro,cavaleiro da morte',
         observation: null,
+        options: null,
         image: '/img/catalog/dark-wood-beasts-and-swamps-2/death-knight.webp'
     },
     {
@@ -1279,6 +1403,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.DARK_WOOD_BEASTS_AND_SWAMPS_2,
         tag: 'criatura, monstro, cachorro, demonio',
         observation: null,
+        options: ['a', 'b', 'c'],
         image: '/img/catalog/dark-wood-beasts-and-swamps-2/death-dogs.webp'
     },
 
@@ -1291,6 +1416,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.DARK_WOOD_BEASTS_AND_WOLF_ORDER,
         tag: 'guerreiro, lobisomem',
         observation: null,
+        options: null,
         image: '/img/catalog/dark-wood-beasts-and-wolf-order/lord-commander.webp'
     },
     {
@@ -1301,6 +1427,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.DARK_WOOD_BEASTS_AND_WOLF_ORDER,
         tag: 'minotauro',
         observation: null,
+        options: null,
         image: '/img/catalog/dark-wood-beasts-and-wolf-order/beast-lord.webp'
     },
     {
@@ -1311,6 +1438,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.DARK_WOOD_BEASTS_AND_WOLF_ORDER,
         tag: 'lobisomem, criatura, monstro,',
         observation: null,
+        options: ['a', 'b', 'c'],
         image: '/img/catalog/dark-wood-beasts-and-wolf-order/werewolf.webp'
     },
     {
@@ -1321,6 +1449,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.DARK_WOOD_BEASTS_AND_WOLF_ORDER,
         tag: 'guerreiro, montaria, lobo',
         observation: null,
+        options: ['a', 'b', 'c'],
         image: '/img/catalog/dark-wood-beasts-and-wolf-order/wolf-princes.webp'
     },
     {
@@ -1331,6 +1460,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.DARK_WOOD_BEASTS_AND_WOLF_ORDER,
         tag: 'arqueiros, arqueiro',
         observation: null,
+        options: ['a', 'b', 'c'],
         image: '/img/catalog/dark-wood-beasts-and-wolf-order/archers.webp'
     },
     {
@@ -1341,6 +1471,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.DARK_WOOD_BEASTS_AND_WOLF_ORDER,
         tag: 'ungor, sátiro, sátiros',
         observation: null,
+        options: ['a', 'b', 'c', 'd', 'e'],
         image: '/img/catalog/dark-wood-beasts-and-wolf-order/ungor-herds.webp'
     },
     {
@@ -1351,6 +1482,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.DARK_WOOD_BEASTS_AND_WOLF_ORDER,
         tag: 'sátiro, sátiros',
         observation: null,
+        options: ['a', 'b', 'c', 'd', 'e'],
         image: '/img/catalog/dark-wood-beasts-and-wolf-order/satyrs-1.webp'
     },
     {
@@ -1361,6 +1493,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.DARK_WOOD_BEASTS_AND_WOLF_ORDER,
         tag: 'sátiro, sátiros',
         observation: null,
+        options: ['a', 'b', 'c', 'd', 'e'],
         image: '/img/catalog/dark-wood-beasts-and-wolf-order/satyrs-2.webp'
     },
     {
@@ -1371,6 +1504,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.DARK_WOOD_BEASTS_AND_WOLF_ORDER,
         tag: 'centauros, centauro',
         observation: null,
+        options: ['a', 'b', 'c'],
         image: '/img/catalog/dark-wood-beasts-and-wolf-order/centaurs-1.webp'
     },
     {
@@ -1381,6 +1515,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.DARK_WOOD_BEASTS_AND_WOLF_ORDER,
         tag: 'centauros, centauro',
         observation: null,
+        options: ['a', 'b', 'c'],
         image: '/img/catalog/dark-wood-beasts-and-wolf-order/centaurs-2.webp'
     },
     {
@@ -1391,6 +1526,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.DARK_WOOD_BEASTS_AND_WOLF_ORDER,
         tag: 'centauros, centauro',
         observation: null,
+        options: ['a', 'b', 'c', 'd', 'e'],
         image: '/img/catalog/dark-wood-beasts-and-wolf-order/centaurs-3.webp'
     },
     {
@@ -1401,6 +1537,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.DARK_WOOD_BEASTS_AND_WOLF_ORDER,
         tag: 'centauros, centauro',
         observation: null,
+        options: ['a', 'b', 'c'],
         image: '/img/catalog/dark-wood-beasts-and-wolf-order/centaurs-4.webp'
     },
     {
@@ -1411,6 +1548,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.DARK_WOOD_BEASTS_AND_WOLF_ORDER,
         tag: 'gigante, minotauro, criatura, monstro,',
         observation: null,
+        options: null,
         image: '/img/catalog/dark-wood-beasts-and-wolf-order/beast-giant.webp'
     },
     {
@@ -1421,6 +1559,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.DARK_WOOD_BEASTS_AND_WOLF_ORDER,
         tag: 'gigante, minotauro, criatura, monstro,',
         observation: null,
+        options: null,
         image: '/img/catalog/dark-wood-beasts-and-wolf-order/giant-berserker.webp'
     },
     {
@@ -1431,6 +1570,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.DARK_WOOD_BEASTS_AND_WOLF_ORDER,
         tag: 'ogro',
         observation: null,
+        options: null,
         image: '/img/catalog/dark-wood-beasts-and-wolf-order/ettin.webp'
     },
     {
@@ -1441,6 +1581,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.DARK_WOOD_BEASTS_AND_WOLF_ORDER,
         tag: 'aranha',
         observation: null,
+        options: null,
         image: '/img/catalog/dark-wood-beasts-and-wolf-order/ettercap.webp'
     },
 
@@ -1453,6 +1594,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.DAYBREAK,
         tag: 'busto, caveira',
         observation: 'Busto estúdio DayBreak',
+        options: null,
         image: '/img/catalog/daybreak/busto-dusk-monk.webp'
     },
     {
@@ -1463,6 +1605,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.DAYBREAK,
         tag: 'busto, orc',
         observation: 'Busto estúdio DayBreak',
+        options: null,
         image: '/img/catalog/daybreak/busto-hector-stumpfkant.webp'
     },
     {
@@ -1473,6 +1616,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.DAYBREAK,
         tag: 'busto, orc',
         observation: 'Busto estúdio DayBreak',
+        options: null,
         image: '/img/catalog/daybreak/busto-higgurath-doubleslit.webp'
     },
     {
@@ -1483,6 +1627,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.DAYBREAK,
         tag: 'busto, orc, anão, anões,',
         observation: 'Busto estúdio DayBreak',
+        options: null,
         image: '/img/catalog/daybreak/busto-sothard-deadhand.webp'
     },
     {
@@ -1493,6 +1638,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.DAYBREAK,
         tag: 'troll',
         observation: 'Estúdio DayBreak - Disponível no tamanho 54mm com aumento de 10 R$ - No tamanho 33mm a cada 5 miniaturas cada uma fica por 18 R$',
+        options: null,
         image: '/img/catalog/daybreak/benjammer-holt.webp'
     },
     {
@@ -1503,6 +1649,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.DAYBREAK,
         tag: 'troll',
         observation: 'Estúdio DayBreak - Disponível no tamanho 54mm com aumento de 10 R$ - No tamanho 33mm a cada 5 miniaturas cada uma fica por 18 R$',
+        options: null,
         image: '/img/catalog/daybreak/circer-malaar.webp'
     },
     {
@@ -1513,6 +1660,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.DAYBREAK,
         tag: 'troll',
         observation: 'Estúdio DayBreak - Disponível no tamanho 54mm com aumento de 10 R$ - No tamanho 33mm a cada 5 miniaturas cada uma fica por 18 R$',
+        options: null,
         image: '/img/catalog/daybreak/deathbringer-olan-troka.webp'
     },
     {
@@ -1523,6 +1671,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.DAYBREAK,
         tag: 'troll',
         observation: 'Estúdio DayBreak - Disponível no tamanho 54mm com aumento de 10 R$ - No tamanho 33mm a cada 5 miniaturas cada uma fica por 18 R$',
+        options: null,
         image: '/img/catalog/daybreak/doblar-grakk.webp'
     },
     {
@@ -1533,6 +1682,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.DAYBREAK,
         tag: 'troll',
         observation: 'Estúdio DayBreak - Disponível no tamanho 54mm com aumento de 10 R$ - No tamanho 33mm a cada 5 miniaturas cada uma fica por 18 R$',
+        options: null,
         image: '/img/catalog/daybreak/gartaz-the-halfed.webp'
     },
     {
@@ -1543,6 +1693,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.DAYBREAK,
         tag: 'troll',
         observation: 'Estúdio DayBreak - Disponível no tamanho 54mm com aumento de 10 R$ - No tamanho 33mm a cada 5 miniaturas cada uma fica por 18 R$',
+        options: null,
         image: '/img/catalog/daybreak/grasta-poka.webp'
     },
     {
@@ -1553,6 +1704,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.DAYBREAK,
         tag: 'troll',
         observation: 'Estúdio DayBreak - Disponível no tamanho 54mm com aumento de 10 R$ - No tamanho 33mm a cada 5 miniaturas cada uma fica por 18 R$',
+        options: null,
         image: '/img/catalog/daybreak/jakzo-stormer.webp'
     },
     {
@@ -1563,6 +1715,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.DAYBREAK,
         tag: 'troll',
         observation: 'Estúdio DayBreak - Disponível no tamanho 54mm com aumento de 10 R$ - No tamanho 33mm a cada 5 miniaturas cada uma fica por 18 R$',
+        options: null,
         image: '/img/catalog/daybreak/jolan-frak.webp'
     },
     {
@@ -1573,6 +1726,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.DAYBREAK,
         tag: 'troll',
         observation: 'Estúdio DayBreak - Disponível no tamanho 54mm com aumento de 10 R$ - No tamanho 33mm a cada 5 miniaturas cada uma fica por 18 R$',
+        options: null,
         image: '/img/catalog/daybreak/jorduz-hunter.webp'
     },
     {
@@ -1583,6 +1737,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.DAYBREAK,
         tag: 'troll',
         observation: 'Estúdio DayBreak - Disponível no tamanho 54mm com aumento de 10 R$ - No tamanho 33mm a cada 5 miniaturas cada uma fica por 18 R$',
+        options: null,
         image: '/img/catalog/daybreak/lieutenant-mitrog.webp'
     },
     {
@@ -1593,6 +1748,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.DAYBREAK,
         tag: 'troll, xamã',
         observation: 'Estúdio DayBreak - Disponível no tamanho 54mm com aumento de 10 R$ - No tamanho 33mm a cada 5 miniaturas cada uma fica por 18 R$',
+        options: null,
         image: '/img/catalog/daybreak/skull-summoner-paktas-blox-1.webp'
     },
     {
@@ -1603,6 +1759,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.DAYBREAK,
         tag: 'troll, assassino',
         observation: 'Estúdio DayBreak - Disponível no tamanho 54mm com aumento de 10 R$ - No tamanho 33mm a cada 5 miniaturas cada uma fica por 18 R$',
+        options: null,
         image: '/img/catalog/daybreak/skull-summoner-paktas-blox-2.webp'
     },
     {
@@ -1613,6 +1770,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.DAYBREAK,
         tag: 'paladino, humano, masculino, homem',
         observation: 'Estúdio DayBreak - Disponível no tamanho 54mm com aumento de 10 R$',
+        options: null,
         image: '/img/catalog/daybreak/chlodvig-du-marteau-lourd.webp'
     },
     {
@@ -1623,6 +1781,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.DAYBREAK,
         tag: 'paladino, humano, masculino, homem',
         observation: 'Estúdio DayBreak - Disponível no tamanho 54mm com aumento de 10 R$',
+        options: null,
         image: '/img/catalog/daybreak/colonel-thierry-du-lion-dargent.webp'
     },
     {
@@ -1633,6 +1792,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.DAYBREAK,
         tag: 'paladino, humano, masculino, homem',
         observation: 'Estúdio DayBreak - Disponível no tamanho 54mm com aumento de 10 R$',
+        options: null,
         image: '/img/catalog/daybreak/erasmus-du-tranchant.webp'
     },
     {
@@ -1643,6 +1803,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.DAYBREAK,
         tag: 'paladino, humano, montaria, masculino, homem',
         observation: 'Estúdio DayBreak',
+        options: null,
         image: '/img/catalog/daybreak/grand-pretre-ferdinand-du-lion-dargent.webp'
     },
     {
@@ -1653,6 +1814,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.DAYBREAK,
         tag: 'paladino, paladina, humano, humana, feminino, feminina, mulher, montaria',
         observation: 'Estúdio DayBreak',
+        options: null,
         image: '/img/catalog/daybreak/grande-pretresse-salome-du-lion-dargent.webp'
     },
     {
@@ -1663,6 +1825,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.DAYBREAK,
         tag: 'paladino, paladina, humano, humana, feminino, feminina, mulher',
         observation: 'Estúdio DayBreak - Disponível no tamanho 54mm com aumento de 10 R$',
+        options: null,
         image: '/img/catalog/daybreak/isabelle-du-lion-dargent.webp'
     },
     {
@@ -1673,6 +1836,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.DAYBREAK,
         tag: 'paladino, humano, montaria, masculino, homem',
         observation: 'Estúdio DayBreak',
+        options: null,
         image: '/img/catalog/daybreak/le-chevalier-florian-de-lancienne-bataille.webp'
     },
     {
@@ -1683,6 +1847,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.DAYBREAK,
         tag: 'paladino, paladina, humano, humana, feminino, feminina, mulher',
         observation: 'Estúdio DayBreak - Disponível no tamanho 54mm com aumento de 10 R$',
+        options: null,
         image: '/img/catalog/daybreak/marie-du-lion-dargent.webp'
     },
     {
@@ -1693,6 +1858,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.DAYBREAK,
         tag: 'paladino, humano, masculino, homem',
         observation: 'Estúdio DayBreak - Disponível no tamanho 54mm com aumento de 10 R$',
+        options: null,
         image: '/img/catalog/daybreak/mattias-du-lion-tuant-01.webp'
     },
 
@@ -1705,6 +1871,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.DEATH_KNIGHTS,
         tag: 'cavalheiro, morte, masculino, homem',
         observation: null,
+        options: null,
         image: '/img/catalog/death-knights/death-lord.webp',
     },
     {
@@ -1715,6 +1882,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.DEATH_KNIGHTS,
         tag: 'orc, mulher, feminino, cavalheiro, morte',
         observation: null,
+        options: null,
         image: '/img/catalog/death-knights/deathknight-champion.webp',
     },
     {
@@ -1725,6 +1893,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.DEATH_KNIGHTS,
         tag: 'cavalheiro, morte, anão, anões, masculino, homem, morto vivo',
         observation: null,
+        options: null,
         image: '/img/catalog/death-knights/deathknights-berserker.webp',
     },
     {
@@ -1735,6 +1904,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.DEATH_KNIGHTS,
         tag: 'patrulheiro, patrulheira, cavalheiro, cavalheira, morte, mulher, feminino',
         observation: null,
+        options: null,
         image: '/img/catalog/death-knights/deathbringer.webp',
     },
     {
@@ -1745,6 +1915,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.DEATH_KNIGHTS,
         tag: 'necromante, humano, homem, masculino',
         observation: null,
+        options: null,
         image: '/img/catalog/death-knights/deathknights-bonespeaker.webp',
     },
     {
@@ -1755,6 +1926,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.DEATH_KNIGHTS,
         tag: 'criatura, monstro, aberração, troll',
         observation: null,
+        options: null,
         image: '/img/catalog/death-knights/deathknights-abomination.webp',
     },
     {
@@ -1765,6 +1937,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.DEATH_KNIGHTS,
         tag: 'cavaleiro, morte, guerreiro, masculino, homem, montaria, cavalo',
         observation: null,
+        options: null,
         image: '/img/catalog/death-knights/deathknights-knight-a.webp',
     },
     {
@@ -1775,6 +1948,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.DEATH_KNIGHTS,
         tag: 'cavaleiro, morte, guerreiro, masculino, homem, montaria, cavalo',
         observation: null,
+        options: null,
         image: '/img/catalog/death-knights/deathknights-knight-b.webp',
     },
     {
@@ -1785,6 +1959,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.DEATH_KNIGHTS,
         tag: 'cavaleiro, morte, guerreiro, masculino, homem',
         observation: 'Na compra de no mínimo 3 o preço diminui para 15 R$',
+        options: ['a', 'b', 'c', 'd', 'e', 'f', 'g'],
         image: '/img/catalog/death-knights/ironbeak-owlbear.webp',
     },
     {
@@ -1795,6 +1970,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.DEATH_KNIGHTS,
         tag: 'demonio, criatura, monstro,',
         observation: null,
+        options: null,
         image: '/img/catalog/death-knights/avatar-of-yrghal.webp',
     },
     {
@@ -1805,6 +1981,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.DEATH_KNIGHTS,
         tag: 'dragão, dragões, morto vivo, voador, criatura, monstro',
         observation: null,
+        options: null,
         image: '/img/catalog/death-knights/dread-dragon.webp',
     },
     {
@@ -1815,6 +1992,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.DEATH_KNIGHTS,
         tag: 'dragão, dragões, morto vivo, voador, criatura, monstro, cavaleiro, morte, guerreiro, masculino, homem, montaria',
         observation: null,
+        options: null,
         image: '/img/catalog/death-knights/death-lord-especial.webp',
     },
 
@@ -1827,6 +2005,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.HIGHBORN_ELVES_AND_VAMPIRE_PIRATES,
         tag: 'elfo, masculino, homem',
         observation: null,
+        options: null,
         image: '/img/catalog/highborn-elves-and-vampire-pirates/highborne-prince.webp',
     },
     {
@@ -1837,6 +2016,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.HIGHBORN_ELVES_AND_VAMPIRE_PIRATES,
         tag: 'elfo, masculino, homem',
         observation: null,
+        options: ['a', 'b', 'c', 'd', 'e'],
         image: '/img/catalog/highborn-elves-and-vampire-pirates/highborne-warriors.webp',
     },
     {
@@ -1847,6 +2027,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.HIGHBORN_ELVES_AND_VAMPIRE_PIRATES,
         tag: 'elfo, masculino, homem, arqueiros, arqueiro',
         observation: null,
+        options: ['a', 'b', 'c', 'd', 'e'],
         image: '/img/catalog/highborn-elves-and-vampire-pirates/highborne-archers.webp',
     },
     {
@@ -1857,6 +2038,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.HIGHBORN_ELVES_AND_VAMPIRE_PIRATES,
         tag: 'cavalaria, elfos, elfo, cavalo, montaria',
         observation: null,
+        options: ['a', 'b', 'c', 'd', 'e'],
         image: '/img/catalog/highborn-elves-and-vampire-pirates/highborne-cavalry.webp',
     },
     {
@@ -1867,6 +2049,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.HIGHBORN_ELVES_AND_VAMPIRE_PIRATES,
         tag: 'dragão, dragões, voador, criatura, monstro',
         observation: null,
+        options: null,
         image: '/img/catalog/highborn-elves-and-vampire-pirates/silver-dragon.webp',
     },
     {
@@ -1877,6 +2060,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.HIGHBORN_ELVES_AND_VAMPIRE_PIRATES,
         tag: 'necromante, masculino, homem, pirata, humano',
         observation: null,
+        options: null,
         image: '/img/catalog/highborn-elves-and-vampire-pirates/necromancer-simple.webp',
     },
     {
@@ -1887,6 +2071,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.HIGHBORN_ELVES_AND_VAMPIRE_PIRATES,
         tag: 'necromante, masculino, homem, pirata, humano',
         observation: null,
+        options: null,
         image: '/img/catalog/highborn-elves-and-vampire-pirates/necromancer-detailed.webp',
     },
     {
@@ -1897,6 +2082,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.HIGHBORN_ELVES_AND_VAMPIRE_PIRATES,
         tag: 'zumbi, pirata, morto vivo, masculino, homem',
         observation: null,
+        options: ['a', 'b', 'c'],
         image: '/img/catalog/highborn-elves-and-vampire-pirates/zombie-gunners.webp',
     },
     {
@@ -1907,6 +2093,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.HIGHBORN_ELVES_AND_VAMPIRE_PIRATES,
         tag: 'ghouls, ghoul, pirata, masculino, homem',
         observation: null,
+        options: ['a', 'b', 'c', 'd', 'e'],
         image: '/img/catalog/highborn-elves-and-vampire-pirates/pirate-ghouls.webp',
     },
     {
@@ -1917,6 +2104,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.HIGHBORN_ELVES_AND_VAMPIRE_PIRATES,
         tag: 'sereias, sereia, feminino, mulher, mágico',
         observation: null,
+        options: ['a', 'b', 'c'],
         image: '/img/catalog/highborn-elves-and-vampire-pirates/sirens.webp',
     },
     {
@@ -1927,6 +2115,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.HIGHBORN_ELVES_AND_VAMPIRE_PIRATES,
         tag: 'monstro, criatura, animal, animais, animais, chuul',
         observation: null,
+        options: null,
         image: '/img/catalog/highborn-elves-and-vampire-pirates/digging-monster.webp',
     },
     {
@@ -1937,6 +2126,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.HIGHBORN_ELVES_AND_VAMPIRE_PIRATES,
         tag: 'golem, criatura, criaturas, monstro',
         observation: null,
+        options: ['a', 'b', 'c'],
         image: '/img/catalog/highborn-elves-and-vampire-pirates/mephit.webp',
     },
 
@@ -1949,6 +2139,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.KINGDOM_OF_EQUITAINE_VOL_2,
         tag: 'soldado, guerreiro, escudeiro, masculino, homem',
         observation: 'Na compra de no mínimo 3 o preço diminui para 16 R$',
+        options: ['a', 'b', 'c', 'd', 'e'],
         image: '/img/catalog/kingdom-of-equitaine-vol-2/footman.webp',
     },
     {
@@ -1959,6 +2150,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.KINGDOM_OF_EQUITAINE_VOL_2,
         tag: 'cavaleiro, guerreiro, montaria, nobre, masculino, homem, cavalo',
         observation: null,
+        options: ['a', 'b', 'c', 'd', 'e'],
         image: '/img/catalog/kingdom-of-equitaine-vol-2/hedge-knights.webp',
     },
     {
@@ -1969,6 +2161,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.KINGDOM_OF_EQUITAINE_VOL_2,
         tag: 'cavaleiro, guerreiro, montaria, nobre, masculino, homem, cavalo',
         observation: null,
+        options: ['a', 'b', 'c', 'd', 'e'],
         image: '/img/catalog/kingdom-of-equitaine-vol-2/penitant-knights.webp',
     },
     {
@@ -1979,6 +2172,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.KINGDOM_OF_EQUITAINE_VOL_2,
         tag: 'arqueiro, cavalo, montaria, masculino, homem, cavaleiro, guerreiro',
         observation: null,
+        options: ['a', 'b', 'c', 'd', 'e'],
         image: '/img/catalog/kingdom-of-equitaine-vol-2/yeoman-bow-mounted.webp',
     },
     {
@@ -1989,6 +2183,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.KINGDOM_OF_EQUITAINE_VOL_2,
         tag: 'cavalo, montaria, masculino, homem, cavaleiro, guerreiro, lança',
         observation: null,
+        options: ['a', 'b', 'c', 'd', 'e'],
         image: '/img/catalog/kingdom-of-equitaine-vol-2/yeoman-spear-mounted.webp',
     },
     {
@@ -1999,6 +2194,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.KINGDOM_OF_EQUITAINE_VOL_2,
         tag: 'paladino, nobre, montaria, guerreiro, cavalo, masculino, homem, cavaleiro',
         observation: null,
+        options: null,
         image: '/img/catalog/kingdom-of-equitaine-vol-2/paladin.webp',
     },
     {
@@ -2009,6 +2205,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.KINGDOM_OF_EQUITAINE_VOL_2,
         tag: 'cavaleiro, guerreiro, humano, montaria, cavalo',
         observation: null,
+        options: null,
         image: '/img/catalog/kingdom-of-equitaine-vol-2/folk-hero.webp',
     },
     {
@@ -2019,6 +2216,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.KINGDOM_OF_EQUITAINE_VOL_2,
         tag: 'arma de cerco, trebuchê, suporte, item, itens, cenário, guerreiro, masculino, homem',
         observation: 'Trebush: R$ 200 | Trebush support unit: R$ 15 (vendidos separadamente)',
+        options: null,
         image: '/img/catalog/kingdom-of-equitaine-vol-2/trebush.webp',
     },
     {
@@ -2029,6 +2227,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.KINGDOM_OF_EQUITAINE_VOL_2,
         tag: 'mágica, mágico, feminino, mulher, montaria, cavalo, sacerdotisa, sacerdote',
         observation: null,
+        options: null,
         image: '/img/catalog/kingdom-of-equitaine-vol-2/damsel-mounted-v1.webp',
     },
     {
@@ -2039,6 +2238,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.KINGDOM_OF_EQUITAINE_VOL_2,
         tag: 'mágica, mágico, feminino, mulher, montaria, cavalo, sacerdotisa, sacerdote',
         observation: null,
+        options: null,
         image: '/img/catalog/kingdom-of-equitaine-vol-2/damsel-mounted-v2.webp',
     },
     {
@@ -2049,6 +2249,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.KINGDOM_OF_EQUITAINE_VOL_2,
         tag: 'monstro, criatura, animal, animais, animais, voadora',
         observation: null,
+        options: null,
         image: '/img/catalog/kingdom-of-equitaine-vol-2/fea-monster.webp',
     },
     {
@@ -2059,6 +2260,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.KINGDOM_OF_EQUITAINE_VOL_2,
         tag: 'monstro, criatura, animal, animais, animais, voadora, mágica, mágico, feminino, mulher, montaria, cavalo, sacerdotisa, sacerdote',
         observation: null,
+        options: null,
         image: '/img/catalog/kingdom-of-equitaine-vol-2/damsel-fea-monster.webp',
     },
     {
@@ -2069,6 +2271,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.KINGDOM_OF_EQUITAINE_VOL_2,
         tag: 'demônio, criatura, morto vivo, monstro',
         observation: null,
+        options: null,
         image: '/img/catalog/kingdom-of-equitaine-vol-2/bone-devil.webp',
     },
     {
@@ -2079,6 +2282,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.KINGDOM_OF_EQUITAINE_VOL_2,
         tag: 'mago, magos vermelhos, mago vermelho, conjurador, mágico, homem, masculino, careca',
         observation: null,
+        options: null,
         image: '/img/catalog/kingdom-of-equitaine-vol-2/red-mages.webp',
     },
 
@@ -2091,6 +2295,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.METAL_BEARDS,
         tag: 'autômato, anão, anões, metálico, metal, masculino, homem',
         observation: null,
+        options: null,
         image: '/img/catalog/metal-beards/bot-a.webp',
     },
     {
@@ -2101,6 +2306,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.METAL_BEARDS,
         tag: 'autômato, anão, anões, metálico, metal, masculino, homem',
         observation: null,
+        options: null,
         image: '/img/catalog/metal-beards/bot-b.webp',
     },
     {
@@ -2111,6 +2317,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.METAL_BEARDS,
         tag: 'anão, anões, feminino, mulher',
         observation: null,
+        options: null,
         image: '/img/catalog/metal-beards/elris.webp',
     },
     {
@@ -2121,6 +2328,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.METAL_BEARDS,
         tag: 'anão, anões, masculino, homem, guerreiro',
         observation: null,
+        options: null,
         image: '/img/catalog/metal-beards/gargy.webp',
     },
     {
@@ -2131,6 +2339,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.METAL_BEARDS,
         tag: 'anão, anões, masculino, homem, guerreiro, metálico, metal',
         observation: null,
+        options: null,
         image: '/img/catalog/metal-beards/gemalin.webp',
     },
     {
@@ -2141,6 +2350,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.METAL_BEARDS,
         tag: 'anão, anões, masculino, homem, guerreiro, metálico, metal',
         observation: null,
+        options: null,
         image: '/img/catalog/metal-beards/gimrom.webp',
     },
     {
@@ -2151,6 +2361,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.METAL_BEARDS,
         tag: 'anão, anões, masculino, homem, metálico, metal, montaria, bufalo',
         observation: null,
+        options: null,
         image: '/img/catalog/metal-beards/ram.webp',
     },
     {
@@ -2161,6 +2372,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.METAL_BEARDS,
         tag: 'bigorna, máquina, forja, item, itens, anão, anões, masculino, homem, metálico, metal, cenário',
         observation: null,
+        options: null,
         image: '/img/catalog/metal-beards/anvil.webp',
     },
     {
@@ -2171,6 +2383,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.METAL_BEARDS,
         tag: 'patrulheiro, anão, anões, rifle, masculino, homem',
         observation: null,
+        options: null,
         image: '/img/catalog/metal-beards/ranger-a.webp',
     },
     {
@@ -2181,6 +2394,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.METAL_BEARDS,
         tag: 'patrulheiro, anão, anões, arqueiro, besta, masculino, homem',
         observation: null,
+        options: null,
         image: '/img/catalog/metal-beards/ranger-b.webp',
     },
     {
@@ -2191,6 +2405,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.METAL_BEARDS,
         tag: 'guerreiro, anão, anões, homem, masculino',
         observation: null,
+        options: null,
         image: '/img/catalog/metal-beards/warrior-a.webp',
     },
     {
@@ -2201,6 +2416,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.METAL_BEARDS,
         tag: 'guerreiro, anão, anões, homem, masculino',
         observation: null,
+        options: null,
         image: '/img/catalog/metal-beards/warrior-b.webp',
     },
     {
@@ -2211,6 +2427,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.METAL_BEARDS,
         tag: 'dragão, dragões, metálico, metal, criatura, animal, animais, animais, monstro',
         observation: null,
+        options: null,
         image: '/img/catalog/metal-beards/steam-dragon.webp',
     },
     {
@@ -2221,6 +2438,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.METAL_BEARDS,
         tag: 'forja, estrutura, anão, anões, item, itens, cenário, casa, cidade',
         observation: 'Conjunto completo - Se quiser algum item separado, entre em contato!',
+        options: null,
         image: '/img/catalog/metal-beards/forge.webp',
     },
 
@@ -2233,6 +2451,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.OGRES_AND_AMAZONS,
         tag: 'dinossauro, criatura, animal, animais, animais,',
         observation: null,
+        options: ['a', 'b', 'c'],
         image: '/img/catalog/ogres-and-amazons/brutosaur.webp',
     },
     {
@@ -2243,6 +2462,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.OGRES_AND_AMAZONS,
         tag: 'dinossauro, criatura, montaria, amazona, mulher, feminino',
         observation: null,
+        options: null,
         image: '/img/catalog/ogres-and-amazons/brutosaur-riders-a.webp',
     },
     {
@@ -2253,6 +2473,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.OGRES_AND_AMAZONS,
         tag: 'dinossauro, criatura, montaria, amazona, mulher, feminino',
         observation: null,
+        options: null,
         image: '/img/catalog/ogres-and-amazons/brutosaur-riders-b.webp',
     },
     {
@@ -2263,6 +2484,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.OGRES_AND_AMAZONS,
         tag: 'dinossauro, criatura, montaria, amazona, mulher, feminino',
         observation: null,
+        options: null,
         image: '/img/catalog/ogres-and-amazons/brutosaur-riders-c.webp',
     },
     {
@@ -2273,6 +2495,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.OGRES_AND_AMAZONS,
         tag: 'criatura, animal, animais, animais, rugido, dente de sabre, criatura, montaria, amazona, mulher, feminino',
         observation: null,
+        options: null,
         image: '/img/catalog/ogres-and-amazons/carninn-primeval-roar.webp',
     },
     {
@@ -2283,6 +2506,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.OGRES_AND_AMAZONS,
         tag: 'dinossauro, animal, animais, animais, sacerdotisa, sacerdote, montaria, amazona, mulher, feminino',
         observation: null,
+        options: null,
         image: '/img/catalog/ogres-and-amazons/ceratops-priestess.webp',
     },
     {
@@ -2293,6 +2517,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.OGRES_AND_AMAZONS,
         tag: 'caçadora, tribal, amazona, feminino, mulher, caveira, guerreiro, guerreira, patrulheiro, patrulheira',
         observation: null,
+        options: null,
         image: '/img/catalog/ogres-and-amazons/headhunters-a.webp',
     },
     {
@@ -2303,6 +2528,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.OGRES_AND_AMAZONS,
         tag: 'caçadora, tribal, amazona, feminino, mulher, caveira, guerreiro, guerreira, patrulheiro, patrulheira',
         observation: null,
+        options: null,
         image: '/img/catalog/ogres-and-amazons/headhunters-b.webp',
     },
     {
@@ -2313,6 +2539,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.OGRES_AND_AMAZONS,
         tag: 'arqueiro, arqueira, arco, caçadora, tribal, amazona, feminino, mulher, caveira, guerreiro, guerreira, patrulheiro, patrulheira',
         observation: null,
+        options: null,
         image: '/img/catalog/ogres-and-amazons/headhunters-c.webp',
     },
     {
@@ -2323,6 +2550,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.OGRES_AND_AMAZONS,
         tag: 'totem, guerreira, guerreiro, amazona, xamã, feminino, mulher, sacerdotisa, sacerdote',
         observation: null,
+        options: null,
         image: '/img/catalog/ogres-and-amazons/itza-totem-wielder.webp',
     },
     {
@@ -2333,6 +2561,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.OGRES_AND_AMAZONS,
         tag: 'dinossauro, amazona, feminino, mulher, guerreiro, guerreira, montaria, animal, animais, animais, totem',
         observation: null,
+        options: null,
         image: '/img/catalog/ogres-and-amazons/jurassica.webp',
     },
     {
@@ -2343,6 +2572,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.OGRES_AND_AMAZONS,
         tag: 'guerreiro, guerreira, amazona, feminino, mulher',
         observation: null,
+        options: ['a', 'b', 'c'],
         image: '/img/catalog/ogres-and-amazons/serpent-guards.webp',
     },
     {
@@ -2353,6 +2583,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.OGRES_AND_AMAZONS,
         tag: 'goblin, tribal, tambores, pirata',
         observation: null,
+        options: ['a', 'b'],
         image: '/img/catalog/ogres-and-amazons/bongos-and-choppa.webp',
     },
     {
@@ -2363,6 +2594,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.OGRES_AND_AMAZONS,
         tag: 'conquistador, capitão, masculino, orc, ogro, homem, pirata',
         observation: null,
+        options: null,
         image: '/img/catalog/ogres-and-amazons/conquistador-captain.webp',
     },
     {
@@ -2373,6 +2605,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.OGRES_AND_AMAZONS,
         tag: 'orc, ogro, pirata, montaria, caranguejo, animal, animais, animais,',
         observation: null,
+        options: null,
         image: '/img/catalog/ogres-and-amazons/cpt-krabor-boncutter.webp',
     },
     {
@@ -2383,6 +2616,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.OGRES_AND_AMAZONS,
         tag: 'orc, ogro, pirata, tripulação, homem, masculino',
         observation: null,
+        options: null,
         image: '/img/catalog/ogres-and-amazons/crewman-a.webp',
     },
     {
@@ -2393,6 +2627,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.OGRES_AND_AMAZONS,
         tag: 'orc, ogro, pirata, tripulação, homem, masculino',
         observation: null,
+        options: null,
         image: '/img/catalog/ogres-and-amazons/crewman-b.webp',
     },
     {
@@ -2403,6 +2638,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.OGRES_AND_AMAZONS,
         tag: 'orc, ogro, pirata, tripulação, homem, masculino',
         observation: null,
+        options: null,
         image: '/img/catalog/ogres-and-amazons/crewman-c.webp',
     },
     {
@@ -2413,6 +2649,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.OGRES_AND_AMAZONS,
         tag: 'orc, ogro, pirata, tripulação, homem, masculino, montaria, lagarto, animal, animais, animais,',
         observation: null,
+        options: null,
         image: '/img/catalog/ogres-and-amazons/komodo-riders-a.webp',
     },
     {
@@ -2423,6 +2660,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.OGRES_AND_AMAZONS,
         tag: 'orc, ogro, pirata, tripulação, homem, masculino, montaria, lagarto, animal, animais, animais,',
         observation: null,
+        options: null,
         image: '/img/catalog/ogres-and-amazons/komodo-riders-b.webp',
     },
     {
@@ -2433,6 +2671,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.OGRES_AND_AMAZONS,
         tag: 'orc, ogro, pirata, tripulação, homem, masculino, animal, animais, animais, morsa',
         observation: 'Apenas morsa: R$ 18 | Hunter: R$ 25',
+        options: ['a', 'b'],
         image: '/img/catalog/ogres-and-amazons/ogre-hunter.webp',
     },
 
@@ -2445,6 +2684,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.OGRES_AND_WIZARDS,
         tag: 'orc, ogro, arqueiro, batedor',
         observation: 'Na compra de no mínimo 3 o preço diminui para 16 R$',
+        options: ['a', 'b', 'c', 'd', 'e'],
         image: '/img/catalog/ogres-and-wizards/orc-scouts.webp',
     },
     {
@@ -2455,8 +2695,10 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.OGRES_AND_WIZARDS,
         tag: 'orc, ogro, guerreiro, bruto',
         observation: null,
+        options: ['a', 'b', 'c', 'd', 'e'],
         image: '/img/catalog/ogres-and-wizards/orc-warriors.webp',
     },
+    //não tem options
     {
         id: 242,
         name: 'Stone Trolls',
@@ -2465,6 +2707,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.OGRES_AND_WIZARDS,
         tag: 'troll, pedra, monstro, criatura',
         observation: null,
+        options: null,
         image: '/img/catalog/ogres-and-wizards/stone-trolls.webp',
     },
     {
@@ -2475,6 +2718,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.OGRES_AND_WIZARDS,
         tag: 'troll, monstro, criatura',
         observation: null,
+        options: null,
         image: '/img/catalog/ogres-and-wizards/trolls.webp',
     },
     {
@@ -2485,6 +2729,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.OGRES_AND_WIZARDS,
         tag: 'orc, ogro, montaria, javali, animal, animais, animais, guerreiro, criatura',
         observation: null,
+        options: null,
         image: '/img/catalog/ogres-and-wizards/warlord-rider-a.webp',
     },
     {
@@ -2495,6 +2740,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.OGRES_AND_WIZARDS,
         tag: 'orc, ogro, montaria, criatura, guerreiro',
         observation: null,
+        options: null,
         image: '/img/catalog/ogres-and-wizards/warlord-rider-b.webp',
     },
     {
@@ -2505,6 +2751,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.OGRES_AND_WIZARDS,
         tag: 'gigante, criatura',
         observation: null,
+        options: null,
         image: '/img/catalog/ogres-and-wizards/dragon-giant.webp',
     },
     {
@@ -2515,6 +2762,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.OGRES_AND_WIZARDS,
         tag: 'armadura, armadura viva, armadura animada, mágico, mágia, item, itens, cenário',
         observation: null,
+        options: null,
         image: '/img/catalog/ogres-and-wizards/animated-armor-a.webp',
     },
     {
@@ -2525,6 +2773,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.OGRES_AND_WIZARDS,
         tag: 'armadura, armadura viva, armadura animada, mágico, mágia, item, itens, cenário',
         observation: null,
+        options: null,
         image: '/img/catalog/ogres-and-wizards/animated-armor-b.webp',
     },
     {
@@ -2535,6 +2784,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.OGRES_AND_WIZARDS,
         tag: 'armadura, armadura viva, armadura animada, mágico, magia, item, itens, cenário',
         observation: null,
+        options: null,
         image: '/img/catalog/ogres-and-wizards/animated-armor-c.webp',
     },
     {
@@ -2545,6 +2795,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.OGRES_AND_WIZARDS,
         tag: 'gnomo, mago, pequeno, mágico, magia, livro, masculino, homem, escola de magia',
         observation: null,
+        options: null,
         image: '/img/catalog/ogres-and-wizards/wizard-gnome.webp',
     },
     {
@@ -2555,6 +2806,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.OGRES_AND_WIZARDS,
         tag: 'zelador, varredor, personagem cômico, gato, humano, masculino, homem, vassoura, escola de magia',
         observation: null,
+        options: null,
         image: '/img/catalog/ogres-and-wizards/janitor.webp',
     },
     {
@@ -2565,6 +2817,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.OGRES_AND_WIZARDS,
         tag: 'mago, magia, magico, magica, mago, maga, escola de magia, feminino, mulher, bruxa, feiticeira, caldeirão, cenário, item, itens',
         observation: null,
+        options: null,
         image: '/img/catalog/ogres-and-wizards/wizard-principal.webp',
     },
     {
@@ -2575,6 +2828,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.OGRES_AND_WIZARDS,
         tag: 'humano, dragão, dragões, mago, magia, magico, escola de magia, feiticeiro, livro',
         observation: null,
+        options: null,
         image: '/img/catalog/ogres-and-wizards/wizard-rubeus.webp',
     },
     {
@@ -2585,6 +2839,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.OGRES_AND_WIZARDS,
         tag: 'feiticeira, feiticeiro, bruxa, bruxo, mágico, mágica, magia, feminino, mulher, escola de magia',
         observation: null,
+        options: null,
         image: '/img/catalog/ogres-and-wizards/wizard-witch.webp',
     },
     {
@@ -2595,6 +2850,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.OGRES_AND_WIZARDS,
         tag: 'feiticeira, feiticeiro, bruxa, bruxo, mágico, mágica, magia, feminino, mulher, escola de magia, botanica, jardim, planta carnivora',
         observation: null,
+        options: null,
         image: '/img/catalog/ogres-and-wizards/wizard-zoologist.webp',
     },
 
@@ -2607,6 +2863,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.ORCS_AND_WOLF_ORDER,
         tag: 'goblin, arqueiro, aranha, guerreiro, homem, masculino',
         observation: null,
+        options: null,
         image: '/img/catalog/orcs-and-wolf-order/goblins-archers.webp',
     },
     {
@@ -2617,6 +2874,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.ORCS_AND_WOLF_ORDER,
         tag: 'goblin, lança, guerreiro, aranha, homem, masculino',
         observation: null,
+        options: null,
         image: '/img/catalog/orcs-and-wolf-order/goblin-spear.webp',
     },
     {
@@ -2627,6 +2885,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.ORCS_AND_WOLF_ORDER,
         tag: 'goblin, carroça, montaria, animal, animais, animais, lobo, cenário, item, itens',
         observation: null,
+        options: null,
         image: '/img/catalog/orcs-and-wolf-order/goblin-on-chariot.webp',
     },
     {
@@ -2637,6 +2896,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.ORCS_AND_WOLF_ORDER,
         tag: 'goblin, lobo, montaria, animal, animais, animais, guerreiro, homem, masculino',
         observation: null,
+        options: null,
         image: '/img/catalog/orcs-and-wolf-order/goblin-wolf-rider.webp',
     },
     {
@@ -2647,6 +2907,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.ORCS_AND_WOLF_ORDER,
         tag: 'orc, ogro, javali, montaria, animal, animais, animais, homem, masculino, guerreiro',
         observation: null,
+        options: null,
         image: '/img/catalog/orcs-and-wolf-order/wild-orc-boar-riders.webp',
     },
     {
@@ -2657,6 +2918,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.ORCS_AND_WOLF_ORDER,
         tag: 'orc, ogro, guerreiro, homem, masculino',
         observation: null,
+        options: null,
         image: '/img/catalog/orcs-and-wolf-order/warlord.webp',
     },
     {
@@ -2667,6 +2929,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.ORCS_AND_WOLF_ORDER,
         tag: 'orc, ogro, guerreiro, homem, masculino, montaria, animal, animais, animais, javali',
         observation: null,
+        options: null,
         image: '/img/catalog/orcs-and-wolf-order/warlord-mounted.webp',
     },
     {
@@ -2677,6 +2940,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.ORCS_AND_WOLF_ORDER,
         tag: 'orc, ogro, guerreiro, homem, masculino, carroça, montaria, javali, animal, animais, animais, cenário, item',
         observation: null,
+        options: null,
         image: '/img/catalog/orcs-and-wolf-order/orc-chariot.webp',
     },
     {
@@ -2687,6 +2951,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.ORCS_AND_WOLF_ORDER,
         tag: 'guerreiro, lobo, homem, masculino',
         observation: null,
+        options: null,
         image: '/img/catalog/orcs-and-wolf-order/wolf-order-warriors-a.webp',
     },
     {
@@ -2697,6 +2962,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.ORCS_AND_WOLF_ORDER,
         tag: 'guerreiro, lobo, homem, masculino',
         observation: null,
+        options: null,
         image: '/img/catalog/orcs-and-wolf-order/wolf-order-warriors-b.webp',
     },
     {
@@ -2707,6 +2973,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.ORCS_AND_WOLF_ORDER,
         tag: 'sacerdotisa, sacerdote, lobo, homem, masculino, xamã',
         observation: null,
+        options: null,
         image: '/img/catalog/orcs-and-wolf-order/wolf-order-priest.webp',
     },
     {
@@ -2717,6 +2984,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.ORCS_AND_WOLF_ORDER,
         tag: 'lobisomem, lobo, guerreiro, animal, animais, animais, criatura, licantropia, licantropo',
         observation: null,
+        options: null,
         image: '/img/catalog/orcs-and-wolf-order/wolf-order-werewolf.webp',
     },
     {
@@ -2727,6 +2995,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.ORCS_AND_WOLF_ORDER,
         tag: 'feral, ferais, criatura, mistico, mistica',
         observation: null,
+        options: null,
         image: '/img/catalog/orcs-and-wolf-order/feral.webp',
     },
     {
@@ -2737,6 +3006,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.ORCS_AND_WOLF_ORDER,
         tag: 'altar, lobo, item, mágico, magica, magia, item, cenário, lobisomem, licantropia, licantropo, criatura',
         observation: null,
+        options: null,
         image: '/img/catalog/orcs-and-wolf-order/wolf-order-altar.webp',
     },
     {
@@ -2747,6 +3017,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.ORCS_AND_WOLF_ORDER,
         tag: 'fungo, criatura, mágico, mágica, magia, floresta, cogumelo, monstro',
         observation: null,
+        options: null,
         image: '/img/catalog/orcs-and-wolf-order/myconid.webp',
     },
     {
@@ -2757,6 +3028,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.ORCS_AND_WOLF_ORDER,
         tag: 'autômato, guerreiro, metálico, metal, homem, masculino, mágico, mágica, magia',
         observation: null,
+        options: null,
         image: '/img/catalog/orcs-and-wolf-order/warforged.webp',
     },
 
@@ -2769,6 +3041,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.OLD_CITY,
         tag: 'guarda, sargento, humano, homem, masculino',
         observation: null,
+        options: null,
         image: '/img/catalog/old-city/city-watch-sergeant.webp',
     },
     {
@@ -2779,6 +3052,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.OLD_CITY,
         tag: 'arqueiro, soldado, guarda, humano, homem, masculino',
         observation: null,
+        options: null,
         image: '/img/catalog/old-city/rookie-bowman.webp',
     },
     {
@@ -2789,6 +3063,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.OLD_CITY,
         tag: 'assassino, caçador, sombrio, humano, homem, masculino',
         observation: null,
+        options: null,
         image: '/img/catalog/old-city/guttershade-manhunter.webp',
     },
     {
@@ -2799,6 +3074,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.OLD_CITY,
         tag: 'vingador, sombrio, justiceiro, humano, homem, masculino, pirata',
         observation: null,
+        options: null,
         image: '/img/catalog/old-city/guttershade-vindicator.webp',
     },
     {
@@ -2809,6 +3085,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.OLD_CITY,
         tag: 'tambor, sombrio, cidade, humano, homem, masculino',
         observation: null,
+        options: null,
         image: '/img/catalog/old-city/guttershade-wardrummer.webp',
     },
     {
@@ -2819,6 +3096,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.OLD_CITY,
         tag: 'humano, homem, masculino',
         observation: null,
+        options: null,
         image: '/img/catalog/old-city/jester-enforcer.webp',
     },
     {
@@ -2829,6 +3107,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.OLD_CITY,
         tag: 'humano, homem, masculino, arauto, perna de madeira, mascara, cartas, baralho',
         observation: null,
+        options: null,
         image: '/img/catalog/old-city/jester-harbringer.webp',
     },
     {
@@ -2839,6 +3118,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.OLD_CITY,
         tag: 'humano, humana, mulher, feminino, arlequina, arlequim, acrobata, circo, mascara, cartas, baralho',
         observation: null,
+        options: null,
         image: '/img/catalog/old-city/jester-harlequin.webp',
     },
     {
@@ -2849,6 +3129,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.OLD_CITY,
         tag: 'guarda, patrulheiro, soldado, vigia, homem, masculino, humano, arqueiro, escudo, lança, machado',
         observation: 'Na compra de no mínimo 3 o preço diminui para 15 R$',
+        options: null,
         image: '/img/catalog/old-city/city-watch.webp',
     },
     {
@@ -2859,6 +3140,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.OLD_CITY,
         tag: 'gigante, fortaleza, vigia, criatura',
         observation: null,
+        options: null,
         image: '/img/catalog/old-city/city-watch-siege-giant.webp',
     },
 
@@ -2871,6 +3153,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.PITFIGHTER,
         tag: 'gladiador, guerreiro, humano, masculino, homem',
         observation: null,
+        options: null,
         image: '/img/catalog/pitfighter/gladiator-1.webp'
     },
     {
@@ -2881,6 +3164,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.PITFIGHTER,
         tag: 'gladiador, guerreiro, humano, masculino, homem',
         observation: null,
+        options: null,
         image: '/img/catalog/pitfighter/gladiator-2.webp'
     },
     {
@@ -2891,6 +3175,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.PITFIGHTER,
         tag: 'gladiador, guerreiro, humano, masculino, homem',
         observation: null,
+        options: null,
         image: '/img/catalog/pitfighter/gladiator-3.webp'
     },
     {
@@ -2901,6 +3186,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.PITFIGHTER,
         tag: 'gladiador, guerreiro, humano, masculino, homem, caveira',
         observation: null,
+        options: null,
         image: '/img/catalog/pitfighter/gladiator-4.webp'
     },
     {
@@ -2911,6 +3197,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.PITFIGHTER,
         tag: 'gladiador, guerreiro, humano, masculino, homem, anão, anões',
         observation: null,
+        options: null,
         image: '/img/catalog/pitfighter/baali-of-mohawk.webp'
     },
     {
@@ -2921,6 +3208,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.PITFIGHTER,
         tag: 'gladiador, guerreiro, humano, masculino, homem, peito de fora, sem camiseta',
         observation: null,
+        options: null,
         image: '/img/catalog/pitfighter/buso-mas.webp'
     },
     {
@@ -2931,6 +3219,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.PITFIGHTER,
         tag: 'feminino, mulher, guerreira, guerreiro, gladiadora, gladiador',
         observation: null,
+        options: null,
         image: '/img/catalog/pitfighter/evelyn-no-mercy.webp'
     },
     {
@@ -2941,6 +3230,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.PITFIGHTER,
         tag: 'criatura, montaria, goblin, monstro, criatura do oceano',
         observation: null,
+        options: null,
         image: '/img/catalog/pitfighter/fang-and-molar.webp'
     },
     {
@@ -2951,6 +3241,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.PITFIGHTER,
         tag: 'monstro, coruja, urso, mágico, mágica, criatura, monstro, ursoruja',
         observation: null,
+        options: null,
         image: '/img/catalog/pitfighter/ironbeak.webp'
     },
     {
@@ -2961,6 +3252,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.PITFIGHTER,
         tag: 'necromante, necromancia, feminino, mulher, esqueleto, invocadora, morto vivo',
         observation: 'Modelos separados e Macaria R$20 - Esqueletos R$18',
+        options: null,
         image: '/img/catalog/pitfighter/macaria.webp'
     },
     {
@@ -2971,6 +3263,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.PITFIGHTER,
         tag: 'gladiador, guerreiro, leão, criatura, animal, animais, animais, licantropia, licantropo, lion folk',
         observation: null,
+        options: null,
         image: '/img/catalog/pitfighter/pristinus.webp'
     },
     {
@@ -2981,6 +3274,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.PITFIGHTER,
         tag: 'abissal, criatura, oceano, criatura do oceano, monstro',
         observation: null,
+        options: null,
         image: '/img/catalog/pitfighter/trogzor.webp'
     },
     {
@@ -2991,6 +3285,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.PITFIGHTER,
         tag: 'guerreiro, lobo, lobisomem, animal, animais, animais, licantropia, licantropo, criatura, mosntro',
         observation: null,
+        options: null,
         image: '/img/catalog/pitfighter/wrargog.webp'
     },
     {
@@ -3001,6 +3296,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.PITFIGHTER,
         tag: 'cães, cão, cachorro, , espinho, criatura, animal, animais, animais, cenário, hiena',
         observation: null,
+        options: null,
         image: '/img/catalog/pitfighter/quillhounds.webp'
     },
     {
@@ -3011,6 +3307,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.PITFIGHTER,
         tag: 'escorpião, monstro, criatura, deserto, cenário',
         observation: null,
+        options: null,
         image: '/img/catalog/pitfighter/hadogenes.webp'
     },
     {
@@ -3021,6 +3318,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.PITFIGHTER,
         tag: 'escorpião, monstro, criatura, deserto, cenário',
         observation: null,
+        options: null,
         image: '/img/catalog/pitfighter/hadogenes-gobo.webp'
     },
     {
@@ -3031,6 +3329,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.PITFIGHTER,
         tag: 'cenário, coliseu, arena, construção, item, cidade, gladiador, roma',
         observation: null,
+        options: null,
         image: '/img/catalog/pitfighter/colloseum.webp'
     },
 
@@ -3043,6 +3342,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.SONS_OF_KASHAN,
         tag: 'guerreiro, homem, masculino, anões, anão, totem',
         observation: null,
+        options: null,
         image: '/img/catalog/sons-of-kashan/beshazzar.webp'
     },
     {
@@ -3053,6 +3353,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.SONS_OF_KASHAN,
         tag: 'robô, androide, android, máquina, metal, ferro, homem, masculino, anões, anão',
         observation: null,
+        options: null,
         image: '/img/catalog/sons-of-kashan/deathbot-1.webp'
     },
     {
@@ -3063,6 +3364,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.SONS_OF_KASHAN,
         tag: 'robô, androide, android, máquina, metal, ferro, homem, masculino, anões, anão',
         observation: null,
+        options: null,
         image: '/img/catalog/sons-of-kashan/deathbot-2.webp'
     },
     {
@@ -3073,6 +3375,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.SONS_OF_KASHAN,
         tag: 'atirador, soldado, arma, homem, masculino, anões, anão',
         observation: null,
+        options: null,
         image: '/img/catalog/sons-of-kashan/gunner-1.webp'
     },
     {
@@ -3083,6 +3386,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.SONS_OF_KASHAN,
         tag: 'atirador, soldado, arma, homem, masculino, anões, anão',
         observation: null,
+        options: null,
         image: '/img/catalog/sons-of-kashan/gunner-2.webp'
     },
     {
@@ -3093,6 +3397,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.SONS_OF_KASHAN,
         tag: 'homem, masculino, anões, anão, guerreiro, soldado',
         observation: null,
+        options: null,
         image: '/img/catalog/sons-of-kashan/warrior-1.webp'
     },
     {
@@ -3103,6 +3408,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.SONS_OF_KASHAN,
         tag: 'homem, masculino, anões, anão, guerreiro, soldado',
         observation: null,
+        options: null,
         image: '/img/catalog/sons-of-kashan/warrior-2.webp'
     },
     {
@@ -3113,6 +3419,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.SONS_OF_KASHAN,
         tag: 'feiticeiro, mago, magico, magia, homem, masculino, anões, anão, necromante, alma',
         observation: null,
+        options: null,
         image: '/img/catalog/sons-of-kashan/warlock.webp'
     },
     {
@@ -3123,6 +3430,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.SONS_OF_KASHAN,
         tag: 'minotauro, besta, mitologia, criatura, monstro, gigante, animal, animais, animais,',
         observation: null,
+        options: null,
         image: '/img/catalog/sons-of-kashan/minotaur-1.webp'
     },
     {
@@ -3133,6 +3441,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.SONS_OF_KASHAN,
         tag: 'minotauro, besta, mitologia, criatura, monstro, gigante, animal, animais, animais,',
         observation: null,
+        options: null,
         image: '/img/catalog/sons-of-kashan/minotaur-2.webp'
     },
     {
@@ -3143,6 +3452,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.SONS_OF_KASHAN,
         tag: 'meca, mecatronico, maquina, metal, ferro, minotauro, criatura, monstro',
         observation: null,
+        options: null,
         image: '/img/catalog/sons-of-kashan/chosen-1.webp'
     },
     {
@@ -3153,6 +3463,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.SONS_OF_KASHAN,
         tag: 'meca, mecatronico, maquina, metal, ferro, minotauro, criatura, monstro',
         observation: null,
+        options: null,
         image: '/img/catalog/sons-of-kashan/chosen-2.webp'
     },
     {
@@ -3163,6 +3474,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.SONS_OF_KASHAN,
         tag: 'arma, artilharia, explosivo, item, itens, cenário, canhão',
         observation: null,
+        options: null,
         image: '/img/catalog/sons-of-kashan/mortar.webp'
     },
     {
@@ -3173,6 +3485,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.SONS_OF_KASHAN,
         tag: 'gigante, criatura, minotauro, monstro, maquina, mecanico, metal, ferro',
         observation: null,
+        options: null,
         image: '/img/catalog/sons-of-kashan/infernal-golem.webp'
     },
 
@@ -3185,6 +3498,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.SPELL_BLADES,
         tag: 'homem, masculino, humano, simples',
         observation: null,
+        options: null,
         image: '/img/catalog/spell-blades/adept.webp'
     },
     {
@@ -3195,6 +3509,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.SPELL_BLADES,
         tag: 'mago, maga, feiticeiro, feiticeira, mulher, feminino, humano, humana',
         observation: null,
+        options: null,
         image: '/img/catalog/spell-blades/dark-mage.webp'
     },
     {
@@ -3205,6 +3520,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.SPELL_BLADES,
         tag: 'mago, maga, deserto, areia, feiticeira, feiticeiro, mulher, feminino, humano, humana',
         observation: null,
+        options: null,
         image: '/img/catalog/spell-blades/desert-mage.webp'
     },
     {
@@ -3215,6 +3531,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.SPELL_BLADES,
         tag: 'mago, maga, feiticeiro, feiticeira, mulher, feminino, humano, humana, guerreiro, guerreira',
         observation: null,
+        options: null,
         image: '/img/catalog/spell-blades/spellblade-mage-1.webp'
     },
     {
@@ -3225,6 +3542,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.SPELL_BLADES,
         tag: 'tigre, animal, animais, animais, invocação, mágico, mago, magia, criatura, humano, homem, masculino, fogo, feiticeiro',
         observation: null,
+        options: null,
         image: '/img/catalog/spell-blades/spell-mage-tiger.webp'
     },
     {
@@ -3235,6 +3553,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.SPELL_BLADES,
         tag: 'mágico, mago, magia, humano, homem, masculino, feiticeiro, guerreiro',
         observation: null,
+        options: null,
         image: '/img/catalog/spell-blades/spellblade-mage-2.webp'
     },
     {
@@ -3245,6 +3564,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.SPELL_BLADES,
         tag: 'mago, velho, ancião, sábio, masculino, homem, mágico, mago, magia, feiticeiro',
         observation: null,
+        options: null,
         image: '/img/catalog/spell-blades/old-mage.webp'
     },
     {
@@ -3255,6 +3575,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.SPELL_BLADES,
         tag: 'metamorfo, transformação, mágico, druida, mago, magia, homem, masculino',
         observation: null,
+        options: null,
         image: '/img/catalog/spell-blades/shapeshifter.webp'
     },
     {
@@ -3265,6 +3586,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.SPELL_BLADES,
         tag: 'gênio, mágico, magia, mago, espirito, invocação, criatura, etéreo',
         observation: null,
+        options: null,
         image: '/img/catalog/spell-blades/jinn.webp'
     },
     {
@@ -3275,6 +3597,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.SPELL_BLADES,
         tag: 'griffo, criatura, alado, mágico, magia, animal, animais, animais, mulher, feminino, guerreira, montaria',
         observation: null,
+        options: null,
         image: '/img/catalog/spell-blades/spellblade-gryphon.webp'
     },
     {
@@ -3285,6 +3608,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.SPELL_BLADES,
         tag: 'louva a deus, inseto, criatura, animal, animais, animais, mágico, magia, monstro',
         observation: null,
+        options: null,
         image: '/img/catalog/spell-blades/spellblade-mantis.webp'
     },
     {
@@ -3295,6 +3619,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.SPELL_BLADES,
         tag: 'criatura, iéti, animal, animais, animais, mágico, magia, monstro, gelo, neve, abominável homem das neves',
         observation: null,
+        options: null,
         image: '/img/catalog/spell-blades/yeti.webp'
     },
 
@@ -3307,6 +3632,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.SWAMPS,
         tag: 'zumbi, morto vivo, mortos vivos, criatura, pântano',
         observation: null,
+        options: null,
         image: '/img/catalog/swamps/zombies.webp'
     },
     {
@@ -3317,6 +3643,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.SWAMPS,
         tag: 'fungo, criatura, cogumelo, pântano, monstro',
         observation: null,
+        options: null,
         image: '/img/catalog/swamps/myconids.webp'
     },
     {
@@ -3327,6 +3654,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.SWAMPS,
         tag: 'místico, feiticeiro, pântano, magia, magico, sapo, criatura, monstro, xamã',
         observation: null,
+        options: null,
         image: '/img/catalog/swamps/mystic.webp'
     },
     {
@@ -3337,6 +3665,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.SWAMPS,
         tag: 'furtivo, esguio, criatura, pântano, místico, magia, magico, sapo, monstro, arco, arqueiro',
         observation: null,
+        options: null,
         image: '/img/catalog/swamps/elusive.webp'
     },
     {
@@ -3347,6 +3676,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.SWAMPS,
         tag: 'emboscador, criatura, pântano, furtivo, ataque surpresa, místico, magia, magico, sapo, monstro',
         observation: null,
+        options: null,
         image: '/img/catalog/swamps/ambusher.webp'
     },
     {
@@ -3357,6 +3687,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.SWAMPS,
         tag: 'brutamontes, bruto, criatura, sapo, monstro, pântano',
         observation: null,
+        options: null,
         image: '/img/catalog/swamps/brute.webp'
     },
     {
@@ -3367,6 +3698,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.SWAMPS,
         tag: 'necromante, cogumelo, fungo, mágico, magia, invocador, criatura, sapo, pântano, monstro',
         observation: null,
+        options: null,
         image: '/img/catalog/swamps/mushroomancer.webp'
     },
     {
@@ -3377,6 +3709,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.SWAMPS,
         tag: 'cenário, construção, casa, pântano, item, itens',
         observation: null,
+        options: null,
         image: '/img/catalog/swamps/house-1.webp'
     },
     {
@@ -3387,6 +3720,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.SWAMPS,
         tag: 'cenário, construção, casa, pântano, item, itens',
         observation: null,
+        options: null,
         image: '/img/catalog/swamps/house-2.webp'
     },
     {
@@ -3397,6 +3731,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.SWAMPS,
         tag: 'elfo, arqueiro, pântano, homem, masculino, passaro',
         observation: null,
+        options: null,
         image: '/img/catalog/swamps/elf-1.webp'
     },
     {
@@ -3407,6 +3742,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.SWAMPS,
         tag: 'elfo, elfa, guerreiro, guerreira, pântano, feminino, mulher',
         observation: null,
+        options: null,
         image: '/img/catalog/swamps/elf-2.webp'
     },
     {
@@ -3417,6 +3753,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.SWAMPS,
         tag: 'musgo, elemental, criatura, pântano, monstro',
         observation: null,
+        options: null,
         image: '/img/catalog/swamps/moss-king.webp'
     },
     {
@@ -3427,6 +3764,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.SWAMPS,
         tag: 'besta, tartaruga, criatura, pântano, monstro',
         observation: null,
+        options: null,
         image: '/img/catalog/swamps/beastoise.webp'
     },
 
@@ -3439,6 +3777,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'paladino, celestial, guerreiro, humano, homem, masculino',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
+        options: null,
         image: '/img/catalog/titans-of-adventure-41-ao-45/celestial-paladin.webp'
     },
     {
@@ -3449,6 +3788,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'humano, humana, bruxo, bruxa, invocador, invocadora, magia, mago, maga, mulher, feminino',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
+        options: null,
         image: '/img/catalog/titans-of-adventure-41-ao-45/human-warlock.webp'
     },
     {
@@ -3459,6 +3799,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'orc, ogro, monge, artes marciais, masculino, homem',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
+        options: null,
         image: '/img/catalog/titans-of-adventure-41-ao-45/orc-monk.webp'
     },
     {
@@ -3469,6 +3810,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'anão, anões, monge, artes marciais, masculino, homem',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
+        options: null,
         image: '/img/catalog/titans-of-adventure-41-ao-45/dwarf-monk.webp'
     },
     {
@@ -3479,6 +3821,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'elfo, patrulheiro, arqueiro, arco, masculino, homem',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
+        options: null,
         image: '/img/catalog/titans-of-adventure-41-ao-45/elf-ranger.webp'
     },
     {
@@ -3489,6 +3832,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'tiefling, bárbaro, chifres, masculino, homem',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
+        options: null,
         image: '/img/catalog/titans-of-adventure-41-ao-45/tiefling-barbarian.webp'
     },
     {
@@ -3499,6 +3843,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'humano, bárbaro, combate, força bruta, homem, masculino',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
+        options: null,
         image: '/img/catalog/titans-of-adventure-41-ao-45/human-barbarian.webp'
     },
     {
@@ -3509,6 +3854,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'halfling, bruxo, pequeno, magia, magico',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
+        options: null,
         image: '/img/catalog/titans-of-adventure-41-ao-45/hafling-warlock.webp'
     },
     {
@@ -3519,6 +3865,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'tiefling, ladino, ladina, chifres, mulher, feminino',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
+        options: null,
         image: '/img/catalog/titans-of-adventure-41-ao-45/tiefling-rogue.webp'
     },
     {
@@ -3529,6 +3876,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'guerreiro, guerreira, guerreiro, mulher, feminino',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
+        options: null,
         image: '/img/catalog/titans-of-adventure-41-ao-45/githyanki-fighter.webp'
     },
     {
@@ -3539,6 +3887,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'humano, alquimista, alquimia, frascos, poções, homem, masculino',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
+        options: null,
         image: '/img/catalog/titans-of-adventure-41-ao-45/human-alchemist.webp'
     },
     {
@@ -3549,6 +3898,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'lionfolk, licantropia, licantropo, leão, clérigo, clériga, cura, mulher, feminino',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
+        options: null,
         image: '/img/catalog/titans-of-adventure-41-ao-45/lionfolk-cleric.webp'
     },
     {
@@ -3559,6 +3909,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'githyanki, bárbaro, selvagem, homem, masculino, wolverine, garras',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
+        options: null,
         image: '/img/catalog/titans-of-adventure-41-ao-45/githyanki-barbarian.webp'
     },
     {
@@ -3569,6 +3920,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'humano, humana, guerreiro, guerreira, mulher, feminino, guarda, soldado, soldada',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
+        options: null,
         image: '/img/catalog/titans-of-adventure-41-ao-45/human-fighter.webp'
     },
     {
@@ -3579,6 +3931,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'halfling, bruxo, bruxa, pequeno, pequena, magia, magico',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13 - O cachorro tem um custo adicional de 10R$',
+        options: null,
         image: '/img/catalog/titans-of-adventure-41-ao-45/hafling-warlock-1.webp'
     },
 
@@ -3591,6 +3944,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'halfling, guerreiro, pequeno, lutador, masculino, homem',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
+        options: null,
         image: '/img/catalog/titans-of-adventure-46-ao-49/hafling-fighter.webp'
     },
     {
@@ -3601,6 +3955,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'humano, bardo, música, suporte, violão',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
+        options: null,
         image: '/img/catalog/titans-of-adventure-46-ao-49/human-bard.webp'
     },
     {
@@ -3611,6 +3966,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'tiefling, monge, artes marciais, chifres, masculino, homem',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
+        options: null,
         image: '/img/catalog/titans-of-adventure-46-ao-49/tiefling-monk.webp'
     },
     {
@@ -3621,6 +3977,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'draconato, monge, dragão, artes marciais, homem, masculino',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
+        options: null,
         image: '/img/catalog/titans-of-adventure-46-ao-49/dragonborn-monk.webp'
     },
     {
@@ -3631,6 +3988,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'meio orc, meio ogro, clérigo, clériga, cura, suporte, mulher, feminino',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
+        options: null,
         image: '/img/catalog/titans-of-adventure-46-ao-49/half-orc-cleric.webp'
     },
     {
@@ -3641,6 +3999,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'tiefling, mago, feiticeiro, chifres, magia, magico, homem, masculino',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
+        options: null,
         image: '/img/catalog/titans-of-adventure-46-ao-49/tiefling-wizard.webp'
     },
     {
@@ -3651,6 +4010,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'orc, ogro, druida, homem, masculino',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
+        options: null,
         image: '/img/catalog/titans-of-adventure-46-ao-49/orc-druid.webp'
     },
     {
@@ -3661,6 +4021,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'humano, humana, monge, artes marciais, mulher, feminino',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
+        options: null,
         image: '/img/catalog/titans-of-adventure-46-ao-49/human-monk.webp'
     },
     {
@@ -3671,6 +4032,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'humano, ladino, furtivo, espionagem, homem, masculino',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
+        options: null,
         image: '/img/catalog/titans-of-adventure-46-ao-49/human-rogue.webp'
     },
     {
@@ -3681,6 +4043,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'humano, arcanista, mago, magia, careca',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
+        options: null,
         image: '/img/catalog/titans-of-adventure-46-ao-49/human-arcanist.webp'
     },
     {
@@ -3691,6 +4054,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'golias, guerreiro, arqueiro, patrulheiro, paladino, homem, masculino',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
+        options: null,
         image: '/img/catalog/titans-of-adventure-46-ao-49/goliath-guardian.webp'
     },
     {
@@ -3701,6 +4065,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'coelho, monge, animal, animais, animais, antropomorfo, artes marciais, humano coelho, feminino, mulher, humana coelha',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
+        options: null,
         image: '/img/catalog/titans-of-adventure-46-ao-49/rabbitfolk-monk.webp'
     },
 
@@ -3713,6 +4078,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'clérigo, clériga, elfo, elfa, divino, suporte, mulher, feminino, assasina, assasino, guerreira, guerreiro',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
+        options: null,
         image: '/img/catalog/titans-of-adventure-50-ao-55/drow-cleric.webp'
     },
     {
@@ -3723,6 +4089,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'anão, anões, anã, mago, maga, magia, livro, fogo, cajado',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
+        options: null,
         image: '/img/catalog/titans-of-adventure-50-ao-55/dwarf-wizard.webp'
     },
     {
@@ -3733,6 +4100,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'halfling, druida, passaro, natureza, mulher, feminino, cajado, escudo',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
+        options: null,
         image: '/img/catalog/titans-of-adventure-50-ao-55/hafling-druid.webp'
     },
     {
@@ -3743,6 +4111,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'felino, gato, gata, guerreiro, guerreira, animal, animais, animais, antropomorfo, licantropia, licantropo, licantropa, mulher, feminino',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
+        options: null,
         image: '/img/catalog/titans-of-adventure-50-ao-55/catfolk-warrior.webp'
     },
     {
@@ -3753,6 +4122,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'orc, ogro, ogra, bárbaro, bárbara, mulher, feminino, machado, espada',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
+        options: null,
         image: '/img/catalog/titans-of-adventure-50-ao-55/orc-barbarian.webp'
     },
     {
@@ -3763,6 +4133,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'tartaruga, paladino, paladina, escudo, divino, suporte, animal, animais, animais, criatura, machado, berrante',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
+        options: null,
         image: '/img/catalog/titans-of-adventure-50-ao-55/tortle-paladin.webp'
     },
     {
@@ -3773,6 +4144,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'halfling, clérigo, suporte, pequeno, cerveja, bebida, machado, escudo, masculino, homem',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
+        options: null,
         image: '/img/catalog/titans-of-adventure-50-ao-55/hafling-cleric.webp'
     },
     {
@@ -3783,6 +4155,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'humano, bruxo, invocador, magia, mago, humano, homem, masculino, capa, cajado, vira tempo, temporizador',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
+        options: null,
         image: '/img/catalog/titans-of-adventure-50-ao-55/human-warlock-2.webp'
     },
     {
@@ -3793,6 +4166,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'tiefling, bárbaro, bárbara, mulher, feminino, machado, adaga',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
+        options: null,
         image: '/img/catalog/titans-of-adventure-50-ao-55/tiefling-barbarian-2.webp'
     },
     {
@@ -3803,6 +4177,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'draconato, draconata, clérigo, clériga, dragão, mulher, feminino, besta, machado, escudo, lança',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
+        options: null,
         image: '/img/catalog/titans-of-adventure-50-ao-55/dragonborn-cleric.webp'
     },
     {
@@ -3813,6 +4188,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'elfo, elfa, arqueiro, arqueira, patrulheiro, patrulheira, arco, escudo, espada',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
+        options: null,
         image: '/img/catalog/titans-of-adventure-50-ao-55/elf-ranger-2.webp'
     },
     {
@@ -3823,6 +4199,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'draconato, guerreiro, espada, chifre, masculino, homem',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
+        options: null,
         image: '/img/catalog/titans-of-adventure-50-ao-55/dragonborn-fighter.webp'
     },
     {
@@ -3833,6 +4210,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'anão, anões, guerreiro, machado, armadura, cerveja, bebida, masculino, homem, lutador',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
+        options: null,
         image: '/img/catalog/titans-of-adventure-50-ao-55/dwarf-fighter.webp'
     },
     {
@@ -3843,6 +4221,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'halfling, paladino, escudo, pequeno, suporte, lança, soldado',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
+        options: null,
         image: '/img/catalog/titans-of-adventure-50-ao-55/halfling-paladin.webp'
     },
     {
@@ -3853,6 +4232,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'orc, ogro, ogra, ladino, ladina, furtivo, furtiva, mulher, feminino, corrente',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
+        options: null,
         image: '/img/catalog/titans-of-adventure-50-ao-55/orc-rogue.webp'
     },
     {
@@ -3863,6 +4243,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'meio orc, meio ogro, paladino, guerreiro, espada, chamas, fogo, machado, masculino, homem',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
+        options: null,
         image: '/img/catalog/titans-of-adventure-50-ao-55/half-orc-paladin.webp'
     },
     {
@@ -3873,6 +4254,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'meio orc, meio ogro, patrulheiro, floresta, rastreador, mulher, feminino, montaria, animal, animais, animais, lobo, arco, espada',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
+        options: null,
         image: '/img/catalog/titans-of-adventure-50-ao-55/half-orc-ranger.webp'
     },
     {
@@ -3883,6 +4265,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'tiefling, bruxo, magia, chifres, lança',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
+        options: null,
         image: '/img/catalog/titans-of-adventure-50-ao-55/tiefling-warlock.webp'
     },
 
@@ -3895,6 +4278,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'orc, ogro, ogra, patrulheiro, patrulheira, floresta, mulher, feminino, guerreiro, guerreira, espada, arco, lança',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
+        options: null,
         image: '/img/catalog/titans-of-adventure-56-ao-59/orc-ranger.webp'
     },
     {
@@ -3905,6 +4289,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'anão, anões, anã, clérigo, clériga, suporte, mulher, feminino, escudo, machado, infinito',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
+        options: null,
         image: '/img/catalog/titans-of-adventure-56-ao-59/dwarf-cleric.webp'
     },
     {
@@ -3915,6 +4300,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'humano, humana, ladino, ladina, furtivo, furtiva, mulher, feminino, leque, espada, guerreiro, guerreira',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
+        options: null,
         image: '/img/catalog/titans-of-adventure-56-ao-59/human-rogue-2.webp'
     },
     {
@@ -3925,6 +4311,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'humano, patrulheiro, floresta, arqueiro, escudo, espada, machado, homem, masculino',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
+        options: null,
         image: '/img/catalog/titans-of-adventure-56-ao-59/human-ranger.webp'
     },
     {
@@ -3935,6 +4322,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'tiefling, clérigo, chifres, cajado, escudo, guerreiro, homem, masculino, lamparina',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
+        options: null,
         image: '/img/catalog/titans-of-adventure-56-ao-59/tiefling-cleric.webp'
     },
     {
@@ -3945,6 +4333,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'tartaruga, bardo, barda, música, músico, antropomorfo, violão, besta, gaita de fole, licantropo, licantropia',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
+        options: null,
         image: '/img/catalog/titans-of-adventure-56-ao-59/turtoise-bard.webp'
     },
     {
@@ -3955,6 +4344,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'druida, fungo, natureza, magia, magico, magica, mulher, feminino, lobo, animal, animais, animais, cajado, enrolado, cacheado, ondulado, crespo planta',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13. Com o lobo fica R$25',
+        options: null,
         image: '/img/catalog/titans-of-adventure-56-ao-59/spore-druid.webp'
     },
     {
@@ -3965,6 +4355,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'anão, anões, anã, druida, natureza, magia, magico, magica, mulher, feminino, punho grande, mão, mãos, grande, flor, floresta, planta, escudo, machado',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
+        options: null,
         image: '/img/catalog/titans-of-adventure-56-ao-59/dwarf-druid.webp'
     },
     {
@@ -3975,6 +4366,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'humano, guerreiro, espada, armadura, guarda, escudo, machado, mascara, soldado, masculino, homem',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
+        options: null,
         image: '/img/catalog/titans-of-adventure-56-ao-59/human-fighter-2.webp'
     },
     {
@@ -3985,6 +4377,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'ave, asas, animal, animais, animais, criatura, caçador, aguia, gaviao, falcão, cachorro, , licantropo, licantropia, arco, lança, espada',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
+        options: null,
         image: '/img/catalog/titans-of-adventure-56-ao-59/arakoa-hunter.webp'
     },
     {
@@ -3995,6 +4388,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'humano, humana, bardo, barda, música, músico, suporte, mulher, feminino, violão, escudo, espada, circo',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
+        options: null,
         image: '/img/catalog/titans-of-adventure-56-ao-59/human-bard-2.webp'
     },
     {
@@ -4005,6 +4399,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'elfo, elfa, ladino, ladina, furtivo, furtiva, arma de duas mão, mãos,s, corda, espada, adaga',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
+        options: null,
         image: '/img/catalog/titans-of-adventure-56-ao-59/elf-rogue.webp'
     },
 
@@ -4017,6 +4412,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'elfo, mago, cajado, masculino, homem',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
+        options: null,
         image: '/img/catalog/titans-of-adventure-1-2-3-4-5-6-7-8-11-39-40/elf-mage.webp'
     },
     {
@@ -4027,6 +4423,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'humano, humana, paladino, paladina, armadura, suporte, mulher, feminino, espada, armadura, guerreiro, guerreira',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
+        options: null,
         image: '/img/catalog/titans-of-adventure-1-2-3-4-5-6-7-8-11-39-40/human-paladin.webp'
     },
     {
@@ -4037,6 +4434,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'tiefling, bruxo, bruxa, magia, magico, magica, chifres, gárgula, animal, animais, animais,',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
+        options: null,
         image: '/img/catalog/titans-of-adventure-1-2-3-4-5-6-7-8-11-39-40/tiefling-warlock.webp'
     },
     {
@@ -4047,6 +4445,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'anão, anões, sacerdote, sacerdotisa, divino, clérigo, suporte, machado',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
+        options: null,
         image: '/img/catalog/titans-of-adventure-1-2-3-4-5-6-7-8-11-39-40/dwarf-priest.webp'
     },
     {
@@ -4057,6 +4456,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'draconato, guerreiro, espada, escudo, machado',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
+        options: null,
         image: '/img/catalog/titans-of-adventure-1-2-3-4-5-6-7-8-11-39-40/dragonborn-warrior.webp'
     },
     {
@@ -4067,6 +4467,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'humano, humana, ladino, ladina, mulher, feminino, adaga',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
+        options: null,
         image: '/img/catalog/titans-of-adventure-1-2-3-4-5-6-7-8-11-39-40/human-rogue-3.webp'
     },
     {
@@ -4077,6 +4478,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'meio orc, meia orc, meio ogro, meia ogra, bárbaro, bárbara',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
+        options: null,
         image: '/img/catalog/titans-of-adventure-1-2-3-4-5-6-7-8-11-39-40/halforc-barbarian.webp'
     },
     {
@@ -4087,6 +4489,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'gnomo, mago, magia, magico, cajado, poção',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
+        options: null,
         image: '/img/catalog/titans-of-adventure-1-2-3-4-5-6-7-8-11-39-40/gnome-mage.webp'
     },
     {
@@ -4097,6 +4500,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'halfling, ladino, furtivo, adaga, besta',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
+        options: null,
         image: '/img/catalog/titans-of-adventure-1-2-3-4-5-6-7-8-11-39-40/halfling-rogue.webp'
     },
     {
@@ -4107,6 +4511,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'humano, humana, guerreiro, guerreira, espada, escudo, enrolado, cacheado, ondulado, crespo',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
+        options: null,
         image: '/img/catalog/titans-of-adventure-1-2-3-4-5-6-7-8-11-39-40/human-warrior.webp'
     },
     {
@@ -4117,6 +4522,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'elfo, elfa, bardo, barda, música, suporte, flauta, instrumento musical',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
+        options: null,
         image: '/img/catalog/titans-of-adventure-1-2-3-4-5-6-7-8-11-39-40/elf-bard.webp'
     },
     {
@@ -4127,6 +4533,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'elfo, elfa, monge, mulher, feminino, careca',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
+        options: null,
         image: '/img/catalog/titans-of-adventure-1-2-3-4-5-6-7-8-11-39-40/elf-monk.webp'
     },
     {
@@ -4137,6 +4544,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'humano, bruxo, magia, invocador, criatura, homem, masculino, chifres',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
+        options: null,
         image: '/img/catalog/titans-of-adventure-1-2-3-4-5-6-7-8-11-39-40/human-warlock-3.webp'
     },
     {
@@ -4147,6 +4555,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'tiefling, feiticeiro, feiticeira, chifres, magia, magico, magica, livro, mulher, feminino',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
+        options: null,
         image: '/img/catalog/titans-of-adventure-1-2-3-4-5-6-7-8-11-39-40/tiefling-sorcerer.webp'
     },
     {
@@ -4157,6 +4566,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'ave, monge, passaro, cajado, asa, licantropo, licantropia, animal, animais, animais, critura',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
+        options: null,
         image: '/img/catalog/titans-of-adventure-1-2-3-4-5-6-7-8-11-39-40/arakoa-monk.webp'
     },
     {
@@ -4167,6 +4577,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'anão, anões, anã, bárbaro, bárbara, machado, mulher, feminino',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
+        options: null,
         image: '/img/catalog/titans-of-adventure-1-2-3-4-5-6-7-8-11-39-40/dwarf-barbarian.webp'
     },
     {
@@ -4177,6 +4588,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'humano, paladino, divino, suporte, armadura, careca, espada, escudo, homem, masculino',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
+        options: null,
         image: '/img/catalog/titans-of-adventure-1-2-3-4-5-6-7-8-11-39-40/human-paladin-2.webp'
     },
     {
@@ -4187,6 +4599,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'anão, anões, bárbaro, machado, homem, masculino',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
+        options: null,
         image: '/img/catalog/titans-of-adventure-1-2-3-4-5-6-7-8-11-39-40/dwarf-barbarian-2.webp'
     },
     {
@@ -4197,6 +4610,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'humano, humana, mago, maga, magia, magico, magica, mulher, feminino, orbe',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
+        options: null,
         image: '/img/catalog/titans-of-adventure-1-2-3-4-5-6-7-8-11-39-40/human-mage.webp'
     },
     {
@@ -4207,6 +4621,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'tiefling, bardo, música, suporte, instrumento musical, violino, chifres, homem, masculino',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
+        options: null,
         image: '/img/catalog/titans-of-adventure-1-2-3-4-5-6-7-8-11-39-40/tiefling-bard.webp'
     },
     {
@@ -4217,6 +4632,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'anão, anões, anã, paladino, paladina, armadura, espada, mulher, feminino',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
+        options: null,
         image: '/img/catalog/titans-of-adventure-1-2-3-4-5-6-7-8-11-39-40/dwarf-paladin.webp'
     },
     {
@@ -4227,6 +4643,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'golias, guerreiro, lutador, careca, machado, adaga, homem, masculino',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
+        options: null,
         image: '/img/catalog/titans-of-adventure-1-2-3-4-5-6-7-8-11-39-40/goliath-fighter.webp'
     },
     {
@@ -4237,6 +4654,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'humano, clérigo, divino, suporte, livro, cajado, homem, masculino',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
+        options: null,
         image: '/img/catalog/titans-of-adventure-1-2-3-4-5-6-7-8-11-39-40/human-cleric.webp'
     },
     {
@@ -4247,6 +4665,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'meio orc, meio ogro, bardo, música, músico, suporte, instrumento musical, tambor, tamborim, homem, masculino',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
+        options: null,
         image: '/img/catalog/titans-of-adventure-1-2-3-4-5-6-7-8-11-39-40/half-orc-bard.webp'
     },
     {
@@ -4257,6 +4676,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'humano, humana, druida, natureza, magia, maga, animal, animais, animais, mulher, feminino, cajado, lontra',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
+        options: null,
         image: '/img/catalog/titans-of-adventure-1-2-3-4-5-6-7-8-11-39-40/human-druid.webp'
     },
     {
@@ -4267,6 +4687,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'humano, humana, ladino, ladina, dançarina, dançarina do ventre, cigana, mulher, feminino',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
+        options: null,
         image: '/img/catalog/titans-of-adventure-1-2-3-4-5-6-7-8-11-39-40/human-rogue-4.webp'
     },
     {
@@ -4277,6 +4698,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'anão, anões, caçador, arqueiro, arco, flecha, homem, masculino',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
+        options: null,
         image: '/img/catalog/titans-of-adventure-1-2-3-4-5-6-7-8-11-39-40/dwarf-hunter.webp'
     },
     {
@@ -4287,6 +4709,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'humano, humana, clérigo, clériga, divino, suporte, mulher, feminino',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
+        options: null,
         image: '/img/catalog/titans-of-adventure-1-2-3-4-5-6-7-8-11-39-40/human-cleric-2.webp'
     },
     {
@@ -4297,6 +4720,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'elfo, bárbaro, arma de duas mão, mãos,s, machado, chifres, lula, polvo, homem, masculino',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
+        options: null,
         image: '/img/catalog/titans-of-adventure-1-2-3-4-5-6-7-8-11-39-40/elf-barbarian.webp'
     },
     {
@@ -4307,6 +4731,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'gnomo, gnoma, halfling, guerreiro, guerreira, machado',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
+        options: null,
         image: '/img/catalog/titans-of-adventure-1-2-3-4-5-6-7-8-11-39-40/gnome-warrior.webp'
     },
     {
@@ -4317,6 +4742,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'humano, caçador, adaga, corda, corrente, besta, masculino, homem',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
+        options: null,
         image: '/img/catalog/titans-of-adventure-1-2-3-4-5-6-7-8-11-39-40/human-hunter.webp'
     },
     {
@@ -4327,6 +4753,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'druida, feral, selvagem, transformação, licantropo, licantropia, animal, animais, animais, fera, criatura',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
+        options: null,
         image: '/img/catalog/titans-of-adventure-1-2-3-4-5-6-7-8-11-39-40/feral-druid.webp'
     },
     {
@@ -4337,6 +4764,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'anão, anões, mago, magia, magico, cajado, homem, masculino',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
+        options: null,
         image: '/img/catalog/titans-of-adventure-1-2-3-4-5-6-7-8-11-39-40/dwarf-mage.webp'
     },
     {
@@ -4347,6 +4775,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'humano, druida, natureza, magia, casaco peludo, cajado, homem, masculino',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
+        options: null,
         image: '/img/catalog/titans-of-adventure-1-2-3-4-5-6-7-8-11-39-40/human-druid-2.webp'
     },
     {
@@ -4357,6 +4786,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'humano, humana, guerreiro, guerreira, lutador, lutadora, mulher, feminino',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
+        options: null,
         image: '/img/catalog/titans-of-adventure-1-2-3-4-5-6-7-8-11-39-40/human-fighter-3.webp'
     },
 
@@ -4368,6 +4798,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'draconato, mago, magia, magico, cajado, homem, masculino',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
+        options: null,
         image: '/img/catalog/titans-of-adventure-1-2-3-4-5-6-7-8-11-39-40/dragonborn-mage.webp'
     },
     {
@@ -4378,6 +4809,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'sátiro, bardo, música, mitologia, animal, animais, animais, homem, masculino, violão, instrumento musical, livro, magia, magico',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
+        options: null,
         image: '/img/catalog/titans-of-adventure-1-2-3-4-5-6-7-8-11-39-40/satyr-bard.webp'
     },
     {
@@ -4388,6 +4820,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'tiefling, ladino, ladina, chifres, mulher, feminino, lança',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
+        options: null,
         image: '/img/catalog/titans-of-adventure-1-2-3-4-5-6-7-8-11-39-40/tiefling-rogue.webp'
     },
     {
@@ -4398,6 +4831,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'humano, bárbaro, masculino, homem, machado, arma de duas mão, mãos,s, corrente',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
+        options: null,
         image: '/img/catalog/titans-of-adventure-1-2-3-4-5-6-7-8-11-39-40/human-barbarian-2.webp'
     },
     {
@@ -4408,6 +4842,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'gnomo, clérigo, divino, suporte, homem, masculino, chama, espada, escudo, batedor, livro',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
+        options: null,
         image: '/img/catalog/titans-of-adventure-1-2-3-4-5-6-7-8-11-39-40/gnome-cleric.webp'
     },
     {
@@ -4418,6 +4853,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'meio orc, meio ogro, meia orc, meia ogro, meia ogra, ladino, ladina, mulher, feminino, corrente, adaga, besta',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
+        options: null,
         image: '/img/catalog/titans-of-adventure-1-2-3-4-5-6-7-8-11-39-40/halforc-rogue.webp'
     },
 
@@ -4430,6 +4866,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TOWNFOLK,
         tag: 'zumbi, cozinheiro, morto vivo, caldeirão, cenário, comida, chef, cozinha, taverna',
         observation: null,
+        options: null,
         image: '/img/catalog/townfolk/zombie-cook.webp',
     },
     {
@@ -4440,6 +4877,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TOWNFOLK,
         tag: 'forasteiro, estranho, aldeão, npm, personagem, humano, homem, masculino, capa, espada, misterioso, cenário, taverna',
         observation: null,
+        options: null,
         image: '/img/catalog/townfolk/stranger.webp',
     },
     {
@@ -4450,6 +4888,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TOWNFOLK,
         tag: 'cliente, aldeão, npm, humano, homem, masculino, cerveja, copo, caneca, bebida, comida, cenário, taverna',
         observation: null,
+        options: null,
         image: '/img/catalog/townfolk/patreon-1.webp',
     },
     {
@@ -4460,6 +4899,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TOWNFOLK,
         tag: 'cliente, aldeão, npm, humano, homem, masculino, cerveja, copo, caneca, bebida, comida, cenário, taverna',
         observation: null,
+        options: null,
         image: '/img/catalog/townfolk/patreon-2.webp',
     },
     {
@@ -4470,6 +4910,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TOWNFOLK,
         tag: 'cavalariço, npm, personagem, aldeão, estábulo, careca, humano, homem, masculino, forcado, fazendeiro, fazenda, cenário',
         observation: null,
+        options: null,
         image: '/img/catalog/townfolk/stable-boys.webp',
     },
     {
@@ -4480,6 +4921,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TOWNFOLK,
         tag: 'ogro, orc, cozinheiro, cozinha, comida, faca, npm, personagem, aldeão, chef, barril, caneca, taverna',
         observation: null,
+        options: null,
         image: '/img/catalog/townfolk/ogre-cook.webp',
     },
     {
@@ -4490,6 +4932,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TOWNFOLK,
         tag: 'garçonete, atendente, empregada, mulher, feminino, npm, aldeão, aldeã, taverna, cerveja, copo, caneca, taverna',
         observation: null,
+        options: null,
         image: '/img/catalog/townfolk/barmaid.webp',
     },
     {
@@ -4500,6 +4943,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TOWNFOLK,
         tag: 'guarda costas, segurança, proteção, aldeão, npm, personagem, mulher, feminino, adaga, taverna, humano, humana',
         observation: null,
+        options: null,
         image: '/img/catalog/townfolk/body-guard-1.webp',
     },
     {
@@ -4510,6 +4954,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TOWNFOLK,
         tag: 'guarda costas, segurança, proteção, aldeão, npm, personagem, taverna, careca, masculino, homem, humano',
         observation: null,
+        options: null,
         image: '/img/catalog/townfolk/body-guard-2.webp',
     },
     {
@@ -4520,6 +4965,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TOWNFOLK,
         tag: 'nobre, senhor, lorde, npm, personagem, aldeão, taverna, cadeira, sentado, frango, masculino, homem, humano, taverna',
         observation: null,
+        options: null,
         image: '/img/catalog/townfolk/lord.webp',
     },
     {
@@ -4530,6 +4976,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TOWNFOLK,
         tag: 'fantasma, espírito,npm, personagem, aldeão, assombração, espectro, espectra, alma, mulher, feminino, invocação, taverna',
         observation: null,
+        options: null,
         image: '/img/catalog/townfolk/ghost-1.webp',
     },
     {
@@ -4540,6 +4987,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TOWNFOLK,
         tag: 'fantasma, espírito, npm, personagem, aldeão, assombração, espectro, alma, taverna, homem, masulino, vela, garçom, garcom',
         observation: null,
+        options: null,
         image: '/img/catalog/townfolk/ghost-2.webp',
     },
     {
@@ -4550,6 +4998,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TOWNFOLK,
         tag: 'cultista, ocultismo, aldeão, npm, personagem, mascara, mascarado, adaga, homem, masculino, ladrão',
         observation: null,
+        options: null,
         image: '/img/catalog/townfolk/cultist.webp',
     },
     {
@@ -4560,6 +5009,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TOWNFOLK,
         tag: 'cultista, ocultismo, aldeão, npm, personagem, mascara, líder, ocultismo, homem, masculino, chifre, adaga, taça, taca',
         observation: null,
+        options: null,
         image: '/img/catalog/townfolk/cultist-leader.webp',
     },
     {
@@ -4570,6 +5020,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TOWNFOLK,
         tag: 'barman, garçom, atendente, homem, masculino, careca, taverna, npm, personagem, aldeão',
         observation: null,
+        options: null,
         image: '/img/catalog/townfolk/bartender.webp',
     },
     {
@@ -4580,6 +5031,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TOWNFOLK,
         tag: 'aldeão, npm, personagem, masculino, homem, animal, animais, animais, gato',
         observation: null,
+        options: null,
         image: '/img/catalog/townfolk/brent.webp',
     },
     {
@@ -4590,6 +5042,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TOWNFOLK,
         tag: 'demônio, bode, criatura, monstro, animal, animais, animais, cajado, chifre, sino',
         observation: null,
+        options: null,
         image: '/img/catalog/townfolk/demon-goat.webp',
     },
     
@@ -4602,6 +5055,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.UNDYING_DYNASTIES,
         tag: 'esqueleto, arqueiro, morto vivo, harpa, bardo, instrumento musical, musica, espada, escudo, guerreiro, soldado, bandeira, deserto, egito, egípcio, areia',
         observation: 'Na compra de no mínimo 5 o preço diminui para 13R$ e na compra de 10 o preço diminui para 10R$.',
+        options: null,
         image: '/img/catalog/undying-dynasties-v1/skeletons-unit.webp',
     },
     {
@@ -4612,6 +5066,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.UNDYING_DYNASTIES,
         tag: 'esqueleto, arqueiro, morto vivo, guerreiro, soldado, deserto, egito, egípcio, areia',
         observation: 'Na compra de no mínimo 5 o preço diminui para 13R$ e na compra de 10 o preço diminui para 10R$.',
+        options: null,
         image: '/img/catalog/undying-dynasties-v1/skeletons-unit-bow.webp',
     },
     {
@@ -4622,6 +5077,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.UNDYING_DYNASTIES,
         tag: 'esqueleto, lança, morto vivo, guerreiro, soldado, deserto, egito, egípcio, areia, bandeira',
         observation: 'Na compra de no mínimo 5 o preço diminui para 13R$ e na compra de 10 o preço diminui para 10R$.',
+        options: null,
         image: '/img/catalog/undying-dynasties-v1/skeletons-unit-spear.webp',
     },
     {
@@ -4632,6 +5088,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.UNDYING_DYNASTIES,
         tag: 'shabti, ceifador, morto vivo, criatura, monstro, deserto, egito, egípcio, areia, animal, animais, animais, cenário, item, itens',
         observation: 'Na compra de no mínimo 3 o preço diminui para 22R$ e na compra de 9 o preço diminui para 20R$.',
+        options: null,
         image: '/img/catalog/undying-dynasties-v1/shabti-scythe.webp',
     },
     {
@@ -4642,6 +5099,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.UNDYING_DYNASTIES,
         tag: 'shabti, lança, ceifador, morto vivo, criatura, monstro, deserto, egito, egípcio, areia, animal, animais, animais, cenário, item, itens',
         observation: 'Na compra de no mínimo 3 o preço diminui para 22R$ e na compra de 9 o preço diminui para 20R$.',
+        options: null,
         image: '/img/catalog/undying-dynasties-v1/shabti-spear.webp',
     },
     {
@@ -4652,6 +5110,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.UNDYING_DYNASTIES,
         tag: 'shabti, arqueiro, arco, ceifador, morto vivo, criatura, monstro, deserto, egito, egípcio, areia, animal, animais, animais, cenário, item, itens',
         observation: 'Na compra de no mínimo 3 o preço diminui para 22R$ e na compra de 9 o preço diminui para 20R$.',
+        options: null,
         image: '/img/catalog/undying-dynasties-v1/shabti-bow.webp',
     },
     {
@@ -4662,6 +5121,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.UNDYING_DYNASTIES,
         tag: 'cavalaria, guerreiro, soldado, esqueleto, morto vivo, deserto, egito, egípcio, areia, arqueiro, montaria, cavalo, animal, animais, animais, harpa, instrumento musical, musica, bardo',
         observation: 'Na compra de no mínimo 4 o preço diminui para 42R$ e na compra de 10 o preço diminui para 38R$.',
+        options: null,
         image: '/img/catalog/undying-dynasties-v1/skeletons-cavalry-bow.webp',
     },
     {
@@ -4672,6 +5132,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.UNDYING_DYNASTIES,
         tag: 'cavalaria, guerreiro, soldado, esqueleto, morto vivo, deserto, egito, egípcio, areia, lança, montaria, cavalo, animal, animais, animais, harpa, instrumento musical, musica, bardo',
         observation: 'Na compra de no mínimo 4 o preço diminui para 42R$ e na compra de 10 o preço diminui para 38R$.',
+        options: null,
         image: '/img/catalog/undying-dynasties-v1/skeletons-cavalry-spear-a.webp',
     },
     {
@@ -4682,6 +5143,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.UNDYING_DYNASTIES,
         tag: 'criatura, mística, gato, besta, bola de fogo, chama, espada, monstro, deserto, egito, egípcio, areia, animal, animais, animais,',
         observation: null,
+        options: null,
         image: '/img/catalog/undying-dynasties-v1/rakshasa.webp',
     },
     {
@@ -4692,6 +5154,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.UNDYING_DYNASTIES,
         tag: 'morto vivo, espírito, amaldiçoado, cachorro, demonio, inferno, deserto, egito, egípcio, areia, animal, animais, animais, criatura, monstro',
         observation: null,
+        options: null,
         image: '/img/catalog/undying-dynasties-v1/hellbound.webp',
     },
     {
@@ -4702,6 +5165,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.UNDYING_DYNASTIES,
         tag: 'deus, senhor, areia, morto vivo, realeza, lorde, mascara, cajado, deserto, egito, egípcio, criatura, monstro, demonio',
         observation: null,
+        options: null,
         image: '/img/catalog/undying-dynasties-v1/sand-lord.webp',
     },
     {
@@ -4712,6 +5176,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.UNDYING_DYNASTIES,
         tag: 'múmia, bruto, morto vivo, deserto, egito, egípcio, criatura, monstro, areia, tambor',
         observation: null,
+        options: null,
         image: '/img/catalog/undying-dynasties-v1/mummy-brute.webp',
     },
     {
@@ -4722,6 +5187,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.UNDYING_DYNASTIES,
         tag: 'guardião, místico, morto vivo, deserto, egito, egípcio, criatura, monstro, areia, ossos, cajado, guerreiro',
         observation: null,
+        options: null,
         image: '/img/catalog/undying-dynasties-v1/sha-guardian.webp',
     },
     {
@@ -4732,6 +5198,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.UNDYING_DYNASTIES,
         tag: 'colosso, gigante, morto vivo, deserto, egito, egípcio, criatura, monstro, areia, ossos, cajado, guerreiro, demonio, flecha, arco, arqueiro, mumia',
         observation: null,
+        options: null,
         image: '/img/catalog/undying-dynasties-v1/colossus.webp',
     },
     
@@ -4744,6 +5211,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.UNDYING_DYNASTIES,
         tag: 'deus, carroça, morto vivo, cavalo, mumia, deserto, egito, egípcio, areia, criatura, monstro, demonio',
         observation: null,
+        options: null,
         image: '/img/catalog/undying-dynasties-v2/chariot.webp',
     },
     {
@@ -4754,6 +5222,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.UNDYING_DYNASTIES,
         tag: 'deus egípcio, deusa egipcia, mago, maga, sacerdote, sacerdotisa, morto vivo, morta viva, mulher, feminino, deserto, egito, egípcio, areia, gato, animal, animais, animais, criatura, monstro',
         observation: null,
+        options: null,
         image: '/img/catalog/undying-dynasties-v2/death-cult-hierarch.webp',
     },
     {
@@ -4764,6 +5233,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.UNDYING_DYNASTIES,
         tag: 'anubis, arauto, morto vivo, deserto, egito, egípcio, criatura, monstro, areia, demonio, deus, chacal',
         observation: null,
+        options: null,
         image: '/img/catalog/undying-dynasties-v2/tomb-harbinger-anubis.webp',
     },
     {
@@ -4774,6 +5244,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.UNDYING_DYNASTIES,
         tag: 'guardião, soldado, guerreiro, espada, deserto, egito, egipcio, areia, escudo, morto vivo, mumia, cobra, escorpiao, bandeira, esqueleto',
         observation: 'Na compra de no mínimo 3 o preço diminui para 15R$ e na compra de 9 o preço diminui para 12R$.',
+        options: null,
         image: '/img/catalog/undying-dynasties-v2/necropolis-guards-unit-shield.webp',
     },
     {
@@ -4784,6 +5255,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.UNDYING_DYNASTIES,
         tag: 'trombeta, guardião, egipcio, alabarda, soldado, guerreiro, espada, deserto, egito, egipcio, areia, escudo, morto vivo, mumia, bardo, instrumneto musical, musica',
         observation: 'Na compra de no mínimo 3 o preço diminui para 15R$ e na compra de 9 o preço diminui para 12R$.',
+        options: null,
         image: '/img/catalog/undying-dynasties-v2/necropolis-guards-unit-halbard.webp',
     },
     {
@@ -4794,6 +5266,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.UNDYING_DYNASTIES,
         tag: 'areia, espreitador, criatura, morto vivo, deserto, egito, egipcio, mumia, montaria, cobra, animal, animais, animais,',
         observation: 'Na compra de 3 o preço diminui para 40R$',
+        options: null,
         image: '/img/catalog/undying-dynasties-v2/sand-stalkers.webp',
     },
     {
@@ -4804,6 +5277,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.UNDYING_DYNASTIES,
         tag: 'areia, abutre, estátua, morto vivo, criatura, monstro, asa, passaro, cenário, item, itens, deserto, egito, egipcio, montaria, animal, animais, animais,',
         observation: 'Na compra de no mínimo 2 o preço diminui para 57R$',
+        options: null,
         image: '/img/catalog/undying-dynasties-v2/vultures.webp',
     },
     {
@@ -4814,6 +5288,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.UNDYING_DYNASTIES,
         tag: 'areia, cultista, dragão, draconato, guerreiro, deserto, egito, areia, egpcio, homem, masculino, adaga, arma de duas mão, mãos, mão, mãos,s',
         observation: 'Na compra de 3 o preço diminui para 15R$',
+        options: null,
         image: '/img/catalog/undying-dynasties-v2/dragon-cultist.webp',
     },
     {
@@ -4824,6 +5299,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.UNDYING_DYNASTIES,
         tag: 'areia, dragão, criatura, mágico, monstro, morto vivo, asa, criatura, demonio, deserto, egito, egpicio',
         observation: null,
+        options: null,
         image: '/img/catalog/undying-dynasties-v2/white-dragon.webp',
     },
     {
@@ -4834,6 +5310,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.UNDYING_DYNASTIES,
         tag: 'areia, caixão, personagem, criatura, mágico, monstro, morto vivo, demonio, deserto, egito, egpicio, mumia, item, itens, cenário, altar, invocador, invocaçao, invocacao',
         observation: 'Personagem pode ser comprado separadamente por R$ 25',
+        options: null,
         image: '/img/catalog/undying-dynasties-v2/casket-of-phatep.webp',
     },
     
@@ -4846,6 +5323,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.UNDYING_DYNASTIES,
         tag: 'areia, sacerdote, sacerdotisa, areia, mágico, morto vivo, deserto, egito, egpicio, mumia, montaria, cavalo, cajado, animal, animais, animais,',
         observation: null,
+        options: null,
         image: '/img/catalog/undying-dynasties-v3/sand-priest-v1.webp',
     },
     {
@@ -4856,6 +5334,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.UNDYING_DYNASTIES,
         tag: 'areia, sacerdote, sacerdotisa, areia, mágico, morto vivo, deserto, egito, egpicio, mumia, montaria, cavalo, cajado, animal, animais, animais,',
         observation: null,
+        options: null,
         image: '/img/catalog/undying-dynasties-v3/sand-priest-v2.webp',
     },
     {
@@ -4866,6 +5345,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.UNDYING_DYNASTIES,
         tag: 'areia, sacerdote, sacerdotisa, areia, mágico, morto vivo, deserto, egito, egpicio, mumia, cajado',
         observation: null,
+        options: null,
         image: '/img/catalog/undying-dynasties-v3/sand-priest-v3.webp',
     },
     {
@@ -4876,6 +5356,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.UNDYING_DYNASTIES,
         tag: 'areia, escorpião, escorpiã, rainha, criatura, deserto, egito, egpicio, egpicia, animal, animais, animais, mulher, feminino, lança',
         observation: null,
+        options: null,
         image: '/img/catalog/undying-dynasties-v3/scorpion-queen.webp',
     },
     {
@@ -4886,6 +5367,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.UNDYING_DYNASTIES,
         tag: 'areia, enxame, inseto, criatura, monstro, deserto, egito, egpicio, animal, animais, animais, escorpião',
         observation: null,
+        options: null,
         image: '/img/catalog/undying-dynasties-v3/swarm-a.webp',
     },
     {
@@ -4896,6 +5378,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.UNDYING_DYNASTIES,
         tag: 'areia, enxame, inseto, criatura, monstro, deserto, egito, egpicio, animal, animais, animais, escorpião',
         observation: null,
+        options: null,
         image: '/img/catalog/undying-dynasties-v3/swarm-b.webp',
     },
     {
@@ -4906,6 +5389,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.UNDYING_DYNASTIES,
         tag: 'areia, carroça, montaria, deserto, egito, egpicio, morto vivo, mumia, lança, cavalo, animal, animais, animais, esqueleto',
         observation: 'Na compra de no mínimo 2 o preço diminui para 70R$ e na compra de 3 o preço diminui para 65R$.',
+        options: null,
         image: '/img/catalog/undying-dynasties-v3/chariots.webp',
     },
     {
@@ -4916,6 +5400,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.UNDYING_DYNASTIES,
         tag: 'areia, catapulta, arma de cerco, morto vivo, deserto, egito, egpicio, mumia, dragão, esqueleto, item, itens, cenário',
         observation: 'A peça completa custa 120R$ - Apenas a catapulta 90R$ - Unidade de suporte vendidas separadamente por 15RS$ cada',
+        options: null,
         image: '/img/catalog/undying-dynasties-v3/catapult.webp',
     },
     {
@@ -4926,6 +5411,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.UNDYING_DYNASTIES,
         tag: 'escorpião, criatura, deserto, egito, egpicio, inseto, monstro, item, itens, cenário, areia',
         observation: null,
+        options: null,
         image: '/img/catalog/undying-dynasties-v3/scorpion-a.webp',
     },
     {
@@ -4936,6 +5422,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.UNDYING_DYNASTIES,
         tag: 'escorpião, criatura, deserto, egito, egpicio, inseto, monstro, item, itens, cenário, areia',
         observation: null,
+        options: null,
         image: '/img/catalog/undying-dynasties-v3/scorpion-b.webp',
     },
     {
@@ -4946,6 +5433,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.UNDYING_DYNASTIES,
         tag: 'esfinge, criatura, mágico, guardião, deserto, egito, egpicio, areia, monstro, animal, animais, animais, asa, cobra, cajado, morto vivo, mumia',
         observation: null,
+        options: null,
         image: '/img/catalog/undying-dynasties-v3/sphinx.webp',
     },
     {
@@ -4956,6 +5444,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.UNDYING_DYNASTIES,
         tag: 'bruxa, pântano, magia, feminino, mulher, magia, caldeirao, passaro, animal, animais, animais, orbe, chifre, cajado, deserto, egito, egpicio, areia',
         observation: null,
+        options: null,
         image: '/img/catalog/undying-dynasties-v3/swamp-witch.webp',
     },
 
@@ -4968,6 +5457,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.VAMPIRE_PIRATES_AND_DARK_WOOD_BEASTS,
         tag: 'xamã, mascara, cajado, folk, licantropo, licantropia, chifre',
         observation: null,
+        options: null,
         image: '/img/catalog/vampire-pirates-and-dark-wood-beasts/blind-shaman.webp',
     },
     {
@@ -4978,6 +5468,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.VAMPIRE_PIRATES_AND_DARK_WOOD_BEASTS,
         tag: 'centauro, chifre, cavalo, criatura',
         observation: null,
+        options: null,
         image: '/img/catalog/vampire-pirates-and-dark-wood-beasts/centaur-chiftain.webp',
     },
     {
@@ -4988,6 +5479,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.VAMPIRE_PIRATES_AND_DARK_WOOD_BEASTS,
         tag: 'xamã, carroça, montaria, cajado, animal, animais, animais, javali, criatura, chifre, bode, folk, licantropo, licantropia',
         observation: null,
+        options: null,
         image: '/img/catalog/vampire-pirates-and-dark-wood-beasts/shaman-chariot.webp'
     },
     {
@@ -4998,6 +5490,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.VAMPIRE_PIRATES_AND_DARK_WOOD_BEASTS,
         tag: 'minotauro, chifre, besta, tambor, instrumento musical, bardo, musica, totem, machado, criatura, guerreiro, animal, animais, animais,',
         observation: null,
+        options: null,
         image: '/img/catalog/vampire-pirates-and-dark-wood-beasts/minotaur-herds.webp'
     },
     {
@@ -5008,6 +5501,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.VAMPIRE_PIRATES_AND_DARK_WOOD_BEASTS,
         tag: 'besta, espinho, criatura, animal, animais, animais, monstro, chifre, cenário',
         observation: null,
+        options: null,
         image: '/img/catalog/vampire-pirates-and-dark-wood-beasts/spiky-beasts.webp'
     },
     {
@@ -5018,6 +5512,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.VAMPIRE_PIRATES_AND_DARK_WOOD_BEASTS,
         tag: 'vampiro, pirata, morto vivo, totem, madeira',
         observation: null,
+        options: null,
         image: '/img/catalog/vampire-pirates-and-dark-wood-beasts/vampire-admiral.webp'
     },
     {
@@ -5028,6 +5523,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.VAMPIRE_PIRATES_AND_DARK_WOOD_BEASTS,
         tag: 'caranguejo, marinho, criatura, monstro, oceano, animal, animais, animais, areia, mar',
         observation: null,
+        options: null,
         image: '/img/catalog/vampire-pirates-and-dark-wood-beasts/crabs.webp'
     },
     {
@@ -5038,6 +5534,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.VAMPIRE_PIRATES_AND_DARK_WOOD_BEASTS,
         tag: 'zumbi, pirata, morto vivo, tripulação, instrumento musical, musica, sanfona, bandeira, espada',
         observation: 'Na compra de no mínimo 3 o preço diminui para R$15',
+        options: null,
         image: '/img/catalog/vampire-pirates-and-dark-wood-beasts/zombie-pirates.webp'
     },
     {
@@ -5048,6 +5545,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.VAMPIRE_PIRATES_AND_DARK_WOOD_BEASTS,
         tag: 'zumbi, pirata, morto vivo, tripulação, madeira, tronco, canário, item, itens',
         observation: null,
+        options: null,
         image: '/img/catalog/vampire-pirates-and-dark-wood-beasts/zombie-pirate.webp'
     },
     {
@@ -5058,6 +5556,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.VAMPIRE_PIRATES_AND_DARK_WOOD_BEASTS,
         tag: 'lagostim, marinho, criatura, monstro, oceano, areia, cenário, animal, animais, mar',
         observation: null,
+        options: null,
         image: '/img/catalog/vampire-pirates-and-dark-wood-beasts/crayfish.webp'
     },
     {
@@ -5068,6 +5567,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.VAMPIRE_PIRATES_AND_DARK_WOOD_BEASTS,
         tag: 'terror, marinho, kraken, monstro, oceano, mar, barco, pirata, morto vivo, madeira, lagostim, criatura, areia',
         observation: null,
+        options: null,
         image: '/img/catalog/vampire-pirates-and-dark-wood-beasts/sea-terror.webp'
     },
     {
@@ -5078,6 +5578,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.VAMPIRE_PIRATES_AND_DARK_WOOD_BEASTS,
         tag: 'infectado, esporo, inseto, criatura, monstro, fungo, animal, animais, animais',
         observation: null,
+        options: null,
         image: '/img/catalog/vampire-pirates-and-dark-wood-beasts/infected-umberhulk.webp'
     },
     {
@@ -5088,6 +5589,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.VAMPIRE_PIRATES_AND_DARK_WOOD_BEASTS,
         tag: 'gnoll, fungo, esporo, criatura, monstro, animal, animais, animais, espada, machado, infectado',
         observation: null,
+        options: null,
         image: '/img/catalog/vampire-pirates-and-dark-wood-beasts/spore-gnolls.webp'
     },
 
@@ -5100,6 +5602,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.VAMPIRES,
         tag: 'doutor, medico, vampiro, medicina, careca, homem, masculino',
         observation: null,
+        options: null,
         image: '/img/catalog/vampires/doctor.webp'
     },
     {
@@ -5110,6 +5613,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.VAMPIRES,
         tag: 'vampiro, homem, masculino, longo, sem camiseta, voador, levitação, levitar, taça',
         observation: null,
+        options: null,
         image: '/img/catalog/vampires/hesus.webp'
     },
     {
@@ -5120,6 +5624,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.VAMPIRES,
         tag: 'vampiro, caçador, guerreiro, armadura, espada, tumba, homem, masculino',
         observation: null,
+        options: null,
         image: '/img/catalog/vampires/kruger.webp'
     },
     {
@@ -5130,6 +5635,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.VAMPIRES,
         tag: 'necromante, magia, magico, mago, morto vivo, invocador, invocação, vampiro',
         observation: null,
+        options: null,
         image: '/img/catalog/vampires/necromancer.webp'
     },
     {
@@ -5140,6 +5646,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.VAMPIRES,
         tag: 'príncipe, vampiro, nobre, guerreiro, armadura, machado, montaria, cavalo, mascara',
         observation: null,
+        options: null,
         image: '/img/catalog/vampires/prince.webp'
     },
     {
@@ -5150,6 +5657,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.VAMPIRES,
         tag: 'morcego, voador, criatura, vampiro, animal, animais, voador, asa, tumba, monstro, cenário',
         observation: null,
+        options: null,
         image: '/img/catalog/vampires/giant-bats.webp'
     },
     {
@@ -5160,6 +5668,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.VAMPIRES,
         tag: 'ceifador, monstro, criatura, vampiro, tumba',
         observation: null,
+        options: null,
         image: '/img/catalog/vampires/flesh-reaper.webp'
     },
     {
@@ -5170,6 +5679,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.VAMPIRES,
         tag: 'vampiro, vampira, mulher, feminino, asa, espada, cabeça, morcego, morcega',
         observation: null,
+        options: null,
         image: '/img/catalog/vampires/vampire.webp'
     },
     {
@@ -5180,6 +5690,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.VAMPIRES,
         tag: 'zumbi, morto vivo, espada, soldado, machado',
         observation: 'Na compra de no mínimo 3 o preço diminui para R$13',
+        options: null,
         image: '/img/catalog/vampires/zombies.webp'
     },
     {
@@ -5190,6 +5701,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.VAMPIRES,
         tag: 'carroça, veículo, cenário, vampiro, animal, animais, item, itens, morto vivo, presos, doutor, medico, montaria, criatura, monstro',
         observation: null,
+        options: null,
         image: '/img/catalog/vampires/wagon.webp'
     },
     
@@ -5202,6 +5714,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.WARRIORS_AND_GNOMES,
         tag: 'gnomo, ilusionista, magia, magico, mago, passaros, maleta, coelho, pomba',
         observation: null,
+        options: null,
         image: '/img/catalog/warriors-and-gnomes-v1/gnome-illusionist.webp'
     },
     {
@@ -5212,6 +5725,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.WARRIORS_AND_GNOMES,
         tag: 'nórdico, druida, homem, masculino, mascara, cajado',
         observation: null,
+        options: null,
         image: '/img/catalog/warriors-and-gnomes-v1/norse-druid.webp'
     },
     {
@@ -5222,6 +5736,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.WARRIORS_AND_GNOMES,
         tag: 'gnomo, infantaria, lança, soldado, guerreiro, bardo, lança, sanfona, bandeira, homem, masculino, musica, insturmneto musical',
         observation: 'Na compra de no mínimo 3 o preço diminui para R$16',
+        options: null,
         image: '/img/catalog/warriors-and-gnomes-v1/gnomes-infantry-spears.webp'
     },
     {
@@ -5232,6 +5747,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.WARRIORS_AND_GNOMES,
         tag: 'gnomo, gnoma, infantaria, pistoleiro, pistoleira, arma, fogo, guerreiro, soldado, homem, masculino, feminino, mulher, bardo, mago, livro, pistola, rifle, sanfona, musica, insturmneto musical',
         observation: 'Na compra de no mínimo 3 o preço diminui para R$16',
+        options: null,
         image: '/img/catalog/warriors-and-gnomes-v1/gnomes-infantry-gunners-1.webp'
     },
     {
@@ -5242,6 +5758,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.WARRIORS_AND_GNOMES,
         tag: 'mecha, exoesqueleto, gnomo, mecânico, armadura, robô, automato, metal, metalico, peça de robo, soldado, guerreiro',
         observation: null,
+        options: null,
         image: '/img/catalog/warriors-and-gnomes-v1/gnomes-mech-1.webp'
     },
     {
@@ -5252,6 +5769,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.WARRIORS_AND_GNOMES,
         tag: 'nórdico, guerreiro, escudo, soldado, armadura, espinho, espada, chifre, berrante. homem, masculino',
         observation: 'Na compra de no mínimo 3 o preço diminui para R$22',
+        options: null,
         image: '/img/catalog/warriors-and-gnomes-v1/norse-warriors-1.webp'
     },
     {
@@ -5262,6 +5780,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.WARRIORS_AND_GNOMES,
         tag: 'nórdico, guerreiro, escudo, soldado, armadura, espinho, espada, chifre, berrante. homem, masculino',
         observation: 'Na compra de no mínimo 3 o preço diminui para R$22',
+        options: null,
         image: '/img/catalog/warriors-and-gnomes-v1/norse-warriors-shield.webp'
     },
     {
@@ -5272,6 +5791,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.WARRIORS_AND_GNOMES,
         tag: 'nórdico, cavaleiro, montaria, cavalo, soldado, armadura, espada guerreiro, escuto, tambor, insturmenot musical, lança',
         observation: 'Na compra de no mínimo 2 o preço diminui para R$52',
+        options: null,
         image: '/img/catalog/warriors-and-gnomes-v1/norse-knights-1.webp'
     },
     {
@@ -5282,6 +5802,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.WARRIORS_AND_GNOMES,
         tag: 'dragão, nórdico, criatura, monstro, montaria, animal, animais, guerreiro, armadura',
         observation: null,
+        options: null,
         image: '/img/catalog/warriors-and-gnomes-v1/norse-ancient-dragon.webp'
     },
     {
@@ -5292,6 +5813,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.WARRIORS_AND_GNOMES,
         tag: 'lorde, montaria, guerreiro, animal, animais, animais, criatura, armadura, escudo',
         observation: null,
+        options: null,
         image: '/img/catalog/warriors-and-gnomes-v1/lord-daemonic-mount.webp'
     },
     {
@@ -5302,6 +5824,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.WARRIORS_AND_GNOMES,
         tag: 'druida, alce, montaria, animal, animais, animais',
         observation: null,
+        options: null,
         image: '/img/catalog/warriors-and-gnomes-v1/druid-moose.webp'
     },
     {
@@ -5312,6 +5835,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.WARRIORS_AND_GNOMES,
         tag: 'verme, subterrâneo, monstro, criatura, areia, animal, animais, animais, caverna, tunel',
         observation: 'Mais partes do corpo podem ser adicionadas por R$15',
+        options: null,
         image: '/img/catalog/warriors-and-gnomes-v1/purple-wurm.webp'
     },
     {
@@ -5322,6 +5846,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.WARRIORS_AND_GNOMES,
         tag: 'esqueleto, soldado, morto vivo, arqueiro, guerreiro, patrulheiro, besta, arco, espada, cajado, machado, escudo',
         observation: null,
+        options: null,
         image: '/img/catalog/warriors-and-gnomes-v1/skeleton-soldiers.webp'
     },
 
@@ -5334,6 +5859,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.WARRIORS_AND_GNOMES,
         tag: 'mago, magia, magico, guerreiro, cajado, mascara, chifre, armadura, homem, masculino',
         observation: null,
+        options: null,
         image: '/img/catalog/warriors-and-gnomes-v2/warmage.webp'
     },
     {
@@ -5344,6 +5870,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.WARRIORS_AND_GNOMES,
         tag: 'guerreiro, comandante, nórdico, machado, armadura, homem, masculino',
         observation: null,
+        options: null,
         image: '/img/catalog/warriors-and-gnomes-v2/warrior-chiftain.webp'
     },
     {
@@ -5354,6 +5881,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.WARRIORS_AND_GNOMES,
         tag: 'cães, cão, cachorro, , cachorro, animal, animais, animais',
         observation: 'Na compra de no mínimo 3 o preço diminui para R$16',
+        options: null,
         image: '/img/catalog/warriors-and-gnomes-v2/good-boys.webp'
     },
     {
@@ -5364,6 +5892,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.WARRIORS_AND_GNOMES,
         tag: 'gnomo, gnoma, infantaria, pistoleiro, pistoleira, arma, pistola, arma de fogo, rifle, montaria, cães, cão, cachorro, , cachorro, animal, animais, animais, homem, masculino, feminino, mulher',
         observation: 'Na compra de no mínimo 2 o preço diminui para R$22',
+        options: null,
         image: '/img/catalog/warriors-and-gnomes-v2/gnomes-infantry-gunners-2.webp'
     },
     {
@@ -5374,6 +5903,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.WARRIORS_AND_GNOMES,
         tag: 'gnomo, gnoma, infantaria, montaria, cães, cão, cachorro, , cachorro, animal, animais, animais, lança, pistoleiro, pistoleira, arma, pistola, arma de fogo, rifle, homem, masculino, feminino, mulher',
         observation: 'Na compra de no mínimo 3 o preço diminui para R$22',
+        options: null,
         image: '/img/catalog/warriors-and-gnomes-v2/gnomes-infantry-2.webp'
     },
     {
@@ -5384,6 +5914,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.WARRIORS_AND_GNOMES,
         tag: 'bombas, mecanico, automato, item, itens, cenário',
         observation: null,
+        options: null,
         image: '/img/catalog/warriors-and-gnomes-v2/bombs.webp'
     },
     {
@@ -5394,6 +5925,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.WARRIORS_AND_GNOMES,
         tag: 'balão, aéreo, transporte, cenário, item, itens, gnomo, arma de fogo, sniper, voador, voo, céu',
         observation: null,
+        options: null,
         image: '/img/catalog/warriors-and-gnomes-v2/ballon-a.webp'
     },
     {
@@ -5404,6 +5936,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.WARRIORS_AND_GNOMES,
         tag: 'balão, aéreo, transporte, cenário, item, itens, gnomo, bomba, voador, voo, céu',
         observation: null,
+        options: null,
         image: '/img/catalog/warriors-and-gnomes-v2/ballon-b.webp'
     },
     {
@@ -5414,6 +5947,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.WARRIORS_AND_GNOMES,
         tag: 'gnomo, robô, máquina, mecânico, mecha, metal, armadura, exoesqueleto, arma de fogo, bomba, missel, metralhadora',
         observation: null,
+        options: null,
         image: '/img/catalog/warriors-and-gnomes-v2/gnomech.webp'
     },
     {
@@ -5424,6 +5958,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.WARRIORS_AND_GNOMES,
         tag: 'nórdico, cavaleiro, montaria, cavalo, animal, animais, animais, guerreiro, armadura, espada, machado, soldado',
         observation: 'Na compra de no mínimo 2 o preço diminui para R$52',
+        options: null,
         image: '/img/catalog/warriors-and-gnomes-v2/norse-knights-2.webp'
     },
     {
@@ -5434,6 +5969,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.WARRIORS_AND_GNOMES,
         tag: 'nórdico, guerreiro, armadura, espada, machado, soldado',
         observation: 'Na compra de no mínimo 3 o preço diminui para R$22',
+        options: null,
         image: '/img/catalog/warriors-and-gnomes-v2/norse-knights-3.webp'
     },
     {
@@ -5444,6 +5980,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.WARRIORS_AND_GNOMES,
         tag: 'nórdico, guerreiro, armadura, espada, machado, soldado, tambor, bardo, instrumenro musical',
         observation: 'Na compra de no mínimo 3 o preço diminui para R$22',
+        options: null,
         image: '/img/catalog/warriors-and-gnomes-v2/norse-knights-4.webp'
     },
     {
@@ -5454,6 +5991,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.WARRIORS_AND_GNOMES,
         tag: 'carruagem, carroça, veículo, guerreiro, nordico, alce, animal, animais',
         observation: null,
+        options: null,
         image: '/img/catalog/warriors-and-gnomes-v2/chariot.webp'
     },
     {
@@ -5464,6 +6002,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.WARRIORS_AND_GNOMES,
         tag: 'cenário, item, itens, gnomo, arma, arma de fogo, fogo, guerreiro, veiculo, montaria, trem',
         observation: null,
+        options: null,
         image: '/img/catalog/warriors-and-gnomes-v2/chocho.webp'
     },
     {
@@ -5474,6 +6013,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.WARRIORS_AND_GNOMES,
         tag: 'aranha, teia, inseto, animal, animais, monstro, criatura, aracnídeo, aracnídea',
         observation: null,
+        options: null,
         image: '/img/catalog/warriors-and-gnomes-v2/phase-spider.webp'
     },
     {
@@ -5484,6 +6024,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.WARRIORS_AND_GNOMES,
         tag: 'monstro, subterrâneo, criatura, inseto, animal, animais, licantropo, licantropia, formiga',
         observation: null,
+        options: null,
         image: '/img/catalog/warriors-and-gnomes-v2/umber-hulk.webp'
     },
 
@@ -5496,6 +6037,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.WARRIORS_AND_GNOMES,
         tag: 'gnomo, gnoma, alquimista, alquimia, mascara, poções, poção, explosivos, fumaça, mulher, feminino, maquina',
         observation: null,
+        options: null,
         image: '/img/catalog/warriors-and-gnomes-v3/gnome-alchemist.webp'
     },
     {
@@ -5506,6 +6048,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.WARRIORS_AND_GNOMES,
         tag: 'gnomo, arma elétrica, engenhoca, arma, metralhadora, fogo, eletrico, eletrica, maquina, homem, masculino',
         observation: null,
+        options: null,
         image: '/img/catalog/warriors-and-gnomes-v3/gnome-big-zapp.webp'
     },
     {
@@ -5516,6 +6059,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.WARRIORS_AND_GNOMES,
         tag: 'guerreiro, guerreira, mulher, feminino, homem, masculino, gnomo, suporte aéreo, avião, engenhoca, maquina, asa, céu, voo, voar, rede, arma, pistola, fogo, jetpack, corda',
         observation: null,
+        options: null,
         image: '/img/catalog/warriors-and-gnomes-v3/gnome-air-support.webp'
     },
     {
@@ -5526,6 +6070,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.WARRIORS_AND_GNOMES,
         tag: 'guerreiro, guerreira, mulher, feminino, homem, masculino, gnomo, gnoma, zapper, engenhoca, elétrico, arma, maquina, pistola, fogo, arma de fogo, lança chamas, eletrico',
         observation: 'Na compra de no mínimo 3 o preço diminui para R$16',
+        options: null,
         image: '/img/catalog/warriors-and-gnomes-v3/gnome-zappers.webp'
     },
     {
@@ -5536,6 +6081,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.WARRIORS_AND_GNOMES,
         tag: 'gnomo, moto, veiculo, montaria, engenhoca, maquina, roda, bicicleta',
         observation: null,
+        options: null,
         image: '/img/catalog/warriors-and-gnomes-v3/gnome-biker.webp'
     },
     {
@@ -5546,6 +6092,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.WARRIORS_AND_GNOMES,
         tag: 'guerreiro, carruagem, carroça, cenário, item, itens, nordico, homem, masculino, montaria, cavalo, animal',
         observation: null,
+        options: null,
         image: '/img/catalog/warriors-and-gnomes-v3/warriors-chariots.webp'
     },
     {
@@ -5556,6 +6103,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.WARRIORS_AND_GNOMES,
         tag: 'centauro, criatura, monstro, chifre, mitologico, mitologica',
         observation: null,
+        options: null,
         image: '/img/catalog/warriors-and-gnomes-v3/forsaken-1.webp'
     },
     {
@@ -5566,6 +6114,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.WARRIORS_AND_GNOMES,
         tag: 'cão, cachorro,  de guerra, cão, cachorro, , cães, animal, animais, demonio',
         observation: 'Na compra de no mínimo 3 o preço diminui para R$17',
+        options: null,
         image: '/img/catalog/warriors-and-gnomes-v3/warhound.webp'
     },
     {
@@ -5576,6 +6125,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.WARRIORS_AND_GNOMES,
         tag: 'maldição, monstro, criatura, lobo, lobisomem',
         observation: null,
+        options: null,
         image: '/img/catalog/warriors-and-gnomes-v3/forsaken-2.webp'
     },
     {
@@ -5586,6 +6136,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.WARRIORS_AND_GNOMES,
         tag: 'gigante, guerreiro, demonio, criatura, monstro, asa, voador, chifre',
         observation: null,
+        options: null,
         image: '/img/catalog/warriors-and-gnomes-v3/harold.webp'
     },
     {
@@ -5596,6 +6147,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.WARRIORS_AND_GNOMES,
         tag: 'homem lagarto, lagarto, reptiliano, reptil, animal, animais, licantropo, licantropia, guerreiro, cajado, xamã, lança',
         observation: 'Na compra de no mínimo 3 o preço diminui para R$22',
+        options: null,
         image: '/img/catalog/warriors-and-gnomes-v3/lizardfolk.webp'
     },
 
@@ -5608,6 +6160,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.WARRIORS_AND_WIZARDS,
         tag: 'homem, masculino, mutante, guerreiro, deformado, duas cabeças, criatura, monstro',
         observation: 'Na compra de no mínimo 3 o preço diminui para R$16',
+        options: null,
         image: '/img/catalog/warriors-and-wizards/mutated-warriors.webp'
     },
     {
@@ -5618,6 +6171,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.WARRIORS_AND_WIZARDS,
         tag: 'rinoceronte, besta, criatura, monstro, animal, animais, cenário, item, itens, chifre',
         observation: null,
+        options: null,
         image: '/img/catalog/warriors-and-wizards/rhino-beasts.webp'
     },
     {
@@ -5628,6 +6182,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.WARRIORS_AND_WIZARDS,
         tag: 'homem, masculino, cavaleiro, rinoceronte, montaria, animal, animais, guerreiro, armadura, bandeira, totem, berrante, escudo',
         observation: null,
+        options: null,
         image: '/img/catalog/warriors-and-wizards/rhino-riders.webp'
     },
     {
@@ -5638,6 +6193,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.WARRIORS_AND_WIZARDS,
         tag: 'homem, masculino, feiticeiro, xamã, mago, druida, cajado, chifre, montaria, criatura, monstro, animal, animais',
         observation: null,
+        options: null,
         image: '/img/catalog/warriors-and-wizards/wild-sorcerer.webp'
     },
     {
@@ -5648,6 +6204,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.WARRIORS_AND_WIZARDS,
         tag: 'mulher, feminino, homem, masculino, aprendiz, mago, magia, magico, magica, escola de magia, feiticeiro, feiticeira, varinha magica, varinha, livro, adaga',
         observation: 'Na compra de no mínimo 3 o preço diminui para R$15',
+        options: null,
         image: '/img/catalog/warriors-and-wizards/apprentices.webp'
     },
     {
@@ -5658,6 +6215,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.WARRIORS_AND_WIZARDS,
         tag: 'golem, livro, criatura, mágica, magico, monstro, biblioteca, escola de magia',
         observation: null,
+        options: null,
         image: '/img/catalog/warriors-and-wizards/book-golems.webp'
     },
     {
@@ -5668,6 +6226,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.WARRIORS_AND_WIZARDS,
         tag: 'golem, elemental, magia, criatura, mágica, magico, monstro, pedra, fogo, agua, terra',
         observation: null,
+        options: null,
         image: '/img/catalog/warriors-and-wizards/elemental-golem.webp'
     },
     {
@@ -5678,6 +6237,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.WARRIORS_AND_WIZARDS,
         tag: 'escola de magia, mulher, feminino, homem, masculino, varinha magica, varinha, livro, hipogrifo, grifo, passaro, voo, voador, montaria, magico, magica, mago, maga, criatura, voador, mitologia',
         observation: null,
+        options: null,
         image: '/img/catalog/warriors-and-wizards/hippogryphs.webp'
     },
     {
@@ -5688,6 +6248,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.WARRIORS_AND_WIZARDS,
         tag: 'bibliotecário, biblioteca, livro, mago, criatura, escola de magia, licantropo, licantropia',
         observation: null,
+        options: null,
         image: '/img/catalog/warriors-and-wizards/librarian.webp'
     },
     {
@@ -5698,6 +6259,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.WARRIORS_AND_WIZARDS,
         tag: 'escola de magia, arqui mago, mago, magia, magico, homem, masculino, cajado, poder, raio',
         observation: null,
+        options: null,
         image: '/img/catalog/warriors-and-wizards/archmage.webp'
     },
     {
@@ -5708,6 +6270,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.WARRIORS_AND_WIZARDS,
         tag: 'montaria, escola de magia, elemental, gigante, criatura, magia, magico, magica, monstro, arqui mago, mago, magia, magico, homem, masculino, cajado, poder, raio, fogo, agua, terra, pedra',
         observation: null,
+        options: null,
         image: '/img/catalog/warriors-and-wizards/elemental-walker.webp'
     },
     {
@@ -5718,6 +6281,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.WARRIORS_AND_WIZARDS,
         tag: 'ogro, orc, monstro, bruto, criatura',
         observation: null,
+        options: null,
         image: '/img/catalog/warriors-and-wizards/ogre.webp'
     },
     {
@@ -5728,6 +6292,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.WARRIORS_AND_WIZARDS,
         tag: 'lobisomem, lobo, maldição, animal, animais, licantropo, licantropia, escola de magia',
         observation: null,
+        options: null,
         image: '/img/catalog/warriors-and-wizards/werewolves.webp'
     },
 
@@ -5740,6 +6305,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.WILDWOOD_SANCTUM,
         tag: 'arqui mago, magico, mago, magia, homem, masculino, coruja, animal, animais, cajado, escola de magia',
         observation: null,
+        options: null,
         image: '/img/catalog/wildwood-sanctum/archmage-camelothar.webp'
     },
     {
@@ -5750,6 +6316,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.WILDWOOD_SANCTUM,
         tag: 'praetor, montaria, guardião, guerreiro, animal, animais, cavalo, armadura, chifre, espada, homem, masculino',
         observation: null,
+        options: null,
         image: '/img/catalog/wildwood-sanctum/praetor-naturalus-mounted.webp'
     },
     {
@@ -5760,6 +6327,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.WILDWOOD_SANCTUM,
         tag: 'praetor, guardião, guerreiro, armadura, chifre, espada, homem, masculino',
         observation: null,
+        options: null,
         image: '/img/catalog/wildwood-sanctum/praetor-naturalus.webp'
     },
     {
@@ -5770,6 +6338,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.WILDWOOD_SANCTUM,
         tag: 'cabeça de porco, criatura, monstro, machado, homem, masculino, guerreiro',
         observation: null,
+        options: null,
         image: '/img/catalog/wildwood-sanctum/hoggs-the-rampager.webp'
     },
     {
@@ -5780,6 +6349,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.WILDWOOD_SANCTUM,
         tag: 'montaria, cavalo, animal, animais, mulher, feminino, armadura, bandeira, guerreiro, guerreira, rainha, princesa, coroa',
         observation: null,
+        options: null,
         image: '/img/catalog/wildwood-sanctum/sanctum-kathrina-bright-mounted.webp'
     },
     {
@@ -5790,6 +6360,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.WILDWOOD_SANCTUM,
         tag: 'mulher, feminino, armadura, bandeira, guerreiro, guerreira, rainha, princesa, coroa',
         observation: null,
+        options: null,
         image: '/img/catalog/wildwood-sanctum/sanctum-kathrina-bright.webp'
     },
     {
@@ -5800,6 +6371,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.WILDWOOD_SANCTUM,
         tag: 'sacerdotisa, sacerdote, mago, maga, magia, magica, magico, invocação, mulher, feminino, poder, espada',
         observation: null,
+        options: null,
         image: '/img/catalog/wildwood-sanctum/sanctum-lady-liliana-confluence-of-spheres.webp'
     },
     {
@@ -5810,6 +6382,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.WILDWOOD_SANCTUM,
         tag: 'guerreiro, soldado, armadura, homem, masculino, espada, escudo',
         observation: null,
+        options: null,
         image: '/img/catalog/wildwood-sanctum/warrior-1.webp'
     },
     {
@@ -5820,6 +6393,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.WILDWOOD_SANCTUM,
         tag: 'guerreiro, soldado, armadura, homem, masculino, maça, escudo',
         observation: null,
+        options: null,
         image: '/img/catalog/wildwood-sanctum/warrior-2.webp'
     },
     {
@@ -5830,6 +6404,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.WILDWOOD_SANCTUM,
         tag: 'guerreiro, soldado, armadura, homem, masculino, espada, escudo',
         observation: null,
+        options: null,
         image: '/img/catalog/wildwood-sanctum/warrior-3.webp'
     },
     {
@@ -5840,6 +6415,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.WILDWOOD_SANCTUM,
         tag: 'guerreiro, soldado, armadura, homem, masculino, espada, escudo, mascara, lobo',
         observation: null,
+        options: null,
         image: '/img/catalog/wildwood-sanctum/warrior-4.webp'
     },
     {
@@ -5850,6 +6426,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.WILDWOOD_SANCTUM,
         tag: 'cavaleiro, guerreiro, soldado, armadura, homem, masculino, lança, escudo, montaria, cavalo, animal, animais',
         observation: null,
+        options: null,
         image: '/img/catalog/wildwood-sanctum/knight-1.webp'
     },
     {
@@ -5860,6 +6437,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.WILDWOOD_SANCTUM,
         tag: 'cavaleiro, guerreiro, soldado, armadura, homem, masculino, lança, lança de justa, escudo, montaria, cavalo, animal, animais',
         observation: null,
+        options: null,
         image: '/img/catalog/wildwood-sanctum/knight-2.webp'
     },
     {
@@ -5870,6 +6448,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.WILDWOOD_SANCTUM,
         tag: 'feiticeiro, aprendiz, magia, mago, magico, homem, masculino, livro, humano, escola de magia',
         observation: null,
+        options: null,
         image: '/img/catalog/wildwood-sanctum/sorcero-the-adept.webp'
     },
     {
@@ -5880,6 +6459,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.WILDWOOD_SANCTUM,
         tag: 'bruxa, maldição, magia, magica, mulher, feminino, passaro, cajado, arvore, tronco, mascara, chifre, cabeça de osso',
         observation: null,
+        options: null,
         image: '/img/catalog/wildwood-sanctum/suri-the-maleficent-omen.webp'
     },
     {
@@ -5890,6 +6470,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.WILDWOOD_SANCTUM,
         tag: 'armadura, machado, guerreiro, soldado, homem, masculino',
         observation: null,
+        options: null,
         image: '/img/catalog/wildwood-sanctum/terminus-1.webp'
     },
     {
@@ -5900,6 +6481,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.WILDWOOD_SANCTUM,
         tag: 'dragão, criatura, monstro, asa, voador, natureza, chifre',
         observation: null,
+        options: null,
         image: '/img/catalog/wildwood-sanctum/nature-dragon.webp'
     },
     
@@ -5912,6 +6494,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.OTHERS,
         tag: 'guerreiro, bárbaro, humano, homem, masculino',
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
+        options: null,
         image: '/img/catalog/others-v1/kairn-warmonger.webp',
     },
     {
@@ -5922,6 +6505,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.OTHERS,
         tag: 'feminino, mulher, maga, orbe, magia, magica, mago, fogo, bola de fogo, algemada, presa',
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
+        options: null,
         image: '/img/catalog/others-v1/lavinia-lastfall.webp',
     },
     {
@@ -5932,6 +6516,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.OTHERS,
         tag: 'anão, anões, guerreiro, homem, masculino, machado, cajado, armadura',
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
+        options: null,
         image: '/img/catalog/others-v1/dwarf-veteran.webp',
     },
     {
@@ -5942,6 +6527,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.OTHERS,
         tag: 'cidade, guarda, sargento, soldado, armadura, guerreiro, homem, masculino, espada',
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
+        options: null,
         image: '/img/catalog/others-v1/city-watch-sergeant.webp',
     },
     {
@@ -5952,6 +6538,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.OTHERS,
         tag: 'leão, animal, animais, licantropo, licantropia, lionfolkm machado, guerreiro, armadura, homem, masculino',
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
+        options: null,
         image: '/img/catalog/others-v1/lion-champion.webp',
     },
     {
@@ -5962,6 +6549,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.OTHERS,
         tag: 'cavaleiro, morto vivo, berserker, anão, anões, armadura, homem, masculino',
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
+        options: null,
         image: '/img/catalog/others-v1/deathknight-berserker.webp',
     },
     {
@@ -5972,6 +6560,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.OTHERS,
         tag: 'freira, ordem religiosa, magia, maga, mago, magica, magico, igreja, cajado, mulher, feminino',
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
+        options: null,
         image: '/img/catalog/others-v1/superior-nun.webp',
     },
     {
@@ -5982,6 +6571,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.OTHERS,
         tag: 'abissal, tritão, lorde, marinho, criatura, monstro, oceano, mar, animal, animais, tridente',
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
+        options: null,
         image: '/img/catalog/others-v1/abyssal-merfolks-lord.webp',
     },
     {
@@ -5992,6 +6582,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.OTHERS,
         tag: 'campeão, armadura, guerreiro, metal, homem, masculino',
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
+        options: null,
         image: '/img/catalog/others-v1/armored-champion.webp',
     },
     {
@@ -6002,6 +6593,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.OTHERS,
         tag: 'guerreiro, lutador, humano, homem, masculino, arma de duas mãos, espada',
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
+        options: null,
         image: '/img/catalog/others-v1/boyka.webp',
     },
     {
@@ -6012,6 +6604,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.OTHERS,
         tag: 'general, império, samurai, japão, homem, masculino, guerreiro',
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
+        options: null,
         image: '/img/catalog/others-v1/dragon-empire-general.webp',
     },
     {
@@ -6022,6 +6615,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.OTHERS,
         tag: 'feiticeira, elfa, feminino, mulher, taça, aranha, magia, magica, maga, mago, bruxa',
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
+        options: null,
         image: '/img/catalog/others-v1/everdark-elves-witch.webp',
     },
     {
@@ -6032,6 +6626,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.OTHERS,
         tag: 'serpente, guerreiro, licantropo, licantropia, dinossauro, criatura, monstro',
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
+        options: null,
         image: '/img/catalog/others-v1/serpent-guard.webp',
     },
     {
@@ -6042,6 +6637,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.OTHERS,
         tag: 'vampiro, morcego, homem, masculino, animal, animais, voador',
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
+        options: null,
         image: '/img/catalog/others-v1/vampire.webp',
     },
     {
@@ -6052,6 +6648,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.OTHERS,
         tag: 'guerreiro, anão, anões, homem, masculino, espada',
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
+        options: null,
         image: '/img/catalog/others-v1/highlander.webp',
     },
     {
@@ -6062,6 +6659,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.OTHERS,
         tag: 'profeta, mago, magico, magia, sábio, sacerdote, sacertotisa, criatura, monstro, cobra, incovador, serpente, homem, masculino',
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
+        options: null,
         image: '/img/catalog/others-v1/prophet.webp',
     },
     {
@@ -6072,6 +6670,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.OTHERS,
         tag: 'sniper, arma de fogo, arma, homem, masculino, patrulheiro',
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
+        options: null,
         image: '/img/catalog/others-v1/scarlet-crusade-sniper.webp',
     },
     {
@@ -6082,6 +6681,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.OTHERS,
         tag: 'nobre, senhora, dama, rainha, maga, magia, magica, feiticeira, cajado, mulher, feminino',
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
+        options: null,
         image: '/img/catalog/others-v1/marquize.webp',
     },
     {
@@ -6092,6 +6692,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.OTHERS,
         tag: 'guerreiro, criatura, monstro, licantropo, licantropia, animal, animais, veneno',
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
+        options: null,
         image: '/img/catalog/others-v1/tanek-needletail.webp',
     },
     {
@@ -6102,6 +6703,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.OTHERS,
         tag: 'armadura, guerreiro, homem, masculino, automato, mecanico, metal, engenhoca',
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
+        options: null,
         image: '/img/catalog/others-v1/war-lord.webp',
     },
     {
@@ -6112,6 +6714,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.OTHERS,
         tag: 'vermin, mago, magia, magico, feiticeiro, criatura, lesma, montaria, homem, masculino, cajado',
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
+        options: null,
         image: '/img/catalog/others-v1/verminspeaker.webp',
     },
     {
@@ -6122,6 +6725,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.OTHERS,
         tag: 'careca, mulher, feminino, passaro, animal, animais, coruja, voador, asa, monge, cajado',
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
+        options: null,
         image: '/img/catalog/others-v1/wakaturu-spirit-walker.webp',
     },
     {
@@ -6132,6 +6736,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.OTHERS,
         tag: 'monge, humano, pedra, homem, masculino, careca',
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
+        options: null,
         image: '/img/catalog/others-v1/human-monk.webp',
     },
     {
@@ -6142,6 +6747,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.OTHERS,
         tag: 'bárbaro, humano, masculino, homem, machado',
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
+        options: null,
         image: '/img/catalog/others-v1/human-barbarian-a.webp',
     },
     {
@@ -6152,6 +6758,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.OTHERS,
         tag: 'bárbaro, humano, masculino, homem, machado, escudo, dupla, anão, anões',
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
+        options: null,
         image: '/img/catalog/others-v1/human-barbarian-b.webp',
     },
 
@@ -6164,6 +6771,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.OTHERS,
         tag: 'elfo, guerreiro, armadura, homem, masculino',
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
+        options: null,
         image: '/img/catalog/others-v2/elesar-painsinger.webp',
     },
     {
@@ -6174,6 +6782,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.OTHERS,
         tag: 'caçadora, elfa, elfo, arqueira, arco, arqueiro, feminino, mulher, lobo, animal, animais',
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
+        options: null,
         image: '/img/catalog/others-v2/elves-huntress.webp',
     },
     {
@@ -6184,6 +6793,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.OTHERS,
         tag: 'humano, guerreiro, armadura, chifre, escudo, homem, masculino',
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
+        options: null,
         image: '/img/catalog/others-v2/garold-allfather.webp',
     },
     {
@@ -6194,6 +6804,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.OTHERS,
         tag: 'feminino, mulher, elfa, elfo, magia, magico, maga, mago, cajado',
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
+        options: null,
         image: '/img/catalog/others-v2/linessa-waterfront.webp',
     },
     {
@@ -6204,6 +6815,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.OTHERS,
         tag: 'leão, leoa, guerreiro, humano, homem, masculino, machado, mascara',
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
+        options: null,
         image: '/img/catalog/others-v2/lion-whiteclaw.webp',
     },
     {
@@ -6214,6 +6826,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.OTHERS,
         tag: 'elfo, elfa, mulher, feminino, montaria, alce, animal, animais, arco, arqueira, arqueiro',
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
+        options: null,
         image: '/img/catalog/others-v2/paradash-sundrop.webp',
     },
     {
@@ -6224,6 +6837,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.OTHERS,
         tag: 'elfo, guerreiro, patrulheiro, espada, mascara, chifre, magico, mago, magica, homem, masculino',
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
+        options: null,
         image: '/img/catalog/others-v2/thalion-leafguard.webp',
     },
     {
@@ -6234,6 +6848,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.OTHERS,
         tag: 'guerreiro, criatura, monstro, javali, animal, animais, lança, licantropo, licantropia',
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
+        options: null,
         image: '/img/catalog/others-v2/brother-tusk.webp',
     },
     {
@@ -6244,6 +6859,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.OTHERS,
         tag: 'animal, animais, coelho, aventureiro, licantropo, licantropia, criatura',
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
+        options: null,
         image: '/img/catalog/others-v2/bunnavy.webp',
     },
     {
@@ -6254,6 +6870,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.OTHERS,
         tag: 'animal, animais, coruja, xamã, cajado, criatura, monstro, licantropo, licantropia, passaro, voador',
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
+        options: null,
         image: '/img/catalog/others-v2/burwing.webp',
     },
     {
@@ -6264,6 +6881,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.OTHERS,
         tag: 'guerreiro, animal, animais, criatura, licantropo, licantropia, urso',
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
+        options: null,
         image: '/img/catalog/others-v2/volver.webp',
     },
     {
@@ -6274,6 +6892,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.OTHERS,
         tag: 'gnomo, ladino, homem, masculino, besta, adaga',
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
+        options: null,
         image: '/img/catalog/others-v2/gnome-rogue.webp',
     },
     {
@@ -6284,6 +6903,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.OTHERS,
         tag: 'goblin, criatura, arco, arqueiro, homem, masculino',
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
+        options: null,
         image: '/img/catalog/others-v2/goblin-a.webp',
     },
     {
@@ -6294,6 +6914,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.OTHERS,
         tag: 'goblin, criatura, facao, faca, escudo, homem, masculino',
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
+        options: null,
         image: '/img/catalog/others-v2/goblin-b.webp',
     },
     {
@@ -6304,6 +6925,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.OTHERS,
         tag: 'goblin, criatura, lança, escudo, homem, masculino, mascara',
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
+        options: null,
         image: '/img/catalog/others-v2/goblin-c.webp',
     },
     {
@@ -6314,6 +6936,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.OTHERS,
         tag: 'goblin, criatura, cajado, xamã, homem, masculino, mascara',
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
+        options: null,
         image: '/img/catalog/others-v2/goblin-d.webp',
     },
     {
@@ -6324,6 +6947,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.OTHERS,
         tag: 'goblin, criatura, homem, masculino, arco, arqueiro',
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
+        options: null,
         image: '/img/catalog/others-v2/goblin-f.webp',
     },
     {
@@ -6334,6 +6958,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.OTHERS,
         tag: 'goliath, golias, bárbaro, homem, masculino',
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
+        options: null,
         image: '/img/catalog/others-v2/golias-barbarian.webp',
     },
     {
@@ -6344,6 +6969,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.OTHERS,
         tag: 'humano, guerreiro, soldado, homem, masculino, espada',
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
+        options: null,
         image: '/img/catalog/others-v2/human-warrior.webp',
     },
     {
@@ -6354,6 +6980,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.OTHERS,
         tag: 'mimico, monstro, criatura, item, itens, cenário',
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
+        options: null,
         image: '/img/catalog/others-v2/mimic-a.webp',
     },
     {
@@ -6364,6 +6991,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.OTHERS,
         tag: 'anão, anões, druida, homem, masculino, animal, animais',
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
+        options: null,
         image: '/img/catalog/others-v2/dwarf-druid.webp',
     },
     {
@@ -6374,6 +7002,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.OTHERS,
         tag: 'elfo, patrulheiro, coruja, animais, animal, magia, magico, mago',
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
+        options: null,
         image: '/img/catalog/others-v2/elf-ranger.webp',
     },
     {
@@ -6384,6 +7013,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.OTHERS,
         tag: 'fantasma, espírito, assombração, morte, criatura, monstro',
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
+        options: null,
         image: '/img/catalog/others-v2/ghost-a.webp',
     },
     {
@@ -6394,6 +7024,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.OTHERS,
         tag: 'fantasma, espírito, assombração, morte, criatura, monstro',
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
+        options: null,
         image: '/img/catalog/others-v2/ghost-b.webp',
     },
     {
@@ -6404,6 +7035,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.OTHERS,
         tag: 'fantasma, espírito, assombração, morte, criatura, monstro',
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
+        options: null,
         image: '/img/catalog/others-v2/ghost-c.webp',
     },
     {
@@ -6414,6 +7046,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.OTHERS,
         tag: 'elfo, patrulheiro, homem, masculino, arco, arqueiro',
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
+        options: null,
         image: '/img/catalog/others-v2/elf-ranger-b.webp',
     },
 
@@ -6426,6 +7059,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.OTHERS,
         tag: 'mímico, baú, tesouro, monstro, armadilha, item, itens, criatura',
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
+        options: null,
         image: '/img/catalog/others-v3/mimic.webp',
     },
     {
@@ -6436,6 +7070,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.OTHERS,
         tag: 'invocação, monstro, demonio, criatura, chifre, machado, asa, voador',
         observation: null,
+        options: null,
         image: '/img/catalog/others-v3/fury.webp',
     },
     {
@@ -6446,6 +7081,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.OTHERS,
         tag: 'invocação, monstro, demonio, criatura, chifre',
         observation: null,
+        options: null,
         image: '/img/catalog/others-v3/filth-demon.webp',
     },
     {
@@ -6456,6 +7092,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.OTHERS,
         tag: 'dragão, animal, animais, voador, criatura, monstro',
         observation: null,
+        options: null,
         image: '/img/catalog/others-v3/blue-dragon-archangel.webp',
     },
     {
@@ -6466,6 +7103,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.OTHERS,
         tag: 'cubo, gelatinoso, armadilha, criatura, item, itens, cenário, gelatina',
         observation: null,
+        options: null,
         image: '/img/catalog/others-v3/cube.webp',
     },
     {
@@ -6476,6 +7114,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.OTHERS,
         tag: 'dríade, floresta, feminino, mágico, mulher, arvore, galhos, espinhos, monstro, criatura',
         observation: null,
+        options: null,
         image: '/img/catalog/others-v3/dryads.webp',
     },
     {
@@ -6486,6 +7125,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.OTHERS,
         tag: 'dragrão, voador, asa, criatura, monstro, montaria, animal, animais, guerreiro',
         observation: null,
+        options: null,
         image: '/img/catalog/others-v3/garold-allfather-drake.webp',
     },
     {
@@ -6496,6 +7136,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.OTHERS,
         tag: 'monstro, criatura, cajado, morte, magia, magico, livro, chifre',
         observation: null,
+        options: null,
         image: '/img/catalog/others-v3/harvester.webp',
     },
     {
@@ -6506,6 +7147,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.OTHERS,
         tag: 'falcões, animais, voador, animal, montaria, passaro, elfo, homem, masculino',
         observation: null,
+        options: null,
         image: '/img/catalog/others-v3/falcons.webp',
     },
     {
@@ -6516,6 +7158,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.OTHERS,
         tag: 'árvore, espírito, guardião, druida, magico, magica, criatura, monstro',
         observation: null,
+        options: null,
         image: '/img/catalog/others-v3/tree-father.webp',
     },
     {
@@ -6526,6 +7169,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.OTHERS,
         tag: 'árvore, espírito, guardião, druida, magico, magica, criatura, monstro, animal, animais',
         observation: null,
+        options: null,
         image: '/img/catalog/others-v3/thicket-shepherd.webp',
     },
     {
@@ -6536,6 +7180,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.OTHERS,
         tag: 'ursoruja, druida, criatura, monstro, urso, coruja, animal, animais',
         observation: null,
+        options: null,
         image: '/img/catalog/others-v3/owlbear.webp',
     },
     {
@@ -6546,6 +7191,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.OTHERS,
         tag: 'beholder, olho, mágico, aberração, criatura, monstro',
         observation: null,
+        options: null,
         image: '/img/catalog/others-v3/beholder.webp',
     },
     {
@@ -6556,6 +7202,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.OTHERS,
         tag: 'lobo, animal, animais',
         observation: null,
+        options: null,
         image: '/img/catalog/others-v3/wolf-a.webp',
     },
     {
@@ -6566,6 +7213,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.OTHERS,
         tag: 'lobo, animal, animais',
         observation: null,
+        options: null,
         image: '/img/catalog/others-v3/wolf-b.webp',
     },
     {
@@ -6576,6 +7224,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.OTHERS,
         tag: 'lobo, animal, animais',
         observation: null,
+        options: null,
         image: '/img/catalog/others-v3/wolf-c.webp',
     },
     {
@@ -6586,6 +7235,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.OTHERS,
         tag: 'lobo, animal, animais',
         observation: null,
+        options: null,
         image: '/img/catalog/others-v3/wolf-d.webp',
     },
     {
@@ -6596,6 +7246,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.OTHERS,
         tag: 'lobo, animal, animais',
         observation: null,
+        options: null,
         image: '/img/catalog/others-v3/wolf-e.webp',
     },
     {
@@ -6606,6 +7257,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.OTHERS,
         tag: 'automato, robo, metal, armadura, metalico, mecanico, cyberpunk',
         observation: null,
+        options: null,
         image: '/img/catalog/others-v3/high-priest-manipulator.webp',
     },
     {
@@ -6616,6 +7268,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.OTHERS,
         tag: 'gárgula, basilisco, criatura, mágica, magico, monstro, voador, asa',
         observation: null,
+        options: null,
         image: '/img/catalog/others-v3/gargolisk.webp',
     },
     {
@@ -6626,6 +7279,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.OTHERS,
         tag: 'automato, robo, metal, armadura, metalico, mecanico, cyberpunk',
         observation: null,
+        options: null,
         image: '/img/catalog/others-v3/high-priest-oppressor.webp',
     },
     {
@@ -6636,6 +7290,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.OTHERS,
         tag: 'automato, metal, armadura, lança chamas, arma, robo, cyberpunk',
         observation: null,
+        options: null,
         image: '/img/catalog/others-v3/flameoner.webp',
     },
     {
@@ -6646,6 +7301,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.OTHERS,
         tag: 'automato, metal, armadura, metralhadora, arma, robo, mecanico, cyberpunk',
         observation: null,
+        options: null,
         image: '/img/catalog/others-v3/corpo-eliminator.webp',
     },
     {
@@ -6656,6 +7312,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.OTHERS,
         tag: 'rato, espacial, criatura, sci-fi, monstro, animal, animais, roedor, mecanico, cyberpunk',
         observation: null,
+        options: null,
         image: '/img/catalog/others-v3/space-rat.webp',
     },
     {
@@ -6666,6 +7323,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.OTHERS,
         tag: 'automato, criatura, metal, mecanico, cyberpunk',
         observation: null,
+        options: null,
         image: '/img/catalog/others-v3/drodd-sinclair.webp',
     },
 ];

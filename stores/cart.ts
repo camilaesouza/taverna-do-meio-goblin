@@ -31,34 +31,44 @@ export const useCartStore = defineStore('cart', {
     },
     actions: {
         addItem(miniature, qty = 1) {
-            const found = this.items.find(i => i.id === miniature.id)
+            const option = miniature.option || ''
+            const found = this.items.find(i =>
+                i.id === miniature.id &&
+                (i.option || '') === option // padroniza comparação
+            )
             if (found) {
                 found.quantity += qty
             } else {
-                this.items.push({ ...miniature, quantity: qty })
+                this.items.push({ ...miniature, option, quantity: qty })
             }
         },
-        removeItem(id) {
-            this.items = this.items.filter(item => item.id !== id)
+
+        removeItem({ id, option }) {
+            const opt = option || ''
+            this.items = this.items.filter(item => !(item.id === id && (item.option || '') === opt))
         },
-        updateQuantity(id, quantity) {
-            const item = this.items.find(i => i.id === id)
+
+        updateQuantity({ id, option }, quantity) {
+            const opt = option || ''
+            const item = this.items.find(i => i.id === id && (i.option || '') === opt)
             if (item) item.quantity = quantity
         },
+
         clearCart() {
             this.items = []
         },
-        decreaseQuantity(itemId) {
-            const item = this.items.find(i => i.id === itemId)
+
+        decreaseQuantity({ id, option }) {
+            const opt = option || ''
+            const item = this.items.find(i => i.id === id && (i.option || '') === opt)
             if (!item) return
 
             if (item.quantity > 1) {
                 item.quantity--
             } else {
-                // Remove se chegar a 0
-                this.removeItem(itemId)
+                this.removeItem({ id, option: opt })
             }
-        }
+        },
     },
     persist: true
 })
