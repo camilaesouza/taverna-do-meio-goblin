@@ -8,6 +8,7 @@ export interface Catalogitem {
     type: TypeEnumKey;
     tag: string;
     observation: null | string;
+    options: null | array;
     image: string;
 }
 
