@@ -2,73 +2,138 @@ import { defineStore } from 'pinia'
 
 export const useCartStore = defineStore('cart', {
     state: () => ({
-        items: []
+        items: [],
+        globalDiscountsBySubtotal: [
+            // { minSubtotal: 200, type: 'percentage', percentage: 10 },
+            // { minSubtotal: 500, type: 'percentage', percentage: 50 },
+        ],
+        globalDiscount: null,
     }),
+
     getters: {
-        totalItems: (state) =>
-            state.items.reduce((acc, item) => acc + item.quantity, 0),
+        subtotal(state) {
+            return state.items.reduce((sum, item) => {
+                const price = item.discountedPrice || item.price
+                return sum + price * item.quantity
+            }, 0)
+        },
+        totalQuantity(state) {
+            return state.items.reduce((sum, item) => sum + item.quantity, 0)
+        },
+        total(state) {
+            let total = this.subtotal
 
-        totalPrice: (state) => {
-            return state.items.reduce((acc, item) => {
-                let unitPrice = item.price
-                const observation = item.observation || ''
-
-                // Detecta texto tipo: "no mínimo 3 o preço diminui para 16 R$"
-                const descontoMatch = observation.match(/no mínimo (\d+).*?(\d+[,.]?\d*)\s*R\$/i)
-
-                if (descontoMatch) {
-                    const minQty = parseInt(descontoMatch[1])
-                    const discountPrice = parseFloat(descontoMatch[2].replace(',', '.'))
-
-                    if (item.quantity >= minQty) {
-                        unitPrice = discountPrice
-                    }
+            // Aplica o desconto global, se houver
+            if (state.globalDiscount) {
+                if (state.globalDiscount.type === 'percentage') {
+                    total -= total * (state.globalDiscount.percentage / 100)
+                } else if (state.globalDiscount.type === 'fixed') {
+                    total -= state.globalDiscount.amount
                 }
-
-                return acc + unitPrice * item.quantity
-            }, 0).toFixed(2)
+            }
+            return total
         }
     },
+
     actions: {
-        addItem(miniature, qty = 1) {
-            const option = miniature.option || ''
-            const found = this.items.find(i =>
-                i.id === miniature.id &&
-                (i.option || '') === option // padroniza comparação
+        addItem(item) {
+            const keyOption = item.option || ''
+            const existing = this.items.find(
+                i => i.id === item.id && i.option === keyOption
             )
-            if (found) {
-                found.quantity += qty
+
+            if (existing) {
+                existing.quantity += item.quantity
+                this.applyItemDiscount(existing)
             } else {
-                this.items.push({ ...miniature, option, quantity: qty })
+                const newItem = {
+                    ...item,
+                    option: keyOption,
+                    discountedPrice: item.price
+                }
+                this.applyItemDiscount(newItem)
+                this.items.push(newItem)
+            }
+
+            // Verifica e aplica o desconto global após adicionar o item
+            this.checkGlobalDiscount()
+        },
+
+        updateQuantity(key, newQuantity) {
+            const item = this.items.find(i =>
+                i.id === key.id && i.option === (key.option || '')
+            )
+            if (item) {
+                item.quantity = newQuantity
+                this.applyItemDiscount(item)
+                this.checkGlobalDiscount()
             }
         },
 
-        removeItem({ id, option }) {
-            const opt = option || ''
-            this.items = this.items.filter(item => !(item.id === id && (item.option || '') === opt))
+        removeItem(key) {
+            this.items = this.items.filter(i =>
+                !(i.id === key.id && i.option === (key.option || ''))
+            )
+            // Verifica o desconto global após remover o item
+            this.checkGlobalDiscount()
         },
 
-        updateQuantity({ id, option }, quantity) {
-            const opt = option || ''
-            const item = this.items.find(i => i.id === id && (i.option || '') === opt)
-            if (item) item.quantity = quantity
+        decreaseQuantity(key) {
+            const item = this.items.find(i =>
+                i.id === key.id && i.option === (key.option || '')
+            )
+            if (item) {
+                item.quantity -= 1
+                if (item.quantity <= 0) {
+                    this.removeItem(key)
+                } else {
+                    this.applyItemDiscount(item)
+                }
+            }
+            this.checkGlobalDiscount()
         },
 
-        clearCart() {
-            this.items = []
-        },
+        applyItemDiscount(item) {
+            if (!item.discounts || !item.discounts.length) {
+                item.discountedPrice = item.price
+                return
+            }
 
-        decreaseQuantity({ id, option }) {
-            const opt = option || ''
-            const item = this.items.find(i => i.id === id && (i.option || '') === opt)
-            if (!item) return
+            let appliedDiscount = null
+            // Verificando o desconto baseado na quantidade de itens comprados
+            for (const discount of item.discounts) {
+                if (item.quantity >= discount.minQty) {
+                    if (!appliedDiscount || discount.minQty > appliedDiscount.minQty) {
+                        appliedDiscount = discount
+                    }
+                }
+            }
 
-            if (item.quantity > 1) {
-                item.quantity--
+            // Se encontrou algum desconto aplicável
+            if (appliedDiscount) {
+                if (appliedDiscount.type === 'fixed') {
+                    item.discountedPrice = appliedDiscount.price // Desconto fixo
+                } else if (appliedDiscount.type === 'percentage') {
+                    item.discountedPrice = item.price * (1 - appliedDiscount.percentage / 100) // Desconto percentual
+                }
             } else {
-                this.removeItem({ id, option: opt })
+                item.discountedPrice = item.price // Sem desconto
             }
         },
-    },
-    persist: true
+
+        checkGlobalDiscount() {
+            const subtotal = this.subtotal
+
+            // Verifica o melhor desconto global baseado no subtotal
+            const bestDiscount = this.globalDiscountsBySubtotal
+                .filter(d => subtotal >= d.minSubtotal)
+                .sort((a, b) => b.minSubtotal - a.minSubtotal)[0]
+
+            if (bestDiscount) {
+                this.globalDiscount = bestDiscount
+            } else {
+                this.globalDiscount = null
+            }
+        }
+    }
 })

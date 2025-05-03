@@ -8,9 +8,9 @@
       <p class="text-sm">Tamanho: {{ item.size }}</p>
       <p class="text-xs">{{ item.observation }}</p>
       <p class="text-sm">
-        R$ {{ discountedPrice.toFixed(2) }}
+        R$ {{ (item.discountedPrice || item.price).toFixed(2) }}
         <span
-            v-if="discountApplied"
+            v-if="item.discountedPrice && item.discountedPrice < item.price"
             class="line-through text-xs text-red-500 ml-2"
         >
           R$ {{ item.price.toFixed(2) }}
@@ -18,7 +18,6 @@
       </p>
     </div>
     <div class="flex items-center gap-3 md:flex-row flex-col">
-      <!-- Contador de quantidade -->
       <div
           class="flex items-center bg-[#D2C5AB] h-[35px] border border-[#cdc2ae] rounded text-black overflow-hidden"
       >
@@ -65,10 +64,8 @@ const currentItemKey = computed(() => ({
   option: props.item.option || ''
 }))
 
-// Controle local da quantidade
 const localQuantity = ref(props.item.quantity)
 
-// Sincronizar se a quantidade mudar fora daqui
 watch(
     () => props.item.quantity,
     (newQty) => {
@@ -89,33 +86,18 @@ function remove() {
 }
 
 function increaseQuantity() {
-  cart.updateQuantity(currentItemKey.value, localQuantity.value + 1)
+  localQuantity.value += 1
+  update()
 }
 
 function decreaseQuantity() {
-  if (localQuantity.value <= 1) {
-    remove()
+  if (localQuantity.value > 1) {
+    localQuantity.value -= 1
+    update()
   } else {
-    cart.updateQuantity(currentItemKey.value, localQuantity.value - 1)
+    remove()
   }
 }
-
-const discountedPrice = computed(() => {
-  const observation = props.item.observation || ''
-  const match = observation.match(/no mínimo (\d+).*?(\d+[,.]?\d*)\s*R\$/i)
-
-  if (match) {
-    const minQty = parseInt(match[1])
-    const discount = parseFloat(match[2].replace(',', '.'))
-    if (props.item.quantity >= minQty) {
-      return discount
-    }
-  }
-
-  return props.item.price
-})
-
-const discountApplied = computed(() => discountedPrice.value < props.item.price)
 </script>
 
 <style scoped>

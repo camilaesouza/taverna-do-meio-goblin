@@ -58,9 +58,9 @@
       <button
           @click="addToCart"
           :disabled="item.options?.length && !selectedOption"
-          class="md:text-sm text-[8px] bg-green-2 hover:bg-green-1 text-white font-medium py-2 px-4 rounded mt-4 w-full disabled:opacity-50"
+          class="md:text-sm text-[11px] bg-green-2 hover:bg-green-1 text-white font-medium py-2 px-4 rounded mt-4 w-full disabled:opacity-50"
       >
-        Adicionar ao meu pedido
+        Adicionar ao pedido
       </button>
     </div>
   </div>
@@ -80,21 +80,12 @@ const props = defineProps({
 })
 
 const cartStore = useCartStore()
-
 const selectedOption = ref('')
 
-const matchingCartItems = computed(() =>
-    cartStore.items.filter(i => i.id === props.item.id)
-)
-
 const itemInCart = computed(() => {
-  if (props.item.options && props.item.options.length) {
-    return cartStore.items.find(
-        i => i.id === props.item.id && i.option === selectedOption.value
-    )
-  } else {
-    return cartStore.items.find(i => i.id === props.item.id)
-  }
+  return cartStore.items.find(
+      i => i.id === props.item.id && (i.option || '') === (selectedOption.value || '')
+  )
 })
 
 const quantity = computed(() => itemInCart.value?.quantity || 0)
@@ -102,7 +93,8 @@ const quantity = computed(() => itemInCart.value?.quantity || 0)
 const addToCart = () => {
   const cartItem = {
     ...props.item,
-    option: selectedOption.value || null
+    option: selectedOption.value || '',
+    quantity: 1
   }
   cartStore.addItem(cartItem)
 }
@@ -110,27 +102,26 @@ const addToCart = () => {
 const increaseQuantity = () => {
   const cartItem = {
     ...props.item,
-    option: selectedOption.value || null
+    option: selectedOption.value || '',
+    quantity: 1
   }
   cartStore.addItem(cartItem)
 }
 
 const decreaseQuantity = () => {
-  const option = props.item.options?.length ? selectedOption.value : null
-  cartStore.decreaseQuantity({ id: props.item.id, option })
+  cartStore.decreaseQuantity({
+    id: props.item.id,
+    option: selectedOption.value || ''
+  })
 }
 
 watch(
     () => props.item.id,
     () => {
-      if (props.item.options && props.item.options.length) {
-        const existing = matchingCartItems.value[0]
-        if (existing) {
-          selectedOption.value = existing.option || ''
-        } else {
-          selectedOption.value = ''
-        }
-      }
+      const existing = cartStore.items.find(
+          i => i.id === props.item.id && (i.option || '') !== ''
+      )
+      selectedOption.value = existing?.option || ''
     },
     { immediate: true }
 )
@@ -207,5 +198,12 @@ watch(
 
 .multiselect-custom .multiselect__clear {
   display: block !important;
+}
+
+/* CSS media query dentro de um stylesheet */
+@media (max-width: 600px) {
+  .multiselect-custom .multiselect__tags {
+    font-size: 13px !important;
+  }
 }
 </style>

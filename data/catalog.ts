@@ -9,6 +9,7 @@ export interface Catalogitem {
     tag: string;
     observation: null | string;
     options: null | array;
+    discounts: null | array // => example:  discounts: [{ minQty: 3, price: 16, type: 'fixed' },{ minQty: 10, percentage: 20, type: 'percentage' }];
     image: string;
 }
 
@@ -23,6 +24,9 @@ export const catalog: Catalogitem[] = [
         tag: 'assassino, élfico, elfo, feminino, feminina, mulher, chicote, corda',
         observation: 'Na compra de no mínimo 3 o preço diminui para 16 R$',
         options: ['a', 'b', 'c'],
+        discounts: [
+            { minQty: 3, price: 16, type: 'fixed' },
+        ],
         image: '/img/catalog/everdark-elves/elves-assassin.webp',
     },
     {
@@ -34,6 +38,9 @@ export const catalog: Catalogitem[] = [
         tag: 'assassinos, assassina, voadores, fada, feminino, feminina, mulher, elfo, asa, voador',
         observation: 'Na compra de no mínimo 3 o preço diminui para 16 R$',
         options: ['a', 'b', 'c'],
+        discounts: [
+            { minQty: 3, price: 16, type: 'fixed' },
+        ],
         image: '/img/catalog/everdark-elves/flying-assassins.webp'
     },
     {
@@ -45,6 +52,7 @@ export const catalog: Catalogitem[] = [
         tag: 'mestre das feras, assassinos, elfo, feminino, feminina, mulher, longo, espada',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/everdark-elves/beast-master.webp'
     },
     {
@@ -56,6 +64,7 @@ export const catalog: Catalogitem[] = [
         tag: 'feiticeiro, selvagem, balista, elfo, flecha, lança, longo',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/everdark-elves/wild-sorcerer-full.webp'
     },
     {
@@ -67,6 +76,7 @@ export const catalog: Catalogitem[] = [
         tag: 'feiticeiro, selvagem, elfo, flecha, lança, longo, homem, masculino',
         observation: null,
         options: ['a', 'b'],
+        discounts: null,
         image: '/img/catalog/everdark-elves/wild-sorcerer-elfs.webp'
     },
     {
@@ -78,6 +88,7 @@ export const catalog: Catalogitem[] = [
         tag: 'Balista, item, itens, flecha, cenário',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/everdark-elves/wild-sorcerer-balista.webp'
     },
     {
@@ -89,6 +100,7 @@ export const catalog: Catalogitem[] = [
         tag: 'cavalo, animal, animais, animais, voador, asa, montaria, criatura',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/everdark-elves/dark-pegassus.webp'
     },
     {
@@ -100,6 +112,7 @@ export const catalog: Catalogitem[] = [
         tag: 'bruxa, feminino, feminina, mulher, longo, espada',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/everdark-elves/witch.webp'
     },
     {
@@ -111,6 +124,7 @@ export const catalog: Catalogitem[] = [
         tag: 'carroça, carruagem, animal, animais, animais, cavalo, montaria, item, itens, cenário',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/everdark-elves/chariot-crossbow.webp'
     },
     {
@@ -122,6 +136,7 @@ export const catalog: Catalogitem[] = [
         tag: 'carroça, carruagem, lança, cavalo, montaria, item, itens, cenário',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/everdark-elves/chariot-lancer.webp'
     },
     {
@@ -133,6 +148,9 @@ export const catalog: Catalogitem[] = [
         tag: 'elfo, guerreiro, masculino, homem, espada, bandeira',
         observation: 'Na compra de no mínimo 3 o preço diminui para 16 R$',
         options: ['a', 'b', 'c', 'd', 'e'],
+        discounts: [
+            { minQty: 3, price: 16, type: 'fixed' },
+        ],
         image: '/img/catalog/everdark-elves/archmage.webp'
     },
     {
@@ -144,6 +162,7 @@ export const catalog: Catalogitem[] = [
         tag: 'cavaleiros, cavaleiro, elfo, montaria, animal, animais, animais, cavalo, espada',
         observation: null,
         options: ['a', 'b', 'c', 'd', 'e', 'f'],
+        discounts: null,
         image: '/img/catalog/everdark-elves/dread-knights.webp'
     },
     {
@@ -155,6 +174,7 @@ export const catalog: Catalogitem[] = [
         tag: 'cérebro, criatura, monstro',
         observation: null,
         options: ['a', 'b', 'c'],
+        discounts: null,
         image: '/img/catalog/everdark-elves/brain.webp'
     },
     {
@@ -166,6 +186,7 @@ export const catalog: Catalogitem[] = [
         tag: 'devorador de mentes, criatura, monstro,',
         observation: null,
         options: ['a', 'b', 'c'],
+        discounts: null,
         image: '/img/catalog/everdark-elves/mindflayer-ab.webp'
     },
     {
@@ -177,6 +198,7 @@ export const catalog: Catalogitem[] = [
         tag: 'devorador de mentes, criatura, monstro,',
         observation: null,
         options: ['a', 'b', 'c'],
+        discounts: null,
         image: '/img/catalog/everdark-elves/mindflayer-c.webp'
     },
     {
@@ -188,6 +210,7 @@ export const catalog: Catalogitem[] = [
         tag: 'estandarte, elfo, feminino, feminina, mulher, criatura, monstro,',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/everdark-elves/avatar-banner.webp'
     },
     {
@@ -199,6 +222,7 @@ export const catalog: Catalogitem[] = [
         tag: 'lança, elfo, feminino, feminina, mulher, criatura, monstro,',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/everdark-elves/avatar-spear.webp'
     },
     {
@@ -210,6 +234,7 @@ export const catalog: Catalogitem[] = [
         tag: 'criatura, monstro, cenário, oceano',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/everdark-elves/kraken.webp'
     },
     {
@@ -221,6 +246,7 @@ export const catalog: Catalogitem[] = [
         tag: 'criatura, monstro, cenário, oceano',
         observation: 'Todas as peças inclusas',
         options: null,
+        discounts: null,
         image: '/img/catalog/everdark-elves/kraken-diorama.webp'
     },
     {
@@ -232,6 +258,7 @@ export const catalog: Catalogitem[] = [
         tag: 'criatura, monstro, cenario, item, itens',
         observation: 'Todas as peças inclusas',
         options: null,
+        discounts: null,
         image: '/img/catalog/everdark-elves/terrain-diorama.webp'
     },
 
@@ -245,6 +272,7 @@ export const catalog: Catalogitem[] = [
         tag: 'goblin, masculino, homem, cajado, mascara',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/badlands/beast-whisperer.webp'
     },
     {
@@ -256,6 +284,7 @@ export const catalog: Catalogitem[] = [
         tag: 'bruxa, criatura, monstro, mulher, feminino, animal, animais, animais, mascara',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/badlands/kairn-den-mother.webp'
     },
     {
@@ -267,6 +296,7 @@ export const catalog: Catalogitem[] = [
         tag: 'guerreiro, masculino, homem, machado, mascara, chifre',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/badlands/kairn-fighter-1.webp'
     },
     {
@@ -278,6 +308,7 @@ export const catalog: Catalogitem[] = [
         tag: 'guerreiro, guerreira, feminino, feminina, mulher, machado',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/badlands/kairn-fighter-2.webp'
     },
     {
@@ -289,6 +320,7 @@ export const catalog: Catalogitem[] = [
         tag: 'guerreiro, guerreira, feminino, feminina, mulher, machado, escudo',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/badlands/kairn-fighter-3.webp'
     },
     {
@@ -300,6 +332,7 @@ export const catalog: Catalogitem[] = [
         tag: 'guerreiro, guerreira, feminino, feminina, mulher',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/badlands/kairn-fighter-4.webp'
     },
     {
@@ -311,6 +344,7 @@ export const catalog: Catalogitem[] = [
         tag: 'guerreiro, guerreira, feminino, feminina, mulher, mascara, chifre',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/badlands/kairn-fighter-5.webp'
     },
     {
@@ -322,6 +356,7 @@ export const catalog: Catalogitem[] = [
         tag: 'guerreiro, masculino, homem, escudo, espada',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/badlands/kairn-fighter-6.webp'
     },
     {
@@ -333,6 +368,7 @@ export const catalog: Catalogitem[] = [
         tag: 'guerreiro, masculino, homem',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/badlands/kairn-fighter-7.webp'
     },
     {
@@ -344,6 +380,7 @@ export const catalog: Catalogitem[] = [
         tag: 'guerreiro, masculino, homem',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/badlands/kairn-fighter-8.webp'
     },
     {
@@ -355,6 +392,7 @@ export const catalog: Catalogitem[] = [
         tag: 'guerreiro, masculino, homem',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/badlands/kairn-fighter-9.webp'
     },
     {
@@ -366,6 +404,7 @@ export const catalog: Catalogitem[] = [
         tag: 'guerreiro, masculino, homem',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/badlands/kairn-fighter-10.webp'
     },
     {
@@ -377,6 +416,7 @@ export const catalog: Catalogitem[] = [
         tag: 'feminino, feminina, mulher, montaria, animal, animais, animais, longo',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/badlands/sabertooth-warrior-1.webp'
     },
     {
@@ -388,6 +428,7 @@ export const catalog: Catalogitem[] = [
         tag: 'feminino, feminina, mulher, montaria, animal, animais, animais,',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/badlands/sabertooth-warrior-2.webp'
     },
     {
@@ -399,6 +440,7 @@ export const catalog: Catalogitem[] = [
         tag: 'cabeça, feminino, feminina, mulher, caçadora',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/badlands/headhuntress.webp'
     },
     {
@@ -410,6 +452,7 @@ export const catalog: Catalogitem[] = [
         tag: 'dinossauro, animal, animais, animais, criatura, monstro,',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/badlands/raptors.webp'
     },
     {
@@ -421,6 +464,7 @@ export const catalog: Catalogitem[] = [
         tag: 'criatura, monstro, animal, animais, animais,',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/badlands/sloth.webp'
     },
     {
@@ -432,6 +476,7 @@ export const catalog: Catalogitem[] = [
         tag: 'criatura, monstro, montaria, masculino, homem, guerreiro',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/badlands/warlord.webp'
     },
     {
@@ -443,6 +488,7 @@ export const catalog: Catalogitem[] = [
         tag: 'guerreiro, masculino, homem',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/badlands/warmonger.webp'
     },
     {
@@ -454,6 +500,7 @@ export const catalog: Catalogitem[] = [
         tag: 'criatura, monstro, montaria, feminino, feminina, mulher, dinossauro, guerreira, guerreiro',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/badlands/warrior-queen.webp'
     },
 
@@ -467,6 +514,7 @@ export const catalog: Catalogitem[] = [
         tag: 'guerreira, feminino, feminina, mulher, guerreiro',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/barbarians/zofuriana.webp'
     },
     {
@@ -478,6 +526,7 @@ export const catalog: Catalogitem[] = [
         tag: 'guerreiro, masculino, homem',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/barbarians/gyratos.webp'
     },
     {
@@ -489,6 +538,7 @@ export const catalog: Catalogitem[] = [
         tag: 'guerreiro, masculino, homem',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/barbarians/tehnar.webp'
     },
     {
@@ -500,6 +550,7 @@ export const catalog: Catalogitem[] = [
         tag: 'guerreiro, feminino, feminina, mulher, guerreira',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/barbarians/vindicta-raid-queen.webp'
     },
     {
@@ -511,6 +562,7 @@ export const catalog: Catalogitem[] = [
         tag: 'troll, feminino, feminina, mulher',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/barbarians/ferin.webp'
     },
     {
@@ -522,6 +574,7 @@ export const catalog: Catalogitem[] = [
         tag: 'troll, masculino, homem',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/barbarians/roogarin.webp'
     },
     {
@@ -533,6 +586,7 @@ export const catalog: Catalogitem[] = [
         tag: 'bárbaro, guerreiro, masculino, homem',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/barbarians/bjorn.webp'
     },
     {
@@ -544,6 +598,7 @@ export const catalog: Catalogitem[] = [
         tag: 'bárbaro, guerreiro, masculino, homem',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/barbarians/eric.webp'
     },
     {
@@ -555,6 +610,7 @@ export const catalog: Catalogitem[] = [
         tag: 'bárbaro, guerreiro, masculino, homem',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/barbarians/olaf.webp'
     },
     {
@@ -566,6 +622,7 @@ export const catalog: Catalogitem[] = [
         tag: 'bruxa, feminino, mulher, invocador, alma, magia, magico, chifre',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/barbarians/martha-bogmaiden.webp'
     },
     {
@@ -577,6 +634,7 @@ export const catalog: Catalogitem[] = [
         tag: 'montaria, criatura, monstro, bárbaro, guerreiro, masculino, homem',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/barbarians/griz-the-hungry.webp'
     },
     {
@@ -588,6 +646,7 @@ export const catalog: Catalogitem[] = [
         tag: 'alce, criatura, monstro, masculino, homem',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/barbarians/elknar-the-calm.webp'
     },
     {
@@ -599,6 +658,7 @@ export const catalog: Catalogitem[] = [
         tag: 'gigante, deus',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/barbarians/ice-giant.webp'
     },
 
@@ -612,6 +672,9 @@ export const catalog: Catalogitem[] = [
         tag: 'Ogro, pescador, ocenado, mar, âncora',
         observation: 'Na compra de no mínimo 3 o preço diminui para 20 R$',
         options: ['a', 'b', 'c'],
+        discounts: [
+            { minQty: 3, price: 20, type: 'fixed' },
+        ],
         image: '/img/catalog/bloodsail-ogres/anchor-bashers-1.webp'
     },
     {
@@ -623,6 +686,9 @@ export const catalog: Catalogitem[] = [
         tag: 'ogros batedores de âncora, ocenado, mar',
         observation: 'Na compra de no mínimo 3 o preço diminui para 25 R$',
         options: ['a', 'b', 'c'],
+        discounts: [
+            { minQty: 3, price: 25, type: 'fixed' },
+        ],
         image: '/img/catalog/bloodsail-ogres/anchor-bashers-2.webp'
     },
     {
@@ -634,6 +700,7 @@ export const catalog: Catalogitem[] = [
         tag: 'Ogro, Dreadnought, âncora, oceano, mar',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/bloodsail-ogres/anchor-basher-hero.webp'
     },
     {
@@ -645,6 +712,7 @@ export const catalog: Catalogitem[] = [
         tag: 'Ogro, caçador, chapeu, passaro, animal, animais, animais,',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/bloodsail-ogres/hunter.webp'
     },
     {
@@ -656,6 +724,7 @@ export const catalog: Catalogitem[] = [
         tag: 'Ogro, bruxo, voodoo',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/bloodsail-ogres/voodoo-doctor.webp'
     },
     {
@@ -667,6 +736,9 @@ export const catalog: Catalogitem[] = [
         tag: 'humano, pirata',
         observation: 'Na compra de no mínimo 3 o preço diminui para 17 R$',
         options: ['a', 'b', 'c', 'd', 'e'],
+        discounts: [
+            { minQty: 3, price: 17, type: 'fixed' },
+        ],
         image: '/img/catalog/bloodsail-ogres/tribesman.webp'
     },
     {
@@ -678,6 +750,7 @@ export const catalog: Catalogitem[] = [
         tag: 'humano, caçador, montaria',
         observation: null,
         options: ['a', 'b', 'c'],
+        discounts: null,
         image: '/img/catalog/bloodsail-ogres/pirate-hippos.webp'
     },
     {
@@ -689,6 +762,7 @@ export const catalog: Catalogitem[] = [
         tag: 'crocodilo, animal, animais, animais,',
         observation: null,
         options: ['a', 'b', 'c'],
+        discounts: null,
         image: '/img/catalog/bloodsail-ogres/elemental-golem.webp'
     },
     {
@@ -700,6 +774,7 @@ export const catalog: Catalogitem[] = [
         tag: 'Yeti, pirata, criatura, monstro,',
         observation: null,
         options: ['a', 'b', 'c'],
+        discounts: null,
         image: '/img/catalog/bloodsail-ogres/hipirate-yetis.webp'
     },
     {
@@ -711,6 +786,7 @@ export const catalog: Catalogitem[] = [
         tag: 'aboleth, criatura, monstro, mar',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/bloodsail-ogres/aboleth.webp'
     },
     {
@@ -722,6 +798,7 @@ export const catalog: Catalogitem[] = [
         tag: 'Chuul, mar, profundezas',
         observation: null,
         options: ['a', 'b'],
+        discounts: null,
         image: '/img/catalog/bloodsail-ogres/archmage.webp'
     },
     {
@@ -733,6 +810,7 @@ export const catalog: Catalogitem[] = [
         tag: 'animal, animais, animais, macaco, gorila',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/bloodsail-ogres/king-kong.webp'
     },
 
@@ -747,6 +825,9 @@ export const catalog: Catalogitem[] = [
         tag: 'orc de carnaval, masculino, homem',
         observation: 'Na compra de no mínimo 3 o preço diminui para 18R$',
         options: ['a', 'b', 'c', 'd', 'e'],
+        discounts: [
+            { minQty: 3, price: 18, type: 'fixed' },
+        ],
         image: '/img/catalog/carnival-and-orcs/orc-1.webp'
     },
     {
@@ -758,6 +839,9 @@ export const catalog: Catalogitem[] = [
         tag: 'orc de carnaval, masculino, homem',
         observation: 'Na compra de no mínimo 3 o preço diminui para 18R$',
         options: ['a', 'b', 'c', 'd', 'e'],
+        discounts: [
+            { minQty: 3, price: 18, type: 'fixed' },
+        ],
         image: '/img/catalog/carnival-and-orcs/orc-2.webp'
     },
     {
@@ -769,6 +853,9 @@ export const catalog: Catalogitem[] = [
         tag: 'orc de carnaval, masculino, homem',
         observation: 'Na compra de no mínimo 3 o preço diminui para 18R$',
         options: ['a', 'b', 'c', 'd', 'e'],
+        discounts: [
+            { minQty: 3, price: 18, type: 'fixed' },
+        ],
         image: '/img/catalog/carnival-and-orcs/orc-3.webp'
     },
     {
@@ -780,6 +867,7 @@ export const catalog: Catalogitem[] = [
         tag: 'troll, feiticeiro, criatura, monstro,',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/carnival-and-orcs/troll-wizard.webp'
     },
     {
@@ -791,6 +879,7 @@ export const catalog: Catalogitem[] = [
         tag: 'xamã, orc, criatura, monstro,',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/carnival-and-orcs/shaman.webp'
     },
     {
@@ -802,6 +891,7 @@ export const catalog: Catalogitem[] = [
         tag: 'xamã, orc, montaria, javali, criatura, monstro,',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/carnival-and-orcs/orc-shaman-on-boar.webp'
     },
     {
@@ -813,6 +903,7 @@ export const catalog: Catalogitem[] = [
         tag: 'aberração, aberrações, circo',
         observation: null,
         options: ['a', 'b', 'c'],
+        discounts: null,
         image: '/img/catalog/carnival-and-orcs/strongman.webp'
     },
     {
@@ -824,6 +915,7 @@ export const catalog: Catalogitem[] = [
         tag: 'acrobata, circo',
         observation: null,
         options: ['a', 'b', 'c', 'd', 'e'],
+        discounts: null,
         image: '/img/catalog/carnival-and-orcs/acrobats.webp'
     },
     {
@@ -835,6 +927,7 @@ export const catalog: Catalogitem[] = [
         tag: 'criatura, monstro, bufão',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/carnival-and-orcs/ring-master-1.webp'
     },
     {
@@ -846,6 +939,7 @@ export const catalog: Catalogitem[] = [
         tag: 'criatura, monstro, bufão, montaria',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/carnival-and-orcs/ring-master-2.webp'
     },
     {
@@ -857,6 +951,7 @@ export const catalog: Catalogitem[] = [
         tag: 'circo, masculino, homem, criatura, monstro,',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/carnival-and-orcs/carnival-carnie-1.webp'
     },
     {
@@ -868,6 +963,7 @@ export const catalog: Catalogitem[] = [
         tag: 'circo, masculino, homem, criatura, monstro, anão, anões,',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/carnival-and-orcs/carnival-carnie-2.webp'
     },
     {
@@ -879,6 +975,7 @@ export const catalog: Catalogitem[] = [
         tag: 'circo, masculino, homem, criatura, monstro,',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/carnival-and-orcs/carnival-carnie-3.webp'
     },
     {
@@ -890,6 +987,7 @@ export const catalog: Catalogitem[] = [
         tag: 'circo, masculino, homem, criatura, monstro,',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/carnival-and-orcs/carnival-carnie-4.webp'
     },
     {
@@ -901,6 +999,7 @@ export const catalog: Catalogitem[] = [
         tag: 'circo, masculino, homem, criatura, monstro, duas cabeças',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/carnival-and-orcs/carnival-carnie-5.webp'
     },
     {
@@ -912,6 +1011,7 @@ export const catalog: Catalogitem[] = [
         tag: 'circo, masculino, homem, criatura, monstro, aberração, demônio',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/carnival-and-orcs/filth-father.webp'
     },
     {
@@ -923,6 +1023,7 @@ export const catalog: Catalogitem[] = [
         tag: 'dinossauro, criatura, monstro,',
         observation: null,
         options: ['a', 'b'],
+        discounts: null,
         image: '/img/catalog/carnival-and-orcs/dinosaur.webp'
     },
 
@@ -937,6 +1038,7 @@ export const catalog: Catalogitem[] = [
         tag: 'guerreiro, masculino, homem, orc, montaria',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/carnival-and-orcs-2/warchief-on-boar.webp'
     },
     {
@@ -948,6 +1050,7 @@ export const catalog: Catalogitem[] = [
         tag: 'guerreiro, masculino, homem, orc',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/carnival-and-orcs-2/warrior-chieftain.webp'
     },
     {
@@ -959,6 +1062,9 @@ export const catalog: Catalogitem[] = [
         tag: 'guerreiro, masculino, homem, orc, montaria',
         observation: 'Na compra de no mínimo 3 o preço diminui para 40 R$',
         options: ['a', 'b', 'c', 'd', 'e', 'f'],
+        discounts: [
+            { minQty: 3, price: 40, type: 'fixed' },
+        ],
         image: '/img/catalog/carnival-and-orcs-2/boar-riders.webp'
     },
     {
@@ -970,6 +1076,9 @@ export const catalog: Catalogitem[] = [
         tag: 'guerreiro, masculino, homem, orc',
         observation: 'Na compra de no mínimo 3 o preço diminui para 18 R$',
         options: ['a', 'b', 'c', 'd', 'e'],
+        discounts: [
+            { minQty: 3, price: 18, type: 'fixed' },
+        ],
         image: '/img/catalog/carnival-and-orcs-2/wild-orcs-1.webp'
     },
     {
@@ -981,6 +1090,9 @@ export const catalog: Catalogitem[] = [
         tag: 'guerreiro, masculino, homem, orc',
         observation: 'Na compra de no mínimo 3 o preço diminui para 18 R$',
         options: ['a', 'b', 'c', 'd', 'e'],
+        discounts: [
+            { minQty: 3, price: 18, type: 'fixed' },
+        ],
         image: '/img/catalog/carnival-and-orcs-2/wild-orcs-2.webp'
     },
     {
@@ -992,6 +1104,7 @@ export const catalog: Catalogitem[] = [
         tag: 'guerreiro, masculino, homem, orc, montaria',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/carnival-and-orcs-2/warchief-on-wyvern.webp'
     },
     {
@@ -1003,6 +1116,7 @@ export const catalog: Catalogitem[] = [
         tag: 'montaria, criatura, monstro,',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/carnival-and-orcs-2/wyvern.webp'
     },
     {
@@ -1014,6 +1128,7 @@ export const catalog: Catalogitem[] = [
         tag: 'criatura, monstro, carnaval, aberração',
         observation: null,
         options: ['a', 'b'],
+        discounts: null,
         image: '/img/catalog/carnival-and-orcs-2/beasts.webp'
     },
     {
@@ -1025,6 +1140,7 @@ export const catalog: Catalogitem[] = [
         tag: 'demônio',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/carnival-and-orcs-2/lord.webp'
     },
     {
@@ -1036,6 +1152,9 @@ export const catalog: Catalogitem[] = [
         tag: 'demônio, demônios',
         observation: 'Na compra de no mínimo 3 o preço diminui para 21 R$',
         options: ['a', 'b', 'c', 'd', 'e'],
+        discounts: [
+            { minQty: 3, price: 21, type: 'fixed' },
+        ],
         image: '/img/catalog/carnival-and-orcs-2/filth-demons.webp'
     },
     {
@@ -1047,6 +1166,7 @@ export const catalog: Catalogitem[] = [
         tag: 'mago, orc, masculino, homem, circo',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/carnival-and-orcs-2/mage.webp'
     },
     {
@@ -1058,6 +1178,7 @@ export const catalog: Catalogitem[] = [
         tag: 'mago, orc, masculino, homem, circo, montaria, sapo',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/carnival-and-orcs-2/norse-knights.webp'
     },
     {
@@ -1069,6 +1190,7 @@ export const catalog: Catalogitem[] = [
         tag: 'carroça',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/carnival-and-orcs-2/cart.webp'
     },
     {
@@ -1080,6 +1202,7 @@ export const catalog: Catalogitem[] = [
         tag: 'sapos, sapos, carnaval',
         observation: null,
         options: ['a', 'b', 'c', 'd', 'e'],
+        discounts: null,
         image: '/img/catalog/carnival-and-orcs-2/toads-1.webp'
     },
     {
@@ -1091,6 +1214,7 @@ export const catalog: Catalogitem[] = [
         tag: 'sapos, sapos, carnaval',
         observation: null,
         options: ['a', 'b'],
+        discounts: null,
         image: '/img/catalog/carnival-and-orcs-2/toads-2.webp'
     },
     {
@@ -1102,6 +1226,9 @@ export const catalog: Catalogitem[] = [
         tag: 'criatura, monstro, mar, oceano',
         observation: 'Na compra de no mínimo 3 o preço diminui para 21 R$',
         options: ['a', 'b', 'c', 'd'],
+        discounts: [
+            { minQty: 3, price: 21, type: 'fixed' },
+        ],
         image: '/img/catalog/carnival-and-orcs-2/slaads.webp'
     },
 
@@ -1116,6 +1243,7 @@ export const catalog: Catalogitem[] = [
         tag: 'xamã, bode',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/dark-wood-beasts-and-swamps/goatman-shaman.webp'
     },
     {
@@ -1127,6 +1255,7 @@ export const catalog: Catalogitem[] = [
         tag: 'centauro, criatura, monstro,',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/dark-wood-beasts-and-swamps/drakonkin-warlord.webp'
     },
     {
@@ -1138,6 +1267,7 @@ export const catalog: Catalogitem[] = [
         tag: 'centauro, criatura, monstro,',
         observation: null,
         options: ['a', 'b', 'c'],
+        discounts: null,
         image: '/img/catalog/dark-wood-beasts-and-swamps/drakonkin.webp'
     },
     {
@@ -1149,6 +1279,9 @@ export const catalog: Catalogitem[] = [
         tag: 'guerreiros, bode',
         observation: 'Na compra de no mínimo 3 o preço diminui para 19 R$',
         options: ['a', 'b', 'c', 'd', 'e'],
+        discounts: [
+            { minQty: 3, price: 19, type: 'fixed' },
+        ],
         image: '/img/catalog/dark-wood-beasts-and-swamps/goatman-warriors.webp'
     },
     {
@@ -1160,6 +1293,9 @@ export const catalog: Catalogitem[] = [
         tag: 'minotauro',
         observation: 'Na compra de no mínimo 3 o preço diminui para 19 R$',
         options: ['a', 'b', 'c', 'd', 'e'],
+        discounts: [
+            { minQty: 3, price: 19, type: 'fixed' },
+        ],
         image: '/img/catalog/dark-wood-beasts-and-swamps/gnomes-infantry-gunners.webp'
     },
     {
@@ -1171,6 +1307,9 @@ export const catalog: Catalogitem[] = [
         tag: 'cogumelos, myconid',
         observation: 'Na compra de no mínimo 3 o preço diminui para 12 R$',
         options: ['a', 'b', 'c', 'd', 'e'],
+        discounts: [
+            { minQty: 3, price: 12, type: 'fixed' },
+        ],
         image: '/img/catalog/dark-wood-beasts-and-swamps/shrooms-1.webp'
     },
     {
@@ -1182,6 +1321,9 @@ export const catalog: Catalogitem[] = [
         tag: 'cogumelos, myconid',
         observation: 'Na compra de no mínimo 3 o preço diminui para 12 R$',
         options: ['a', 'b', 'c', 'd', 'e'],
+        discounts: [
+            { minQty: 3, price: 12, type: 'fixed' },
+        ],
         image: '/img/catalog/dark-wood-beasts-and-swamps/shrooms-2.webp'
     },
     {
@@ -1193,6 +1335,7 @@ export const catalog: Catalogitem[] = [
         tag: 'cogumelos, myconid',
         observation: null,
         options: ['a', 'b'],
+        discounts: null,
         image: '/img/catalog/dark-wood-beasts-and-swamps/shroom-golems.webp'
     },
     {
@@ -1204,6 +1347,7 @@ export const catalog: Catalogitem[] = [
         tag: 'lagarta, criatura, monstro,',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/dark-wood-beasts-and-swamps/caterpillar.webp'
     },
     {
@@ -1215,6 +1359,7 @@ export const catalog: Catalogitem[] = [
         tag: 'dragão, dragões, pântano, criatura, monstro,',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/dark-wood-beasts-and-swamps/swamp-dragon.webp'
     },
     {
@@ -1226,6 +1371,7 @@ export const catalog: Catalogitem[] = [
         tag: 'gárgulas, criatura, monstro,',
         observation: null,
         options: ['a', 'b', 'c'],
+        discounts: null,
         image: '/img/catalog/dark-wood-beasts-and-swamps/gargoyles.webp'
     },
     {
@@ -1237,6 +1383,7 @@ export const catalog: Catalogitem[] = [
         tag: 'morto vivo, golem',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/dark-wood-beasts-and-swamps/grave-golem.webp'
     },
 
@@ -1251,6 +1398,7 @@ export const catalog: Catalogitem[] = [
         tag: 'guerreiro, minotauro',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/dark-wood-beasts-and-swamps-2/goatman-champion-1.webp'
     },
     {
@@ -1262,6 +1410,7 @@ export const catalog: Catalogitem[] = [
         tag: 'guerreiro, minotauro',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/dark-wood-beasts-and-swamps-2/goatman-champion-2.webp'
     },
     {
@@ -1273,6 +1422,7 @@ export const catalog: Catalogitem[] = [
         tag: 'guerreiro, minotauro, carruagem, criatura, monstro,',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/dark-wood-beasts-and-swamps-2/razor-beast-chariot.webp'
     },
     {
@@ -1284,6 +1434,9 @@ export const catalog: Catalogitem[] = [
         tag: 'guerreiro, minotauro',
         observation: 'Na compra de no mínimo 3 o preço diminui para 18 R$',
         options: ['a', 'b', 'c', 'd', 'e'],
+        discounts: [
+            { minQty: 3, price: 18, type: 'fixed' },
+        ],
         image: '/img/catalog/dark-wood-beasts-and-swamps-2/deathknights.webp'
     },
     {
@@ -1295,6 +1448,9 @@ export const catalog: Catalogitem[] = [
         tag: 'guerreiro, minotauro',
         observation: 'Na compra de no mínimo 3 o preço diminui para 18 R$',
         options: ['a', 'b', 'c', 'd', 'e'],
+        discounts: [
+            { minQty: 3, price: 18, type: 'fixed' },
+        ],
         image: '/img/catalog/dark-wood-beasts-and-swamps-2/goatman-light-warriors.webp'
     },
     {
@@ -1306,6 +1462,7 @@ export const catalog: Catalogitem[] = [
         tag: 'guerreiro, minotauro',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/dark-wood-beasts-and-swamps-2/minotaur-warlord-1.webp'
     },
     {
@@ -1317,6 +1474,7 @@ export const catalog: Catalogitem[] = [
         tag: 'guerreiro, minotauro',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/dark-wood-beasts-and-swamps-2/minotaur-warlord-2.webp'
     },
     {
@@ -1328,6 +1486,7 @@ export const catalog: Catalogitem[] = [
         tag: 'criatura, monstro, voador, demônio',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/dark-wood-beasts-and-swamps-2/giant-beast.webp'
     },
     {
@@ -1339,6 +1498,7 @@ export const catalog: Catalogitem[] = [
         tag: 'sapo, arqueiro, criatura, monstro,',
         observation: null,
         options: ['a', 'b', 'c'],
+        discounts: null,
         image: '/img/catalog/dark-wood-beasts-and-swamps-2/frog-archers.webp'
     },
     {
@@ -1350,6 +1510,7 @@ export const catalog: Catalogitem[] = [
         tag: 'sapo, guerreiro, criatura, monstro,',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/dark-wood-beasts-and-swamps-2/frog-centurion.webp'
     },
     {
@@ -1361,6 +1522,7 @@ export const catalog: Catalogitem[] = [
         tag: 'sapo, carruagem, criatura, monstro,',
         observation: null,
         options: ['a', 'b'],
+        discounts: null,
         image: '/img/catalog/dark-wood-beasts-and-swamps-2/frog-chariot.webp'
     },
     {
@@ -1372,6 +1534,9 @@ export const catalog: Catalogitem[] = [
         tag: 'sapo, guerreiro, criatura, monstro,',
         observation: 'Na compra de no mínimo 3 o preço diminui para 15 R$',
         options: ['a', 'b', 'c', 'd', 'e'],
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+        ],
         image: '/img/catalog/dark-wood-beasts-and-swamps-2/frog-guardians-1.webp'
     },
     {
@@ -1383,6 +1548,7 @@ export const catalog: Catalogitem[] = [
         tag: 'sapo, montaria',
         observation: null,
         options: ['a', 'b'],
+        discounts: null,
         image: '/img/catalog/dark-wood-beasts-and-swamps-2/frog-guardians-2.webp'
     },
     {
@@ -1394,6 +1560,7 @@ export const catalog: Catalogitem[] = [
         tag: 'morto vivo, guerreiro,cavaleiro da morte',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/dark-wood-beasts-and-swamps-2/death-knight.webp'
     },
     {
@@ -1405,6 +1572,7 @@ export const catalog: Catalogitem[] = [
         tag: 'criatura, monstro, cachorro, demonio',
         observation: null,
         options: ['a', 'b', 'c'],
+        discounts: null,
         image: '/img/catalog/dark-wood-beasts-and-swamps-2/death-dogs.webp'
     },
 
@@ -1418,6 +1586,7 @@ export const catalog: Catalogitem[] = [
         tag: 'guerreiro, lobisomem',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/dark-wood-beasts-and-wolf-order/lord-commander.webp'
     },
     {
@@ -1429,6 +1598,7 @@ export const catalog: Catalogitem[] = [
         tag: 'minotauro',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/dark-wood-beasts-and-wolf-order/beast-lord.webp'
     },
     {
@@ -1440,6 +1610,7 @@ export const catalog: Catalogitem[] = [
         tag: 'lobisomem, criatura, monstro,',
         observation: null,
         options: ['a', 'b', 'c'],
+        discounts: null,
         image: '/img/catalog/dark-wood-beasts-and-wolf-order/werewolf.webp'
     },
     {
@@ -1451,6 +1622,7 @@ export const catalog: Catalogitem[] = [
         tag: 'guerreiro, montaria, lobo',
         observation: null,
         options: ['a', 'b', 'c'],
+        discounts: null,
         image: '/img/catalog/dark-wood-beasts-and-wolf-order/wolf-princes.webp'
     },
     {
@@ -1462,6 +1634,7 @@ export const catalog: Catalogitem[] = [
         tag: 'arqueiros, arqueiro',
         observation: null,
         options: ['a', 'b', 'c'],
+        discounts: null,
         image: '/img/catalog/dark-wood-beasts-and-wolf-order/archers.webp'
     },
     {
@@ -1473,6 +1646,7 @@ export const catalog: Catalogitem[] = [
         tag: 'ungor, sátiro, sátiros',
         observation: null,
         options: ['a', 'b', 'c', 'd', 'e'],
+        discounts: null,
         image: '/img/catalog/dark-wood-beasts-and-wolf-order/ungor-herds.webp'
     },
     {
@@ -1484,6 +1658,7 @@ export const catalog: Catalogitem[] = [
         tag: 'sátiro, sátiros',
         observation: null,
         options: ['a', 'b', 'c', 'd', 'e'],
+        discounts: null,
         image: '/img/catalog/dark-wood-beasts-and-wolf-order/satyrs-1.webp'
     },
     {
@@ -1495,6 +1670,7 @@ export const catalog: Catalogitem[] = [
         tag: 'sátiro, sátiros',
         observation: null,
         options: ['a', 'b', 'c', 'd', 'e'],
+        discounts: null,
         image: '/img/catalog/dark-wood-beasts-and-wolf-order/satyrs-2.webp'
     },
     {
@@ -1506,6 +1682,7 @@ export const catalog: Catalogitem[] = [
         tag: 'centauros, centauro',
         observation: null,
         options: ['a', 'b', 'c'],
+        discounts: null,
         image: '/img/catalog/dark-wood-beasts-and-wolf-order/centaurs-1.webp'
     },
     {
@@ -1517,6 +1694,7 @@ export const catalog: Catalogitem[] = [
         tag: 'centauros, centauro',
         observation: null,
         options: ['a', 'b', 'c'],
+        discounts: null,
         image: '/img/catalog/dark-wood-beasts-and-wolf-order/centaurs-2.webp'
     },
     {
@@ -1528,6 +1706,7 @@ export const catalog: Catalogitem[] = [
         tag: 'centauros, centauro',
         observation: null,
         options: ['a', 'b', 'c', 'd', 'e'],
+        discounts: null,
         image: '/img/catalog/dark-wood-beasts-and-wolf-order/centaurs-3.webp'
     },
     {
@@ -1539,6 +1718,7 @@ export const catalog: Catalogitem[] = [
         tag: 'centauros, centauro',
         observation: null,
         options: ['a', 'b', 'c'],
+        discounts: null,
         image: '/img/catalog/dark-wood-beasts-and-wolf-order/centaurs-4.webp'
     },
     {
@@ -1550,6 +1730,7 @@ export const catalog: Catalogitem[] = [
         tag: 'gigante, minotauro, criatura, monstro,',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/dark-wood-beasts-and-wolf-order/beast-giant.webp'
     },
     {
@@ -1561,6 +1742,7 @@ export const catalog: Catalogitem[] = [
         tag: 'gigante, minotauro, criatura, monstro,',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/dark-wood-beasts-and-wolf-order/giant-berserker.webp'
     },
     {
@@ -1572,6 +1754,7 @@ export const catalog: Catalogitem[] = [
         tag: 'ogro',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/dark-wood-beasts-and-wolf-order/ettin.webp'
     },
     {
@@ -1582,7 +1765,8 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.DARK_WOOD_BEASTS_AND_WOLF_ORDER,
         tag: 'aranha',
         observation: null,
-        options: null,
+        options: ['a', 'b'],
+        discounts: null,
         image: '/img/catalog/dark-wood-beasts-and-wolf-order/ettercap.webp'
     },
 
@@ -1596,6 +1780,7 @@ export const catalog: Catalogitem[] = [
         tag: 'busto, caveira',
         observation: 'Busto estúdio DayBreak',
         options: null,
+        discounts: null,
         image: '/img/catalog/daybreak/busto-dusk-monk.webp'
     },
     {
@@ -1607,6 +1792,7 @@ export const catalog: Catalogitem[] = [
         tag: 'busto, orc',
         observation: 'Busto estúdio DayBreak',
         options: null,
+        discounts: null,
         image: '/img/catalog/daybreak/busto-hector-stumpfkant.webp'
     },
     {
@@ -1618,6 +1804,7 @@ export const catalog: Catalogitem[] = [
         tag: 'busto, orc',
         observation: 'Busto estúdio DayBreak',
         options: null,
+        discounts: null,
         image: '/img/catalog/daybreak/busto-higgurath-doubleslit.webp'
     },
     {
@@ -1629,6 +1816,7 @@ export const catalog: Catalogitem[] = [
         tag: 'busto, orc, anão, anões,',
         observation: 'Busto estúdio DayBreak',
         options: null,
+        discounts: null,
         image: '/img/catalog/daybreak/busto-sothard-deadhand.webp'
     },
     {
@@ -1640,6 +1828,9 @@ export const catalog: Catalogitem[] = [
         tag: 'troll',
         observation: 'Estúdio DayBreak - Disponível no tamanho 54mm com aumento de 10 R$ - No tamanho 33mm a cada 5 miniaturas cada uma fica por 18 R$',
         options: null,
+        discounts: [
+            { minQty: 5, price: 18, type: 'fixed' },
+        ],
         image: '/img/catalog/daybreak/benjammer-holt.webp'
     },
     {
@@ -1651,6 +1842,9 @@ export const catalog: Catalogitem[] = [
         tag: 'troll',
         observation: 'Estúdio DayBreak - Disponível no tamanho 54mm com aumento de 10 R$ - No tamanho 33mm a cada 5 miniaturas cada uma fica por 18 R$',
         options: null,
+        discounts: [
+            { minQty: 5, price: 18, type: 'fixed' },
+        ],
         image: '/img/catalog/daybreak/circer-malaar.webp'
     },
     {
@@ -1662,6 +1856,9 @@ export const catalog: Catalogitem[] = [
         tag: 'troll',
         observation: 'Estúdio DayBreak - Disponível no tamanho 54mm com aumento de 10 R$ - No tamanho 33mm a cada 5 miniaturas cada uma fica por 18 R$',
         options: null,
+        discounts: [
+            { minQty: 5, price: 18, type: 'fixed' },
+        ],
         image: '/img/catalog/daybreak/deathbringer-olan-troka.webp'
     },
     {
@@ -1673,6 +1870,9 @@ export const catalog: Catalogitem[] = [
         tag: 'troll',
         observation: 'Estúdio DayBreak - Disponível no tamanho 54mm com aumento de 10 R$ - No tamanho 33mm a cada 5 miniaturas cada uma fica por 18 R$',
         options: null,
+        discounts: [
+            { minQty: 5, price: 18, type: 'fixed' },
+        ],
         image: '/img/catalog/daybreak/doblar-grakk.webp'
     },
     {
@@ -1684,6 +1884,9 @@ export const catalog: Catalogitem[] = [
         tag: 'troll',
         observation: 'Estúdio DayBreak - Disponível no tamanho 54mm com aumento de 10 R$ - No tamanho 33mm a cada 5 miniaturas cada uma fica por 18 R$',
         options: null,
+        discounts: [
+            { minQty: 5, price: 18, type: 'fixed' },
+        ],
         image: '/img/catalog/daybreak/gartaz-the-halfed.webp'
     },
     {
@@ -1695,6 +1898,9 @@ export const catalog: Catalogitem[] = [
         tag: 'troll',
         observation: 'Estúdio DayBreak - Disponível no tamanho 54mm com aumento de 10 R$ - No tamanho 33mm a cada 5 miniaturas cada uma fica por 18 R$',
         options: null,
+        discounts: [
+            { minQty: 5, price: 18, type: 'fixed' },
+        ],
         image: '/img/catalog/daybreak/grasta-poka.webp'
     },
     {
@@ -1706,6 +1912,9 @@ export const catalog: Catalogitem[] = [
         tag: 'troll',
         observation: 'Estúdio DayBreak - Disponível no tamanho 54mm com aumento de 10 R$ - No tamanho 33mm a cada 5 miniaturas cada uma fica por 18 R$',
         options: null,
+        discounts: [
+            { minQty: 5, price: 18, type: 'fixed' },
+        ],
         image: '/img/catalog/daybreak/jakzo-stormer.webp'
     },
     {
@@ -1717,6 +1926,9 @@ export const catalog: Catalogitem[] = [
         tag: 'troll',
         observation: 'Estúdio DayBreak - Disponível no tamanho 54mm com aumento de 10 R$ - No tamanho 33mm a cada 5 miniaturas cada uma fica por 18 R$',
         options: null,
+        discounts: [
+            { minQty: 5, price: 18, type: 'fixed' },
+        ],
         image: '/img/catalog/daybreak/jolan-frak.webp'
     },
     {
@@ -1728,6 +1940,9 @@ export const catalog: Catalogitem[] = [
         tag: 'troll',
         observation: 'Estúdio DayBreak - Disponível no tamanho 54mm com aumento de 10 R$ - No tamanho 33mm a cada 5 miniaturas cada uma fica por 18 R$',
         options: null,
+        discounts: [
+            { minQty: 5, price: 18, type: 'fixed' },
+        ],
         image: '/img/catalog/daybreak/jorduz-hunter.webp'
     },
     {
@@ -1739,6 +1954,9 @@ export const catalog: Catalogitem[] = [
         tag: 'troll',
         observation: 'Estúdio DayBreak - Disponível no tamanho 54mm com aumento de 10 R$ - No tamanho 33mm a cada 5 miniaturas cada uma fica por 18 R$',
         options: null,
+        discounts: [
+            { minQty: 5, price: 18, type: 'fixed' },
+        ],
         image: '/img/catalog/daybreak/lieutenant-mitrog.webp'
     },
     {
@@ -1750,6 +1968,9 @@ export const catalog: Catalogitem[] = [
         tag: 'troll, xamã',
         observation: 'Estúdio DayBreak - Disponível no tamanho 54mm com aumento de 10 R$ - No tamanho 33mm a cada 5 miniaturas cada uma fica por 18 R$',
         options: null,
+        discounts: [
+            { minQty: 5, price: 18, type: 'fixed' },
+        ],
         image: '/img/catalog/daybreak/skull-summoner-paktas-blox-1.webp'
     },
     {
@@ -1761,6 +1982,9 @@ export const catalog: Catalogitem[] = [
         tag: 'troll, assassino',
         observation: 'Estúdio DayBreak - Disponível no tamanho 54mm com aumento de 10 R$ - No tamanho 33mm a cada 5 miniaturas cada uma fica por 18 R$',
         options: null,
+        discounts: [
+            { minQty: 5, price: 18, type: 'fixed' },
+        ],
         image: '/img/catalog/daybreak/skull-summoner-paktas-blox-2.webp'
     },
     {
@@ -1772,6 +1996,7 @@ export const catalog: Catalogitem[] = [
         tag: 'paladino, humano, masculino, homem',
         observation: 'Estúdio DayBreak - Disponível no tamanho 54mm com aumento de 10 R$',
         options: null,
+        discounts: null,
         image: '/img/catalog/daybreak/chlodvig-du-marteau-lourd.webp'
     },
     {
@@ -1783,6 +2008,7 @@ export const catalog: Catalogitem[] = [
         tag: 'paladino, humano, masculino, homem',
         observation: 'Estúdio DayBreak - Disponível no tamanho 54mm com aumento de 10 R$',
         options: null,
+        discounts: null,
         image: '/img/catalog/daybreak/colonel-thierry-du-lion-dargent.webp'
     },
     {
@@ -1794,6 +2020,7 @@ export const catalog: Catalogitem[] = [
         tag: 'paladino, humano, masculino, homem',
         observation: 'Estúdio DayBreak - Disponível no tamanho 54mm com aumento de 10 R$',
         options: null,
+        discounts: null,
         image: '/img/catalog/daybreak/erasmus-du-tranchant.webp'
     },
     {
@@ -1805,6 +2032,7 @@ export const catalog: Catalogitem[] = [
         tag: 'paladino, humano, montaria, masculino, homem',
         observation: 'Estúdio DayBreak',
         options: null,
+        discounts: null,
         image: '/img/catalog/daybreak/grand-pretre-ferdinand-du-lion-dargent.webp'
     },
     {
@@ -1816,6 +2044,7 @@ export const catalog: Catalogitem[] = [
         tag: 'paladino, paladina, humano, humana, feminino, feminina, mulher, montaria',
         observation: 'Estúdio DayBreak',
         options: null,
+        discounts: null,
         image: '/img/catalog/daybreak/grande-pretresse-salome-du-lion-dargent.webp'
     },
     {
@@ -1827,6 +2056,7 @@ export const catalog: Catalogitem[] = [
         tag: 'paladino, paladina, humano, humana, feminino, feminina, mulher',
         observation: 'Estúdio DayBreak - Disponível no tamanho 54mm com aumento de 10 R$',
         options: null,
+        discounts: null,
         image: '/img/catalog/daybreak/isabelle-du-lion-dargent.webp'
     },
     {
@@ -1838,6 +2068,7 @@ export const catalog: Catalogitem[] = [
         tag: 'paladino, humano, montaria, masculino, homem',
         observation: 'Estúdio DayBreak',
         options: null,
+        discounts: null,
         image: '/img/catalog/daybreak/le-chevalier-florian-de-lancienne-bataille.webp'
     },
     {
@@ -1849,6 +2080,7 @@ export const catalog: Catalogitem[] = [
         tag: 'paladino, paladina, humano, humana, feminino, feminina, mulher',
         observation: 'Estúdio DayBreak - Disponível no tamanho 54mm com aumento de 10 R$',
         options: null,
+        discounts: null,
         image: '/img/catalog/daybreak/marie-du-lion-dargent.webp'
     },
     {
@@ -1860,6 +2092,7 @@ export const catalog: Catalogitem[] = [
         tag: 'paladino, humano, masculino, homem',
         observation: 'Estúdio DayBreak - Disponível no tamanho 54mm com aumento de 10 R$',
         options: null,
+        discounts: null,
         image: '/img/catalog/daybreak/mattias-du-lion-tuant-01.webp'
     },
 
@@ -1873,6 +2106,7 @@ export const catalog: Catalogitem[] = [
         tag: 'cavalheiro, morte, masculino, homem',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/death-knights/death-lord.webp',
     },
     {
@@ -1884,6 +2118,7 @@ export const catalog: Catalogitem[] = [
         tag: 'orc, mulher, feminino, cavalheiro, morte',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/death-knights/deathknight-champion.webp',
     },
     {
@@ -1895,6 +2130,7 @@ export const catalog: Catalogitem[] = [
         tag: 'cavalheiro, morte, anão, anões, masculino, homem, morto vivo',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/death-knights/deathknights-berserker.webp',
     },
     {
@@ -1906,6 +2142,7 @@ export const catalog: Catalogitem[] = [
         tag: 'patrulheiro, patrulheira, cavalheiro, cavalheira, morte, mulher, feminino',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/death-knights/deathbringer.webp',
     },
     {
@@ -1917,6 +2154,7 @@ export const catalog: Catalogitem[] = [
         tag: 'necromante, humano, homem, masculino',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/death-knights/deathknights-bonespeaker.webp',
     },
     {
@@ -1928,6 +2166,7 @@ export const catalog: Catalogitem[] = [
         tag: 'criatura, monstro, aberração, troll',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/death-knights/deathknights-abomination.webp',
     },
     {
@@ -1939,6 +2178,7 @@ export const catalog: Catalogitem[] = [
         tag: 'cavaleiro, morte, guerreiro, masculino, homem, montaria, cavalo',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/death-knights/deathknights-knight-a.webp',
     },
     {
@@ -1950,6 +2190,7 @@ export const catalog: Catalogitem[] = [
         tag: 'cavaleiro, morte, guerreiro, masculino, homem, montaria, cavalo',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/death-knights/deathknights-knight-b.webp',
     },
     {
@@ -1961,6 +2202,9 @@ export const catalog: Catalogitem[] = [
         tag: 'cavaleiro, morte, guerreiro, masculino, homem',
         observation: 'Na compra de no mínimo 3 o preço diminui para 15 R$',
         options: ['a', 'b', 'c', 'd', 'e', 'f', 'g'],
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+        ],
         image: '/img/catalog/death-knights/ironbeak-owlbear.webp',
     },
     {
@@ -1972,6 +2216,7 @@ export const catalog: Catalogitem[] = [
         tag: 'demonio, criatura, monstro,',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/death-knights/avatar-of-yrghal.webp',
     },
     {
@@ -1983,6 +2228,7 @@ export const catalog: Catalogitem[] = [
         tag: 'dragão, dragões, morto vivo, voador, criatura, monstro',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/death-knights/dread-dragon.webp',
     },
     {
@@ -1994,6 +2240,7 @@ export const catalog: Catalogitem[] = [
         tag: 'dragão, dragões, morto vivo, voador, criatura, monstro, cavaleiro, morte, guerreiro, masculino, homem, montaria',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/death-knights/death-lord-especial.webp',
     },
 
@@ -2007,6 +2254,7 @@ export const catalog: Catalogitem[] = [
         tag: 'elfo, masculino, homem',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/highborn-elves-and-vampire-pirates/highborne-prince.webp',
     },
     {
@@ -2018,6 +2266,7 @@ export const catalog: Catalogitem[] = [
         tag: 'elfo, masculino, homem',
         observation: null,
         options: ['a', 'b', 'c', 'd', 'e'],
+        discounts: null,
         image: '/img/catalog/highborn-elves-and-vampire-pirates/highborne-warriors.webp',
     },
     {
@@ -2029,6 +2278,7 @@ export const catalog: Catalogitem[] = [
         tag: 'elfo, masculino, homem, arqueiros, arqueiro',
         observation: null,
         options: ['a', 'b', 'c', 'd', 'e'],
+        discounts: null,
         image: '/img/catalog/highborn-elves-and-vampire-pirates/highborne-archers.webp',
     },
     {
@@ -2040,6 +2290,7 @@ export const catalog: Catalogitem[] = [
         tag: 'cavalaria, elfos, elfo, cavalo, montaria',
         observation: null,
         options: ['a', 'b', 'c', 'd', 'e'],
+        discounts: null,
         image: '/img/catalog/highborn-elves-and-vampire-pirates/highborne-cavalry.webp',
     },
     {
@@ -2051,6 +2302,7 @@ export const catalog: Catalogitem[] = [
         tag: 'dragão, dragões, voador, criatura, monstro',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/highborn-elves-and-vampire-pirates/silver-dragon.webp',
     },
     {
@@ -2062,6 +2314,7 @@ export const catalog: Catalogitem[] = [
         tag: 'necromante, masculino, homem, pirata, humano',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/highborn-elves-and-vampire-pirates/necromancer-simple.webp',
     },
     {
@@ -2073,6 +2326,7 @@ export const catalog: Catalogitem[] = [
         tag: 'necromante, masculino, homem, pirata, humano',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/highborn-elves-and-vampire-pirates/necromancer-detailed.webp',
     },
     {
@@ -2084,6 +2338,7 @@ export const catalog: Catalogitem[] = [
         tag: 'zumbi, pirata, morto vivo, masculino, homem',
         observation: null,
         options: ['a', 'b', 'c'],
+        discounts: null,
         image: '/img/catalog/highborn-elves-and-vampire-pirates/zombie-gunners.webp',
     },
     {
@@ -2095,6 +2350,7 @@ export const catalog: Catalogitem[] = [
         tag: 'ghouls, ghoul, pirata, masculino, homem',
         observation: null,
         options: ['a', 'b', 'c', 'd', 'e'],
+        discounts: null,
         image: '/img/catalog/highborn-elves-and-vampire-pirates/pirate-ghouls.webp',
     },
     {
@@ -2106,6 +2362,7 @@ export const catalog: Catalogitem[] = [
         tag: 'sereias, sereia, feminino, mulher, mágico',
         observation: null,
         options: ['a', 'b', 'c'],
+        discounts: null,
         image: '/img/catalog/highborn-elves-and-vampire-pirates/sirens.webp',
     },
     {
@@ -2117,6 +2374,7 @@ export const catalog: Catalogitem[] = [
         tag: 'monstro, criatura, animal, animais, animais, chuul',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/highborn-elves-and-vampire-pirates/digging-monster.webp',
     },
     {
@@ -2128,6 +2386,7 @@ export const catalog: Catalogitem[] = [
         tag: 'golem, criatura, criaturas, monstro',
         observation: null,
         options: ['a', 'b', 'c'],
+        discounts: null,
         image: '/img/catalog/highborn-elves-and-vampire-pirates/mephit.webp',
     },
 
@@ -2141,6 +2400,9 @@ export const catalog: Catalogitem[] = [
         tag: 'soldado, guerreiro, escudeiro, masculino, homem',
         observation: 'Na compra de no mínimo 3 o preço diminui para 16 R$',
         options: ['a', 'b', 'c', 'd', 'e'],
+        discounts: [
+            { minQty: 3, price: 16, type: 'fixed' },
+        ],
         image: '/img/catalog/kingdom-of-equitaine-vol-2/footman.webp',
     },
     {
@@ -2152,6 +2414,7 @@ export const catalog: Catalogitem[] = [
         tag: 'cavaleiro, guerreiro, montaria, nobre, masculino, homem, cavalo',
         observation: null,
         options: ['a', 'b', 'c', 'd', 'e'],
+        discounts: null,
         image: '/img/catalog/kingdom-of-equitaine-vol-2/hedge-knights.webp',
     },
     {
@@ -2163,6 +2426,7 @@ export const catalog: Catalogitem[] = [
         tag: 'cavaleiro, guerreiro, montaria, nobre, masculino, homem, cavalo',
         observation: null,
         options: ['a', 'b', 'c', 'd', 'e'],
+        discounts: null,
         image: '/img/catalog/kingdom-of-equitaine-vol-2/penitant-knights.webp',
     },
     {
@@ -2174,6 +2438,7 @@ export const catalog: Catalogitem[] = [
         tag: 'arqueiro, cavalo, montaria, masculino, homem, cavaleiro, guerreiro',
         observation: null,
         options: ['a', 'b', 'c', 'd', 'e'],
+        discounts: null,
         image: '/img/catalog/kingdom-of-equitaine-vol-2/yeoman-bow-mounted.webp',
     },
     {
@@ -2185,6 +2450,7 @@ export const catalog: Catalogitem[] = [
         tag: 'cavalo, montaria, masculino, homem, cavaleiro, guerreiro, lança',
         observation: null,
         options: ['a', 'b', 'c', 'd', 'e'],
+        discounts: null,
         image: '/img/catalog/kingdom-of-equitaine-vol-2/yeoman-spear-mounted.webp',
     },
     {
@@ -2196,6 +2462,7 @@ export const catalog: Catalogitem[] = [
         tag: 'paladino, nobre, montaria, guerreiro, cavalo, masculino, homem, cavaleiro',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/kingdom-of-equitaine-vol-2/paladin.webp',
     },
     {
@@ -2207,21 +2474,47 @@ export const catalog: Catalogitem[] = [
         tag: 'cavaleiro, guerreiro, humano, montaria, cavalo',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/kingdom-of-equitaine-vol-2/folk-hero.webp',
     },
     {
         id: 198,
-        name: 'Trebush',
+        name: 'Trebush + Trebush support unit',
         size: 'especial',
         price: 210.00,
         type: TypeEnum.KINGDOM_OF_EQUITAINE_VOL_2,
         tag: 'arma de cerco, trebuchê, suporte, item, itens, cenário, guerreiro, masculino, homem',
-        observation: 'Trebush: R$ 200 | Trebush support unit: R$ 15 (vendidos separadamente)',
+        observation: null,
         options: null,
-        image: '/img/catalog/kingdom-of-equitaine-vol-2/trebush.webp',
+        discounts: null,
+        image: '/img/catalog/kingdom-of-equitaine-vol-2/trebush_and_unit.webp',
     },
     {
         id: 199,
+        name: 'Trebush',
+        size: 'especial',
+        price: 200.00,
+        type: TypeEnum.KINGDOM_OF_EQUITAINE_VOL_2,
+        tag: 'arma de cerco, trebuchê, suporte, item, itens, cenário',
+        observation: null,
+        options: null,
+        discounts: null,
+        image: '/img/catalog/kingdom-of-equitaine-vol-2/trebush.webp',
+    },
+    {
+        id: 200,
+        name: 'Trebush support unit',
+        size: 'especial',
+        price: 15.00,
+        type: TypeEnum.KINGDOM_OF_EQUITAINE_VOL_2,
+        tag: 'guerreiro, masculino, homem, trebuchê',
+        observation: null,
+        options: null,
+        discounts: null,
+        image: '/img/catalog/kingdom-of-equitaine-vol-2/trebush-unit.webp',
+    },
+    {
+        id: 201,
         name: 'Damsel Mounted v1',
         size: 'especial',
         price: 45.00,
@@ -2229,10 +2522,11 @@ export const catalog: Catalogitem[] = [
         tag: 'mágica, mágico, feminino, mulher, montaria, cavalo, sacerdotisa, sacerdote',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/kingdom-of-equitaine-vol-2/damsel-mounted-v1.webp',
     },
     {
-        id: 200,
+        id: 202,
         name: 'Damsel Mounted v2',
         size: 'especial',
         price: 45.00,
@@ -2240,10 +2534,11 @@ export const catalog: Catalogitem[] = [
         tag: 'mágica, mágico, feminino, mulher, montaria, cavalo, sacerdotisa, sacerdote',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/kingdom-of-equitaine-vol-2/damsel-mounted-v2.webp',
     },
     {
-        id: 201,
+        id: 203,
         name: 'Fea Monster',
         size: 'especial',
         price: 160.00,
@@ -2251,10 +2546,11 @@ export const catalog: Catalogitem[] = [
         tag: 'monstro, criatura, animal, animais, animais, voadora',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/kingdom-of-equitaine-vol-2/fea-monster.webp',
     },
     {
-        id: 202,
+        id: 204,
         name: 'Damsel on Fea Monster',
         size: 'especial',
         price: 175.00,
@@ -2262,10 +2558,11 @@ export const catalog: Catalogitem[] = [
         tag: 'monstro, criatura, animal, animais, animais, voadora, mágica, mágico, feminino, mulher, montaria, cavalo, sacerdotisa, sacerdote',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/kingdom-of-equitaine-vol-2/damsel-fea-monster.webp',
     },
     {
-        id: 203,
+        id: 205,
         name: 'Bone Devil',
         size: 'especial',
         price: 75.00,
@@ -2273,10 +2570,11 @@ export const catalog: Catalogitem[] = [
         tag: 'demônio, criatura, morto vivo, monstro',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/kingdom-of-equitaine-vol-2/bone-devil.webp',
     },
     {
-        id: 204,
+        id: 206,
         name: 'Red Mages',
         size: '28mm|33mm',
         price: 18.00,
@@ -2284,12 +2582,13 @@ export const catalog: Catalogitem[] = [
         tag: 'mago, magos vermelhos, mago vermelho, conjurador, mágico, homem, masculino, careca',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/kingdom-of-equitaine-vol-2/red-mages.webp',
     },
 
     // METAL_BEARDS
     {
-        id: 205,
+        id: 207,
         name: 'Bot A',
         size: '28mm|33mm',
         price: 16.00,
@@ -2297,10 +2596,11 @@ export const catalog: Catalogitem[] = [
         tag: 'autômato, anão, anões, metálico, metal, masculino, homem',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/metal-beards/bot-a.webp',
     },
     {
-        id: 206,
+        id: 208,
         name: 'Bot B',
         size: '28mm|33mm',
         price: 16.00,
@@ -2308,10 +2608,11 @@ export const catalog: Catalogitem[] = [
         tag: 'autômato, anão, anões, metálico, metal, masculino, homem',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/metal-beards/bot-b.webp',
     },
     {
-        id: 207,
+        id: 209,
         name: 'Elris',
         size: '28mm|33mm',
         price: 15.00,
@@ -2319,10 +2620,11 @@ export const catalog: Catalogitem[] = [
         tag: 'anão, anões, feminino, mulher',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/metal-beards/elris.webp',
     },
     {
-        id: 208,
+        id: 210,
         name: 'Gargy',
         size: '28mm|33mm',
         price: 16.00,
@@ -2330,10 +2632,11 @@ export const catalog: Catalogitem[] = [
         tag: 'anão, anões, masculino, homem, guerreiro',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/metal-beards/gargy.webp',
     },
     {
-        id: 209,
+        id: 211,
         name: 'Gemalin',
         size: '28mm|33mm',
         price: 16.00,
@@ -2341,10 +2644,11 @@ export const catalog: Catalogitem[] = [
         tag: 'anão, anões, masculino, homem, guerreiro, metálico, metal',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/metal-beards/gemalin.webp',
     },
     {
-        id: 210,
+        id: 212,
         name: 'Gimrom',
         size: '28mm|33mm',
         price: 16.00,
@@ -2352,10 +2656,11 @@ export const catalog: Catalogitem[] = [
         tag: 'anão, anões, masculino, homem, guerreiro, metálico, metal',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/metal-beards/gimrom.webp',
     },
     {
-        id: 211,
+        id: 213,
         name: 'Ram',
         size: 'especial',
         price: 35.00,
@@ -2363,10 +2668,11 @@ export const catalog: Catalogitem[] = [
         tag: 'anão, anões, masculino, homem, metálico, metal, montaria, bufalo',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/metal-beards/ram.webp',
     },
     {
-        id: 212,
+        id: 214,
         name: 'Anvil',
         size: 'especial',
         price: 100.00,
@@ -2374,10 +2680,11 @@ export const catalog: Catalogitem[] = [
         tag: 'bigorna, máquina, forja, item, itens, anão, anões, masculino, homem, metálico, metal, cenário',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/metal-beards/anvil.webp',
     },
     {
-        id: 213,
+        id: 215,
         name: 'Ranger A',
         size: '28mm|33mm',
         price: 15.00,
@@ -2385,10 +2692,11 @@ export const catalog: Catalogitem[] = [
         tag: 'patrulheiro, anão, anões, rifle, masculino, homem',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/metal-beards/ranger-a.webp',
     },
     {
-        id: 214,
+        id: 216,
         name: 'Ranger B',
         size: '28mm|33mm',
         price: 15.00,
@@ -2396,10 +2704,11 @@ export const catalog: Catalogitem[] = [
         tag: 'patrulheiro, anão, anões, arqueiro, besta, masculino, homem',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/metal-beards/ranger-b.webp',
     },
     {
-        id: 215,
+        id: 217,
         name: 'Warrior A',
         size: '28mm|33mm',
         price: 15.00,
@@ -2407,10 +2716,11 @@ export const catalog: Catalogitem[] = [
         tag: 'guerreiro, anão, anões, homem, masculino',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/metal-beards/warrior-a.webp',
     },
     {
-        id: 216,
+        id: 218,
         name: 'Warrior B',
         size: '28mm|33mm',
         price: 15.00,
@@ -2418,10 +2728,11 @@ export const catalog: Catalogitem[] = [
         tag: 'guerreiro, anão, anões, homem, masculino',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/metal-beards/warrior-b.webp',
     },
     {
-        id: 217,
+        id: 219,
         name: 'Steam Dragon',
         size: 'especial',
         price: 280.00,
@@ -2429,10 +2740,11 @@ export const catalog: Catalogitem[] = [
         tag: 'dragão, dragões, metálico, metal, criatura, animal, animais, animais, monstro',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/metal-beards/steam-dragon.webp',
     },
     {
-        id: 218,
+        id: 220,
         name: 'Forge',
         size: 'especial',
         price: 150.00,
@@ -2440,12 +2752,13 @@ export const catalog: Catalogitem[] = [
         tag: 'forja, estrutura, anão, anões, item, itens, cenário, casa, cidade',
         observation: 'Conjunto completo - Se quiser algum item separado, entre em contato!',
         options: null,
+        discounts: null,
         image: '/img/catalog/metal-beards/forge.webp',
     },
 
     // OGRES_AND_AMAZONS
     {
-        id: 219,
+        id: 221,
         name: 'Brutosaur',
         size: '28mm|33mm',
         price: 35.00,
@@ -2453,10 +2766,11 @@ export const catalog: Catalogitem[] = [
         tag: 'dinossauro, criatura, animal, animais, animais,',
         observation: null,
         options: ['a', 'b', 'c'],
+        discounts: null,
         image: '/img/catalog/ogres-and-amazons/brutosaur.webp',
     },
     {
-        id: 220,
+        id: 222,
         name: 'Brutosaur Riders A',
         size: 'especial',
         price: 45.00,
@@ -2464,10 +2778,11 @@ export const catalog: Catalogitem[] = [
         tag: 'dinossauro, criatura, montaria, amazona, mulher, feminino',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/ogres-and-amazons/brutosaur-riders-a.webp',
     },
     {
-        id: 221,
+        id: 223,
         name: 'Brutosaur Riders B',
         size: 'especial',
         price: 45.00,
@@ -2475,10 +2790,11 @@ export const catalog: Catalogitem[] = [
         tag: 'dinossauro, criatura, montaria, amazona, mulher, feminino',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/ogres-and-amazons/brutosaur-riders-b.webp',
     },
     {
-        id: 222,
+        id: 224,
         name: 'Brutosaur Riders C',
         size: 'especial',
         price: 45.00,
@@ -2486,10 +2802,11 @@ export const catalog: Catalogitem[] = [
         tag: 'dinossauro, criatura, montaria, amazona, mulher, feminino',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/ogres-and-amazons/brutosaur-riders-c.webp',
     },
     {
-        id: 223,
+        id: 225,
         name: 'Carninn the Primeval Roar',
         size: 'especial',
         price: 55.00,
@@ -2497,10 +2814,11 @@ export const catalog: Catalogitem[] = [
         tag: 'criatura, animal, animais, animais, rugido, dente de sabre, criatura, montaria, amazona, mulher, feminino',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/ogres-and-amazons/carninn-primeval-roar.webp',
     },
     {
-        id: 224,
+        id: 226,
         name: 'Ceratops with Priestess',
         size: 'especial',
         price: 280.00,
@@ -2508,10 +2826,11 @@ export const catalog: Catalogitem[] = [
         tag: 'dinossauro, animal, animais, animais, sacerdotisa, sacerdote, montaria, amazona, mulher, feminino',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/ogres-and-amazons/ceratops-priestess.webp',
     },
     {
-        id: 225,
+        id: 227,
         name: 'Headhunters A',
         size: '28mm|33mm',
         price: 18.00,
@@ -2519,10 +2838,11 @@ export const catalog: Catalogitem[] = [
         tag: 'caçadora, tribal, amazona, feminino, mulher, caveira, guerreiro, guerreira, patrulheiro, patrulheira',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/ogres-and-amazons/headhunters-a.webp',
     },
     {
-        id: 226,
+        id: 228,
         name: 'Headhunters B',
         size: '28mm|33mm',
         price: 18.00,
@@ -2530,10 +2850,11 @@ export const catalog: Catalogitem[] = [
         tag: 'caçadora, tribal, amazona, feminino, mulher, caveira, guerreiro, guerreira, patrulheiro, patrulheira',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/ogres-and-amazons/headhunters-b.webp',
     },
     {
-        id: 227,
+        id: 229,
         name: 'Headhunters C',
         size: '28mm|33mm',
         price: 18.00,
@@ -2541,10 +2862,11 @@ export const catalog: Catalogitem[] = [
         tag: 'arqueiro, arqueira, arco, caçadora, tribal, amazona, feminino, mulher, caveira, guerreiro, guerreira, patrulheiro, patrulheira',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/ogres-and-amazons/headhunters-c.webp',
     },
     {
-        id: 228,
+        id: 230,
         name: 'Itza the Totem Wielder',
         size: '28mm|33mm',
         price: 25.00,
@@ -2552,10 +2874,11 @@ export const catalog: Catalogitem[] = [
         tag: 'totem, guerreira, guerreiro, amazona, xamã, feminino, mulher, sacerdotisa, sacerdote',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/ogres-and-amazons/itza-totem-wielder.webp',
     },
     {
-        id: 229,
+        id: 231,
         name: 'Jurassica the First to Charge',
         size: 'especial',
         price: 45.00,
@@ -2563,10 +2886,11 @@ export const catalog: Catalogitem[] = [
         tag: 'dinossauro, amazona, feminino, mulher, guerreiro, guerreira, montaria, animal, animais, animais, totem',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/ogres-and-amazons/jurassica.webp',
     },
     {
-        id: 230,
+        id: 232,
         name: 'Serpent Guards',
         size: '28mm|33mm',
         price: 18.00,
@@ -2574,10 +2898,11 @@ export const catalog: Catalogitem[] = [
         tag: 'guerreiro, guerreira, amazona, feminino, mulher',
         observation: null,
         options: ['a', 'b', 'c'],
+        discounts: null,
         image: '/img/catalog/ogres-and-amazons/serpent-guards.webp',
     },
     {
-        id: 231,
+        id: 233,
         name: 'Bongos and Choppa',
         size: '28mm|33mm',
         price: 15.00,
@@ -2585,10 +2910,11 @@ export const catalog: Catalogitem[] = [
         tag: 'goblin, tribal, tambores, pirata',
         observation: null,
         options: ['a', 'b'],
+        discounts: null,
         image: '/img/catalog/ogres-and-amazons/bongos-and-choppa.webp',
     },
     {
-        id: 232,
+        id: 234,
         name: 'Conquistador Captain',
         size: '28mm|33mm',
         price: 25.00,
@@ -2596,10 +2922,11 @@ export const catalog: Catalogitem[] = [
         tag: 'conquistador, capitão, masculino, orc, ogro, homem, pirata',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/ogres-and-amazons/conquistador-captain.webp',
     },
     {
-        id: 233,
+        id: 235,
         name: 'Cpt. Krabor BonCutter',
         size: 'especial',
         price: 190.00,
@@ -2607,10 +2934,11 @@ export const catalog: Catalogitem[] = [
         tag: 'orc, ogro, pirata, montaria, caranguejo, animal, animais, animais,',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/ogres-and-amazons/cpt-krabor-boncutter.webp',
     },
     {
-        id: 234,
+        id: 236,
         name: 'Crewman A',
         size: '28mm|33mm',
         price: 18.00,
@@ -2618,10 +2946,11 @@ export const catalog: Catalogitem[] = [
         tag: 'orc, ogro, pirata, tripulação, homem, masculino',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/ogres-and-amazons/crewman-a.webp',
     },
     {
-        id: 235,
+        id: 237,
         name: 'Crewman B',
         size: '28mm|33mm',
         price: 18.00,
@@ -2629,10 +2958,11 @@ export const catalog: Catalogitem[] = [
         tag: 'orc, ogro, pirata, tripulação, homem, masculino',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/ogres-and-amazons/crewman-b.webp',
     },
     {
-        id: 236,
+        id: 238,
         name: 'Crewman C',
         size: '28mm|33mm',
         price: 18.00,
@@ -2640,10 +2970,11 @@ export const catalog: Catalogitem[] = [
         tag: 'orc, ogro, pirata, tripulação, homem, masculino',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/ogres-and-amazons/crewman-c.webp',
     },
     {
-        id: 237,
+        id: 239,
         name: 'Komodo Riders A',
         size: 'especial',
         price: 40.00,
@@ -2651,10 +2982,11 @@ export const catalog: Catalogitem[] = [
         tag: 'orc, ogro, pirata, tripulação, homem, masculino, montaria, lagarto, animal, animais, animais,',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/ogres-and-amazons/komodo-riders-a.webp',
     },
     {
-        id: 238,
+        id: 240,
         name: 'Komodo Riders B',
         size: 'especial',
         price: 40.00,
@@ -2662,23 +2994,49 @@ export const catalog: Catalogitem[] = [
         tag: 'orc, ogro, pirata, tripulação, homem, masculino, montaria, lagarto, animal, animais, animais,',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/ogres-and-amazons/komodo-riders-b.webp',
     },
     {
-        id: 239,
-        name: 'Ogre Hunter',
+        id: 241,
+        name: 'Ogre Hunter + Sea Cow',
         size: 'especial',
         price: 55.00,
         type: TypeEnum.OGRES_AND_AMAZONS,
         tag: 'orc, ogro, pirata, tripulação, homem, masculino, animal, animais, animais, morsa',
-        observation: 'Apenas morsa: R$ 18 | Hunter: R$ 25',
-        options: ['a', 'b'],
+        observation: null,
+        options: null,
+        discounts: null,
+        image: '/img/catalog/ogres-and-amazons/ogre-hunter-and-animal.webp',
+    },
+    {
+        id: 242,
+        name: 'Ogre Hunter',
+        size: 'especial',
+        price: 25.00,
+        type: TypeEnum.OGRES_AND_AMAZONS,
+        tag: 'orc, ogro, pirata, tripulação, homem, masculino, animal, animais, animais, morsa',
+        observation: null,
+        options: null,
+        discounts: null,
         image: '/img/catalog/ogres-and-amazons/ogre-hunter.webp',
+    },
+    {
+        id: 243,
+        name: 'Sea cow',
+        size: '28|33mm',
+        price: 18.00,
+        type: TypeEnum.OGRES_AND_AMAZONS,
+        tag: 'animal, animais, morsa, oceano, areia, mar, marinho',
+        observation: null,
+        options: ['a', 'b'],
+        discounts: null,
+        image: '/img/catalog/ogres-and-amazons/hunter-sea-cow.webp',
     },
 
     // OGRES_AND_WIZARDS
     {
-        id: 240,
+        id: 244,
         name: 'Orc Scouts',
         size: '28mm|33mm',
         price: 18.00,
@@ -2686,10 +3044,13 @@ export const catalog: Catalogitem[] = [
         tag: 'orc, ogro, arqueiro, batedor',
         observation: 'Na compra de no mínimo 3 o preço diminui para 16 R$',
         options: ['a', 'b', 'c', 'd', 'e'],
+        discounts: [
+            { minQty: 3, price: 16, type: 'fixed' },
+        ],
         image: '/img/catalog/ogres-and-wizards/orc-scouts.webp',
     },
     {
-        id: 241,
+        id: 245,
         name: 'Orc Warriors',
         size: '28mm|33mm',
         price: 20.00,
@@ -2697,10 +3058,11 @@ export const catalog: Catalogitem[] = [
         tag: 'orc, ogro, guerreiro, bruto',
         observation: null,
         options: ['a', 'b', 'c', 'd', 'e'],
+        discounts: null,
         image: '/img/catalog/ogres-and-wizards/orc-warriors.webp',
     },
     {
-        id: 242,
+        id: 246,
         name: 'Stone Trolls',
         size: 'especial',
         price: 45.00,
@@ -2708,10 +3070,11 @@ export const catalog: Catalogitem[] = [
         tag: 'troll, pedra, monstro, criatura',
         observation: null,
         options: ['a', 'b'],
+        discounts: null,
         image: '/img/catalog/ogres-and-wizards/stone-trolls.webp',
     },
     {
-        id: 243,
+        id: 247,
         name: 'Trolls',
         size: 'especial',
         price: 45.00,
@@ -2719,10 +3082,11 @@ export const catalog: Catalogitem[] = [
         tag: 'troll, monstro, criatura',
         observation: null,
         options: ['a', 'b'],
+        discounts: null,
         image: '/img/catalog/ogres-and-wizards/trolls.webp',
     },
     {
-        id: 244,
+        id: 248,
         name: 'Warlord Rider A',
         size: 'especial',
         price: 60.00,
@@ -2730,10 +3094,11 @@ export const catalog: Catalogitem[] = [
         tag: 'orc, ogro, montaria, javali, animal, animais, animais, guerreiro, criatura',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/ogres-and-wizards/warlord-rider-a.webp',
     },
     {
-        id: 245,
+        id: 249,
         name: 'Warlord Rider B',
         size: 'especial',
         price: 60.00,
@@ -2741,10 +3106,11 @@ export const catalog: Catalogitem[] = [
         tag: 'orc, ogro, montaria, criatura, guerreiro',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/ogres-and-wizards/warlord-rider-b.webp',
     },
     {
-        id: 246,
+        id: 250,
         name: 'Dragon Giant',
         size: 'especial',
         price: 260.00,
@@ -2752,10 +3118,11 @@ export const catalog: Catalogitem[] = [
         tag: 'gigante, criatura',
         observation: null,
         options: ['a', 'b'],
+        discounts: null,
         image: '/img/catalog/ogres-and-wizards/dragon-giant.webp',
     },
     {
-        id: 247,
+        id: 251,
         name: 'Animated Armor A',
         size: '28mm|33mm',
         price: 18.00,
@@ -2763,10 +3130,11 @@ export const catalog: Catalogitem[] = [
         tag: 'armadura, armadura viva, armadura animada, mágico, mágia, item, itens, cenário',
         observation: null,
         options: ['a', 'b', 'c'],
+        discounts: null,
         image: '/img/catalog/ogres-and-wizards/animated-armor-a.webp',
     },
     {
-        id: 248,
+        id: 252,
         name: 'Animated Armor B',
         size: '28mm|33mm',
         price: 18.00,
@@ -2774,10 +3142,11 @@ export const catalog: Catalogitem[] = [
         tag: 'armadura, armadura viva, armadura animada, mágico, mágia, item, itens, cenário',
         observation: null,
         options: ['a', 'b', 'c'],
+        discounts: null,
         image: '/img/catalog/ogres-and-wizards/animated-armor-b.webp',
     },
     {
-        id: 249,
+        id: 253,
         name: 'Animated Armor C',
         size: '28mm|33mm',
         price: 18.00,
@@ -2785,10 +3154,11 @@ export const catalog: Catalogitem[] = [
         tag: 'armadura, armadura viva, armadura animada, mágico, magia, item, itens, cenário',
         observation: null,
         options: ['a', 'b', 'c'],
+        discounts: null,
         image: '/img/catalog/ogres-and-wizards/animated-armor-c.webp',
     },
     {
-        id: 250,
+        id: 254,
         name: 'Wizard Gnome',
         size: '28mm|33mm',
         price: 25.00,
@@ -2796,10 +3166,11 @@ export const catalog: Catalogitem[] = [
         tag: 'gnomo, mago, pequeno, mágico, magia, livro, masculino, homem, escola de magia',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/ogres-and-wizards/wizard-gnome.webp',
     },
     {
-        id: 251,
+        id: 255,
         name: 'Janitor',
         size: '28mm|33mm',
         price: 20.00,
@@ -2807,10 +3178,11 @@ export const catalog: Catalogitem[] = [
         tag: 'zelador, varredor, personagem cômico, gato, humano, masculino, homem, vassoura, escola de magia',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/ogres-and-wizards/janitor.webp',
     },
     {
-        id: 252,
+        id: 256,
         name: 'Wizard Principal',
         size: '28mm|33mm',
         price: 30.00,
@@ -2818,10 +3190,11 @@ export const catalog: Catalogitem[] = [
         tag: 'mago, magia, magico, magica, mago, maga, escola de magia, feminino, mulher, bruxa, feiticeira, caldeirão, cenário, item, itens',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/ogres-and-wizards/wizard-principal.webp',
     },
     {
-        id: 253,
+        id: 257,
         name: 'Wizard Rubeus',
         size: '28mm|33mm',
         price: 30.00,
@@ -2829,10 +3202,11 @@ export const catalog: Catalogitem[] = [
         tag: 'humano, dragão, dragões, mago, magia, magico, escola de magia, feiticeiro, livro',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/ogres-and-wizards/wizard-rubeus.webp',
     },
     {
-        id: 254,
+        id: 258,
         name: 'Wizard Witch',
         size: '28mm|33mm',
         price: 30.00,
@@ -2840,10 +3214,11 @@ export const catalog: Catalogitem[] = [
         tag: 'feiticeira, feiticeiro, bruxa, bruxo, mágico, mágica, magia, feminino, mulher, escola de magia',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/ogres-and-wizards/wizard-witch.webp',
     },
     {
-        id: 255,
+        id: 259,
         name: 'Wizard Zoologist',
         size: '28mm|33mm',
         price: 25.00,
@@ -2851,12 +3226,13 @@ export const catalog: Catalogitem[] = [
         tag: 'feiticeira, feiticeiro, bruxa, bruxo, mágico, mágica, magia, feminino, mulher, escola de magia, botanica, jardim, planta carnivora',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/ogres-and-wizards/wizard-zoologist.webp',
     },
 
     // ORCS_AND_WOLF_ORDER
     {
-        id: 256,
+        id: 260,
         name: 'Goblins Archers',
         size: '28mm|33mm',
         price: 16.00,
@@ -2864,10 +3240,11 @@ export const catalog: Catalogitem[] = [
         tag: 'goblin, arqueiro, aranha, guerreiro, homem, masculino',
         observation: null,
         options: ['a', 'b', 'c', 'd', 'e'],
+        discounts: null,
         image: '/img/catalog/orcs-and-wolf-order/goblins-archers.webp',
     },
     {
-        id: 257,
+        id: 261,
         name: 'Goblin Spear',
         size: '28mm|33mm',
         price: 16.00,
@@ -2875,10 +3252,11 @@ export const catalog: Catalogitem[] = [
         tag: 'goblin, lança, guerreiro, aranha, homem, masculino',
         observation: null,
         options: ['a', 'b', 'c', 'd', 'e'],
+        discounts: null,
         image: '/img/catalog/orcs-and-wolf-order/goblin-spear.webp',
     },
     {
-        id: 258,
+        id: 262,
         name: 'Goblin on Chariot',
         size: 'especial',
         price: 40.00,
@@ -2886,10 +3264,11 @@ export const catalog: Catalogitem[] = [
         tag: 'goblin, carroça, montaria, animal, animais, animais, lobo, cenário, item, itens',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/orcs-and-wolf-order/goblin-on-chariot.webp',
     },
     {
-        id: 259,
+        id: 263,
         name: 'Goblin Wolf Rider',
         size: 'especial',
         price: 30.00,
@@ -2897,10 +3276,11 @@ export const catalog: Catalogitem[] = [
         tag: 'goblin, lobo, montaria, animal, animais, animais, guerreiro, homem, masculino',
         observation: null,
         options: ['a', 'b', 'c', 'd', 'e'],
+        discounts: null,
         image: '/img/catalog/orcs-and-wolf-order/goblin-wolf-rider.webp',
     },
     {
-        id: 260,
+        id: 264,
         name: 'Wild Orc Boar Riders',
         size: 'especial',
         price: 50.00,
@@ -2908,10 +3288,11 @@ export const catalog: Catalogitem[] = [
         tag: 'orc, ogro, javali, montaria, animal, animais, animais, homem, masculino, guerreiro',
         observation: null,
         options: ['a', 'b', 'c', 'd', 'e'],
+        discounts: null,
         image: '/img/catalog/orcs-and-wolf-order/wild-orc-boar-riders.webp',
     },
     {
-        id: 261,
+        id: 265,
         name: 'Warlord',
         size: '28mm|33mm',
         price: 25.00,
@@ -2919,10 +3300,11 @@ export const catalog: Catalogitem[] = [
         tag: 'orc, ogro, guerreiro, homem, masculino',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/orcs-and-wolf-order/warlord.webp',
     },
     {
-        id: 262,
+        id: 266,
         name: 'Warlord Mounted',
         size: 'especial',
         price: 45.00,
@@ -2930,10 +3312,11 @@ export const catalog: Catalogitem[] = [
         tag: 'orc, ogro, guerreiro, homem, masculino, montaria, animal, animais, animais, javali',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/orcs-and-wolf-order/warlord-mounted.webp',
     },
     {
-        id: 263,
+        id: 267,
         name: 'Orc Chariot',
         size: 'especial',
         price: 85.00,
@@ -2941,10 +3324,11 @@ export const catalog: Catalogitem[] = [
         tag: 'orc, ogro, guerreiro, homem, masculino, carroça, montaria, javali, animal, animais, animais, cenário, item',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/orcs-and-wolf-order/orc-chariot.webp',
     },
     {
-        id: 264,
+        id: 268,
         name: 'Wolf Order Warriors A',
         size: '28mm|33mm',
         price: 18.00,
@@ -2952,10 +3336,11 @@ export const catalog: Catalogitem[] = [
         tag: 'guerreiro, lobo, homem, masculino',
         observation: null,
         options: ['a', 'b', 'c', 'd', 'e'],
+        discounts: null,
         image: '/img/catalog/orcs-and-wolf-order/wolf-order-warriors-a.webp',
     },
     {
-        id: 265,
+        id: 269,
         name: 'Wolf Order Warriors B',
         size: '28mm|33mm',
         price: 18.00,
@@ -2963,10 +3348,11 @@ export const catalog: Catalogitem[] = [
         tag: 'guerreiro, lobo, homem, masculino',
         observation: null,
         options: ['a', 'b', 'c', 'd', 'e'],
+        discounts: null,
         image: '/img/catalog/orcs-and-wolf-order/wolf-order-warriors-b.webp',
     },
     {
-        id: 266,
+        id: 270,
         name: 'Wolf Order Priest',
         size: '28mm|33mm',
         price: 20.00,
@@ -2974,10 +3360,11 @@ export const catalog: Catalogitem[] = [
         tag: 'sacerdotisa, sacerdote, lobo, homem, masculino, xamã',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/orcs-and-wolf-order/wolf-order-priest.webp',
     },
     {
-        id: 267,
+        id: 271,
         name: 'Wolf Order WereWolf',
         size: '28mm|33mm',
         price: 20.00,
@@ -2985,10 +3372,11 @@ export const catalog: Catalogitem[] = [
         tag: 'lobisomem, lobo, guerreiro, animal, animais, animais, criatura, licantropia, licantropo',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/orcs-and-wolf-order/wolf-order-werewolf.webp',
     },
     {
-        id: 268,
+        id: 272,
         name: 'Feral',
         size: '28mm|33mm',
         price: 20.00,
@@ -2996,10 +3384,11 @@ export const catalog: Catalogitem[] = [
         tag: 'feral, ferais, criatura, mistico, mistica',
         observation: null,
         options: ['a', 'b', 'c'],
+        discounts: null,
         image: '/img/catalog/orcs-and-wolf-order/feral.webp',
     },
     {
-        id: 269,
+        id: 273,
         name: 'Wolf Order Altar',
         size: 'especial',
         price: 95.00,
@@ -3007,10 +3396,11 @@ export const catalog: Catalogitem[] = [
         tag: 'altar, lobo, item, mágico, magica, magia, item, cenário, lobisomem, licantropia, licantropo, criatura',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/orcs-and-wolf-order/wolf-order-altar.webp',
     },
     {
-        id: 270,
+        id: 274,
         name: 'Myconid',
         size: '28mm|33mm',
         price: 20.00,
@@ -3018,10 +3408,11 @@ export const catalog: Catalogitem[] = [
         tag: 'fungo, criatura, mágico, mágica, magia, floresta, cogumelo, monstro',
         observation: null,
         options: ['a', 'b', 'c'],
+        discounts: null,
         image: '/img/catalog/orcs-and-wolf-order/myconid.webp',
     },
     {
-        id: 271,
+        id: 275,
         name: 'Warforged',
         size: '28mm|33mm',
         price: 25.00,
@@ -3029,12 +3420,13 @@ export const catalog: Catalogitem[] = [
         tag: 'autômato, guerreiro, metálico, metal, homem, masculino, mágico, mágica, magia',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/orcs-and-wolf-order/warforged.webp',
     },
 
     // OLD_CITY
     {
-        id: 272,
+        id: 276,
         name: 'City Watch Sergeant',
         size: '28mm|33mm',
         price: 18.00,
@@ -3042,10 +3434,11 @@ export const catalog: Catalogitem[] = [
         tag: 'guarda, sargento, humano, homem, masculino',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/old-city/city-watch-sergeant.webp',
     },
     {
-        id: 273,
+        id: 277,
         name: 'Rookie Bowman',
         size: '28mm|33mm',
         price: 18.00,
@@ -3053,10 +3446,11 @@ export const catalog: Catalogitem[] = [
         tag: 'arqueiro, soldado, guarda, humano, homem, masculino',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/old-city/rookie-bowman.webp',
     },
     {
-        id: 274,
+        id: 278,
         name: 'Guttershade Manhunter',
         size: '28mm|33mm',
         price: 18.00,
@@ -3064,10 +3458,11 @@ export const catalog: Catalogitem[] = [
         tag: 'assassino, caçador, sombrio, humano, homem, masculino',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/old-city/guttershade-manhunter.webp',
     },
     {
-        id: 275,
+        id: 279,
         name: 'Guttershade Vindicator',
         size: '28mm|33mm',
         price: 18.00,
@@ -3075,10 +3470,11 @@ export const catalog: Catalogitem[] = [
         tag: 'vingador, sombrio, justiceiro, humano, homem, masculino, pirata',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/old-city/guttershade-vindicator.webp',
     },
     {
-        id: 276,
+        id: 280,
         name: 'Guttershade Wardrummer',
         size: '28mm|33mm',
         price: 22.00,
@@ -3086,10 +3482,11 @@ export const catalog: Catalogitem[] = [
         tag: 'tambor, sombrio, cidade, humano, homem, masculino',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/old-city/guttershade-wardrummer.webp',
     },
     {
-        id: 277,
+        id: 281,
         name: 'Jester Enforcer',
         size: '28mm|33mm',
         price: 18.00,
@@ -3097,10 +3494,11 @@ export const catalog: Catalogitem[] = [
         tag: 'humano, homem, masculino',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/old-city/jester-enforcer.webp',
     },
     {
-        id: 278,
+        id: 282,
         name: 'Jester Harbringer',
         size: '28mm|33mm',
         price: 18.00,
@@ -3108,10 +3506,11 @@ export const catalog: Catalogitem[] = [
         tag: 'humano, homem, masculino, arauto, perna de madeira, mascara, cartas, baralho',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/old-city/jester-harbringer.webp',
     },
     {
-        id: 279,
+        id: 283,
         name: 'Jester Harlequin',
         size: '28mm|33mm',
         price: 18.00,
@@ -3119,10 +3518,11 @@ export const catalog: Catalogitem[] = [
         tag: 'humano, humana, mulher, feminino, arlequina, arlequim, acrobata, circo, mascara, cartas, baralho',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/old-city/jester-harlequin.webp',
     },
     {
-        id: 280,
+        id: 284,
         name: 'City Watch',
         size: '28mm|33mm',
         price: 18.00,
@@ -3130,10 +3530,13 @@ export const catalog: Catalogitem[] = [
         tag: 'guarda, patrulheiro, soldado, vigia, homem, masculino, humano, arqueiro, escudo, lança, machado',
         observation: 'Na compra de no mínimo 3 o preço diminui para 15 R$',
         options: ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'],
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+        ],
         image: '/img/catalog/old-city/city-watch.webp',
     },
     {
-        id: 281,
+        id: 285,
         name: 'City Watch Siege Giant',
         size: 'especial',
         price: 240.00,
@@ -3141,12 +3544,13 @@ export const catalog: Catalogitem[] = [
         tag: 'gigante, fortaleza, vigia, criatura',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/old-city/city-watch-siege-giant.webp',
     },
 
     // PITFIGHTER
     {
-        id: 282,
+        id: 286,
         name: 'Gladiator',
         size: '28mm|33mm',
         price: 20.00,
@@ -3154,10 +3558,11 @@ export const catalog: Catalogitem[] = [
         tag: 'gladiador, guerreiro, humano, masculino, homem',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/pitfighter/gladiator-1.webp'
     },
     {
-        id: 283,
+        id: 287,
         name: 'Gladiator',
         size: '28mm|33mm',
         price: 20.00,
@@ -3165,10 +3570,11 @@ export const catalog: Catalogitem[] = [
         tag: 'gladiador, guerreiro, humano, masculino, homem',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/pitfighter/gladiator-2.webp'
     },
     {
-        id: 284,
+        id: 288,
         name: 'Gladiator',
         size: '28mm|33mm',
         price: 20.00,
@@ -3176,10 +3582,11 @@ export const catalog: Catalogitem[] = [
         tag: 'gladiador, guerreiro, humano, masculino, homem',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/pitfighter/gladiator-3.webp'
     },
     {
-        id: 285,
+        id: 289,
         name: 'Gladiator',
         size: '28mm|33mm',
         price: 20.00,
@@ -3187,10 +3594,11 @@ export const catalog: Catalogitem[] = [
         tag: 'gladiador, guerreiro, humano, masculino, homem, caveira',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/pitfighter/gladiator-4.webp'
     },
     {
-        id: 286,
+        id: 290,
         name: 'Baali of Mohawk Clan',
         size: '28mm|33mm',
         price: 20.00,
@@ -3198,10 +3606,11 @@ export const catalog: Catalogitem[] = [
         tag: 'gladiador, guerreiro, humano, masculino, homem, anão, anões',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/pitfighter/baali-of-mohawk.webp'
     },
     {
-        id: 287,
+        id: 291,
         name: 'Buso-Mas the Massacrator',
         size: '28mm|33mm',
         price: 20.00,
@@ -3209,10 +3618,11 @@ export const catalog: Catalogitem[] = [
         tag: 'gladiador, guerreiro, humano, masculino, homem, peito de fora, sem camiseta',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/pitfighter/buso-mas.webp'
     },
     {
-        id: 288,
+        id: 292,
         name: 'Evelyn No Mercy Pierce',
         size: '28mm|33mm',
         price: 20.00,
@@ -3220,10 +3630,11 @@ export const catalog: Catalogitem[] = [
         tag: 'feminino, mulher, guerreira, guerreiro, gladiadora, gladiador',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/pitfighter/evelyn-no-mercy.webp'
     },
     {
-        id: 289,
+        id: 293,
         name: 'Fang and Molar',
         size: '28mm|33mm',
         price: 35.00,
@@ -3231,10 +3642,11 @@ export const catalog: Catalogitem[] = [
         tag: 'criatura, montaria, goblin, monstro, criatura do oceano',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/pitfighter/fang-and-molar.webp'
     },
     {
-        id: 290,
+        id: 294,
         name: 'Ironbeak the Owlbear',
         size: 'especial',
         price: 50.00,
@@ -3242,10 +3654,11 @@ export const catalog: Catalogitem[] = [
         tag: 'monstro, coruja, urso, mágico, mágica, criatura, monstro, ursoruja',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/pitfighter/ironbeak.webp'
     },
     {
-        id: 291,/// separar
+        id: 295,
         name: 'Macaria Deathwish',
         size: '28mm|33mm',
         price: 50.00,
@@ -3253,10 +3666,35 @@ export const catalog: Catalogitem[] = [
         tag: 'necromante, necromancia, feminino, mulher, esqueleto, invocadora, morto vivo',
         observation: 'Modelos separados e Macaria R$20 - Esqueletos R$18',
         options: null,
+        discounts: null,
+        image: '/img/catalog/pitfighter/macaria+skeleton.webp'
+    },
+    {
+        id: 296,
+        name: 'Macaria Deathwish',
+        size: '28mm|33mm',
+        price: 20.00,
+        type: TypeEnum.PITFIGHTER,
+        tag: 'necromante, necromancia, feminino, mulher, invocadora',
+        observation: 'Modelos separados e Macaria R$20 - Esqueletos R$18',
+        options: null,
+        discounts: null,
         image: '/img/catalog/pitfighter/macaria.webp'
     },
     {
-        id: 292,
+        id: 297,
+        name: 'Skeleton',
+        size: '28mm|33mm',
+        price: 18.00,
+        type: TypeEnum.PITFIGHTER,
+        tag: 'esqueleto, invocação, morto vivo',
+        observation: 'Modelos separados e Macaria R$20 - Esqueletos R$18',
+        options: ['a', 'b'],
+        discounts: null,
+        image: '/img/catalog/pitfighter/skeleton.webp'
+    },
+    {
+        id: 298,
         name: 'Pristinus Silvermane',
         size: '28mm|33mm',
         price: 25.00,
@@ -3264,10 +3702,11 @@ export const catalog: Catalogitem[] = [
         tag: 'gladiador, guerreiro, leão, criatura, animal, animais, animais, licantropia, licantropo, lion folk',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/pitfighter/pristinus.webp'
     },
     {
-        id: 293,
+        id: 299,
         name: 'Trogzor Depthcrusher',
         size: '28mm|33mm',
         price: 25.00,
@@ -3275,10 +3714,11 @@ export const catalog: Catalogitem[] = [
         tag: 'abissal, criatura, oceano, criatura do oceano, monstro',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/pitfighter/trogzor.webp'
     },
     {
-        id: 294,
+        id: 300,
         name: 'Wrargog Bloodmoon',
         size: '28mm|33mm',
         price: 25.00,
@@ -3286,10 +3726,11 @@ export const catalog: Catalogitem[] = [
         tag: 'guerreiro, lobo, lobisomem, animal, animais, animais, licantropia, licantropo, criatura, mosntro',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/pitfighter/wrargog.webp'
     },
     {
-        id: 295,
+        id: 301,
         name: 'Quillhounds',
         size: '28mm|33mm',
         price: 18.00,
@@ -3297,10 +3738,11 @@ export const catalog: Catalogitem[] = [
         tag: 'cães, cão, cachorro, , espinho, criatura, animal, animais, animais, cenário, hiena',
         observation: null,
         options: ['a', 'b'],
+        discounts: null,
         image: '/img/catalog/pitfighter/quillhounds.webp'
     },
     {
-        id: 296,
+        id: 302,
         name: 'Hadogenes the Scorpion',
         size: 'especial',
         price: 120.00,
@@ -3308,10 +3750,11 @@ export const catalog: Catalogitem[] = [
         tag: 'escorpião, monstro, criatura, deserto, cenário',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/pitfighter/hadogenes.webp'
     },
     {
-        id: 297,
+        id: 303,
         name: 'Hadogenes the Scorpion with Gobo',
         size: 'especial',
         price: 135.00,
@@ -3319,10 +3762,11 @@ export const catalog: Catalogitem[] = [
         tag: 'escorpião, monstro, criatura, deserto, cenário',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/pitfighter/hadogenes-gobo.webp'
     },
     {
-        id: 298,
+        id: 304,
         name: 'Colloseum',
         size: 'especial',
         price: 800.00,
@@ -3330,12 +3774,13 @@ export const catalog: Catalogitem[] = [
         tag: 'cenário, coliseu, arena, construção, item, cidade, gladiador, roma',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/pitfighter/colloseum.webp'
     },
 
     // SONS_OF_KASHAN
     {
-        id: 299,
+        id: 305,
         name: 'Beshazzar the Law Keeper',
         size: '28mm|33mm',
         price: 35.00,
@@ -3343,10 +3788,11 @@ export const catalog: Catalogitem[] = [
         tag: 'guerreiro, homem, masculino, anões, anão, totem',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/sons-of-kashan/beshazzar.webp'
     },
     {
-        id: 300,
+        id: 306,
         name: 'Deathbot',
         size: '28mm|33mm',
         price: 20.00,
@@ -3354,10 +3800,11 @@ export const catalog: Catalogitem[] = [
         tag: 'robô, androide, android, máquina, metal, ferro, homem, masculino, anões, anão',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/sons-of-kashan/deathbot-1.webp'
     },
     {
-        id: 301,
+        id: 307,
         name: 'Deathbot',
         size: '28mm|33mm',
         price: 20.00,
@@ -3365,10 +3812,11 @@ export const catalog: Catalogitem[] = [
         tag: 'robô, androide, android, máquina, metal, ferro, homem, masculino, anões, anão',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/sons-of-kashan/deathbot-2.webp'
     },
     {
-        id: 302,
+        id: 308,
         name: 'Gunner',
         size: '28mm|33mm',
         price: 20.00,
@@ -3376,10 +3824,11 @@ export const catalog: Catalogitem[] = [
         tag: 'atirador, soldado, arma, homem, masculino, anões, anão',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/sons-of-kashan/gunner-1.webp'
     },
     {
-        id: 303,
+        id: 309,
         name: 'Gunner',
         size: '28mm|33mm',
         price: 20.00,
@@ -3387,10 +3836,11 @@ export const catalog: Catalogitem[] = [
         tag: 'atirador, soldado, arma, homem, masculino, anões, anão',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/sons-of-kashan/gunner-2.webp'
     },
     {
-        id: 304,
+        id: 310,
         name: 'Warrior',
         size: '28mm|33mm',
         price: 20.00,
@@ -3398,10 +3848,11 @@ export const catalog: Catalogitem[] = [
         tag: 'homem, masculino, anões, anão, guerreiro, soldado',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/sons-of-kashan/warrior-1.webp'
     },
     {
-        id: 305,
+        id: 311,
         name: 'Warrior',
         size: '28mm|33mm',
         price: 20.00,
@@ -3409,10 +3860,11 @@ export const catalog: Catalogitem[] = [
         tag: 'homem, masculino, anões, anão, guerreiro, soldado',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/sons-of-kashan/warrior-2.webp'
     },
     {
-        id: 306,
+        id: 312,
         name: 'Warlock',
         size: '28mm|33mm',
         price: 25.00,
@@ -3420,10 +3872,11 @@ export const catalog: Catalogitem[] = [
         tag: 'feiticeiro, mago, magico, magia, homem, masculino, anões, anão, necromante, alma',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/sons-of-kashan/warlock.webp'
     },
     {
-        id: 307,
+        id: 313,
         name: 'Minotaur',
         size: '28mm|33mm',
         price: 30.00,
@@ -3431,10 +3884,11 @@ export const catalog: Catalogitem[] = [
         tag: 'minotauro, besta, mitologia, criatura, monstro, gigante, animal, animais, animais,',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/sons-of-kashan/minotaur-1.webp'
     },
     {
-        id: 308,
+        id: 314,
         name: 'Minotaur',
         size: '28mm|33mm',
         price: 30.00,
@@ -3442,10 +3896,11 @@ export const catalog: Catalogitem[] = [
         tag: 'minotauro, besta, mitologia, criatura, monstro, gigante, animal, animais, animais,',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/sons-of-kashan/minotaur-2.webp'
     },
     {
-        id: 309,
+        id: 315,
         name: 'Chosen',
         size: '28mm|33mm',
         price: 55.00,
@@ -3453,10 +3908,11 @@ export const catalog: Catalogitem[] = [
         tag: 'meca, mecatronico, maquina, metal, ferro, minotauro, criatura, monstro',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/sons-of-kashan/chosen-1.webp'
     },
     {
-        id: 310,
+        id: 316,
         name: 'Chosen',
         size: '28mm|33mm',
         price: 55.00,
@@ -3464,10 +3920,11 @@ export const catalog: Catalogitem[] = [
         tag: 'meca, mecatronico, maquina, metal, ferro, minotauro, criatura, monstro',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/sons-of-kashan/chosen-2.webp'
     },
     {
-        id: 311,
+        id: 317,
         name: 'Mortar',
         size: 'especial',
         price: 50.00,
@@ -3475,10 +3932,11 @@ export const catalog: Catalogitem[] = [
         tag: 'arma, artilharia, explosivo, item, itens, cenário, canhão',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/sons-of-kashan/mortar.webp'
     },
     {
-        id: 312,
+        id: 318,
         name: 'Infernal Golem',
         size: 'especial',
         price: 360.00,
@@ -3486,12 +3944,13 @@ export const catalog: Catalogitem[] = [
         tag: 'gigante, criatura, minotauro, monstro, maquina, mecanico, metal, ferro',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/sons-of-kashan/infernal-golem.webp'
     },
 
     //SPELL_BLADES
     {
-        id: 313,
+        id: 319,
         name: 'Adept',
         size: '28mm|33mm',
         price: 18.00,
@@ -3499,10 +3958,11 @@ export const catalog: Catalogitem[] = [
         tag: 'homem, masculino, humano, simples',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/spell-blades/adept.webp'
     },
     {
-        id: 314,
+        id: 320,
         name: 'Dark Mage',
         size: '28mm|33mm',
         price: 18.00,
@@ -3510,10 +3970,11 @@ export const catalog: Catalogitem[] = [
         tag: 'mago, maga, feiticeiro, feiticeira, mulher, feminino, humano, humana',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/spell-blades/dark-mage.webp'
     },
     {
-        id: 315,
+        id: 321,
         name: 'Desert Mage',
         size: '28mm|33mm',
         price: 18.00,
@@ -3521,10 +3982,11 @@ export const catalog: Catalogitem[] = [
         tag: 'mago, maga, deserto, areia, feiticeira, feiticeiro, mulher, feminino, humano, humana',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/spell-blades/desert-mage.webp'
     },
     {
-        id: 316,
+        id: 322,
         name: 'SpellBlade Mage',
         size: '28mm|33mm',
         price: 18.00,
@@ -3532,10 +3994,11 @@ export const catalog: Catalogitem[] = [
         tag: 'mago, maga, feiticeiro, feiticeira, mulher, feminino, humano, humana, guerreiro, guerreira',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/spell-blades/spellblade-mage-1.webp'
     },
     {
-        id: 317,
+        id: 323,
         name: 'Spell Mage Tiger',
         size: '28mm|33mm',
         price: 28.00,
@@ -3543,10 +4006,11 @@ export const catalog: Catalogitem[] = [
         tag: 'tigre, animal, animais, animais, invocação, mágico, mago, magia, criatura, humano, homem, masculino, fogo, feiticeiro',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/spell-blades/spell-mage-tiger.webp'
     },
     {
-        id: 318,
+        id: 324,
         name: 'SpellBlade Mage',
         size: '28mm|33mm',
         price: 18.00,
@@ -3554,10 +4018,11 @@ export const catalog: Catalogitem[] = [
         tag: 'mágico, mago, magia, humano, homem, masculino, feiticeiro, guerreiro',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/spell-blades/spellblade-mage-2.webp'
     },
     {
-        id: 319,
+        id: 325,
         name: 'Old Mage',
         size: '28mm|33mm',
         price: 18.00,
@@ -3565,10 +4030,11 @@ export const catalog: Catalogitem[] = [
         tag: 'mago, velho, ancião, sábio, masculino, homem, mágico, mago, magia, feiticeiro',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/spell-blades/old-mage.webp'
     },
     {
-        id: 320,
+        id: 326,
         name: 'ShapeShifter',
         size: '28mm|33mm',
         price: 18.00,
@@ -3576,10 +4042,11 @@ export const catalog: Catalogitem[] = [
         tag: 'metamorfo, transformação, mágico, druida, mago, magia, homem, masculino',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/spell-blades/shapeshifter.webp'
     },
     {
-        id: 321,
+        id: 327,
         name: 'Jinn',
         size: '28mm|33mm',
         price: 20.00,
@@ -3587,10 +4054,11 @@ export const catalog: Catalogitem[] = [
         tag: 'gênio, mágico, magia, mago, espirito, invocação, criatura, etéreo',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/spell-blades/jinn.webp'
     },
     {
-        id: 322,
+        id: 328,
         name: 'SpellBlade Gryphon',
         size: 'especial',
         price: 65.00,
@@ -3598,10 +4066,11 @@ export const catalog: Catalogitem[] = [
         tag: 'griffo, criatura, alado, mágico, magia, animal, animais, animais, mulher, feminino, guerreira, montaria',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/spell-blades/spellblade-gryphon.webp'
     },
     {
-        id: 323,
+        id: 329,
         name: 'SpellBlade Mantis',
         size: '28mm|33mm',
         price: 25.00,
@@ -3609,10 +4078,11 @@ export const catalog: Catalogitem[] = [
         tag: 'louva a deus, inseto, criatura, animal, animais, animais, mágico, magia, monstro',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/spell-blades/spellblade-mantis.webp'
     },
     {
-        id: 324,
+        id: 330,
         name: 'Yeti',
         size: '28mm|33mm',
         price: 35.00,
@@ -3620,12 +4090,13 @@ export const catalog: Catalogitem[] = [
         tag: 'criatura, iéti, animal, animais, animais, mágico, magia, monstro, gelo, neve, abominável homem das neves',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/spell-blades/yeti.webp'
     },
 
     //SWAMPS
     {
-        id: 325,
+        id: 331,
         name: 'Zombies',
         size: '28mm|33mm',
         price: 18.00,
@@ -3633,10 +4104,11 @@ export const catalog: Catalogitem[] = [
         tag: 'zumbi, morto vivo, mortos vivos, criatura, pântano',
         observation: null,
         options: ['a', 'b', 'c', 'd', 'e'],
+        discounts: null,
         image: '/img/catalog/swamps/zombies.webp'
     },
     {
-        id: 326,
+        id: 332,
         name: 'Myconids',
         size: '28mm|33mm',
         price: 16.00,
@@ -3644,10 +4116,11 @@ export const catalog: Catalogitem[] = [
         tag: 'fungo, criatura, cogumelo, pântano, monstro',
         observation: null,
         options: ['a', 'b', 'c'],
+        discounts: null,
         image: '/img/catalog/swamps/myconids.webp'
     },
     {
-        id: 327,
+        id: 333,
         name: 'Mystic',
         size: '28mm|33mm',
         price: 20.00,
@@ -3655,10 +4128,11 @@ export const catalog: Catalogitem[] = [
         tag: 'místico, feiticeiro, pântano, magia, magico, sapo, criatura, monstro, xamã',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/swamps/mystic.webp'
     },
     {
-        id: 328,
+        id: 334,
         name: 'Elusive',
         size: '28mm|33mm',
         price: 20.00,
@@ -3666,10 +4140,11 @@ export const catalog: Catalogitem[] = [
         tag: 'furtivo, esguio, criatura, pântano, místico, magia, magico, sapo, monstro, arco, arqueiro',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/swamps/elusive.webp'
     },
     {
-        id: 329,
+        id: 335,
         name: 'Ambusher',
         size: '28mm|33mm',
         price: 20.00,
@@ -3677,10 +4152,11 @@ export const catalog: Catalogitem[] = [
         tag: 'emboscador, criatura, pântano, furtivo, ataque surpresa, místico, magia, magico, sapo, monstro',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/swamps/ambusher.webp'
     },
     {
-        id: 330,
+        id: 336,
         name: 'Brute',
         size: '28mm|33mm',
         price: 20.00,
@@ -3688,10 +4164,11 @@ export const catalog: Catalogitem[] = [
         tag: 'brutamontes, bruto, criatura, sapo, monstro, pântano',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/swamps/brute.webp'
     },
     {
-        id: 331,
+        id: 337,
         name: 'Mushroomancer',
         size: '28mm|33mm',
         price: 55.00,
@@ -3699,10 +4176,11 @@ export const catalog: Catalogitem[] = [
         tag: 'necromante, cogumelo, fungo, mágico, magia, invocador, criatura, sapo, pântano, monstro',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/swamps/mushroomancer.webp'
     },
     {
-        id: 332,
+        id: 338,
         name: 'House 1',
         size: 'especial',
         price: 40.00,
@@ -3710,10 +4188,11 @@ export const catalog: Catalogitem[] = [
         tag: 'cenário, construção, casa, pântano, item, itens',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/swamps/house-1.webp'
     },
     {
-        id: 333,
+        id: 339,
         name: 'House 2',
         size: 'especial',
         price: 40.00,
@@ -3721,10 +4200,11 @@ export const catalog: Catalogitem[] = [
         tag: 'cenário, construção, casa, pântano, item, itens',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/swamps/house-2.webp'
     },
     {
-        id: 334,
+        id: 340,
         name: 'Elf 1',
         size: '28mm|33mm',
         price: 18.00,
@@ -3732,10 +4212,11 @@ export const catalog: Catalogitem[] = [
         tag: 'elfo, arqueiro, pântano, homem, masculino, passaro',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/swamps/elf-1.webp'
     },
     {
-        id: 335,
+        id: 341,
         name: 'Elf 2',
         size: '28mm|33mm',
         price: 18.00,
@@ -3743,10 +4224,11 @@ export const catalog: Catalogitem[] = [
         tag: 'elfo, elfa, guerreiro, guerreira, pântano, feminino, mulher',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/swamps/elf-2.webp'
     },
     {
-        id: 336,
+        id: 342,
         name: 'Moss King',
         size: 'especial',
         price: 210.00,
@@ -3754,10 +4236,11 @@ export const catalog: Catalogitem[] = [
         tag: 'musgo, elemental, criatura, pântano, monstro',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/swamps/moss-king.webp'
     },
     {
-        id: 337,
+        id: 343,
         name: 'Beastoise',
         size: 'especial',
         price: 110.00,
@@ -3765,12 +4248,13 @@ export const catalog: Catalogitem[] = [
         tag: 'besta, tartaruga, criatura, pântano, monstro',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/swamps/beastoise.webp'
     },
 
     // TITANS_OF_ADVENTURE 41,42,43,44,45
     {
-        id: 338,
+        id: 344,
         name: 'Set 41, Celestial Paladin',
         size: '28mm|33mm',
         price: 18.00,
@@ -3778,10 +4262,14 @@ export const catalog: Catalogitem[] = [
         tag: 'paladino, celestial, guerreiro, humano, homem, masculino',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options: ['a', 'b', 'c'],
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/titans-of-adventure-41-ao-45/celestial-paladin.webp'
     },
     {
-        id: 339,
+        id: 345,
         name: 'Set 41, Human Warlock',
         size: '28mm|33mm',
         price: 18.00,
@@ -3789,10 +4277,14 @@ export const catalog: Catalogitem[] = [
         tag: 'humano, humana, bruxo, bruxa, invocador, invocadora, magia, mago, maga, mulher, feminino',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options: ['a', 'b', 'c'],
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/titans-of-adventure-41-ao-45/human-warlock.webp'
     },
     {
-        id: 340,
+        id: 346,
         name: 'Set 41, Orc Monk',
         size: '28mm|33mm',
         price: 18.00,
@@ -3800,10 +4292,14 @@ export const catalog: Catalogitem[] = [
         tag: 'orc, ogro, monge, artes marciais, masculino, homem',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options: ['a', 'b', 'c'],
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/titans-of-adventure-41-ao-45/orc-monk.webp'
     },
     {
-        id: 341,
+        id: 347,
         name: 'Set 42, Dwarf Monk',
         size: '28mm|33mm',
         price: 18.00,
@@ -3811,10 +4307,14 @@ export const catalog: Catalogitem[] = [
         tag: 'anão, anões, monge, artes marciais, masculino, homem',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options: ['a', 'b', 'c'],
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/titans-of-adventure-41-ao-45/dwarf-monk.webp'
     },
     {
-        id: 342,
+        id: 348,
         name: 'Set 42, Elf Ranger',
         size: '28mm|33mm',
         price: 18.00,
@@ -3822,10 +4322,14 @@ export const catalog: Catalogitem[] = [
         tag: 'elfo, patrulheiro, arqueiro, arco, masculino, homem',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options:  ['a', 'b', 'c'],
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/titans-of-adventure-41-ao-45/elf-ranger.webp'
     },
     {
-        id: 343,
+        id: 349,
         name: 'Set 42, Tiefling Barbarian',
         size: '28mm|33mm',
         price: 18.00,
@@ -3833,10 +4337,14 @@ export const catalog: Catalogitem[] = [
         tag: 'tiefling, bárbaro, chifres, masculino, homem',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options:  ['a', 'b', 'c'],
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/titans-of-adventure-41-ao-45/tiefling-barbarian.webp'
     },
     {
-        id: 344,
+        id: 350,
         name: 'Set 43, Human Barbarian',
         size: '28mm|33mm',
         price: 18.00,
@@ -3844,10 +4352,14 @@ export const catalog: Catalogitem[] = [
         tag: 'humano, bárbaro, combate, força bruta, homem, masculino',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options:  ['a', 'b', 'c'],
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/titans-of-adventure-41-ao-45/human-barbarian.webp'
     },
     {
-        id: 345,
+        id: 351,
         name: 'Set 43, Hafling Warlock',
         size: '28mm|33mm',
         price: 18.00,
@@ -3855,10 +4367,14 @@ export const catalog: Catalogitem[] = [
         tag: 'halfling, bruxo, pequeno, magia, magico',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options:  ['a', 'b', 'c'],
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/titans-of-adventure-41-ao-45/hafling-warlock.webp'
     },
     {
-        id: 346,
+        id: 352,
         name: 'Set 43, Tiefling Rogue',
         size: '28mm|33mm',
         price: 18.00,
@@ -3866,10 +4382,14 @@ export const catalog: Catalogitem[] = [
         tag: 'tiefling, ladino, ladina, chifres, mulher, feminino',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options:  ['a', 'b', 'c'],
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/titans-of-adventure-41-ao-45/tiefling-rogue.webp'
     },
     {
-        id: 347,
+        id: 353,
         name: 'Set 44, Githyanki Fighter',
         size: '28mm|33mm',
         price: 18.00,
@@ -3877,10 +4397,14 @@ export const catalog: Catalogitem[] = [
         tag: 'guerreiro, guerreira, guerreiro, mulher, feminino',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options:  ['a', 'b', 'c'],
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/titans-of-adventure-41-ao-45/githyanki-fighter.webp'
     },
     {
-        id: 348,
+        id: 354,
         name: 'Set 44, Human Alchemist',
         size: '28mm|33mm',
         price: 18.00,
@@ -3888,10 +4412,14 @@ export const catalog: Catalogitem[] = [
         tag: 'humano, alquimista, alquimia, frascos, poções, homem, masculino',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options:  ['a', 'b', 'c'],
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/titans-of-adventure-41-ao-45/human-alchemist.webp'
     },
     {
-        id: 349,
+        id: 355,
         name: 'Set 44, Lionfolk Cleric',
         size: '28mm|33mm',
         price: 18.00,
@@ -3899,10 +4427,14 @@ export const catalog: Catalogitem[] = [
         tag: 'lionfolk, licantropia, licantropo, leão, clérigo, clériga, cura, mulher, feminino',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options:  ['a', 'b', 'c'],
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/titans-of-adventure-41-ao-45/lionfolk-cleric.webp'
     },
     {
-        id: 350,
+        id: 356,
         name: 'Set 45, Githyanki Barbarian',
         size: '28mm|33mm',
         price: 18.00,
@@ -3910,10 +4442,14 @@ export const catalog: Catalogitem[] = [
         tag: 'githyanki, bárbaro, selvagem, homem, masculino, wolverine, garras',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options:  ['a', 'b', 'c'],
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/titans-of-adventure-41-ao-45/githyanki-barbarian.webp'
     },
     {
-        id: 351,
+        id: 357,
         name: 'Set 45, Human Fighter',
         size: '28mm|33mm',
         price: 18.00,
@@ -3921,23 +4457,43 @@ export const catalog: Catalogitem[] = [
         tag: 'humano, humana, guerreiro, guerreira, mulher, feminino, guarda, soldado, soldada',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options:  ['a', 'b', 'c'],
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/titans-of-adventure-41-ao-45/human-fighter.webp'
     },
     {
-        id: 352,
+        id: 358,
         name: 'Set 45, Hafling Warlock 2',
         size: '28mm|33mm',
         price: 18.00,
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'halfling, bruxo, bruxa, pequeno, pequena, magia, magico',
-        observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13 - O cachorro tem um custo adicional de 10R$',
+        observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13 - O cachorro é vendido separadamente',
         options:  ['a', 'b', 'c'],
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/titans-of-adventure-41-ao-45/hafling-warlock-1.webp'
+    },
+    {
+        id: 359,
+        name: 'Set 45, Hafling Warlock Dog',
+        size: '28mm|33mm',
+        price: 12.00,
+        type: TypeEnum.TITANS_OF_ADVENTURE,
+        tag: 'cachorro, cao, cães, animal, animais',
+        observation: null,
+        options:  null,
+        discounts: null,
+        image: '/img/catalog/titans-of-adventure-41-ao-45/hafling-warlock-dog.webp'
     },
 
     // TITANS_OF_ADVENTURE 46,47,48,49
     {
-        id: 353,
+        id: 360,
         name: 'Set 46, Hafling Fighter',
         size: '28mm|33mm',
         price: 18.00,
@@ -3945,10 +4501,14 @@ export const catalog: Catalogitem[] = [
         tag: 'halfling, guerreiro, pequeno, lutador, masculino, homem',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options:  ['a', 'b', 'c'],
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/titans-of-adventure-46-ao-49/hafling-fighter.webp'
     },
     {
-        id: 354,
+        id: 361,
         name: 'Set 46, Human Bard',
         size: '28mm|33mm',
         price: 18.00,
@@ -3956,10 +4516,14 @@ export const catalog: Catalogitem[] = [
         tag: 'humano, bardo, música, suporte, violão',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options:  ['a', 'b', 'c'],
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/titans-of-adventure-46-ao-49/human-bard.webp'
     },
     {
-        id: 355,
+        id: 362,
         name: 'Set 46, Tiefling Monk',
         size: '28mm|33mm',
         price: 18.00,
@@ -3967,10 +4531,14 @@ export const catalog: Catalogitem[] = [
         tag: 'tiefling, monge, artes marciais, chifres, masculino, homem',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options:  ['a', 'b', 'c'],
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/titans-of-adventure-46-ao-49/tiefling-monk.webp'
     },
     {
-        id: 356,
+        id: 363,
         name: 'Set 47, Dragonborn Monk',
         size: '28mm|33mm',
         price: 18.00,
@@ -3978,10 +4546,14 @@ export const catalog: Catalogitem[] = [
         tag: 'draconato, monge, dragão, artes marciais, homem, masculino',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options:  ['a', 'b', 'c'],
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/titans-of-adventure-46-ao-49/dragonborn-monk.webp'
     },
     {
-        id: 357,
+        id: 364,
         name: 'Set 47, Half-Orc Cleric',
         size: '28mm|33mm',
         price: 18.00,
@@ -3989,10 +4561,14 @@ export const catalog: Catalogitem[] = [
         tag: 'meio orc, meio ogro, clérigo, clériga, cura, suporte, mulher, feminino',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options:  ['a', 'b', 'c'],
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/titans-of-adventure-46-ao-49/half-orc-cleric.webp'
     },
     {
-        id: 358,
+        id: 365,
         name: 'Set 47, Tiefling Wizard',
         size: '28mm|33mm',
         price: 18.00,
@@ -4000,10 +4576,14 @@ export const catalog: Catalogitem[] = [
         tag: 'tiefling, mago, feiticeiro, chifres, magia, magico, homem, masculino',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options:  ['a', 'b', 'c'],
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/titans-of-adventure-46-ao-49/tiefling-wizard.webp'
     },
     {
-        id: 359,
+        id: 366,
         name: 'Set 48, Orc Druid',
         size: '28mm|33mm',
         price: 18.00,
@@ -4011,10 +4591,14 @@ export const catalog: Catalogitem[] = [
         tag: 'orc, ogro, druida, homem, masculino',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options:  ['a', 'b', 'c'],
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/titans-of-adventure-46-ao-49/orc-druid.webp'
     },
     {
-        id: 360,
+        id: 367,
         name: 'Set 48, Human Monk',
         size: '28mm|33mm',
         price: 18.00,
@@ -4022,10 +4606,14 @@ export const catalog: Catalogitem[] = [
         tag: 'humano, humana, monge, artes marciais, mulher, feminino',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options:  ['a', 'b', 'c'],
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/titans-of-adventure-46-ao-49/human-monk.webp'
     },
     {
-        id: 361,
+        id: 368,
         name: 'Set 48, Human Rogue',
         size: '28mm|33mm',
         price: 18.00,
@@ -4033,10 +4621,14 @@ export const catalog: Catalogitem[] = [
         tag: 'humano, ladino, furtivo, espionagem, homem, masculino',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options:  ['a', 'b', 'c'],
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/titans-of-adventure-46-ao-49/human-rogue.webp'
     },
     {
-        id: 362,
+        id: 369,
         name: 'Set 49, Human Arcanist',
         size: '28mm|33mm',
         price: 18.00,
@@ -4044,10 +4636,14 @@ export const catalog: Catalogitem[] = [
         tag: 'humano, arcanista, mago, magia, careca',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options:  ['a', 'b', 'c'],
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/titans-of-adventure-46-ao-49/human-arcanist.webp'
     },
     {
-        id: 363,
+        id: 370,
         name: 'Set 49, Goliath Guardian',
         size: '28mm|33mm',
         price: 18.00,
@@ -4055,10 +4651,14 @@ export const catalog: Catalogitem[] = [
         tag: 'golias, guerreiro, arqueiro, patrulheiro, paladino, homem, masculino',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options:  ['a', 'b', 'c'],
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/titans-of-adventure-46-ao-49/goliath-guardian.webp'
     },
     {
-        id: 364,
+        id: 371,
         name: 'Set 49, RabitFolk Monk',
         size: '28mm|33mm',
         price: 18.00,
@@ -4066,12 +4666,16 @@ export const catalog: Catalogitem[] = [
         tag: 'coelho, monge, animal, animais, animais, antropomorfo, artes marciais, humano coelho, feminino, mulher, humana coelha',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options:  ['a', 'b', 'c'],
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/titans-of-adventure-46-ao-49/rabbitfolk-monk.webp'
     },
 
     // TITANS_OF_ADVENTURE 50,51,52,53,54,55
     {
-        id: 365,
+        id: 372,
         name: 'Set 50, Drow Cleric',
         size: '28mm|33mm',
         price: 18.00,
@@ -4079,10 +4683,14 @@ export const catalog: Catalogitem[] = [
         tag: 'clérigo, clériga, elfo, elfa, divino, suporte, mulher, feminino, assasina, assasino, guerreira, guerreiro',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options:  ['a', 'b', 'c'],
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/titans-of-adventure-50-ao-55/drow-cleric.webp'
     },
     {
-        id: 366,
+        id: 373,
         name: 'Set 50, Dwarf Wizard',
         size: '28mm|33mm',
         price: 18.00,
@@ -4090,10 +4698,14 @@ export const catalog: Catalogitem[] = [
         tag: 'anão, anões, anã, mago, maga, magia, livro, fogo, cajado',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options:  ['a', 'b', 'c'],
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/titans-of-adventure-50-ao-55/dwarf-wizard.webp'
     },
     {
-        id: 367,
+        id: 374,
         name: 'Set 50, Hafling Druid',
         size: '28mm|33mm',
         price: 18.00,
@@ -4101,10 +4713,14 @@ export const catalog: Catalogitem[] = [
         tag: 'halfling, druida, passaro, natureza, mulher, feminino, cajado, escudo',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options:  ['a', 'b', 'c'],
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/titans-of-adventure-50-ao-55/hafling-druid.webp'
     },
     {
-        id: 368,
+        id: 375,
         name: 'Set 51, Catfolk Warrior',
         size: '28mm|33mm',
         price: 18.00,
@@ -4112,10 +4728,14 @@ export const catalog: Catalogitem[] = [
         tag: 'felino, gato, gata, guerreiro, guerreira, animal, animais, animais, antropomorfo, licantropia, licantropo, licantropa, mulher, feminino',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options:  ['a', 'b', 'c'],
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/titans-of-adventure-50-ao-55/catfolk-warrior.webp'
     },
     {
-        id: 369,
+        id: 376,
         name: 'Set 51, Orc Barbarian',
         size: '28mm|33mm',
         price: 18.00,
@@ -4123,10 +4743,14 @@ export const catalog: Catalogitem[] = [
         tag: 'orc, ogro, ogra, bárbaro, bárbara, mulher, feminino, machado, espada',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options:  ['a', 'b', 'c'],
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/titans-of-adventure-50-ao-55/orc-barbarian.webp'
     },
     {
-        id: 370,
+        id: 377,
         name: 'Set 51, Tortle Paladin',
         size: '28mm|33mm',
         price: 18.00,
@@ -4134,10 +4758,14 @@ export const catalog: Catalogitem[] = [
         tag: 'tartaruga, paladino, paladina, escudo, divino, suporte, animal, animais, animais, criatura, machado, berrante',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options:  ['a', 'b', 'c'],
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/titans-of-adventure-50-ao-55/tortle-paladin.webp'
     },
     {
-        id: 371,
+        id: 378,
         name: 'Set 52, Hafling Cleric',
         size: '28mm|33mm',
         price: 18.00,
@@ -4145,10 +4773,14 @@ export const catalog: Catalogitem[] = [
         tag: 'halfling, clérigo, suporte, pequeno, cerveja, bebida, machado, escudo, masculino, homem',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options:  ['a', 'b', 'c'],
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/titans-of-adventure-50-ao-55/hafling-cleric.webp'
     },
     {
-        id: 372,
+        id: 379,
         name: 'Set 52, Human Warlock',
         size: '28mm|33mm',
         price: 18.00,
@@ -4156,10 +4788,14 @@ export const catalog: Catalogitem[] = [
         tag: 'humano, bruxo, invocador, magia, mago, humano, homem, masculino, capa, cajado, vira tempo, temporizador',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options:  ['a', 'b', 'c'],
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/titans-of-adventure-50-ao-55/human-warlock-2.webp'
     },
     {
-        id: 373,
+        id: 380,
         name: 'Set 52, Tiefling Barbarian',
         size: '28mm|33mm',
         price: 18.00,
@@ -4167,10 +4803,14 @@ export const catalog: Catalogitem[] = [
         tag: 'tiefling, bárbaro, bárbara, mulher, feminino, machado, adaga',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options:  ['a', 'b', 'c'],
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/titans-of-adventure-50-ao-55/tiefling-barbarian-2.webp'
     },
     {
-        id: 374,
+        id: 381,
         name: 'Set 53, Dragonborn Cleric',
         size: '28mm|33mm',
         price: 18.00,
@@ -4178,10 +4818,14 @@ export const catalog: Catalogitem[] = [
         tag: 'draconato, draconata, clérigo, clériga, dragão, mulher, feminino, besta, machado, escudo, lança',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options:  ['a', 'b', 'c'],
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/titans-of-adventure-50-ao-55/dragonborn-cleric.webp'
     },
     {
-        id: 375,
+        id: 382,
         name: 'Set 53, Elf Ranger',
         size: '28mm|33mm',
         price: 18.00,
@@ -4189,10 +4833,14 @@ export const catalog: Catalogitem[] = [
         tag: 'elfo, elfa, arqueiro, arqueira, patrulheiro, patrulheira, arco, escudo, espada',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options:  ['a', 'b', 'c'],
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/titans-of-adventure-50-ao-55/elf-ranger-2.webp'
     },
     {
-        id: 376,
+        id: 383,
         name: 'Set 53, Dragonborn Fighter',
         size: '28mm|33mm',
         price: 18.00,
@@ -4200,10 +4848,14 @@ export const catalog: Catalogitem[] = [
         tag: 'draconato, guerreiro, espada, chifre, masculino, homem',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options:  ['a', 'b', 'c'],
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/titans-of-adventure-50-ao-55/dragonborn-fighter.webp'
     },
     {
-        id: 377,
+        id: 384,
         name: 'Set 54, Dwarf Fighter',
         size: '28mm|33mm',
         price: 18.00,
@@ -4211,10 +4863,14 @@ export const catalog: Catalogitem[] = [
         tag: 'anão, anões, guerreiro, machado, armadura, cerveja, bebida, masculino, homem, lutador',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options:  ['a', 'b', 'c'],
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/titans-of-adventure-50-ao-55/dwarf-fighter.webp'
     },
     {
-        id: 378,
+        id: 385,
         name: 'Set 54, Halfling Paladin',
         size: '28mm|33mm',
         price: 18.00,
@@ -4222,10 +4878,14 @@ export const catalog: Catalogitem[] = [
         tag: 'halfling, paladino, escudo, pequeno, suporte, lança, soldado',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options:  ['a', 'b', 'c'],
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/titans-of-adventure-50-ao-55/halfling-paladin.webp'
     },
     {
-        id: 379,
+        id: 386,
         name: 'Set 54, Orc Rogue',
         size: '28mm|33mm',
         price: 18.00,
@@ -4233,10 +4893,14 @@ export const catalog: Catalogitem[] = [
         tag: 'orc, ogro, ogra, ladino, ladina, furtivo, furtiva, mulher, feminino, corrente',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options:  ['a', 'b', 'c'],
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/titans-of-adventure-50-ao-55/orc-rogue.webp'
     },
     {
-        id: 380,
+        id: 387,
         name: 'Set 55, Half Orc Paladin',
         size: '28mm|33mm',
         price: 18.00,
@@ -4244,10 +4908,14 @@ export const catalog: Catalogitem[] = [
         tag: 'meio orc, meio ogro, paladino, guerreiro, espada, chamas, fogo, machado, masculino, homem',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options:  ['a', 'b', 'c'],
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/titans-of-adventure-50-ao-55/half-orc-paladin.webp'
     },
     {
-        id: 381,
+        id: 388,
         name: 'Set 55, Half Orc Ranger',
         size: '28mm|33mm',
         price: 18.00,
@@ -4255,10 +4923,14 @@ export const catalog: Catalogitem[] = [
         tag: 'meio orc, meio ogro, patrulheiro, floresta, rastreador, mulher, feminino, montaria, animal, animais, animais, lobo, arco, espada',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options:  ['a', 'b', 'c'],
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/titans-of-adventure-50-ao-55/half-orc-ranger.webp'
     },
     {
-        id: 382,
+        id: 389,
         name: 'Set 55, Tiefling Warlock',
         size: '28mm|33mm',
         price: 18.00,
@@ -4266,12 +4938,16 @@ export const catalog: Catalogitem[] = [
         tag: 'tiefling, bruxo, magia, chifres, lança',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options:  ['a', 'b', 'c'],
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/titans-of-adventure-50-ao-55/tiefling-warlock.webp'
     },
 
     //TITANS_OF_ADVENTURE 56,57,58,59
     {
-        id: 383,
+        id: 390,
         name: 'Set 56, Orc Ranger',
         size: '28mm|33mm',
         price: 18.00,
@@ -4279,10 +4955,14 @@ export const catalog: Catalogitem[] = [
         tag: 'orc, ogro, ogra, patrulheiro, patrulheira, floresta, mulher, feminino, guerreiro, guerreira, espada, arco, lança',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options:  ['a', 'b', 'c'],
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/titans-of-adventure-56-ao-59/orc-ranger.webp'
     },
     {
-        id: 384,
+        id: 391,
         name: 'Set 56, Dwarf Cleric',
         size: '28mm|33mm',
         price: 18.00,
@@ -4290,10 +4970,14 @@ export const catalog: Catalogitem[] = [
         tag: 'anão, anões, anã, clérigo, clériga, suporte, mulher, feminino, escudo, machado, infinito',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options:  ['a', 'b', 'c'],
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/titans-of-adventure-56-ao-59/dwarf-cleric.webp'
     },
     {
-        id: 385,
+        id: 392,
         name: 'Set 56, Human Rogue',
         size: '28mm|33mm',
         price: 18.00,
@@ -4301,10 +4985,14 @@ export const catalog: Catalogitem[] = [
         tag: 'humano, humana, ladino, ladina, furtivo, furtiva, mulher, feminino, leque, espada, guerreiro, guerreira',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options:  ['a', 'b', 'c'],
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/titans-of-adventure-56-ao-59/human-rogue-2.webp'
     },
     {
-        id: 386,
+        id: 393,
         name: 'Set 57, Human Ranger',
         size: '28mm|33mm',
         price: 18.00,
@@ -4312,10 +5000,14 @@ export const catalog: Catalogitem[] = [
         tag: 'humano, patrulheiro, floresta, arqueiro, escudo, espada, machado, homem, masculino',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options:  ['a', 'b', 'c'],
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/titans-of-adventure-56-ao-59/human-ranger.webp'
     },
     {
-        id: 387,
+        id: 394,
         name: 'Set 57, Tiefling Cleric',
         size: '28mm|33mm',
         price: 18.00,
@@ -4323,10 +5015,14 @@ export const catalog: Catalogitem[] = [
         tag: 'tiefling, clérigo, chifres, cajado, escudo, guerreiro, homem, masculino, lamparina',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options:  ['a', 'b', 'c'],
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/titans-of-adventure-56-ao-59/tiefling-cleric.webp'
     },
     {
-        id: 388,
+        id: 395,
         name: 'Set 57, Turtoise Bard',
         size: '28mm|33mm',
         price: 18.00,
@@ -4334,10 +5030,14 @@ export const catalog: Catalogitem[] = [
         tag: 'tartaruga, bardo, barda, música, músico, antropomorfo, violão, besta, gaita de fole, licantropo, licantropia',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options:  ['a', 'b', 'c'],
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/titans-of-adventure-56-ao-59/turtoise-bard.webp'
     },
     {
-        id: 389, ///separar
+        id: 396,
         name: 'Set 58, Spore Druid',
         size: '28mm|33mm',
         price: 18.00,
@@ -4345,10 +5045,26 @@ export const catalog: Catalogitem[] = [
         tag: 'druida, fungo, natureza, magia, magico, magica, mulher, feminino, lobo, animal, animais, animais, cajado, enrolado, cacheado, ondulado, crespo planta',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13. Com o lobo fica R$25',
         options: ['a', 'b', 'c'],
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/titans-of-adventure-56-ao-59/spore-druid.webp'
     },
     {
-        id: 390,
+        id: 397,
+        name: 'Set 58, Spore Druid Wolf',
+        size: '28mm|33mm',
+        price: 13.00,
+        type: TypeEnum.TITANS_OF_ADVENTURE,
+        tag: 'lobo, animal, animais, animais',
+        observation: null,
+        options: null,
+        discounts: null,
+        image: '/img/catalog/titans-of-adventure-56-ao-59/spore-druid-wolf.webp'
+    },
+    {
+        id: 398,
         name: 'Set 58, Dwarf Druid',
         size: '28mm|33mm',
         price: 18.00,
@@ -4356,10 +5072,14 @@ export const catalog: Catalogitem[] = [
         tag: 'anão, anões, anã, druida, natureza, magia, magico, magica, mulher, feminino, punho grande, mão, mãos, grande, flor, floresta, planta, escudo, machado',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options: ['a', 'b', 'c'],
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/titans-of-adventure-56-ao-59/dwarf-druid.webp'
     },
     {
-        id: 391,
+        id: 399,
         name: 'Set 58, Human Fighter',
         size: '28mm|33mm',
         price: 18.00,
@@ -4367,10 +5087,14 @@ export const catalog: Catalogitem[] = [
         tag: 'humano, guerreiro, espada, armadura, guarda, escudo, machado, mascara, soldado, masculino, homem',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options: ['a', 'b', 'c'],
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/titans-of-adventure-56-ao-59/human-fighter-2.webp'
     },
     {
-        id: 392,
+        id: 400,
         name: 'Set 59, Arakoa Hunter',
         size: '28mm|33mm',
         price: 18.00,
@@ -4378,10 +5102,14 @@ export const catalog: Catalogitem[] = [
         tag: 'ave, asas, animal, animais, animais, criatura, caçador, aguia, gaviao, falcão, cachorro, , licantropo, licantropia, arco, lança, espada',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options: ['a', 'b', 'c'],
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/titans-of-adventure-56-ao-59/arakoa-hunter.webp'
     },
     {
-        id: 393,
+        id: 401,
         name: 'Set 59, Human Bard',
         size: '28mm|33mm',
         price: 18.00,
@@ -4389,10 +5117,14 @@ export const catalog: Catalogitem[] = [
         tag: 'humano, humana, bardo, barda, música, músico, suporte, mulher, feminino, violão, escudo, espada, circo',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options: ['a', 'b', 'c'],
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/titans-of-adventure-56-ao-59/human-bard-2.webp'
     },
     {
-        id: 394,
+        id: 402,
         name: 'Set 59, Elf Rogue',
         size: '28mm|33mm',
         price: 18.00,
@@ -4400,12 +5132,16 @@ export const catalog: Catalogitem[] = [
         tag: 'elfo, elfa, ladino, ladina, furtivo, furtiva, arma de duas mão, mãos,s, corda, espada, adaga',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options: ['a', 'b', 'c'],
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/titans-of-adventure-56-ao-59/elf-rogue.webp'
     },
 
     //TITANS_OF_ADVENTURE 1,2,3,4,5,6,7,8,11,39,40
     {
-        id: 395,
+        id: 403,
         name: 'Set 1, Elf Mage',
         size: '28mm|33mm',
         price: 18.00,
@@ -4413,10 +5149,14 @@ export const catalog: Catalogitem[] = [
         tag: 'elfo, mago, cajado, masculino, homem',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options: null,
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/titans-of-adventure-1-2-3-4-5-6-7-8-11-39-40/elf-mage.webp'
     },
     {
-        id: 396,
+        id: 404,
         name: 'Set 1, Human Paladin',
         size: '28mm|33mm',
         price: 18.00,
@@ -4424,10 +5164,14 @@ export const catalog: Catalogitem[] = [
         tag: 'humano, humana, paladino, paladina, armadura, suporte, mulher, feminino, espada, armadura, guerreiro, guerreira',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options: null,
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/titans-of-adventure-1-2-3-4-5-6-7-8-11-39-40/human-paladin.webp'
     },
     {
-        id: 397,
+        id: 405,
         name: 'Set 1, Tirefling Warlock',
         size: '28mm|33mm',
         price: 18.00,
@@ -4435,10 +5179,14 @@ export const catalog: Catalogitem[] = [
         tag: 'tiefling, bruxo, bruxa, magia, magico, magica, chifres, gárgula, animal, animais, animais,',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options: null,
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/titans-of-adventure-1-2-3-4-5-6-7-8-11-39-40/tiefling-warlock.webp'
     },
     {
-        id: 398,
+        id: 406,
         name: 'Set 1, Dwarf Priest',
         size: '28mm|33mm',
         price: 18.00,
@@ -4446,10 +5194,14 @@ export const catalog: Catalogitem[] = [
         tag: 'anão, anões, sacerdote, sacerdotisa, divino, clérigo, suporte, machado',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options: null,
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/titans-of-adventure-1-2-3-4-5-6-7-8-11-39-40/dwarf-priest.webp'
     },
     {
-        id: 399,
+        id: 407,
         name: 'Set 2, Dragonborn Warrior',
         size: '28mm|33mm',
         price: 18.00,
@@ -4457,10 +5209,14 @@ export const catalog: Catalogitem[] = [
         tag: 'draconato, guerreiro, espada, escudo, machado',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options: null,
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/titans-of-adventure-1-2-3-4-5-6-7-8-11-39-40/dragonborn-warrior.webp'
     },
     {
-        id: 400,
+        id: 408,
         name: 'Set 2, Human Rogue',
         size: '28mm|33mm',
         price: 18.00,
@@ -4468,10 +5224,14 @@ export const catalog: Catalogitem[] = [
         tag: 'humano, humana, ladino, ladina, mulher, feminino, adaga',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options: null,
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/titans-of-adventure-1-2-3-4-5-6-7-8-11-39-40/human-rogue-3.webp'
     },
     {
-        id: 401,
+        id: 409,
         name: 'Set 2, Halforc Barbarian',
         size: '28mm|33mm',
         price: 18.00,
@@ -4479,10 +5239,14 @@ export const catalog: Catalogitem[] = [
         tag: 'meio orc, meia orc, meio ogro, meia ogra, bárbaro, bárbara',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options: null,
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/titans-of-adventure-1-2-3-4-5-6-7-8-11-39-40/halforc-barbarian.webp'
     },
     {
-        id: 402,
+        id: 410,
         name: 'Set 2, Gnome Mage',
         size: '28mm|33mm',
         price: 18.00,
@@ -4490,10 +5254,14 @@ export const catalog: Catalogitem[] = [
         tag: 'gnomo, mago, magia, magico, cajado, poção',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options: null,
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/titans-of-adventure-1-2-3-4-5-6-7-8-11-39-40/gnome-mage.webp'
     },
     {
-        id: 403,
+        id: 411,
         name: 'Set 3, Halfling Rogue',
         size: '28mm|33mm',
         price: 18.00,
@@ -4501,10 +5269,14 @@ export const catalog: Catalogitem[] = [
         tag: 'halfling, ladino, furtivo, adaga, besta',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options: null,
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/titans-of-adventure-1-2-3-4-5-6-7-8-11-39-40/halfling-rogue.webp'
     },
     {
-        id: 404,
+        id: 412,
         name: 'Set 3, Human Warrior',
         size: '28mm|33mm',
         price: 18.00,
@@ -4512,10 +5284,14 @@ export const catalog: Catalogitem[] = [
         tag: 'humano, humana, guerreiro, guerreira, espada, escudo, enrolado, cacheado, ondulado, crespo',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options: null,
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/titans-of-adventure-1-2-3-4-5-6-7-8-11-39-40/human-warrior.webp'
     },
     {
-        id: 405,
+        id: 413,
         name: 'Set 3, Elf Bard',
         size: '28mm|33mm',
         price: 18.00,
@@ -4523,10 +5299,14 @@ export const catalog: Catalogitem[] = [
         tag: 'elfo, elfa, bardo, barda, música, suporte, flauta, instrumento musical',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options: null,
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/titans-of-adventure-1-2-3-4-5-6-7-8-11-39-40/elf-bard.webp'
     },
     {
-        id: 406,
+        id: 414,
         name: 'Set 4, Elf Monk',
         size: '28mm|33mm',
         price: 18.00,
@@ -4534,10 +5314,14 @@ export const catalog: Catalogitem[] = [
         tag: 'elfo, elfa, monge, mulher, feminino, careca',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options: null,
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/titans-of-adventure-1-2-3-4-5-6-7-8-11-39-40/elf-monk.webp'
     },
     {
-        id: 407,
+        id: 415,
         name: 'Set 4, Human Warlock',
         size: '28mm|33mm',
         price: 18.00,
@@ -4545,10 +5329,14 @@ export const catalog: Catalogitem[] = [
         tag: 'humano, bruxo, magia, invocador, criatura, homem, masculino, chifres',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options: null,
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/titans-of-adventure-1-2-3-4-5-6-7-8-11-39-40/human-warlock-3.webp'
     },
     {
-        id: 408,
+        id: 416,
         name: 'Set 4, Tirefling Sorcerer',
         size: '28mm|33mm',
         price: 18.00,
@@ -4556,10 +5344,14 @@ export const catalog: Catalogitem[] = [
         tag: 'tiefling, feiticeiro, feiticeira, chifres, magia, magico, magica, livro, mulher, feminino',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options: null,
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/titans-of-adventure-1-2-3-4-5-6-7-8-11-39-40/tiefling-sorcerer.webp'
     },
     {
-        id: 409,
+        id: 417,
         name: 'Set 5, Arakoa Monk',
         size: '28mm|33mm',
         price: 18.00,
@@ -4567,10 +5359,14 @@ export const catalog: Catalogitem[] = [
         tag: 'ave, monge, passaro, cajado, asa, licantropo, licantropia, animal, animais, animais, critura',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options: null,
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/titans-of-adventure-1-2-3-4-5-6-7-8-11-39-40/arakoa-monk.webp'
     },
     {
-        id: 410,
+        id: 418,
         name: 'Set 5, Dwarf Barbarian',
         size: '28mm|33mm',
         price: 18.00,
@@ -4578,10 +5374,14 @@ export const catalog: Catalogitem[] = [
         tag: 'anão, anões, anã, bárbaro, bárbara, machado, mulher, feminino',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options: null,
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/titans-of-adventure-1-2-3-4-5-6-7-8-11-39-40/dwarf-barbarian.webp'
     },
     {
-        id: 411,
+        id: 419,
         name: 'Set 5, Human Paladin',
         size: '28mm|33mm',
         price: 18.00,
@@ -4589,10 +5389,14 @@ export const catalog: Catalogitem[] = [
         tag: 'humano, paladino, divino, suporte, armadura, careca, espada, escudo, homem, masculino',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options: null,
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/titans-of-adventure-1-2-3-4-5-6-7-8-11-39-40/human-paladin-2.webp'
     },
     {
-        id: 412,
+        id: 420,
         name: 'Set 6, Dwarf Barbarian',
         size: '28mm|33mm',
         price: 18.00,
@@ -4600,10 +5404,14 @@ export const catalog: Catalogitem[] = [
         tag: 'anão, anões, bárbaro, machado, homem, masculino',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options: null,
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/titans-of-adventure-1-2-3-4-5-6-7-8-11-39-40/dwarf-barbarian-2.webp'
     },
     {
-        id: 413,
+        id: 421,
         name: 'Set 6, Human Mage',
         size: '28mm|33mm',
         price: 18.00,
@@ -4611,10 +5419,14 @@ export const catalog: Catalogitem[] = [
         tag: 'humano, humana, mago, maga, magia, magico, magica, mulher, feminino, orbe',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options: null,
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/titans-of-adventure-1-2-3-4-5-6-7-8-11-39-40/human-mage.webp'
     },
     {
-        id: 414,
+        id: 422,
         name: 'Set 6, Tiefling Bard',
         size: '28mm|33mm',
         price: 18.00,
@@ -4622,10 +5434,14 @@ export const catalog: Catalogitem[] = [
         tag: 'tiefling, bardo, música, suporte, instrumento musical, violino, chifres, homem, masculino',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options: null,
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/titans-of-adventure-1-2-3-4-5-6-7-8-11-39-40/tiefling-bard.webp'
     },
     {
-        id: 415,
+        id: 423,
         name: 'Set 7, Dwarf Paladin',
         size: '28mm|33mm',
         price: 18.00,
@@ -4633,10 +5449,14 @@ export const catalog: Catalogitem[] = [
         tag: 'anão, anões, anã, paladino, paladina, armadura, espada, mulher, feminino',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options: null,
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/titans-of-adventure-1-2-3-4-5-6-7-8-11-39-40/dwarf-paladin.webp'
     },
     {
-        id: 416,
+        id: 424,
         name: 'Set 7, Goliath Fighter',
         size: '28mm|33mm',
         price: 18.00,
@@ -4644,10 +5464,14 @@ export const catalog: Catalogitem[] = [
         tag: 'golias, guerreiro, lutador, careca, machado, adaga, homem, masculino',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options: null,
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/titans-of-adventure-1-2-3-4-5-6-7-8-11-39-40/goliath-fighter.webp'
     },
     {
-        id: 417,
+        id: 425,
         name: 'Set 7, Human Cleric',
         size: '28mm|33mm',
         price: 18.00,
@@ -4655,10 +5479,14 @@ export const catalog: Catalogitem[] = [
         tag: 'humano, clérigo, divino, suporte, livro, cajado, homem, masculino',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options: null,
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/titans-of-adventure-1-2-3-4-5-6-7-8-11-39-40/human-cleric.webp'
     },
     {
-        id: 418,
+        id: 426,
         name: 'Set 8, Half Orc Bard',
         size: '28mm|33mm',
         price: 18.00,
@@ -4666,10 +5494,14 @@ export const catalog: Catalogitem[] = [
         tag: 'meio orc, meio ogro, bardo, música, músico, suporte, instrumento musical, tambor, tamborim, homem, masculino',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options: null,
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/titans-of-adventure-1-2-3-4-5-6-7-8-11-39-40/half-orc-bard.webp'
     },
     {
-        id: 419,
+        id: 427,
         name: 'Set 8, Human Druid',
         size: '28mm|33mm',
         price: 18.00,
@@ -4677,10 +5509,14 @@ export const catalog: Catalogitem[] = [
         tag: 'humano, humana, druida, natureza, magia, maga, animal, animais, animais, mulher, feminino, cajado, lontra',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options: null,
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/titans-of-adventure-1-2-3-4-5-6-7-8-11-39-40/human-druid.webp'
     },
     {
-        id: 420,
+        id: 428,
         name: 'Set 8, Human Rogue',
         size: '28mm|33mm',
         price: 18.00,
@@ -4688,10 +5524,14 @@ export const catalog: Catalogitem[] = [
         tag: 'humano, humana, ladino, ladina, dançarina, dançarina do ventre, cigana, mulher, feminino',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options: null,
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/titans-of-adventure-1-2-3-4-5-6-7-8-11-39-40/human-rogue-4.webp'
     },
     {
-        id: 421,
+        id: 429,
         name: 'Set 9, Dwarf Hunter',
         size: '28mm|33mm',
         price: 18.00,
@@ -4699,10 +5539,14 @@ export const catalog: Catalogitem[] = [
         tag: 'anão, anões, caçador, arqueiro, arco, flecha, homem, masculino',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options: null,
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/titans-of-adventure-1-2-3-4-5-6-7-8-11-39-40/dwarf-hunter.webp'
     },
     {
-        id: 422,
+        id: 430,
         name: 'Set 9, Human Cleric',
         size: '28mm|33mm',
         price: 18.00,
@@ -4710,10 +5554,14 @@ export const catalog: Catalogitem[] = [
         tag: 'humano, humana, clérigo, clériga, divino, suporte, mulher, feminino',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options: null,
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/titans-of-adventure-1-2-3-4-5-6-7-8-11-39-40/human-cleric-2.webp'
     },
     {
-        id: 423,
+        id: 431,
         name: 'Set 9, Elf Barbarian',
         size: '28mm|33mm',
         price: 18.00,
@@ -4721,10 +5569,14 @@ export const catalog: Catalogitem[] = [
         tag: 'elfo, bárbaro, arma de duas mão, mãos,s, machado, chifres, lula, polvo, homem, masculino',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options: null,
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/titans-of-adventure-1-2-3-4-5-6-7-8-11-39-40/elf-barbarian.webp'
     },
     {
-        id: 424,
+        id: 432,
         name: 'Set 10, Gnome Warrior',
         size: '28mm|33mm',
         price: 18.00,
@@ -4732,10 +5584,14 @@ export const catalog: Catalogitem[] = [
         tag: 'gnomo, gnoma, halfling, guerreiro, guerreira, machado',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options: null,
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/titans-of-adventure-1-2-3-4-5-6-7-8-11-39-40/gnome-warrior.webp'
     },
     {
-        id: 425,
+        id: 433,
         name: 'Set 10, Human Hunter',
         size: '28mm|33mm',
         price: 18.00,
@@ -4743,10 +5599,14 @@ export const catalog: Catalogitem[] = [
         tag: 'humano, caçador, adaga, corda, corrente, besta, masculino, homem',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options: null,
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/titans-of-adventure-1-2-3-4-5-6-7-8-11-39-40/human-hunter.webp'
     },
     {
-        id: 426,
+        id: 434,
         name: 'Set 10, Feral Druid',
         size: '28mm|33mm',
         price: 18.00,
@@ -4754,10 +5614,14 @@ export const catalog: Catalogitem[] = [
         tag: 'druida, feral, selvagem, transformação, licantropo, licantropia, animal, animais, animais, fera, criatura',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options: null,
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/titans-of-adventure-1-2-3-4-5-6-7-8-11-39-40/feral-druid.webp'
     },
     {
-        id: 427,
+        id: 435,
         name: 'Set 11, Dwarf Mage',
         size: '28mm|33mm',
         price: 18.00,
@@ -4765,10 +5629,14 @@ export const catalog: Catalogitem[] = [
         tag: 'anão, anões, mago, magia, magico, cajado, homem, masculino',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options: null,
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/titans-of-adventure-1-2-3-4-5-6-7-8-11-39-40/dwarf-mage.webp'
     },
     {
-        id: 428,
+        id: 436,
         name: 'Set 11, Human Druid',
         size: '28mm|33mm',
         price: 18.00,
@@ -4776,10 +5644,14 @@ export const catalog: Catalogitem[] = [
         tag: 'humano, druida, natureza, magia, casaco peludo, cajado, homem, masculino',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options: null,
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/titans-of-adventure-1-2-3-4-5-6-7-8-11-39-40/human-druid-2.webp'
     },
     {
-        id: 429,
+        id: 437,
         name: 'Set 11, Human Fighter',
         size: '28mm|33mm',
         price: 18.00,
@@ -4787,11 +5659,15 @@ export const catalog: Catalogitem[] = [
         tag: 'humano, humana, guerreiro, guerreira, lutador, lutadora, mulher, feminino',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options: null,
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/titans-of-adventure-1-2-3-4-5-6-7-8-11-39-40/human-fighter-3.webp'
     },
 
     {
-        id: 430,
+        id: 438,
         name: 'Set 39, Dragonborn Mage',
         size: '28mm|33mm',
         price: 18.00,
@@ -4799,10 +5675,14 @@ export const catalog: Catalogitem[] = [
         tag: 'draconato, mago, magia, magico, cajado, homem, masculino',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options: ['a', 'b', 'c'],
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/titans-of-adventure-1-2-3-4-5-6-7-8-11-39-40/dragonborn-mage.webp'
     },
     {
-        id: 431,
+        id: 439,
         name: 'Set 39, Satyr Bard',
         size: '28mm|33mm',
         price: 18.00,
@@ -4810,10 +5690,14 @@ export const catalog: Catalogitem[] = [
         tag: 'sátiro, bardo, música, mitologia, animal, animais, animais, homem, masculino, violão, instrumento musical, livro, magia, magico',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options: ['a', 'b', 'c'],
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/titans-of-adventure-1-2-3-4-5-6-7-8-11-39-40/satyr-bard.webp'
     },
     {
-        id: 432,
+        id: 440,
         name: 'Set 39, Tiefling Rogue',
         size: '28mm|33mm',
         price: 18.00,
@@ -4821,10 +5705,14 @@ export const catalog: Catalogitem[] = [
         tag: 'tiefling, ladino, ladina, chifres, mulher, feminino, lança',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options: ['a', 'b', 'c'],
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/titans-of-adventure-1-2-3-4-5-6-7-8-11-39-40/tiefling-rogue.webp'
     },
     {
-        id: 433,
+        id: 441,
         name: 'Set 40, Human Barbarian',
         size: '28mm|33mm',
         price: 18.00,
@@ -4832,10 +5720,14 @@ export const catalog: Catalogitem[] = [
         tag: 'humano, bárbaro, masculino, homem, machado, arma de duas mão, mãos,s, corrente',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options: ['a', 'b', 'c'],
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/titans-of-adventure-1-2-3-4-5-6-7-8-11-39-40/human-barbarian-2.webp'
     },
     {
-        id: 434,
+        id: 442,
         name: 'Set 40, Gnome Cleric',
         size: '28mm|33mm',
         price: 18.00,
@@ -4843,10 +5735,14 @@ export const catalog: Catalogitem[] = [
         tag: 'gnomo, clérigo, divino, suporte, homem, masculino, chama, espada, escudo, batedor, livro',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options: ['a', 'b', 'c'],
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/titans-of-adventure-1-2-3-4-5-6-7-8-11-39-40/gnome-cleric.webp'
     },
     {
-        id: 435,
+        id: 443,
         name: 'Set 40, Halforc Rogue',
         size: '28mm|33mm',
         price: 18.00,
@@ -4854,12 +5750,16 @@ export const catalog: Catalogitem[] = [
         tag: 'meio orc, meio ogro, meia orc, meia ogro, meia ogra, ladino, ladina, mulher, feminino, corrente, adaga, besta',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options: ['a', 'b', 'c'],
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/titans-of-adventure-1-2-3-4-5-6-7-8-11-39-40/halforc-rogue.webp'
     },
 
     // TOWNFOLK
     {
-        id: 436,
+        id: 444,
         name: 'Zombie Cook',
         size: '28mm|33mm',
         price: 25.00,
@@ -4867,10 +5767,11 @@ export const catalog: Catalogitem[] = [
         tag: 'zumbi, cozinheiro, morto vivo, caldeirão, cenário, comida, chef, cozinha, taverna',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/townfolk/zombie-cook.webp',
     },
     {
-        id: 437,
+        id: 445,
         name: 'Stranger',
         size: '28mm|33mm',
         price: 18.00,
@@ -4878,10 +5779,11 @@ export const catalog: Catalogitem[] = [
         tag: 'forasteiro, estranho, aldeão, npm, personagem, humano, homem, masculino, capa, espada, misterioso, cenário, taverna',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/townfolk/stranger.webp',
     },
     {
-        id: 438,
+        id: 446,
         name: 'Patreon 1',
         size: '28mm|33mm',
         price: 18.00,
@@ -4889,10 +5791,11 @@ export const catalog: Catalogitem[] = [
         tag: 'cliente, aldeão, npm, humano, homem, masculino, cerveja, copo, caneca, bebida, comida, cenário, taverna',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/townfolk/patreon-1.webp',
     },
     {
-        id: 439,
+        id: 447,
         name: 'Patreon 2',
         size: '28mm|33mm',
         price: 18.00,
@@ -4900,10 +5803,11 @@ export const catalog: Catalogitem[] = [
         tag: 'cliente, aldeão, npm, humano, homem, masculino, cerveja, copo, caneca, bebida, comida, cenário, taverna',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/townfolk/patreon-2.webp',
     },
     {
-        id: 440, /// corrigir
+        id: 448,
         name: 'Stable Boys',
         size: '28mm|33mm',
         price: 18.00,
@@ -4911,10 +5815,11 @@ export const catalog: Catalogitem[] = [
         tag: 'cavalariço, npm, personagem, aldeão, estábulo, careca, humano, homem, masculino, forcado, fazendeiro, fazenda, cenário',
         observation: null,
         options: ['a', 'b'],
+        discounts: null,
         image: '/img/catalog/townfolk/stable-boys.webp',
     },
     {
-        id: 441,
+        id: 449,
         name: 'Ogre Cook',
         size: '28mm|33mm',
         price: 25.00,
@@ -4922,10 +5827,11 @@ export const catalog: Catalogitem[] = [
         tag: 'ogro, orc, cozinheiro, cozinha, comida, faca, npm, personagem, aldeão, chef, barril, caneca, taverna',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/townfolk/ogre-cook.webp',
     },
     {
-        id: 442,
+        id: 450,
         name: 'Barmaid',
         size: '28mm|33mm',
         price: 18.00,
@@ -4933,10 +5839,11 @@ export const catalog: Catalogitem[] = [
         tag: 'garçonete, atendente, empregada, mulher, feminino, npm, aldeão, aldeã, taverna, cerveja, copo, caneca, taverna',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/townfolk/barmaid.webp',
     },
     {
-        id: 443,
+        id: 451,
         name: 'Body Guard 1',
         size: '28mm|33mm',
         price: 18.00,
@@ -4944,10 +5851,11 @@ export const catalog: Catalogitem[] = [
         tag: 'guarda costas, segurança, proteção, aldeão, npm, personagem, mulher, feminino, adaga, taverna, humano, humana',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/townfolk/body-guard-1.webp',
     },
     {
-        id: 444,
+        id: 452,
         name: 'Body Guard 2',
         size: '28mm|33mm',
         price: 18.00,
@@ -4955,10 +5863,11 @@ export const catalog: Catalogitem[] = [
         tag: 'guarda costas, segurança, proteção, aldeão, npm, personagem, taverna, careca, masculino, homem, humano',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/townfolk/body-guard-2.webp',
     },
     {
-        id: 445,
+        id: 453,
         name: 'Lord',
         size: '28mm|33mm',
         price: 25.00,
@@ -4966,10 +5875,11 @@ export const catalog: Catalogitem[] = [
         tag: 'nobre, senhor, lorde, npm, personagem, aldeão, taverna, cadeira, sentado, frango, masculino, homem, humano, taverna',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/townfolk/lord.webp',
     },
     {
-        id: 446,
+        id: 454,
         name: 'Ghost 1',
         size: '28mm|33mm',
         price: 18.00,
@@ -4977,10 +5887,11 @@ export const catalog: Catalogitem[] = [
         tag: 'fantasma, espírito,npm, personagem, aldeão, assombração, espectro, espectra, alma, mulher, feminino, invocação, taverna',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/townfolk/ghost-1.webp',
     },
     {
-        id: 447,
+        id: 455,
         name: 'Ghost 2',
         size: '28mm|33mm',
         price: 18.00,
@@ -4988,10 +5899,11 @@ export const catalog: Catalogitem[] = [
         tag: 'fantasma, espírito, npm, personagem, aldeão, assombração, espectro, alma, taverna, homem, masulino, vela, garçom, garcom',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/townfolk/ghost-2.webp',
     },
     {
-        id: 448,
+        id: 456,
         name: 'Cultist',
         size: '28mm|33mm',
         price: 18.00,
@@ -4999,10 +5911,11 @@ export const catalog: Catalogitem[] = [
         tag: 'cultista, ocultismo, aldeão, npm, personagem, mascara, mascarado, adaga, homem, masculino, ladrão',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/townfolk/cultist.webp',
     },
     {
-        id: 449,
+        id: 457,
         name: 'Cultist Leader',
         size: '28mm|33mm',
         price: 20.00,
@@ -5010,10 +5923,11 @@ export const catalog: Catalogitem[] = [
         tag: 'cultista, ocultismo, aldeão, npm, personagem, mascara, líder, ocultismo, homem, masculino, chifre, adaga, taça, taca',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/townfolk/cultist-leader.webp',
     },
     {
-        id: 450,
+        id: 458,
         name: 'Bartender',
         size: '28mm|33mm',
         price: 18.00,
@@ -5021,10 +5935,11 @@ export const catalog: Catalogitem[] = [
         tag: 'barman, garçom, atendente, homem, masculino, careca, taverna, npm, personagem, aldeão',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/townfolk/bartender.webp',
     },
     {
-        id: 451,
+        id: 459,
         name: 'Brent',
         size: '28mm|33mm',
         price: 18.00,
@@ -5032,10 +5947,11 @@ export const catalog: Catalogitem[] = [
         tag: 'aldeão, npm, personagem, masculino, homem, animal, animais, animais, gato',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/townfolk/brent.webp',
     },
     {
-        id: 452,
+        id: 460,
         name: 'Demon Goat',
         size: 'especial',
         price: 70.00,
@@ -5043,12 +5959,13 @@ export const catalog: Catalogitem[] = [
         tag: 'demônio, bode, criatura, monstro, animal, animais, animais, cajado, chifre, sino',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/townfolk/demon-goat.webp',
     },
-    
+
     // UNDYING_DYNASTIES V1
     {
-        id: 453,
+        id: 461,
         name: 'Skeletons Unit',
         size: '28mm|33mm',
         price: 15.00,
@@ -5056,10 +5973,14 @@ export const catalog: Catalogitem[] = [
         tag: 'esqueleto, arqueiro, morto vivo, harpa, bardo, instrumento musical, musica, espada, escudo, guerreiro, soldado, bandeira, deserto, egito, egípcio, areia',
         observation: 'Na compra de no mínimo 5 o preço diminui para 13R$ e na compra de 10 o preço diminui para 10R$.',
         options: ['a', 'b', 'c', 'd', 'e'],
+        discounts: [
+            { minQty: 5, price: 13, type: 'fixed' },
+            { minQty: 10, price: 10, type: 'fixed' },
+        ],
         image: '/img/catalog/undying-dynasties-v1/skeletons-unit.webp',
     },
     {
-        id: 454,
+        id: 462,
         name: 'Skeletons Unit Bow',
         size: '28mm|33mm',
         price: 15.00,
@@ -5067,10 +5988,14 @@ export const catalog: Catalogitem[] = [
         tag: 'esqueleto, arqueiro, morto vivo, guerreiro, soldado, deserto, egito, egípcio, areia',
         observation: 'Na compra de no mínimo 5 o preço diminui para 13R$ e na compra de 10 o preço diminui para 10R$.',
         options: ['a', 'b', 'c', 'd', 'e'],
+        discounts: [
+            { minQty: 5, price: 13, type: 'fixed' },
+            { minQty: 10, price: 10, type: 'fixed' },
+        ],
         image: '/img/catalog/undying-dynasties-v1/skeletons-unit-bow.webp',
     },
     {
-        id: 455,
+        id: 463,
         name: 'Skeletons Unit Spear',
         size: '28mm|33mm',
         price: 15.00,
@@ -5078,10 +6003,14 @@ export const catalog: Catalogitem[] = [
         tag: 'esqueleto, lança, morto vivo, guerreiro, soldado, deserto, egito, egípcio, areia, bandeira',
         observation: 'Na compra de no mínimo 5 o preço diminui para 13R$ e na compra de 10 o preço diminui para 10R$.',
         options: ['a', 'b', 'c', 'd', 'e'],
+        discounts: [
+            { minQty: 5, price: 13, type: 'fixed' },
+            { minQty: 10, price: 10, type: 'fixed' },
+        ],
         image: '/img/catalog/undying-dynasties-v1/skeletons-unit-spear.webp',
     },
     {
-        id: 456,
+        id: 464,
         name: 'Shabti Scythe',
         size: '28mm|33mm',
         price: 25.00,
@@ -5089,10 +6018,14 @@ export const catalog: Catalogitem[] = [
         tag: 'shabti, ceifador, morto vivo, criatura, monstro, deserto, egito, egípcio, areia, animal, animais, animais, cenário, item, itens',
         observation: 'Na compra de no mínimo 3 o preço diminui para 22R$ e na compra de 9 o preço diminui para 20R$.',
         options: ['a', 'b', 'c'],
+        discounts: [
+            { minQty: 5, price: 22, type: 'fixed' },
+            { minQty: 9, price: 20, type: 'fixed' },
+        ],
         image: '/img/catalog/undying-dynasties-v1/shabti-scythe.webp',
     },
     {
-        id: 457,
+        id: 465,
         name: 'Shabti Spear',
         size: '28mm|33mm',
         price: 25.00,
@@ -5100,10 +6033,14 @@ export const catalog: Catalogitem[] = [
         tag: 'shabti, lança, ceifador, morto vivo, criatura, monstro, deserto, egito, egípcio, areia, animal, animais, animais, cenário, item, itens',
         observation: 'Na compra de no mínimo 3 o preço diminui para 22R$ e na compra de 9 o preço diminui para 20R$.',
         options: ['a', 'b', 'c'],
+        discounts: [
+            { minQty: 3, price: 22, type: 'fixed' },
+            { minQty: 9, price: 20, type: 'fixed' },
+        ],
         image: '/img/catalog/undying-dynasties-v1/shabti-spear.webp',
     },
     {
-        id: 458,
+        id: 466,
         name: 'Shabti Bow',
         size: '28mm|33mm',
         price: 25.00,
@@ -5111,10 +6048,14 @@ export const catalog: Catalogitem[] = [
         tag: 'shabti, arqueiro, arco, ceifador, morto vivo, criatura, monstro, deserto, egito, egípcio, areia, animal, animais, animais, cenário, item, itens',
         observation: 'Na compra de no mínimo 3 o preço diminui para 22R$ e na compra de 9 o preço diminui para 20R$.',
         options: ['a', 'b', 'c'],
+        discounts: [
+            { minQty: 3, price: 22, type: 'fixed' },
+            { minQty: 9, price: 20, type: 'fixed' },
+        ],
         image: '/img/catalog/undying-dynasties-v1/shabti-bow.webp',
     },
     {
-        id: 459,
+        id: 467,
         name: 'Skeletons Cavalry Bow',
         size: 'especial',
         price: 45.00,
@@ -5122,10 +6063,14 @@ export const catalog: Catalogitem[] = [
         tag: 'cavalaria, guerreiro, soldado, esqueleto, morto vivo, deserto, egito, egípcio, areia, arqueiro, montaria, cavalo, animal, animais, animais, harpa, instrumento musical, musica, bardo',
         observation: 'Na compra de no mínimo 4 o preço diminui para 42R$ e na compra de 10 o preço diminui para 38R$.',
         options: ['a', 'b', 'c', 'd'],
+        discounts: [
+            { minQty: 4, price: 42, type: 'fixed' },
+            { minQty: 10, price: 38, type: 'fixed' },
+        ],
         image: '/img/catalog/undying-dynasties-v1/skeletons-cavalry-bow.webp',
     },
     {
-        id: 460,
+        id: 468,
         name: 'Skeletons Cavalry Spear A',
         size: 'especial',
         price: 45.00,
@@ -5133,10 +6078,14 @@ export const catalog: Catalogitem[] = [
         tag: 'cavalaria, guerreiro, soldado, esqueleto, morto vivo, deserto, egito, egípcio, areia, lança, montaria, cavalo, animal, animais, animais, harpa, instrumento musical, musica, bardo',
         observation: 'Na compra de no mínimo 4 o preço diminui para 42R$ e na compra de 10 o preço diminui para 38R$.',
         options: ['a', 'b', 'c', 'd'],
+        discounts: [
+            { minQty: 4, price: 42, type: 'fixed' },
+            { minQty: 10, price: 38, type: 'fixed' },
+        ],
         image: '/img/catalog/undying-dynasties-v1/skeletons-cavalry-spear-a.webp',
     },
     {
-        id: 461,
+        id: 469,
         name: 'RakShasa',
         size: '28mm|33mm',
         price: 18.00,
@@ -5144,10 +6093,11 @@ export const catalog: Catalogitem[] = [
         tag: 'criatura, mística, gato, besta, bola de fogo, chama, espada, monstro, deserto, egito, egípcio, areia, animal, animais, animais,',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/undying-dynasties-v1/rakshasa.webp',
     },
     {
-        id: 462,
+        id: 470,
         name: 'HellBound',
         size: '28mm|33mm',
         price: 15.00,
@@ -5155,10 +6105,11 @@ export const catalog: Catalogitem[] = [
         tag: 'morto vivo, espírito, amaldiçoado, cachorro, demonio, inferno, deserto, egito, egípcio, areia, animal, animais, animais, criatura, monstro',
         observation: null,
         options: ['a', 'b', 'c'],
+        discounts: null,
         image: '/img/catalog/undying-dynasties-v1/hellbound.webp',
     },
     {
-        id: 463,
+        id: 471,
         name: 'Sand Lord',
         size: '28mm|33mm',
         price: 25.00,
@@ -5166,10 +6117,11 @@ export const catalog: Catalogitem[] = [
         tag: 'deus, senhor, areia, morto vivo, realeza, lorde, mascara, cajado, deserto, egito, egípcio, criatura, monstro, demonio',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/undying-dynasties-v1/sand-lord.webp',
     },
     {
-        id: 464,
+        id: 472,
         name: 'Mummy Brute',
         size: 'especial',
         price: 45.00,
@@ -5177,10 +6129,11 @@ export const catalog: Catalogitem[] = [
         tag: 'múmia, bruto, morto vivo, deserto, egito, egípcio, criatura, monstro, areia, tambor',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/undying-dynasties-v1/mummy-brute.webp',
     },
     {
-        id: 465,
+        id: 473,
         name: 'Sha Guardian',
         size: 'especial',
         price: 120.00,
@@ -5188,10 +6141,11 @@ export const catalog: Catalogitem[] = [
         tag: 'guardião, místico, morto vivo, deserto, egito, egípcio, criatura, monstro, areia, ossos, cajado, guerreiro',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/undying-dynasties-v1/sha-guardian.webp',
     },
     {
-        id: 466,
+        id: 474,
         name: 'Colossus',
         size: 'especial',
         price: 185.00,
@@ -5199,12 +6153,13 @@ export const catalog: Catalogitem[] = [
         tag: 'colosso, gigante, morto vivo, deserto, egito, egípcio, criatura, monstro, areia, ossos, cajado, guerreiro, demonio, flecha, arco, arqueiro, mumia',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/undying-dynasties-v1/colossus.webp',
     },
-    
+
     //UNDYING_DYNASTIES V2
     {
-        id: 467,
+        id: 475,
         name: 'Chariot',
         size: 'especial',
         price: 95.00,
@@ -5212,10 +6167,11 @@ export const catalog: Catalogitem[] = [
         tag: 'deus, carroça, morto vivo, cavalo, mumia, deserto, egito, egípcio, areia, criatura, monstro, demonio',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/undying-dynasties-v2/chariot.webp',
     },
     {
-        id: 468,
+        id: 476,
         name: 'Death Cult Hierarch',
         size: '28mm|33mm',
         price: 25.00,
@@ -5223,10 +6179,11 @@ export const catalog: Catalogitem[] = [
         tag: 'deus egípcio, deusa egipcia, mago, maga, sacerdote, sacerdotisa, morto vivo, morta viva, mulher, feminino, deserto, egito, egípcio, areia, gato, animal, animais, animais, criatura, monstro',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/undying-dynasties-v2/death-cult-hierarch.webp',
     },
     {
-        id: 469,
+        id: 477,
         name: 'Tomb Harbinger Anubis',
         size: '28mm|33mm',
         price: 25.00,
@@ -5234,10 +6191,11 @@ export const catalog: Catalogitem[] = [
         tag: 'anubis, arauto, morto vivo, deserto, egito, egípcio, criatura, monstro, areia, demonio, deus, chacal',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/undying-dynasties-v2/tomb-harbinger-anubis.webp',
     },
     {
-        id: 470,
+        id: 478,
         name: 'Necropolis Guards Unit Shield',
         size: '28mm|33mm',
         price: 18.00,
@@ -5245,10 +6203,14 @@ export const catalog: Catalogitem[] = [
         tag: 'guardião, soldado, guerreiro, espada, deserto, egito, egipcio, areia, escudo, morto vivo, mumia, cobra, escorpiao, bandeira, esqueleto',
         observation: 'Na compra de no mínimo 3 o preço diminui para 15R$ e na compra de 9 o preço diminui para 12R$.',
         options: ['a', 'b', 'c', 'd', 'e'],
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 9, price: 12, type: 'fixed' },
+        ],
         image: '/img/catalog/undying-dynasties-v2/necropolis-guards-unit-shield.webp',
     },
     {
-        id: 471,
+        id: 479,
         name: 'Necropolis Guards Unit Halbard',
         size: '28mm|33mm',
         price: 18.00,
@@ -5256,10 +6218,14 @@ export const catalog: Catalogitem[] = [
         tag: 'trombeta, guardião, egipcio, alabarda, soldado, guerreiro, espada, deserto, egito, egipcio, areia, escudo, morto vivo, mumia, bardo, instrumneto musical, musica',
         observation: 'Na compra de no mínimo 3 o preço diminui para 15R$ e na compra de 9 o preço diminui para 12R$.',
         options: ['a', 'b', 'c', 'd', 'e'],
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 9, price: 12, type: 'fixed' },
+        ],
         image: '/img/catalog/undying-dynasties-v2/necropolis-guards-unit-halbard.webp',
     },
     {
-        id: 472,
+        id: 480,
         name: 'Sand Stalkers',
         size: 'especial',
         price: 45.00,
@@ -5267,10 +6233,13 @@ export const catalog: Catalogitem[] = [
         tag: 'areia, espreitador, criatura, morto vivo, deserto, egito, egipcio, mumia, montaria, cobra, animal, animais, animais,',
         observation: 'Na compra de 3 o preço diminui para 40R$',
         options: ['a', 'b', 'c'],
+        discounts: [
+            { minQty: 3, price: 40, type: 'fixed' },
+        ],
         image: '/img/catalog/undying-dynasties-v2/sand-stalkers.webp',
     },
     {
-        id: 473,
+        id: 481,
         name: 'Vultures',
         size: 'especial',
         price: 60.00,
@@ -5278,10 +6247,13 @@ export const catalog: Catalogitem[] = [
         tag: 'areia, abutre, estátua, morto vivo, criatura, monstro, asa, passaro, cenário, item, itens, deserto, egito, egipcio, montaria, animal, animais, animais,',
         observation: 'Na compra de no mínimo 2 o preço diminui para 57R$',
         options: ['a', 'b', 'c'],
+        discounts: [
+            { minQty: 2, price: 57, type: 'fixed' },
+        ],
         image: '/img/catalog/undying-dynasties-v2/vultures.webp',
     },
     {
-        id: 474,
+        id: 482,
         name: 'Dragon Cultist',
         size: '28mm|33mm',
         price: 18.00,
@@ -5289,10 +6261,13 @@ export const catalog: Catalogitem[] = [
         tag: 'areia, cultista, dragão, draconato, guerreiro, deserto, egito, areia, egpcio, homem, masculino, adaga, arma de duas mão, mãos, mão, mãos,s',
         observation: 'Na compra de 3 o preço diminui para 15R$',
         options: ['a', 'b', 'c'],
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+        ],
         image: '/img/catalog/undying-dynasties-v2/dragon-cultist.webp',
     },
     {
-        id: 475,
+        id: 483,
         name: 'White Dragon',
         size: 'especial',
         price: 80.00,
@@ -5300,23 +6275,37 @@ export const catalog: Catalogitem[] = [
         tag: 'areia, dragão, criatura, mágico, monstro, morto vivo, asa, criatura, demonio, deserto, egito, egpicio',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/undying-dynasties-v2/white-dragon.webp',
     },
     {
-        id: 476,
+        id: 484,
         name: 'Casket of Phatep',
         size: 'especial',
         price: 160.00,
         type: TypeEnum.UNDYING_DYNASTIES,
         tag: 'areia, caixão, personagem, criatura, mágico, monstro, morto vivo, demonio, deserto, egito, egpicio, mumia, item, itens, cenário, altar, invocador, invocaçao, invocacao',
-        observation: 'Personagem pode ser comprado separadamente por R$ 25',
+        observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/undying-dynasties-v2/casket-of-phatep.webp',
     },
-    
+    {
+        id: 485,
+        name: 'Casket of Phatep - Necromancer',
+        size: 'especial',
+        price: 25.00,
+        type: TypeEnum.UNDYING_DYNASTIES,
+        tag: 'areia, caixão, personagem, criatura, mágico, monstro, morto vivo, demonio, deserto, egito, egpicio, mumia, item, itens, cenário, altar, invocador, invocaçao, invocacao',
+        observation: null,
+        options: null,
+        discounts: null,
+        image: '/img/catalog/undying-dynasties-v2/casket-of-phatep-necromancer.webp',
+    },
+
     // UNDYING_DYNASTIES V3
     {
-        id: 477,
+        id: 486,
         name: 'Sand Priest V1',
         size: '28mm|33mm',
         price: 50.00,
@@ -5324,10 +6313,11 @@ export const catalog: Catalogitem[] = [
         tag: 'areia, sacerdote, sacerdotisa, areia, mágico, morto vivo, deserto, egito, egpicio, mumia, montaria, cavalo, cajado, animal, animais, animais,',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/undying-dynasties-v3/sand-priest-v1.webp',
     },
     {
-        id: 478,
+        id: 487,
         name: 'Sand Priest V2',
         size: '28mm|33mm',
         price: 50.00,
@@ -5335,10 +6325,11 @@ export const catalog: Catalogitem[] = [
         tag: 'areia, sacerdote, sacerdotisa, areia, mágico, morto vivo, deserto, egito, egpicio, mumia, montaria, cavalo, cajado, animal, animais, animais,',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/undying-dynasties-v3/sand-priest-v2.webp',
     },
     {
-        id: 479,
+        id: 488,
         name: 'Sand Priest V3',
         size: '28mm|33mm',
         price: 25.00,
@@ -5346,10 +6337,11 @@ export const catalog: Catalogitem[] = [
         tag: 'areia, sacerdote, sacerdotisa, areia, mágico, morto vivo, deserto, egito, egpicio, mumia, cajado',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/undying-dynasties-v3/sand-priest-v3.webp',
     },
     {
-        id: 480,
+        id: 489,
         name: 'Scorpion Queen',
         size: '28mm|33mm',
         price: 25.00,
@@ -5357,10 +6349,11 @@ export const catalog: Catalogitem[] = [
         tag: 'areia, escorpião, escorpiã, rainha, criatura, deserto, egito, egpicio, egpicia, animal, animais, animais, mulher, feminino, lança',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/undying-dynasties-v3/scorpion-queen.webp',
     },
     {
-        id: 481,
+        id: 490,
         name: 'Swarm A',
         size: '28mm|33mm',
         price: 15.00,
@@ -5368,10 +6361,11 @@ export const catalog: Catalogitem[] = [
         tag: 'areia, enxame, inseto, criatura, monstro, deserto, egito, egpicio, animal, animais, animais, escorpião',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/undying-dynasties-v3/swarm-a.webp',
     },
     {
-        id: 482,
+        id: 491,
         name: 'Swarm B',
         size: '28mm|33mm',
         price: 15.00,
@@ -5379,10 +6373,11 @@ export const catalog: Catalogitem[] = [
         tag: 'areia, enxame, inseto, criatura, monstro, deserto, egito, egpicio, animal, animais, animais, escorpião',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/undying-dynasties-v3/swarm-b.webp',
     },
     {
-        id: 483,
+        id: 492,
         name: 'Chariots',
         size: 'especial',
         price: 75.00,
@@ -5390,21 +6385,50 @@ export const catalog: Catalogitem[] = [
         tag: 'areia, carroça, montaria, deserto, egito, egpicio, morto vivo, mumia, lança, cavalo, animal, animais, animais, esqueleto',
         observation: 'Na compra de no mínimo 2 o preço diminui para 70R$ e na compra de 3 o preço diminui para 65R$.',
         options: ['a', 'b', 'c'],
+        discounts: [
+            { minQty: 2, price: 70, type: 'fixed' },
+            { minQty: 3, price: 65, type: 'fixed' },
+        ],
         image: '/img/catalog/undying-dynasties-v3/chariots.webp',
     },
     {
-        id: 484, /// separar
-        name: 'Catapult',
+        id: 493,
+        name: 'Catapult + Skeletons',
         size: 'especial',
         price: 120.00,
         type: TypeEnum.UNDYING_DYNASTIES,
         tag: 'areia, catapulta, arma de cerco, morto vivo, deserto, egito, egpicio, mumia, dragão, esqueleto, item, itens, cenário',
         observation: 'A peça completa custa 120R$ - Apenas a catapulta 90R$ - Unidade de suporte vendidas separadamente por 15RS$ cada',
-        options: ['a', 'b', 'c'],
+        options: null,
+        discounts: null,
+        image: '/img/catalog/undying-dynasties-v3/catapult-and-skeletons.webp',
+    },
+    {
+        id: 494,
+        name: 'Catapult',
+        size: 'especial',
+        price: 90.00,
+        type: TypeEnum.UNDYING_DYNASTIES,
+        tag: 'areia, catapulta, arma de cerco, morto vivo, deserto, egito, egpicio, mumia, dragão, esqueleto, item, itens, cenário',
+        observation: null,
+        options: null,
+        discounts: null,
         image: '/img/catalog/undying-dynasties-v3/catapult.webp',
     },
     {
-        id: 485,
+        id: 495,
+        name: 'Skeletons',
+        size: 'especial',
+        price: 15.00,
+        type: TypeEnum.UNDYING_DYNASTIES,
+        tag: 'areia, catapulta, arma de cerco, morto vivo, deserto, egito, egpicio, mumia, dragão, esqueleto, item, itens, cenário',
+        observation: null,
+        options: ['a', 'b', 'c'],
+        discounts: null,
+        image: '/img/catalog/undying-dynasties-v3/skeletons.webp',
+    },
+    {
+        id: 496,
         name: 'Scorpion A',
         size: 'especial',
         price: 70.00,
@@ -5412,10 +6436,11 @@ export const catalog: Catalogitem[] = [
         tag: 'escorpião, criatura, deserto, egito, egpicio, inseto, monstro, item, itens, cenário, areia',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/undying-dynasties-v3/scorpion-a.webp',
     },
     {
-        id: 486,
+        id: 497,
         name: 'Scorpion B',
         size: 'especial',
         price: 70.00,
@@ -5423,10 +6448,11 @@ export const catalog: Catalogitem[] = [
         tag: 'escorpião, criatura, deserto, egito, egpicio, inseto, monstro, item, itens, cenário, areia',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/undying-dynasties-v3/scorpion-b.webp',
     },
     {
-        id: 487,
+        id: 498,
         name: 'Sphinx',
         size: 'especial',
         price: 180.00,
@@ -5434,10 +6460,11 @@ export const catalog: Catalogitem[] = [
         tag: 'esfinge, criatura, mágico, guardião, deserto, egito, egpicio, areia, monstro, animal, animais, animais, asa, cobra, cajado, morto vivo, mumia',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/undying-dynasties-v3/sphinx.webp',
     },
     {
-        id: 488,
+        id: 499,
         name: 'Swamp Witch',
         size: '28mm|33mm',
         price: 20.00,
@@ -5445,12 +6472,13 @@ export const catalog: Catalogitem[] = [
         tag: 'bruxa, pântano, magia, feminino, mulher, magia, caldeirao, passaro, animal, animais, animais, orbe, chifre, cajado, deserto, egito, egpicio, areia',
         observation: null,
         options: ['a', 'b', 'c'],
+        discounts: null,
         image: '/img/catalog/undying-dynasties-v3/swamp-witch.webp',
     },
 
     // VAMPIRE_PIRATES_AND_DARK_WOOD_BEASTS
     {
-        id: 489,
+        id: 500,
         name: 'Blind Shaman',
         size: '28mm|33mm',
         price: 25.00,
@@ -5458,10 +6486,11 @@ export const catalog: Catalogitem[] = [
         tag: 'xamã, mascara, cajado, folk, licantropo, licantropia, chifre',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/vampire-pirates-and-dark-wood-beasts/blind-shaman.webp',
     },
     {
-        id: 490,
+        id: 501,
         name: 'Centaur Chiftain',
         size: 'especial',
         price: 55.00,
@@ -5469,10 +6498,11 @@ export const catalog: Catalogitem[] = [
         tag: 'centauro, chifre, cavalo, criatura',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/vampire-pirates-and-dark-wood-beasts/centaur-chiftain.webp',
     },
     {
-        id: 491,
+        id: 502,
         name: 'Shaman Chariot',
         size: 'especial',
         price: 95.00,
@@ -5480,10 +6510,11 @@ export const catalog: Catalogitem[] = [
         tag: 'xamã, carroça, montaria, cajado, animal, animais, animais, javali, criatura, chifre, bode, folk, licantropo, licantropia',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/vampire-pirates-and-dark-wood-beasts/shaman-chariot.webp'
     },
     {
-        id: 492,
+        id: 503,
         name: 'Minotaur Herds',
         size: '28mm|33mm',
         price: 25.00,
@@ -5491,10 +6522,11 @@ export const catalog: Catalogitem[] = [
         tag: 'minotauro, chifre, besta, tambor, instrumento musical, bardo, musica, totem, machado, criatura, guerreiro, animal, animais, animais,',
         observation: null,
         options: ['a', 'b', 'c'],
+        discounts: null,
         image: '/img/catalog/vampire-pirates-and-dark-wood-beasts/minotaur-herds.webp'
     },
     {
-        id: 493,
+        id: 504,
         name: 'Spiky Beasts',
         size: '28mm|33mm',
         price: 18.00,
@@ -5502,10 +6534,11 @@ export const catalog: Catalogitem[] = [
         tag: 'besta, espinho, criatura, animal, animais, animais, monstro, chifre, cenário',
         observation: null,
         options: ['a', 'b', 'c'],
+        discounts: null,
         image: '/img/catalog/vampire-pirates-and-dark-wood-beasts/spiky-beasts.webp'
     },
     {
-        id: 494,
+        id: 505,
         name: 'Vampire Admiral',
         size: '28mm|33mm',
         price: 25.00,
@@ -5513,10 +6546,11 @@ export const catalog: Catalogitem[] = [
         tag: 'vampiro, pirata, morto vivo, totem, madeira',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/vampire-pirates-and-dark-wood-beasts/vampire-admiral.webp'
     },
     {
-        id: 495,
+        id: 506,
         name: 'Crabs',
         size: '28mm|33mm',
         price: 12.00,
@@ -5524,10 +6558,11 @@ export const catalog: Catalogitem[] = [
         tag: 'caranguejo, marinho, criatura, monstro, oceano, animal, animais, animais, areia, mar',
         observation: null,
         options: ['a', 'b', 'c'],
+        discounts: null,
         image: '/img/catalog/vampire-pirates-and-dark-wood-beasts/crabs.webp'
     },
     {
-        id: 496,
+        id: 507,
         name: 'Zombie Pirates',
         size: '28mm|33mm',
         price: 18.00,
@@ -5535,10 +6570,13 @@ export const catalog: Catalogitem[] = [
         tag: 'zumbi, pirata, morto vivo, tripulação, instrumento musical, musica, sanfona, bandeira, espada',
         observation: 'Na compra de no mínimo 3 o preço diminui para R$15',
         options: ['a', 'b', 'c', 'd', 'e'],
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+        ],
         image: '/img/catalog/vampire-pirates-and-dark-wood-beasts/zombie-pirates.webp'
     },
     {
-        id: 497,
+        id: 508,
         name: 'Zombie Pirate',
         size: '28mm|33mm',
         price: 25.00,
@@ -5546,10 +6584,11 @@ export const catalog: Catalogitem[] = [
         tag: 'zumbi, pirata, morto vivo, tripulação, madeira, tronco, canário, item, itens',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/vampire-pirates-and-dark-wood-beasts/zombie-pirate.webp'
     },
     {
-        id: 498,
+        id: 509,
         name: 'CrayFish',
         size: 'especial',
         price: 160.00,
@@ -5557,10 +6596,11 @@ export const catalog: Catalogitem[] = [
         tag: 'lagostim, marinho, criatura, monstro, oceano, areia, cenário, animal, animais, mar',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/vampire-pirates-and-dark-wood-beasts/crayfish.webp'
     },
     {
-        id: 499,
+        id: 510,
         name: 'Sea Terror',
         size: 'especial',
         price: 340.00,
@@ -5568,10 +6608,11 @@ export const catalog: Catalogitem[] = [
         tag: 'terror, marinho, kraken, monstro, oceano, mar, barco, pirata, morto vivo, madeira, lagostim, criatura, areia',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/vampire-pirates-and-dark-wood-beasts/sea-terror.webp'
     },
     {
-        id: 500,
+        id: 511,
         name: 'Infected UmberHulk',
         size: 'especial',
         price: 45.00,
@@ -5579,10 +6620,11 @@ export const catalog: Catalogitem[] = [
         tag: 'infectado, esporo, inseto, criatura, monstro, fungo, animal, animais, animais',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/vampire-pirates-and-dark-wood-beasts/infected-umberhulk.webp'
     },
     {
-        id: 501,
+        id: 512,
         name: 'Spore Gnolls',
         size: '28mm|33mm',
         price: 18.00,
@@ -5590,12 +6632,13 @@ export const catalog: Catalogitem[] = [
         tag: 'gnoll, fungo, esporo, criatura, monstro, animal, animais, animais, espada, machado, infectado',
         observation: null,
         options: ['a', 'b', 'c'],
+        discounts: null,
         image: '/img/catalog/vampire-pirates-and-dark-wood-beasts/spore-gnolls.webp'
     },
 
     // VAMPIRES
     {
-        id: 502,
+        id: 513,
         name: 'Doctor',
         size: '28mm|33mm',
         price: 18.00,
@@ -5603,10 +6646,11 @@ export const catalog: Catalogitem[] = [
         tag: 'doutor, medico, vampiro, medicina, careca, homem, masculino',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/vampires/doctor.webp'
     },
     {
-        id: 503,
+        id: 514,
         name: 'Hesus',
         size: '28mm|33mm',
         price: 18.00,
@@ -5614,10 +6658,11 @@ export const catalog: Catalogitem[] = [
         tag: 'vampiro, homem, masculino, longo, sem camiseta, voador, levitação, levitar, taça',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/vampires/hesus.webp'
     },
     {
-        id: 504,
+        id: 515,
         name: 'Kruger',
         size: '28mm|33mm',
         price: 20.00,
@@ -5625,10 +6670,11 @@ export const catalog: Catalogitem[] = [
         tag: 'vampiro, caçador, guerreiro, armadura, espada, tumba, homem, masculino',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/vampires/kruger.webp'
     },
     {
-        id: 505,
+        id: 516,
         name: 'Necromancer',
         size: '28mm|33mm',
         price: 18.00,
@@ -5636,10 +6682,11 @@ export const catalog: Catalogitem[] = [
         tag: 'necromante, magia, magico, mago, morto vivo, invocador, invocação, vampiro',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/vampires/necromancer.webp'
     },
     {
-        id: 506,
+        id: 517,
         name: 'Prince',
         size: '28mm|33mm',
         price: 45.00,
@@ -5647,10 +6694,11 @@ export const catalog: Catalogitem[] = [
         tag: 'príncipe, vampiro, nobre, guerreiro, armadura, machado, montaria, cavalo, mascara',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/vampires/prince.webp'
     },
     {
-        id: 507,
+        id: 518,
         name: 'Giant Bats',
         size: '28mm|33mm',
         price: 25.00,
@@ -5658,10 +6706,11 @@ export const catalog: Catalogitem[] = [
         tag: 'morcego, voador, criatura, vampiro, animal, animais, voador, asa, tumba, monstro, cenário',
         observation: null,
         options: ['a', 'b'],
+        discounts: null,
         image: '/img/catalog/vampires/giant-bats.webp'
     },
     {
-        id: 508,
+        id: 519,
         name: 'Flesh Reaper',
         size: 'especial',
         price: 40.00,
@@ -5669,10 +6718,11 @@ export const catalog: Catalogitem[] = [
         tag: 'ceifador, monstro, criatura, vampiro, tumba',
         observation: null,
         options: ['a', 'b'],
+        discounts: null,
         image: '/img/catalog/vampires/flesh-reaper.webp'
     },
     {
-        id: 509,
+        id: 520,
         name: 'Vampire',
         size: '28mm|33mm',
         price: 18.00,
@@ -5680,10 +6730,11 @@ export const catalog: Catalogitem[] = [
         tag: 'vampiro, vampira, mulher, feminino, asa, espada, cabeça, morcego, morcega',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/vampires/vampire.webp'
     },
     {
-        id: 510,
+        id: 521,
         name: 'Zombies',
         size: '28mm|33mm',
         price: 18.00,
@@ -5691,10 +6742,13 @@ export const catalog: Catalogitem[] = [
         tag: 'zumbi, morto vivo, espada, soldado, machado',
         observation: 'Na compra de no mínimo 3 o preço diminui para R$13',
         options: ['a', 'b', 'c', 'd', 'e'],
+        discounts: [
+            { minQty: 3, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/vampires/zombies.webp'
     },
     {
-        id: 511,
+        id: 522,
         name: 'Wagon',
         size: 'especial',
         price: 200.00,
@@ -5702,12 +6756,13 @@ export const catalog: Catalogitem[] = [
         tag: 'carroça, veículo, cenário, vampiro, animal, animais, item, itens, morto vivo, presos, doutor, medico, montaria, criatura, monstro',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/vampires/wagon.webp'
     },
-    
+
     // WARRIORS_AND_GNOMES V1
     {
-        id: 512,
+        id: 523,
         name: 'Gnome Illusionist',
         size: '28mm|33mm',
         price: 25.00,
@@ -5715,10 +6770,11 @@ export const catalog: Catalogitem[] = [
         tag: 'gnomo, ilusionista, magia, magico, mago, passaros, maleta, coelho, pomba',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/warriors-and-gnomes-v1/gnome-illusionist.webp'
     },
     {
-        id: 513,
+        id: 524,
         name: 'Norse Druid',
         size: '28mm|33mm',
         price: 25.00,
@@ -5726,10 +6782,11 @@ export const catalog: Catalogitem[] = [
         tag: 'nórdico, druida, homem, masculino, mascara, cajado',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/warriors-and-gnomes-v1/norse-druid.webp'
     },
     {
-        id: 514,
+        id: 525,
         name: 'Gnomes Infantry Spears',
         size: '28mm|33mm',
         price: 20.00,
@@ -5737,10 +6794,13 @@ export const catalog: Catalogitem[] = [
         tag: 'gnomo, infantaria, lança, soldado, guerreiro, bardo, lança, sanfona, bandeira, homem, masculino, musica, insturmneto musical',
         observation: 'Na compra de no mínimo 3 o preço diminui para R$16',
         options: ['a', 'b', 'c', 'd', 'e', 'f'],
+        discounts: [
+            { minQty: 3, price: 16, type: 'fixed' },
+        ],
         image: '/img/catalog/warriors-and-gnomes-v1/gnomes-infantry-spears.webp'
     },
     {
-        id: 515,
+        id: 526,
         name: 'Gnomes Infantry Gunners',
         size: '28mm|33mm',
         price: 20.00,
@@ -5748,10 +6808,13 @@ export const catalog: Catalogitem[] = [
         tag: 'gnomo, gnoma, infantaria, pistoleiro, pistoleira, arma, fogo, guerreiro, soldado, homem, masculino, feminino, mulher, bardo, mago, livro, pistola, rifle, sanfona, musica, insturmneto musical',
         observation: 'Na compra de no mínimo 3 o preço diminui para R$16',
         options: ['a', 'b', 'c', 'd', 'e'],
+        discounts: [
+            { minQty: 3, price: 16, type: 'fixed' },
+        ],
         image: '/img/catalog/warriors-and-gnomes-v1/gnomes-infantry-gunners-1.webp'
     },
     {
-        id: 516,
+        id: 527,
         name: 'Gnomes Mech',
         size: '28mm|33mm',
         price: 35.00,
@@ -5759,10 +6822,11 @@ export const catalog: Catalogitem[] = [
         tag: 'mecha, exoesqueleto, gnomo, mecânico, armadura, robô, automato, metal, metalico, peça de robo, soldado, guerreiro',
         observation: null,
         options: ['a', 'b', 'c'],
+        discounts: null,
         image: '/img/catalog/warriors-and-gnomes-v1/gnomes-mech-1.webp'
     },
     {
-        id: 517,
+        id: 528,
         name: 'Norse Warriors',
         size: '28mm|33mm',
         price: 25.00,
@@ -5770,10 +6834,13 @@ export const catalog: Catalogitem[] = [
         tag: 'nórdico, guerreiro, escudo, soldado, armadura, espinho, espada, chifre, berrante. homem, masculino',
         observation: 'Na compra de no mínimo 3 o preço diminui para R$22',
         options: ['a', 'b', 'c', 'd', 'e'],
+        discounts: [
+            { minQty: 3, price: 22, type: 'fixed' },
+        ],
         image: '/img/catalog/warriors-and-gnomes-v1/norse-warriors-1.webp'
     },
     {
-        id: 518,
+        id: 529,
         name: 'Norse Warriors Shield',
         size: '28mm|33mm',
         price: 25.00,
@@ -5781,10 +6848,13 @@ export const catalog: Catalogitem[] = [
         tag: 'nórdico, guerreiro, escudo, soldado, armadura, espinho, espada, chifre, berrante. homem, masculino',
         observation: 'Na compra de no mínimo 3 o preço diminui para R$22',
         options: ['a', 'b', 'c', 'd', 'e'],
+        discounts: [
+            { minQty: 3, price: 22, type: 'fixed' },
+        ],
         image: '/img/catalog/warriors-and-gnomes-v1/norse-warriors-shield.webp'
     },
     {
-        id: 519,
+        id: 530,
         name: 'Norse Knights',
         size: '28mm|33mm',
         price: 55.00,
@@ -5792,10 +6862,13 @@ export const catalog: Catalogitem[] = [
         tag: 'nórdico, cavaleiro, montaria, cavalo, soldado, armadura, espada guerreiro, escuto, tambor, insturmenot musical, lança',
         observation: 'Na compra de no mínimo 2 o preço diminui para R$52',
         options: ['a', 'b', 'c', 'd', 'e'],
+        discounts: [
+            { minQty: 2, price: 52, type: 'fixed' },
+        ],
         image: '/img/catalog/warriors-and-gnomes-v1/norse-knights-1.webp'
     },
     {
-        id: 520,
+        id: 531,
         name: 'Norse Ancient Dragon',
         size: 'especial',
         price: 260.00,
@@ -5803,10 +6876,11 @@ export const catalog: Catalogitem[] = [
         tag: 'dragão, nórdico, criatura, monstro, montaria, animal, animais, guerreiro, armadura',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/warriors-and-gnomes-v1/norse-ancient-dragon.webp'
     },
     {
-        id: 521,
+        id: 532,
         name: 'Lord on Daemonic Mount',
         size: 'especial',
         price: 85.00,
@@ -5814,10 +6888,11 @@ export const catalog: Catalogitem[] = [
         tag: 'lorde, montaria, guerreiro, animal, animais, animais, criatura, armadura, escudo',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/warriors-and-gnomes-v1/lord-daemonic-mount.webp'
     },
     {
-        id: 522,
+        id: 533,
         name: 'Druid on Moose',
         size: 'especial',
         price: 60.00,
@@ -5825,10 +6900,11 @@ export const catalog: Catalogitem[] = [
         tag: 'druida, alce, montaria, animal, animais, animais',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/warriors-and-gnomes-v1/druid-moose.webp'
     },
     {
-        id: 523,
+        id: 534,
         name: 'Purple Wurm',
         size: 'especial',
         price: 60.00,
@@ -5836,10 +6912,11 @@ export const catalog: Catalogitem[] = [
         tag: 'verme, subterrâneo, monstro, criatura, areia, animal, animais, animais, caverna, tunel',
         observation: 'Mais partes do corpo podem ser adicionadas por R$15',
         options: null,
+        discounts: null,
         image: '/img/catalog/warriors-and-gnomes-v1/purple-wurm.webp'
     },
     {
-        id: 524,
+        id: 535,
         name: 'Skeleton Soldiers',
         size: '28mm|33mm',
         price: 18.00,
@@ -5847,12 +6924,13 @@ export const catalog: Catalogitem[] = [
         tag: 'esqueleto, soldado, morto vivo, arqueiro, guerreiro, patrulheiro, besta, arco, espada, cajado, machado, escudo',
         observation: null,
         options: ['a', 'b', 'c', 'd', 'e'],
+        discounts: null,
         image: '/img/catalog/warriors-and-gnomes-v1/skeleton-soldiers.webp'
     },
 
     // WARRIORS_AND_GNOMES V2
     {
-        id: 525,
+        id: 536,
         name: 'Warmage',
         size: '28mm|33mm',
         price: 25.00,
@@ -5860,10 +6938,11 @@ export const catalog: Catalogitem[] = [
         tag: 'mago, magia, magico, guerreiro, cajado, mascara, chifre, armadura, homem, masculino',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/warriors-and-gnomes-v2/warmage.webp'
     },
     {
-        id: 526,
+        id: 537,
         name: 'Warrior Chiftain',
         size: '28mm|33mm',
         price: 25.00,
@@ -5871,10 +6950,11 @@ export const catalog: Catalogitem[] = [
         tag: 'guerreiro, comandante, nórdico, machado, armadura, homem, masculino',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/warriors-and-gnomes-v2/warrior-chiftain.webp'
     },
     {
-        id: 527,
+        id: 538,
         name: 'Good Boys',
         size: '28mm|33mm',
         price: 20.00,
@@ -5882,10 +6962,13 @@ export const catalog: Catalogitem[] = [
         tag: 'cães, cão, cachorro, , cachorro, animal, animais, animais',
         observation: 'Na compra de no mínimo 3 o preço diminui para R$16',
         options: ['a', 'b', 'c', 'd', 'e'],
+        discounts: [
+            { minQty: 3, price: 16, type: 'fixed' },
+        ],
         image: '/img/catalog/warriors-and-gnomes-v2/good-boys.webp'
     },
     {
-        id: 528,
+        id: 539,
         name: 'Gnomes Infantry Gunners',
         size: '28mm|33mm',
         price: 25.00,
@@ -5893,10 +6976,13 @@ export const catalog: Catalogitem[] = [
         tag: 'gnomo, gnoma, infantaria, pistoleiro, pistoleira, arma, pistola, arma de fogo, rifle, montaria, cães, cão, cachorro, , cachorro, animal, animais, animais, homem, masculino, feminino, mulher',
         observation: 'Na compra de no mínimo 2 o preço diminui para R$22',
         options: ['a', 'b', 'c'],
+        discounts: [
+            { minQty: 2, price: 22, type: 'fixed' },
+        ],
         image: '/img/catalog/warriors-and-gnomes-v2/gnomes-infantry-gunners-2.webp'
     },
     {
-        id: 529,
+        id: 540,
         name: 'Gnomes Infantry',
         size: '28mm|33mm',
         price: 25.00,
@@ -5904,10 +6990,13 @@ export const catalog: Catalogitem[] = [
         tag: 'gnomo, gnoma, infantaria, montaria, cães, cão, cachorro, , cachorro, animal, animais, animais, lança, pistoleiro, pistoleira, arma, pistola, arma de fogo, rifle, homem, masculino, feminino, mulher',
         observation: 'Na compra de no mínimo 3 o preço diminui para R$22',
         options: ['a', 'b', 'c', 'd', 'e'],
+        discounts: [
+            { minQty: 3, price: 22, type: 'fixed' },
+        ],
         image: '/img/catalog/warriors-and-gnomes-v2/gnomes-infantry-2.webp'
     },
     {
-        id: 530,
+        id: 541,
         name: 'Bombs',
         size: '28mm|33mm',
         price: 20.00,
@@ -5915,10 +7004,11 @@ export const catalog: Catalogitem[] = [
         tag: 'bombas, mecanico, automato, item, itens, cenário',
         observation: null,
         options: ['a', 'b', 'c'],
+        discounts: null,
         image: '/img/catalog/warriors-and-gnomes-v2/bombs.webp'
     },
     {
-        id: 531,
+        id: 542,
         name: 'Ballon A',
         size: 'especial',
         price: 50.00,
@@ -5926,10 +7016,11 @@ export const catalog: Catalogitem[] = [
         tag: 'balão, aéreo, transporte, cenário, item, itens, gnomo, arma de fogo, sniper, voador, voo, céu',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/warriors-and-gnomes-v2/ballon-a.webp'
     },
     {
-        id: 532,
+        id: 543,
         name: 'Ballon B',
         size: 'especial',
         price: 50.00,
@@ -5937,10 +7028,11 @@ export const catalog: Catalogitem[] = [
         tag: 'balão, aéreo, transporte, cenário, item, itens, gnomo, bomba, voador, voo, céu',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/warriors-and-gnomes-v2/ballon-b.webp'
     },
     {
-        id: 533,
+        id: 544,
         name: 'Gnomech',
         size: 'especial',
         price: 80.00,
@@ -5948,10 +7040,11 @@ export const catalog: Catalogitem[] = [
         tag: 'gnomo, robô, máquina, mecânico, mecha, metal, armadura, exoesqueleto, arma de fogo, bomba, missel, metralhadora',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/warriors-and-gnomes-v2/gnomech.webp'
     },
     {
-        id: 534,
+        id: 545,
         name: 'Norse Knights',
         size: '28mm|33mm',
         price: 55.00,
@@ -5959,10 +7052,13 @@ export const catalog: Catalogitem[] = [
         tag: 'nórdico, cavaleiro, montaria, cavalo, animal, animais, animais, guerreiro, armadura, espada, machado, soldado',
         observation: 'Na compra de no mínimo 2 o preço diminui para R$52',
         options: ['a', 'b', 'c', 'd', 'e'],
+        discounts: [
+            { minQty: 2, price: 52, type: 'fixed' },
+        ],
         image: '/img/catalog/warriors-and-gnomes-v2/norse-knights-2.webp'
     },
     {
-        id: 535,
+        id: 546,
         name: 'Norse Knights',
         size: '28mm|33mm',
         price: 25.00,
@@ -5970,10 +7066,13 @@ export const catalog: Catalogitem[] = [
         tag: 'nórdico, guerreiro, armadura, espada, machado, soldado',
         observation: 'Na compra de no mínimo 3 o preço diminui para R$22',
         options: ['a', 'b', 'c', 'd', 'e'],
+        discounts: [
+            { minQty: 3, price: 22, type: 'fixed' },
+        ],
         image: '/img/catalog/warriors-and-gnomes-v2/norse-knights-3.webp'
     },
     {
-        id: 536,
+        id: 547,
         name: 'Norse Knights',
         size: '28mm|33mm',
         price: 25.00,
@@ -5981,10 +7080,13 @@ export const catalog: Catalogitem[] = [
         tag: 'nórdico, guerreiro, armadura, espada, machado, soldado, tambor, bardo, instrumenro musical',
         observation: 'Na compra de no mínimo 3 o preço diminui para R$22',
         options: ['a', 'b', 'c', 'd', 'e'],
+        discounts: [
+            { minQty: 3, price: 22, type: 'fixed' },
+        ],
         image: '/img/catalog/warriors-and-gnomes-v2/norse-knights-4.webp'
     },
     {
-        id: 537,
+        id: 548,
         name: 'Chariot',
         size: 'especial',
         price: 95.00,
@@ -5992,10 +7094,11 @@ export const catalog: Catalogitem[] = [
         tag: 'carruagem, carroça, veículo, guerreiro, nordico, alce, animal, animais',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/warriors-and-gnomes-v2/chariot.webp'
     },
     {
-        id: 538,
+        id: 549,
         name: 'ChoCho',
         size: 'especial',
         price: 220.00,
@@ -6003,10 +7106,11 @@ export const catalog: Catalogitem[] = [
         tag: 'cenário, item, itens, gnomo, arma, arma de fogo, fogo, guerreiro, veiculo, montaria, trem',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/warriors-and-gnomes-v2/chocho.webp'
     },
     {
-        id: 539,
+        id: 550,
         name: 'Phase Spider',
         size: 'especial',
         price: 40.00,
@@ -6014,10 +7118,11 @@ export const catalog: Catalogitem[] = [
         tag: 'aranha, teia, inseto, animal, animais, monstro, criatura, aracnídeo, aracnídea',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/warriors-and-gnomes-v2/phase-spider.webp'
     },
     {
-        id: 540,
+        id: 551,
         name: 'Umber Hulk',
         size: 'especial',
         price: 60.00,
@@ -6025,12 +7130,13 @@ export const catalog: Catalogitem[] = [
         tag: 'monstro, subterrâneo, criatura, inseto, animal, animais, licantropo, licantropia, formiga',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/warriors-and-gnomes-v2/umber-hulk.webp'
     },
 
     // WARRIORS_AND_GNOMES V3
     {
-        id: 541,
+        id: 552,
         name: 'Gnome Alchemist',
         size: '28mm|33mm',
         price: 25.00,
@@ -6038,10 +7144,11 @@ export const catalog: Catalogitem[] = [
         tag: 'gnomo, gnoma, alquimista, alquimia, mascara, poções, poção, explosivos, fumaça, mulher, feminino, maquina',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/warriors-and-gnomes-v3/gnome-alchemist.webp'
     },
     {
-        id: 542,
+        id: 553,
         name: 'Gnome Big Zapp',
         size: 'especial',
         price: 40.00,
@@ -6049,10 +7156,11 @@ export const catalog: Catalogitem[] = [
         tag: 'gnomo, arma elétrica, engenhoca, arma, metralhadora, fogo, eletrico, eletrica, maquina, homem, masculino',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/warriors-and-gnomes-v3/gnome-big-zapp.webp'
     },
     {
-        id: 543,
+        id: 554,
         name: 'Gnome Air Support',
         size: 'especial',
         price: 35.00,
@@ -6060,10 +7168,11 @@ export const catalog: Catalogitem[] = [
         tag: 'guerreiro, guerreira, mulher, feminino, homem, masculino, gnomo, suporte aéreo, avião, engenhoca, maquina, asa, céu, voo, voar, rede, arma, pistola, fogo, jetpack, corda',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/warriors-and-gnomes-v3/gnome-air-support.webp'
     },
     {
-        id: 544,
+        id: 555,
         name: 'Gnome Zappers',
         size: '28mm|33mm',
         price: 18.00,
@@ -6071,10 +7180,13 @@ export const catalog: Catalogitem[] = [
         tag: 'guerreiro, guerreira, mulher, feminino, homem, masculino, gnomo, gnoma, zapper, engenhoca, elétrico, arma, maquina, pistola, fogo, arma de fogo, lança chamas, eletrico',
         observation: 'Na compra de no mínimo 3 o preço diminui para R$16',
         options: ['a', 'b', 'c', 'd', 'e'],
+        discounts: [
+            { minQty: 3, price: 16, type: 'fixed' },
+        ],
         image: '/img/catalog/warriors-and-gnomes-v3/gnome-zappers.webp'
     },
     {
-        id: 545,
+        id: 556,
         name: 'Gnome Biker',
         size: 'especial',
         price: 35.00,
@@ -6082,10 +7194,11 @@ export const catalog: Catalogitem[] = [
         tag: 'gnomo, moto, veiculo, montaria, engenhoca, maquina, roda, bicicleta',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/warriors-and-gnomes-v3/gnome-biker.webp'
     },
     {
-        id: 546,
+        id: 557,
         name: 'Warriors Chariots',
         size: 'especial',
         price: 85.00,
@@ -6093,10 +7206,11 @@ export const catalog: Catalogitem[] = [
         tag: 'guerreiro, carruagem, carroça, cenário, item, itens, nordico, homem, masculino, montaria, cavalo, animal',
         observation: null,
         options: ['a', 'b'],
+        discounts: null,
         image: '/img/catalog/warriors-and-gnomes-v3/warriors-chariots.webp'
     },
     {
-        id: 547,
+        id: 558,
         name: 'Forsaken',
         size: 'especial',
         price: 45.00,
@@ -6104,10 +7218,11 @@ export const catalog: Catalogitem[] = [
         tag: 'centauro, criatura, monstro, chifre, mitologico, mitologica',
         observation: null,
         options: ['a', 'b', 'c'],
+        discounts: null,
         image: '/img/catalog/warriors-and-gnomes-v3/forsaken-1.webp'
     },
     {
-        id: 548, /// corrigir
+        id: 559,
         name: 'WarHound',
         size: '28mm|33mm',
         price: 20.00,
@@ -6115,10 +7230,13 @@ export const catalog: Catalogitem[] = [
         tag: 'cão, cachorro,  de guerra, cão, cachorro, , cães, animal, animais, demonio',
         observation: 'Na compra de no mínimo 3 o preço diminui para R$17',
         options: null,
+        discounts: [
+            { minQty: 3, price: 17, type: 'fixed' },
+        ],
         image: '/img/catalog/warriors-and-gnomes-v3/warhound.webp'
     },
     {
-        id: 549,
+        id: 560,
         name: 'Forsaken',
         size: 'especial',
         price: 45.00,
@@ -6126,10 +7244,11 @@ export const catalog: Catalogitem[] = [
         tag: 'maldição, monstro, criatura, lobo, lobisomem',
         observation: null,
         options: ['a', 'b'],
+        discounts: null,
         image: '/img/catalog/warriors-and-gnomes-v3/forsaken-2.webp'
     },
     {
-        id: 550,
+        id: 561,
         name: 'Harold',
         size: 'especial',
         price: 60.00,
@@ -6137,10 +7256,11 @@ export const catalog: Catalogitem[] = [
         tag: 'gigante, guerreiro, demonio, criatura, monstro, asa, voador, chifre',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/warriors-and-gnomes-v3/harold.webp'
     },
     {
-        id: 551,
+        id: 562,
         name: 'LizardFolk',
         size: '28mm|33mm',
         price: 25.00,
@@ -6148,12 +7268,15 @@ export const catalog: Catalogitem[] = [
         tag: 'homem lagarto, lagarto, reptiliano, reptil, animal, animais, licantropo, licantropia, guerreiro, cajado, xamã, lança',
         observation: 'Na compra de no mínimo 3 o preço diminui para R$22',
         options: ['a', 'b', 'c', 'd'],
+        discounts: [
+            { minQty: 3, price: 22, type: 'fixed' },
+        ],
         image: '/img/catalog/warriors-and-gnomes-v3/lizardfolk.webp'
     },
 
     // WARRIORS_AND_WIZARDS
     {
-        id: 552,
+        id: 563,
         name: 'Mutated Warriors',
         size: '28mm|33mm',
         price: 20.00,
@@ -6161,10 +7284,13 @@ export const catalog: Catalogitem[] = [
         tag: 'homem, masculino, mutante, guerreiro, deformado, duas cabeças, criatura, monstro',
         observation: 'Na compra de no mínimo 3 o preço diminui para R$16',
         options: ['a', 'b', 'c', 'd', 'e'],
+        discounts: [
+            { minQty: 3, price: 16, type: 'fixed' },
+        ],
         image: '/img/catalog/warriors-and-wizards/mutated-warriors.webp'
     },
     {
-        id: 553,
+        id: 564,
         name: 'Rhino Beasts',
         size: '28mm|33mm',
         price: 45.00,
@@ -6172,10 +7298,11 @@ export const catalog: Catalogitem[] = [
         tag: 'rinoceronte, besta, criatura, monstro, animal, animais, cenário, item, itens, chifre',
         observation: null,
         options: ['a', 'b', 'c'],
+        discounts: null,
         image: '/img/catalog/warriors-and-wizards/rhino-beasts.webp'
     },
     {
-        id: 554,
+        id: 565,
         name: 'Rhino Riders',
         size: 'especial',
         price: 60.00,
@@ -6183,10 +7310,11 @@ export const catalog: Catalogitem[] = [
         tag: 'homem, masculino, cavaleiro, rinoceronte, montaria, animal, animais, guerreiro, armadura, bandeira, totem, berrante, escudo',
         observation: null,
         options: ['a', 'b', 'c'],
+        discounts: null,
         image: '/img/catalog/warriors-and-wizards/rhino-riders.webp'
     },
     {
-        id: 555,
+        id: 566,
         name: 'Wild Sorcerer',
         size: '28mm|33mm',
         price: 35.00,
@@ -6194,10 +7322,11 @@ export const catalog: Catalogitem[] = [
         tag: 'homem, masculino, feiticeiro, xamã, mago, druida, cajado, chifre, montaria, criatura, monstro, animal, animais',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/warriors-and-wizards/wild-sorcerer.webp'
     },
     {
-        id: 556,
+        id: 567,
         name: 'Apprentices',
         size: '28mm|33mm',
         price: 18.00,
@@ -6205,10 +7334,13 @@ export const catalog: Catalogitem[] = [
         tag: 'mulher, feminino, homem, masculino, aprendiz, mago, magia, magico, magica, escola de magia, feiticeiro, feiticeira, varinha magica, varinha, livro, adaga',
         observation: 'Na compra de no mínimo 3 o preço diminui para R$15',
         options: ['a', 'b', 'c', 'd', 'e', 'f', 'g'],
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+        ],
         image: '/img/catalog/warriors-and-wizards/apprentices.webp'
     },
     {
-        id: 557,
+        id: 568,
         name: 'Book Golems',
         size: '28mm|33mm',
         price: 45.00,
@@ -6216,10 +7348,11 @@ export const catalog: Catalogitem[] = [
         tag: 'golem, livro, criatura, mágica, magico, monstro, biblioteca, escola de magia',
         observation: null,
         options: ['a', 'b', 'c', 'd'],
+        discounts: null,
         image: '/img/catalog/warriors-and-wizards/book-golems.webp'
     },
     {
-        id: 558,
+        id: 569,
         name: 'Elemental Golem',
         size: 'especial',
         price: 80.00,
@@ -6227,10 +7360,11 @@ export const catalog: Catalogitem[] = [
         tag: 'golem, elemental, magia, criatura, mágica, magico, monstro, pedra, fogo, agua, terra',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/warriors-and-wizards/elemental-golem.webp'
     },
     {
-        id: 559,
+        id: 570,
         name: 'Hippogryphs',
         size: 'especial',
         price: 55.00,
@@ -6238,10 +7372,11 @@ export const catalog: Catalogitem[] = [
         tag: 'escola de magia, mulher, feminino, homem, masculino, varinha magica, varinha, livro, hipogrifo, grifo, passaro, voo, voador, montaria, magico, magica, mago, maga, criatura, voador, mitologia',
         observation: null,
         options: ['a', 'b', 'c'],
+        discounts: null,
         image: '/img/catalog/warriors-and-wizards/hippogryphs.webp'
     },
     {
-        id: 560,
+        id: 571,
         name: 'Librarian',
         size: '28mm|33mm',
         price: 25.00,
@@ -6249,10 +7384,11 @@ export const catalog: Catalogitem[] = [
         tag: 'bibliotecário, biblioteca, livro, mago, criatura, escola de magia, licantropo, licantropia',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/warriors-and-wizards/librarian.webp'
     },
     {
-        id: 561,
+        id: 572,
         name: 'Archmage',
         size: '28mm|33mm',
         price: 25.00,
@@ -6260,10 +7396,11 @@ export const catalog: Catalogitem[] = [
         tag: 'escola de magia, arqui mago, mago, magia, magico, homem, masculino, cajado, poder, raio',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/warriors-and-wizards/archmage.webp'
     },
     {
-        id: 562,
+        id: 573,
         name: 'Elemental Walker',
         size: 'especial',
         price: 250.00,
@@ -6271,10 +7408,11 @@ export const catalog: Catalogitem[] = [
         tag: 'montaria, escola de magia, elemental, gigante, criatura, magia, magico, magica, monstro, arqui mago, mago, magia, magico, homem, masculino, cajado, poder, raio, fogo, agua, terra, pedra',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/warriors-and-wizards/elemental-walker.webp'
     },
     {
-        id: 563,
+        id: 574,
         name: 'Ogre',
         size: '28mm|33mm',
         price: 25.00,
@@ -6282,10 +7420,11 @@ export const catalog: Catalogitem[] = [
         tag: 'ogro, orc, monstro, bruto, criatura',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/warriors-and-wizards/ogre.webp'
     },
     {
-        id: 564,
+        id: 575,
         name: 'Werewolves',
         size: '28mm|33mm',
         price: 25.00,
@@ -6293,12 +7432,13 @@ export const catalog: Catalogitem[] = [
         tag: 'lobisomem, lobo, maldição, animal, animais, licantropo, licantropia, escola de magia',
         observation: null,
         options: ['a', 'b'],
+        discounts: null,
         image: '/img/catalog/warriors-and-wizards/werewolves.webp'
     },
 
     // WILDWOOD_SANCTUM
     {
-        id: 565,
+        id: 576,
         name: 'Archmage Camelothar',
         size: '28mm|33mm',
         price: 20.00,
@@ -6306,10 +7446,11 @@ export const catalog: Catalogitem[] = [
         tag: 'arqui mago, magico, mago, magia, homem, masculino, coruja, animal, animais, cajado, escola de magia',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/wildwood-sanctum/archmage-camelothar.webp'
     },
     {
-        id: 566,
+        id: 577,
         name: 'Praetor Naturalus Mounted',
         size: 'especial',
         price: 45.00,
@@ -6317,10 +7458,11 @@ export const catalog: Catalogitem[] = [
         tag: 'praetor, montaria, guardião, guerreiro, animal, animais, cavalo, armadura, chifre, espada, homem, masculino',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/wildwood-sanctum/praetor-naturalus-mounted.webp'
     },
     {
-        id: 567,
+        id: 578,
         name: 'Praetor Naturalus',
         size: '28mm|33mm',
         price: 20.00,
@@ -6328,10 +7470,11 @@ export const catalog: Catalogitem[] = [
         tag: 'praetor, guardião, guerreiro, armadura, chifre, espada, homem, masculino',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/wildwood-sanctum/praetor-naturalus.webp'
     },
     {
-        id: 568,
+        id: 579,
         name: 'Hoggs the Rampager',
         size: '28mm|33mm',
         price: 20.00,
@@ -6339,10 +7482,11 @@ export const catalog: Catalogitem[] = [
         tag: 'cabeça de porco, criatura, monstro, machado, homem, masculino, guerreiro',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/wildwood-sanctum/hoggs-the-rampager.webp'
     },
     {
-        id: 569,
+        id: 580,
         name: 'Sanctum Kathrina Bright Mounted',
         size: 'especial',
         price: 45.00,
@@ -6350,10 +7494,11 @@ export const catalog: Catalogitem[] = [
         tag: 'montaria, cavalo, animal, animais, mulher, feminino, armadura, bandeira, guerreiro, guerreira, rainha, princesa, coroa',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/wildwood-sanctum/sanctum-kathrina-bright-mounted.webp'
     },
     {
-        id: 570,
+        id: 581,
         name: 'Sanctum Kathrina Bright',
         size: '28mm|33mm',
         price: 25.00,
@@ -6361,10 +7506,11 @@ export const catalog: Catalogitem[] = [
         tag: 'mulher, feminino, armadura, bandeira, guerreiro, guerreira, rainha, princesa, coroa',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/wildwood-sanctum/sanctum-kathrina-bright.webp'
     },
     {
-        id: 571,
+        id: 582,
         name: 'Sanctum Lady Liliana Confluence of Spheres',
         size: '28mm|33mm',
         price: 35.00,
@@ -6372,10 +7518,11 @@ export const catalog: Catalogitem[] = [
         tag: 'sacerdotisa, sacerdote, mago, maga, magia, magica, magico, invocação, mulher, feminino, poder, espada',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/wildwood-sanctum/sanctum-lady-liliana-confluence-of-spheres.webp'
     },
     {
-        id: 572,
+        id: 583,
         name: 'Warrior',
         size: '28mm|33mm',
         price: 20.00,
@@ -6383,10 +7530,11 @@ export const catalog: Catalogitem[] = [
         tag: 'guerreiro, soldado, armadura, homem, masculino, espada, escudo',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/wildwood-sanctum/warrior-1.webp'
     },
     {
-        id: 573,
+        id: 584,
         name: 'Warrior',
         size: '28mm|33mm',
         price: 20.00,
@@ -6394,10 +7542,11 @@ export const catalog: Catalogitem[] = [
         tag: 'guerreiro, soldado, armadura, homem, masculino, maça, escudo',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/wildwood-sanctum/warrior-2.webp'
     },
     {
-        id: 574,
+        id: 585,
         name: 'Warrior',
         size: '28mm|33mm',
         price: 20.00,
@@ -6405,10 +7554,11 @@ export const catalog: Catalogitem[] = [
         tag: 'guerreiro, soldado, armadura, homem, masculino, espada, escudo',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/wildwood-sanctum/warrior-3.webp'
     },
     {
-        id: 575,
+        id: 586,
         name: 'Warrior',
         size: '28mm|33mm',
         price: 20.00,
@@ -6416,10 +7566,11 @@ export const catalog: Catalogitem[] = [
         tag: 'guerreiro, soldado, armadura, homem, masculino, espada, escudo, mascara, lobo',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/wildwood-sanctum/warrior-4.webp'
     },
     {
-        id: 576,
+        id: 587,
         name: 'Knight',
         size: '28mm|33mm',
         price: 45.00,
@@ -6427,10 +7578,11 @@ export const catalog: Catalogitem[] = [
         tag: 'cavaleiro, guerreiro, soldado, armadura, homem, masculino, lança, escudo, montaria, cavalo, animal, animais',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/wildwood-sanctum/knight-1.webp'
     },
     {
-        id: 577,
+        id: 588,
         name: 'Knight',
         size: '28mm|33mm',
         price: 45.00,
@@ -6438,10 +7590,11 @@ export const catalog: Catalogitem[] = [
         tag: 'cavaleiro, guerreiro, soldado, armadura, homem, masculino, lança, lança de justa, escudo, montaria, cavalo, animal, animais',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/wildwood-sanctum/knight-2.webp'
     },
     {
-        id: 578,
+        id: 589,
         name: 'Sorcero the Adept',
         size: '28mm|33mm',
         price: 15.00,
@@ -6449,10 +7602,11 @@ export const catalog: Catalogitem[] = [
         tag: 'feiticeiro, aprendiz, magia, mago, magico, homem, masculino, livro, humano, escola de magia',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/wildwood-sanctum/sorcero-the-adept.webp'
     },
     {
-        id: 579,
+        id: 590,
         name: 'Suri the Maleficent Omen',
         size: '28mm|33mm',
         price: 25.00,
@@ -6460,10 +7614,11 @@ export const catalog: Catalogitem[] = [
         tag: 'bruxa, maldição, magia, magica, mulher, feminino, passaro, cajado, arvore, tronco, mascara, chifre, cabeça de osso',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/wildwood-sanctum/suri-the-maleficent-omen.webp'
     },
     {
-        id: 580,
+        id: 591,
         name: 'Terminus',
         size: '28mm|33mm',
         price: 25.00,
@@ -6471,10 +7626,11 @@ export const catalog: Catalogitem[] = [
         tag: 'armadura, machado, guerreiro, soldado, homem, masculino',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/wildwood-sanctum/terminus-1.webp'
     },
     {
-        id: 581,
+        id: 592,
         name: 'Nature dragon',
         size: 'especial',
         price: 300.00,
@@ -6482,12 +7638,13 @@ export const catalog: Catalogitem[] = [
         tag: 'dragão, criatura, monstro, asa, voador, natureza, chifre',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/wildwood-sanctum/nature-dragon.webp'
     },
-    
+
     // OTHERS V1
     {
-        id: 582,
+        id: 593,
         name: 'Kairn Warmonger',
         size: '28mm|33mm',
         price: 20.00,
@@ -6495,10 +7652,14 @@ export const catalog: Catalogitem[] = [
         tag: 'guerreiro, bárbaro, humano, homem, masculino',
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
         options: null,
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/others-v1/kairn-warmonger.webp',
     },
     {
-        id: 583,
+        id: 594,
         name: 'Lavinia Lastfall',
         size: '28mm|33mm',
         price: 15.00,
@@ -6506,10 +7667,14 @@ export const catalog: Catalogitem[] = [
         tag: 'feminino, mulher, maga, orbe, magia, magica, mago, fogo, bola de fogo, algemada, presa',
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
         options: null,
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/others-v1/lavinia-lastfall.webp',
     },
     {
-        id: 584,
+        id: 595,
         name: 'Dwarf Veteran',
         size: '28mm|33mm',
         price: 18.00,
@@ -6517,10 +7682,14 @@ export const catalog: Catalogitem[] = [
         tag: 'anão, anões, guerreiro, homem, masculino, machado, cajado, armadura',
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
         options: null,
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/others-v1/dwarf-veteran.webp',
     },
     {
-        id: 585,
+        id: 596,
         name: 'City Watch Sergeant',
         size: '28mm|33mm',
         price: 20.00,
@@ -6528,10 +7697,14 @@ export const catalog: Catalogitem[] = [
         tag: 'cidade, guarda, sargento, soldado, armadura, guerreiro, homem, masculino, espada',
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
         options: null,
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/others-v1/city-watch-sergeant.webp',
     },
     {
-        id: 586,
+        id: 597,
         name: 'Lion Champion',
         size: '28mm|33mm',
         price: 20.00,
@@ -6539,10 +7712,14 @@ export const catalog: Catalogitem[] = [
         tag: 'leão, animal, animais, licantropo, licantropia, lionfolkm machado, guerreiro, armadura, homem, masculino',
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
         options: null,
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/others-v1/lion-champion.webp',
     },
     {
-        id: 587,
+        id: 598,
         name: 'Deathknight Berserker',
         size: '28mm|33mm',
         price: 18.00,
@@ -6550,10 +7727,14 @@ export const catalog: Catalogitem[] = [
         tag: 'cavaleiro, morto vivo, berserker, anão, anões, armadura, homem, masculino',
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
         options: null,
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/others-v1/deathknight-berserker.webp',
     },
     {
-        id: 588,
+        id: 599,
         name: 'Superior Nun',
         size: '28mm|33mm',
         price: 20.00,
@@ -6561,10 +7742,14 @@ export const catalog: Catalogitem[] = [
         tag: 'freira, ordem religiosa, magia, maga, mago, magica, magico, igreja, cajado, mulher, feminino',
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
         options: null,
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/others-v1/superior-nun.webp',
     },
     {
-        id: 589,
+        id: 600,
         name: 'Abyssal Merfolks Lord',
         size: '28mm|33mm',
         price: 20.00,
@@ -6572,10 +7757,14 @@ export const catalog: Catalogitem[] = [
         tag: 'abissal, tritão, lorde, marinho, criatura, monstro, oceano, mar, animal, animais, tridente',
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
         options: null,
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/others-v1/abyssal-merfolks-lord.webp',
     },
     {
-        id: 590,
+        id: 601,
         name: 'Armored Champion',
         size: '28mm|33mm',
         price: 30.00,
@@ -6583,10 +7772,14 @@ export const catalog: Catalogitem[] = [
         tag: 'campeão, armadura, guerreiro, metal, homem, masculino',
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
         options: null,
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/others-v1/armored-champion.webp',
     },
     {
-        id: 591,
+        id: 602,
         name: 'Boyka',
         size: '28mm|33mm',
         price: 18.00,
@@ -6594,10 +7787,14 @@ export const catalog: Catalogitem[] = [
         tag: 'guerreiro, lutador, humano, homem, masculino, arma de duas mãos, espada',
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
         options: null,
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/others-v1/boyka.webp',
     },
     {
-        id: 592,
+        id: 603,
         name: 'Dragon Empire General',
         size: '28mm|33mm',
         price: 35.00,
@@ -6605,10 +7802,14 @@ export const catalog: Catalogitem[] = [
         tag: 'general, império, samurai, japão, homem, masculino, guerreiro',
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
         options: null,
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/others-v1/dragon-empire-general.webp',
     },
     {
-        id: 593,
+        id: 604,
         name: 'Everdark Elves Witch',
         size: '28mm|33mm',
         price: 20.00,
@@ -6616,10 +7817,14 @@ export const catalog: Catalogitem[] = [
         tag: 'feiticeira, elfa, feminino, mulher, taça, aranha, magia, magica, maga, mago, bruxa',
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
         options: null,
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/others-v1/everdark-elves-witch.webp',
     },
     {
-        id: 594,
+        id: 605,
         name: 'Serpent Guard',
         size: '28mm|33mm',
         price: 35.00,
@@ -6627,10 +7832,14 @@ export const catalog: Catalogitem[] = [
         tag: 'serpente, guerreiro, licantropo, licantropia, dinossauro, criatura, monstro',
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
         options: null,
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/others-v1/serpent-guard.webp',
     },
     {
-        id: 595,
+        id: 606,
         name: 'Vampire',
         size: '28mm|33mm',
         price: 25.00,
@@ -6638,10 +7847,14 @@ export const catalog: Catalogitem[] = [
         tag: 'vampiro, morcego, homem, masculino, animal, animais, voador',
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
         options: null,
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/others-v1/vampire.webp',
     },
     {
-        id: 596,
+        id: 607,
         name: 'Highlander',
         size: '28mm|33mm',
         price: 18.00,
@@ -6649,10 +7862,14 @@ export const catalog: Catalogitem[] = [
         tag: 'guerreiro, anão, anões, homem, masculino, espada',
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
         options: null,
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/others-v1/highlander.webp',
     },
     {
-        id: 597,
+        id: 608,
         name: 'Prophet',
         size: '28mm|33mm',
         price: 20.00,
@@ -6660,10 +7877,14 @@ export const catalog: Catalogitem[] = [
         tag: 'profeta, mago, magico, magia, sábio, sacerdote, sacertotisa, criatura, monstro, cobra, incovador, serpente, homem, masculino',
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
         options: null,
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/others-v1/prophet.webp',
     },
     {
-        id: 598,
+        id: 609,
         name: 'Scarlet Crusade Sniper',
         size: '28mm|33mm',
         price: 18.00,
@@ -6671,10 +7892,14 @@ export const catalog: Catalogitem[] = [
         tag: 'sniper, arma de fogo, arma, homem, masculino, patrulheiro',
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
         options: null,
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/others-v1/scarlet-crusade-sniper.webp',
     },
     {
-        id: 599,
+        id: 610,
         name: 'Marquize',
         size: '28mm|33mm',
         price: 20.00,
@@ -6682,10 +7907,14 @@ export const catalog: Catalogitem[] = [
         tag: 'nobre, senhora, dama, rainha, maga, magia, magica, feiticeira, cajado, mulher, feminino',
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
         options: null,
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/others-v1/marquize.webp',
     },
     {
-        id: 600,
+        id: 611,
         name: 'Tanek Needletail',
         size: '28mm|33mm',
         price: 20.00,
@@ -6693,10 +7922,14 @@ export const catalog: Catalogitem[] = [
         tag: 'guerreiro, criatura, monstro, licantropo, licantropia, animal, animais, veneno',
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
         options: null,
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/others-v1/tanek-needletail.webp',
     },
     {
-        id: 601,
+        id: 612,
         name: 'War Lord',
         size: '28mm|33mm',
         price: 35.00,
@@ -6704,10 +7937,14 @@ export const catalog: Catalogitem[] = [
         tag: 'armadura, guerreiro, homem, masculino, automato, mecanico, metal, engenhoca',
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
         options: null,
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/others-v1/war-lord.webp',
     },
     {
-        id: 602,
+        id: 613,
         name: 'VerminSpeaker',
         size: '28mm|33mm',
         price: 45.00,
@@ -6715,10 +7952,14 @@ export const catalog: Catalogitem[] = [
         tag: 'vermin, mago, magia, magico, feiticeiro, criatura, lesma, montaria, homem, masculino, cajado',
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
         options: null,
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/others-v1/verminspeaker.webp',
     },
     {
-        id: 603,
+        id: 614,
         name: 'Wakaturu Spirit Walker',
         size: '28mm|33mm',
         price: 35.00,
@@ -6726,10 +7967,14 @@ export const catalog: Catalogitem[] = [
         tag: 'careca, mulher, feminino, passaro, animal, animais, coruja, voador, asa, monge, cajado',
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
         options: null,
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/others-v1/wakaturu-spirit-walker.webp',
     },
     {
-        id: 604,
+        id: 615,
         name: 'Human Monk',
         size: '28mm|33mm',
         price: 25.00,
@@ -6737,10 +7982,14 @@ export const catalog: Catalogitem[] = [
         tag: 'monge, humano, pedra, homem, masculino, careca',
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
         options: null,
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/others-v1/human-monk.webp',
     },
     {
-        id: 605,
+        id: 616,
         name: 'Human Barbarian A',
         size: '28mm|33mm',
         price: 20.00,
@@ -6748,10 +7997,14 @@ export const catalog: Catalogitem[] = [
         tag: 'bárbaro, humano, masculino, homem, machado',
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
         options: null,
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/others-v1/human-barbarian-a.webp',
     },
     {
-        id: 606,
+        id: 617,
         name: 'Human Barbarian B',
         size: '28mm|33mm',
         price: 25.00,
@@ -6759,12 +8012,16 @@ export const catalog: Catalogitem[] = [
         tag: 'bárbaro, humano, masculino, homem, machado, escudo, dupla, anão, anões',
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
         options: null,
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/others-v1/human-barbarian-b.webp',
     },
 
     // OTHERS V2
     {
-        id: 607,
+        id: 618,
         name: 'Elesar Painsinger',
         size: '28mm|33mm',
         price: 25.00,
@@ -6772,10 +8029,14 @@ export const catalog: Catalogitem[] = [
         tag: 'elfo, guerreiro, armadura, homem, masculino',
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
         options: null,
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/others-v2/elesar-painsinger.webp',
     },
     {
-        id: 608,
+        id: 619,
         name: 'Elves Huntress',
         size: '28mm|33mm',
         price: 35.00,
@@ -6783,10 +8044,14 @@ export const catalog: Catalogitem[] = [
         tag: 'caçadora, elfa, elfo, arqueira, arco, arqueiro, feminino, mulher, lobo, animal, animais',
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
         options: null,
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/others-v2/elves-huntress.webp',
     },
     {
-        id: 609,
+        id: 620,
         name: 'Garold Allfather',
         size: '28mm|33mm',
         price: 20.00,
@@ -6794,10 +8059,14 @@ export const catalog: Catalogitem[] = [
         tag: 'humano, guerreiro, armadura, chifre, escudo, homem, masculino',
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
         options: null,
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/others-v2/garold-allfather.webp',
     },
     {
-        id: 610,
+        id: 621,
         name: 'Linessa Waterfront',
         size: '28mm|33mm',
         price: 25.00,
@@ -6805,10 +8074,14 @@ export const catalog: Catalogitem[] = [
         tag: 'feminino, mulher, elfa, elfo, magia, magico, maga, mago, cajado',
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
         options: null,
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/others-v2/linessa-waterfront.webp',
     },
     {
-        id: 611,
+        id: 622,
         name: 'Lion Whiteclaw',
         size: '28mm|33mm',
         price: 35.00,
@@ -6816,10 +8089,14 @@ export const catalog: Catalogitem[] = [
         tag: 'leão, leoa, guerreiro, humano, homem, masculino, machado, mascara',
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
         options: null,
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/others-v2/lion-whiteclaw.webp',
     },
     {
-        id: 612,
+        id: 623,
         name: 'Paradash Sundrop',
         size: '28mm|33mm',
         price: 45.00,
@@ -6827,10 +8104,14 @@ export const catalog: Catalogitem[] = [
         tag: 'elfo, elfa, mulher, feminino, montaria, alce, animal, animais, arco, arqueira, arqueiro',
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
         options: null,
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/others-v2/paradash-sundrop.webp',
     },
     {
-        id: 613,
+        id: 624,
         name: 'Thalion LeafGuard',
         size: '28mm|33mm',
         price: 20.00,
@@ -6838,10 +8119,14 @@ export const catalog: Catalogitem[] = [
         tag: 'elfo, guerreiro, patrulheiro, espada, mascara, chifre, magico, mago, magica, homem, masculino',
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
         options: null,
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/others-v2/thalion-leafguard.webp',
     },
     {
-        id: 614,
+        id: 625,
         name: 'Brother Tusk',
         size: '28mm|33mm',
         price: 20.00,
@@ -6849,10 +8134,14 @@ export const catalog: Catalogitem[] = [
         tag: 'guerreiro, criatura, monstro, javali, animal, animais, lança, licantropo, licantropia',
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
         options: null,
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/others-v2/brother-tusk.webp',
     },
     {
-        id: 615,
+        id: 626,
         name: 'Bunnavy',
         size: '28mm|33mm',
         price: 18.00,
@@ -6860,10 +8149,14 @@ export const catalog: Catalogitem[] = [
         tag: 'animal, animais, coelho, aventureiro, licantropo, licantropia, criatura',
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
         options: null,
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/others-v2/bunnavy.webp',
     },
     {
-        id: 616,
+        id: 627,
         name: 'Burwing',
         size: '28mm|33mm',
         price: 25.00,
@@ -6871,10 +8164,14 @@ export const catalog: Catalogitem[] = [
         tag: 'animal, animais, coruja, xamã, cajado, criatura, monstro, licantropo, licantropia, passaro, voador',
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
         options: null,
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/others-v2/burwing.webp',
     },
     {
-        id: 617,
+        id: 628,
         name: 'Volver',
         size: '28mm|33mm',
         price: 20.00,
@@ -6882,10 +8179,14 @@ export const catalog: Catalogitem[] = [
         tag: 'guerreiro, animal, animais, criatura, licantropo, licantropia, urso',
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
         options: null,
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/others-v2/volver.webp',
     },
     {
-        id: 618,
+        id: 629,
         name: 'Gnome Rogue',
         size: '28mm|33mm',
         price: 18.00,
@@ -6893,10 +8194,14 @@ export const catalog: Catalogitem[] = [
         tag: 'gnomo, ladino, homem, masculino, besta, adaga',
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
         options: null,
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/others-v2/gnome-rogue.webp',
     },
     {
-        id: 619,
+        id: 630,
         name: 'Goblin A',
         size: '28mm|33mm',
         price: 18.00,
@@ -6904,10 +8209,14 @@ export const catalog: Catalogitem[] = [
         tag: 'goblin, criatura, arco, arqueiro, homem, masculino',
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
         options: null,
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/others-v2/goblin-a.webp',
     },
     {
-        id: 620,
+        id: 631,
         name: 'Goblin B',
         size: '28mm|33mm',
         price: 18.00,
@@ -6915,10 +8224,14 @@ export const catalog: Catalogitem[] = [
         tag: 'goblin, criatura, facao, faca, escudo, homem, masculino',
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
         options: null,
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/others-v2/goblin-b.webp',
     },
     {
-        id: 621,
+        id: 632,
         name: 'Goblin C',
         size: '28mm|33mm',
         price: 18.00,
@@ -6926,10 +8239,14 @@ export const catalog: Catalogitem[] = [
         tag: 'goblin, criatura, lança, escudo, homem, masculino, mascara',
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
         options: null,
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/others-v2/goblin-c.webp',
     },
     {
-        id: 622,
+        id: 633,
         name: 'Goblin D',
         size: '28mm|33mm',
         price: 18.00,
@@ -6937,10 +8254,14 @@ export const catalog: Catalogitem[] = [
         tag: 'goblin, criatura, cajado, xamã, homem, masculino, mascara',
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
         options: null,
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/others-v2/goblin-d.webp',
     },
     {
-        id: 623,
+        id: 634,
         name: 'Goblin F',
         size: '28mm|33mm',
         price: 18.00,
@@ -6948,10 +8269,14 @@ export const catalog: Catalogitem[] = [
         tag: 'goblin, criatura, homem, masculino, arco, arqueiro',
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
         options: null,
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/others-v2/goblin-f.webp',
     },
     {
-        id: 624,
+        id: 635,
         name: 'Golias Barbarian',
         size: '28mm|33mm',
         price: 20.00,
@@ -6959,10 +8284,14 @@ export const catalog: Catalogitem[] = [
         tag: 'goliath, golias, bárbaro, homem, masculino',
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
         options: null,
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/others-v2/golias-barbarian.webp',
     },
     {
-        id: 625,
+        id: 636,
         name: 'Human Warrior',
         size: '28mm|33mm',
         price: 18.00,
@@ -6970,10 +8299,14 @@ export const catalog: Catalogitem[] = [
         tag: 'humano, guerreiro, soldado, homem, masculino, espada',
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
         options: ['a', 'b', 'c'],
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/others-v2/human-warrior.webp',
     },
     {
-        id: 626,
+        id: 637,
         name: 'Mimic',
         size: '28mm|33mm',
         price: 35.00,
@@ -6981,10 +8314,14 @@ export const catalog: Catalogitem[] = [
         tag: 'mimico, monstro, criatura, item, itens, cenário',
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
         options: ['a', 'b'],
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/others-v2/mimic-a.webp',
     },
     {
-        id: 627,
+        id: 638,
         name: 'Dwarf Druid',
         size: '28mm|33mm',
         price: 25.00,
@@ -6992,10 +8329,14 @@ export const catalog: Catalogitem[] = [
         tag: 'anão, anões, druida, homem, masculino, animal, animais',
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
         options: null,
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/others-v2/dwarf-druid.webp',
     },
     {
-        id: 628,
+        id: 639,
         name: 'Elf Ranger',
         size: '28mm|33mm',
         price: 25.00,
@@ -7003,10 +8344,14 @@ export const catalog: Catalogitem[] = [
         tag: 'elfo, patrulheiro, coruja, animais, animal, magia, magico, mago',
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
         options: null,
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/others-v2/elf-ranger.webp',
     },
     {
-        id: 629,
+        id: 640,
         name: 'Ghost A',
         size: '28mm|33mm',
         price: 20.00,
@@ -7014,10 +8359,14 @@ export const catalog: Catalogitem[] = [
         tag: 'fantasma, espírito, assombração, morte, criatura, monstro',
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
         options: null,
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/others-v2/ghost-a.webp',
     },
     {
-        id: 630,
+        id: 641,
         name: 'Ghost B',
         size: '28mm|33mm',
         price: 20.00,
@@ -7025,10 +8374,14 @@ export const catalog: Catalogitem[] = [
         tag: 'fantasma, espírito, assombração, morte, criatura, monstro',
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
         options: null,
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/others-v2/ghost-b.webp',
     },
     {
-        id: 631,
+        id: 642,
         name: 'Ghost C',
         size: '28mm|33mm',
         price: 20.00,
@@ -7036,10 +8389,14 @@ export const catalog: Catalogitem[] = [
         tag: 'fantasma, espírito, assombração, morte, criatura, monstro',
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
         options: null,
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/others-v2/ghost-c.webp',
     },
     {
-        id: 632,
+        id: 643,
         name: 'Elf Ranger B',
         size: '28mm|33mm',
         price: 18.00,
@@ -7047,12 +8404,16 @@ export const catalog: Catalogitem[] = [
         tag: 'elfo, patrulheiro, homem, masculino, arco, arqueiro',
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
         options: null,
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/others-v2/elf-ranger-b.webp',
     },
 
     // OTHERS V3
     {
-        id: 633,
+        id: 644,
         name: 'Mimic',
         size: '28mm|33mm',
         price: 18.00,
@@ -7060,10 +8421,14 @@ export const catalog: Catalogitem[] = [
         tag: 'mímico, baú, tesouro, monstro, armadilha, item, itens, criatura',
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
         options: null,
+        discounts: [
+            { minQty: 3, price: 15, type: 'fixed' },
+            { minQty: 10, price: 13, type: 'fixed' },
+        ],
         image: '/img/catalog/others-v3/mimic.webp',
     },
     {
-        id: 634,
+        id: 645,
         name: 'Fury',
         size: 'especial',
         price: 160.00,
@@ -7071,10 +8436,11 @@ export const catalog: Catalogitem[] = [
         tag: 'invocação, monstro, demonio, criatura, chifre, machado, asa, voador',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/others-v3/fury.webp',
     },
     {
-        id: 635,
+        id: 646,
         name: 'Filth Demon',
         size: 'especial',
         price: 135.00,
@@ -7082,10 +8448,11 @@ export const catalog: Catalogitem[] = [
         tag: 'invocação, monstro, demonio, criatura, chifre',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/others-v3/filth-demon.webp',
     },
     {
-        id: 636,
+        id: 647,
         name: 'Blue Dragon Archangel',
         size: 'especial',
         price: 320.00,
@@ -7093,10 +8460,11 @@ export const catalog: Catalogitem[] = [
         tag: 'dragão, animal, animais, voador, criatura, monstro',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/others-v3/blue-dragon-archangel.webp',
     },
     {
-        id: 637,
+        id: 648,
         name: 'Cube',
         size: 'especial',
         price: 55.00,
@@ -7104,10 +8472,11 @@ export const catalog: Catalogitem[] = [
         tag: 'cubo, gelatinoso, armadilha, criatura, item, itens, cenário, gelatina',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/others-v3/cube.webp',
     },
     {
-        id: 638,
+        id: 649,
         name: 'Dryads',
         size: '28mm|33mm',
         price: 30.00,
@@ -7115,10 +8484,11 @@ export const catalog: Catalogitem[] = [
         tag: 'dríade, floresta, feminino, mágico, mulher, arvore, galhos, espinhos, monstro, criatura',
         observation: null,
         options: ['a', 'b', 'c'],
+        discounts: null,
         image: '/img/catalog/others-v3/dryads.webp',
     },
     {
-        id: 639,
+        id: 650,
         name: 'Garold Allfather Drake',
         size: 'especial',
         price: 240.00,
@@ -7126,10 +8496,11 @@ export const catalog: Catalogitem[] = [
         tag: 'dragrão, voador, asa, criatura, monstro, montaria, animal, animais, guerreiro',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/others-v3/garold-allfather-drake.webp',
     },
     {
-        id: 640,
+        id: 651,
         name: 'Harvester',
         size: '28mm|33mm',
         price: 25.00,
@@ -7137,10 +8508,11 @@ export const catalog: Catalogitem[] = [
         tag: 'monstro, criatura, cajado, morte, magia, magico, livro, chifre',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/others-v3/harvester.webp',
     },
     {
-        id: 641,
+        id: 652,
         name: 'Falcons',
         size: 'especial',
         price: 55.00,
@@ -7148,10 +8520,11 @@ export const catalog: Catalogitem[] = [
         tag: 'falcões, animais, voador, animal, montaria, passaro, elfo, homem, masculino',
         observation: null,
         options: ['a', 'b'],
+        discounts: null,
         image: '/img/catalog/others-v3/falcons.webp',
     },
     {
-        id: 642,
+        id: 653,
         name: 'Tree Father',
         size: 'especial',
         price: 210.00,
@@ -7159,10 +8532,11 @@ export const catalog: Catalogitem[] = [
         tag: 'árvore, espírito, guardião, druida, magico, magica, criatura, monstro',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/others-v3/tree-father.webp',
     },
     {
-        id: 643,
+        id: 654,
         name: 'Thicket Shepherd',
         size: 'especial',
         price: 170.00,
@@ -7170,10 +8544,11 @@ export const catalog: Catalogitem[] = [
         tag: 'árvore, espírito, guardião, druida, magico, magica, criatura, monstro, animal, animais',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/others-v3/thicket-shepherd.webp',
     },
     {
-        id: 644,
+        id: 655,
         name: 'Owlbear',
         size: 'especial',
         price: 55.00,
@@ -7181,10 +8556,11 @@ export const catalog: Catalogitem[] = [
         tag: 'ursoruja, druida, criatura, monstro, urso, coruja, animal, animais',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/others-v3/owlbear.webp',
     },
     {
-        id: 645,
+        id: 656,
         name: 'Beholder',
         size: 'especial',
         price: 55.00,
@@ -7192,10 +8568,11 @@ export const catalog: Catalogitem[] = [
         tag: 'beholder, olho, mágico, aberração, criatura, monstro',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/others-v3/beholder.webp',
     },
     {
-        id: 646,
+        id: 657,
         name: 'Wolf A',
         size: '28mm|33mm',
         price: 15.00,
@@ -7203,10 +8580,11 @@ export const catalog: Catalogitem[] = [
         tag: 'lobo, animal, animais',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/others-v3/wolf-a.webp',
     },
     {
-        id: 647,
+        id: 658,
         name: 'Wolf B',
         size: '28mm|33mm',
         price: 15.00,
@@ -7214,10 +8592,11 @@ export const catalog: Catalogitem[] = [
         tag: 'lobo, animal, animais',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/others-v3/wolf-b.webp',
     },
     {
-        id: 648,
+        id: 659,
         name: 'Wolf C',
         size: '28mm|33mm',
         price: 15.00,
@@ -7225,10 +8604,11 @@ export const catalog: Catalogitem[] = [
         tag: 'lobo, animal, animais',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/others-v3/wolf-c.webp',
     },
     {
-        id: 649,
+        id: 660,
         name: 'Wolf D',
         size: '28mm|33mm',
         price: 15.00,
@@ -7236,10 +8616,11 @@ export const catalog: Catalogitem[] = [
         tag: 'lobo, animal, animais',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/others-v3/wolf-d.webp',
     },
     {
-        id: 650,
+        id: 661,
         name: 'Wolf E',
         size: '28mm|33mm',
         price: 15.00,
@@ -7247,10 +8628,11 @@ export const catalog: Catalogitem[] = [
         tag: 'lobo, animal, animais',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/others-v3/wolf-e.webp',
     },
     {
-        id: 651,
+        id: 662,
         name: 'High Priest Manipulator',
         size: '28mm|33mm',
         price: 60.00,
@@ -7258,10 +8640,11 @@ export const catalog: Catalogitem[] = [
         tag: 'automato, robo, metal, armadura, metalico, mecanico, cyberpunk',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/others-v3/high-priest-manipulator.webp',
     },
     {
-        id: 652,
+        id: 663,
         name: 'Gargolisk',
         size: '28mm|33mm',
         price: 30.00,
@@ -7269,10 +8652,11 @@ export const catalog: Catalogitem[] = [
         tag: 'gárgula, basilisco, criatura, mágica, magico, monstro, voador, asa',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/others-v3/gargolisk.webp',
     },
     {
-        id: 653,
+        id: 664,
         name: 'High Priest Opressor',
         size: '28mm|33mm',
         price: 75.00,
@@ -7280,10 +8664,11 @@ export const catalog: Catalogitem[] = [
         tag: 'automato, robo, metal, armadura, metalico, mecanico, cyberpunk',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/others-v3/high-priest-oppressor.webp',
     },
     {
-        id: 654,
+        id: 665,
         name: 'Flameoner',
         size: '28mm|33mm',
         price: 35.00,
@@ -7291,10 +8676,11 @@ export const catalog: Catalogitem[] = [
         tag: 'automato, metal, armadura, lança chamas, arma, robo, cyberpunk',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/others-v3/flameoner.webp',
     },
     {
-        id: 655,
+        id: 666,
         name: 'Corpo Eliminator',
         size: 'especial',
         price: 100.00,
@@ -7302,10 +8688,11 @@ export const catalog: Catalogitem[] = [
         tag: 'automato, metal, armadura, metralhadora, arma, robo, mecanico, cyberpunk',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/others-v3/corpo-eliminator.webp',
     },
     {
-        id: 656,
+        id: 667,
         name: 'Space Rat',
         size: '28mm|33mm',
         price: 20.00,
@@ -7313,10 +8700,11 @@ export const catalog: Catalogitem[] = [
         tag: 'rato, espacial, criatura, sci-fi, monstro, animal, animais, roedor, mecanico, cyberpunk',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/others-v3/space-rat.webp',
     },
     {
-        id: 657,
+        id: 668,
         name: 'Drodd Sinclair',
         size: '28mm|33mm',
         price: 20.00,
@@ -7324,6 +8712,7 @@ export const catalog: Catalogitem[] = [
         tag: 'automato, criatura, metal, mecanico, cyberpunk',
         observation: null,
         options: null,
+        discounts: null,
         image: '/img/catalog/others-v3/drodd-sinclair.webp',
     },
 ];

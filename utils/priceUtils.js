@@ -1,13 +1,22 @@
-export function calcularPrecoComDesconto(item) {
-    const observation = item.observation || ''
-    const match = observation.match(/no mínimo (\d+).*?(\d+[,.]?\d*)\s*R\$/i)
+export function calculateDiscountedPrice(item) {
+    if (!item || !item.discounts || !Array.isArray(item.discounts)) {
+        return item.price
+    }
 
-    if (match) {
-        const minQty = parseInt(match[1])
-        const discount = parseFloat(match[2].replace(',', '.'))
-        if (item.quantity >= minQty) {
-            return discount
-        }
+    const applicableDiscount = item.discounts
+        .filter(discount => item.quantity >= discount.minQty)
+        .sort((a, b) => b.minQty - a.minQty)[0]
+
+    if (!applicableDiscount) {
+        return item.price
+    }
+
+    if (applicableDiscount.type === 'fixed') {
+        return applicableDiscount.price
+    }
+
+    if (applicableDiscount.type === 'percentage') {
+        return item.price - (item.price * applicableDiscount.percentage) / 100
     }
 
     return item.price
