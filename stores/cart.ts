@@ -3,44 +3,42 @@ import { defineStore } from 'pinia'
 export const useCartStore = defineStore('cart', {
     state: () => ({
         items: [],
-        globalDiscountsBySubtotal: [
-            // { minSubtotal: 200, type: 'percentage', percentage: 10 },
-            // { minSubtotal: 500, type: 'percentage', percentage: 50 },
-        ],
-        globalDiscount: null,
+        appliedCoupon: null // { code: 'PROMO10', percentage: 10 }
     }),
 
     getters: {
+        totalQuantity(state) {
+            return state.items.reduce((sum, item) => sum + item.quantity, 0)
+        },
         subtotal(state) {
+            // Se há cupom, usar o valor cheio dos itens (sem desconto por quantidade)
+            if (state.appliedCoupon) {
+                return state.items.reduce((sum, item) => sum + item.price * item.quantity, 0)
+            }
             return state.items.reduce((sum, item) => {
                 const price = item.discountedPrice || item.price
                 return sum + price * item.quantity
             }, 0)
         },
-        totalQuantity(state) {
-            return state.items.reduce((sum, item) => sum + item.quantity, 0)
-        },
         total(state) {
-            let total = this.subtotal
-
-            // Aplica o desconto global, se houver
-            if (state.globalDiscount) {
-                if (state.globalDiscount.type === 'percentage') {
-                    total -= total * (state.globalDiscount.percentage / 100)
-                } else if (state.globalDiscount.type === 'fixed') {
-                    total -= state.globalDiscount.amount
-                }
+            const rawTotal = state.items.reduce((sum, item) => sum + item.price * item.quantity, 0)
+            if (state.appliedCoupon) {
+                return rawTotal * (1 - state.appliedCoupon.percentage / 100)
             }
-            return total
+            return this.subtotal
+        },
+
+        couponValue(state) {
+            if (!state.appliedCoupon) return 0
+            const rawTotal = state.items.reduce((sum, item) => sum + item.price * item.quantity, 0)
+            return rawTotal * (state.appliedCoupon.percentage / 100)
         }
     },
 
     actions: {
         addItem(item) {
             const keyOption = item.option || ''
-            const existing = this.items.find(
-                i => i.id === item.id && i.option === keyOption
-            )
+            const existing = this.items.find(i => i.id === item.id && i.option === keyOption)
 
             if (existing) {
                 existing.quantity += item.quantity
@@ -54,34 +52,22 @@ export const useCartStore = defineStore('cart', {
                 this.applyItemDiscount(newItem)
                 this.items.push(newItem)
             }
-
-            // Verifica e aplica o desconto global após adicionar o item
-            this.checkGlobalDiscount()
         },
 
         updateQuantity(key, newQuantity) {
-            const item = this.items.find(i =>
-                i.id === key.id && i.option === (key.option || '')
-            )
+            const item = this.items.find(i => i.id === key.id && i.option === (key.option || ''))
             if (item) {
                 item.quantity = newQuantity
                 this.applyItemDiscount(item)
-                this.checkGlobalDiscount()
             }
         },
 
         removeItem(key) {
-            this.items = this.items.filter(i =>
-                !(i.id === key.id && i.option === (key.option || ''))
-            )
-            // Verifica o desconto global após remover o item
-            this.checkGlobalDiscount()
+            this.items = this.items.filter(i => !(i.id === key.id && i.option === (key.option || '')))
         },
 
         decreaseQuantity(key) {
-            const item = this.items.find(i =>
-                i.id === key.id && i.option === (key.option || '')
-            )
+            const item = this.items.find(i => i.id === key.id && i.option === (key.option || ''))
             if (item) {
                 item.quantity -= 1
                 if (item.quantity <= 0) {
@@ -90,17 +76,20 @@ export const useCartStore = defineStore('cart', {
                     this.applyItemDiscount(item)
                 }
             }
-            this.checkGlobalDiscount()
         },
 
         applyItemDiscount(item) {
+            if (this.appliedCoupon) {
+                item.discountedPrice = item.price
+                return
+            }
+
             if (!item.discounts || !item.discounts.length) {
                 item.discountedPrice = item.price
                 return
             }
 
             let appliedDiscount = null
-            // Verificando o desconto baseado na quantidade de itens comprados
             for (const discount of item.discounts) {
                 if (item.quantity >= discount.minQty) {
                     if (!appliedDiscount || discount.minQty > appliedDiscount.minQty) {
@@ -109,31 +98,27 @@ export const useCartStore = defineStore('cart', {
                 }
             }
 
-            // Se encontrou algum desconto aplicável
             if (appliedDiscount) {
                 if (appliedDiscount.type === 'fixed') {
-                    item.discountedPrice = appliedDiscount.price // Desconto fixo
+                    item.discountedPrice = appliedDiscount.price
                 } else if (appliedDiscount.type === 'percentage') {
-                    item.discountedPrice = item.price * (1 - appliedDiscount.percentage / 100) // Desconto percentual
+                    item.discountedPrice = item.price * (1 - appliedDiscount.percentage / 100)
                 }
             } else {
-                item.discountedPrice = item.price // Sem desconto
+                item.discountedPrice = item.price
             }
         },
 
-        checkGlobalDiscount() {
-            const subtotal = this.subtotal
+        applyCoupon(coupon) {
+            this.appliedCoupon = coupon
+            this.items.forEach(item => {
+                item.discountedPrice = item.price
+            })
+        },
 
-            // Verifica o melhor desconto global baseado no subtotal
-            const bestDiscount = this.globalDiscountsBySubtotal
-                .filter(d => subtotal >= d.minSubtotal)
-                .sort((a, b) => b.minSubtotal - a.minSubtotal)[0]
-
-            if (bestDiscount) {
-                this.globalDiscount = bestDiscount
-            } else {
-                this.globalDiscount = null
-            }
+        removeCoupon() {
+            this.appliedCoupon = null
+            this.items.forEach(item => this.applyItemDiscount(item))
         }
     }
 })

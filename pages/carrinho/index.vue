@@ -72,7 +72,52 @@
           </div>
         </div>
 
-        <p class="text-right font-bold mt-4 md:text-xl text-lg">Total: R$ {{ totalWithDelivery.toFixed(2) }}</p>
+        <!-- Campo para aplicar cupom -->
+        <div v-if="cart.items.length > 0" class="mb-4">
+          <label class="block font-semibold mb-1" for="coupon">Cupom de desconto:</label>
+          <div class="flex gap-2 items-center">
+            <input
+                id="coupon"
+                v-model="couponCode"
+                type="text"
+                placeholder="Digite o código do cupom"
+                class="placeholder-black bg-[#D2C5AB] border border-[#cdc2ae] rounded p-2 text-sm w-full md:w-[250px]"
+            />
+            <button
+                @click="applyCouponCode"
+                class="bg-green-2 text-white px-4 py-2 rounded text-sm"
+            >
+              Aplicar
+            </button>
+            <button
+                v-if="cart.appliedCoupon"
+                @click="removeCouponCode"
+                class="text-sm text-red-600 underline"
+            >
+              Remover
+            </button>
+          </div>
+          <p v-if="cart.appliedCoupon" class="text-green-600 text-sm mt-1">
+            Cupom aplicado: <strong>{{ cart.appliedCoupon.code }}</strong> - {{ cart.appliedCoupon.percentage }}% OFF
+          </p>
+        </div>
+
+        <div class="text-right font-bold mt-4 md:text-xl text-lg">
+          <p v-if="cart.appliedCoupon">
+            Total original:
+            <span class="line-through text-red-600">R$ {{ totalOriginalWithDelivery.toFixed(2) }}</span><br />
+            Total com desconto: R$ {{ totalWithDelivery.toFixed(2) }}
+          </p>
+          <p v-else>
+            Total: R$ {{ totalWithDelivery.toFixed(2) }}
+          </p>
+        </div>
+
+        <div class="mt-[12px]">
+          <p class="font-medium">Observação importante: Os pedidos são feitos pelo WhatsApp ou Instagram. Este site serve apenas para
+            facilitar o atendimento — não é possível comprar diretamente por aqui.
+          </p>
+        </div>
 
         <!-- Botões -->
         <div class="w-full flex md:gap-5 gap-1 md:flex-row flex-col-reverse justify-between items-center mt-8">
@@ -117,14 +162,18 @@ import AddressForm from '~/components/AddressForm.vue'
 const cart = useCartStore()
 const observationOrder = ref('')
 const deliveryOption = ref('')
-const deliveryAddress = ref('') // Endereço (Rua e Número)
-const deliveryNeighborhood = ref('')
-const deliveryComplement = ref('')
 const deliveryOptions = ref([
   {key: 'deliver-guarapuava', label: 'Entregar em Guarapuava - PR (adicional de R$ 7,00)'},
   {key: 'pick-up-order-guarapuava', label: 'Buscar em nosso endereço em Guarapuava - PR (a combinar)'},
   {key: 'deliver-by-transport', label: 'Entregar por Correios/SEDEX (a combinar informações e valores do frete pelo WhatsApp ou Instagram)'},
 ])
+
+const couponCode = ref('')
+
+// Simule cupons válidos
+const validCoupons = [
+  { code: 'TAVERNA10', percentage: 10 },
+]
 
 // Definindo o valor extra para entrega em Guarapuava
 const deliveryCharge = 7.0
@@ -136,6 +185,35 @@ const deliveryData = ref({
   number: '',
   complement: ''
 })
+
+function applyCouponCode() {
+  const found = validCoupons.find(c => c.code.toUpperCase() === couponCode.value.toUpperCase())
+  if (!found) {
+    Swal.fire({
+      icon: 'error',
+      title: 'Cupom inválido',
+      text: 'O código inserido não é válido.'
+    })
+    return
+  }
+
+  cart.applyCoupon(found)
+  Swal.fire({
+    icon: 'success',
+    title: 'Cupom aplicado!',
+    text: `Você ganhou ${found.percentage}% de desconto no total.`
+  })
+}
+
+function removeCouponCode() {
+  cart.removeCoupon()
+  couponCode.value = ''
+  Swal.fire({
+    icon: 'info',
+    title: 'Cupom removido',
+    text: 'O desconto foi removido do seu pedido.'
+  })
+}
 
 function onAddressDataUpdate(data: typeof deliveryData.value) {
   deliveryData.value = data
@@ -164,12 +242,19 @@ function generateMessage() {
         \t- Valor total: R$ ${itemTotal}`
   }).join('\n\n')
 
+  const rawTotal = cart.items.reduce((acc, item) => acc + item.price * item.quantity, 0)
   const totalWithDiscount = Number(cart.total).toFixed(2)
-  const globalDiscountText = cart.globalDiscount
-      ? ` (Aplicado desconto de R$ ${(cart.items.reduce((acc, item) => acc + item.price * item.quantity, 0) - cart.total).toFixed(2)})`
-      : ''
+  const discountAmount = rawTotal - cart.total
 
-  let totalLine = `💰 Total do pedido: R$ ${totalWithDiscount}${globalDiscountText}`
+  let totalLine = `💰 Total do pedido: R$ ${totalWithDiscount}`
+
+  if (cart.appliedCoupon) {
+    totalLine =
+        `💵 Total original: R$ ${rawTotal.toFixed(2)}\n` +
+        `🎟️ Cupom aplicado: ${cart.appliedCoupon.code} (${cart.appliedCoupon.percentage}% OFF)\n` +
+        `🧾 Desconto: -R$ ${discountAmount.toFixed(2)}\n` +
+        `💰 Total com desconto: R$ ${totalWithDiscount}`
+  }
 
   const observationText = observationOrder.value.trim()
       ? `📝 Observação: ${observationOrder.value.trim()}\n\n`
@@ -180,10 +265,10 @@ function generateMessage() {
     const { address, number, neighborhood, complement } = deliveryData.value
     const fullAddress = `${address}, Nº ${number}${complement ? `, ${complement}` : ''}`
     deliveryText = `📦 Entrega em Guarapuava - Endereço: ${fullAddress}, Bairro: ${neighborhood}`
-    totalLine = `💰 Total do pedido: R$ ${(Number(totalWithDiscount) + deliveryCharge).toFixed(2)}${globalDiscountText} (adicionados R$ ${deliveryCharge.toFixed(2)} de entrega)`
+    totalLine += ` (adicionados R$ ${deliveryCharge.toFixed(2)} de entrega)`
   } else {
     const deliverValue = deliveryOptions.value.find(option => option.key === deliveryOption.value)
-    deliveryText = `📦 ${deliverValue?.label}` || '';
+    deliveryText = `📦 ${deliverValue?.label}` || ''
   }
 
   return (
@@ -198,13 +283,28 @@ function generateMessage() {
 
 function sendOrder() {
   if (cart.items.length === 0) {
-    alert('Seu carrinho está vazio!')
+    Swal.fire({
+      icon: 'warning',
+      title: 'Carrinho vazio',
+      text: 'Adicione itens antes de copiar seu pedido.',
+    })
     return
   }
 
-  const message = generateMessage()
-  const url = `https://wa.me/554288642843?text=${encodeURIComponent(message)}`
-  window.open(url, '_blank')
+  Swal.fire({
+    icon: 'question',
+    title: 'Confirmar envio do pedido?',
+    html: 'Você será redirecionado para o WhatsApp com a mensagem pronta.<br><br><strong>Esteja ciente de que o pedido só será realizado após o envio da mensagem.</strong>',
+    showCancelButton: true,
+    confirmButtonText: 'Abrir WhatsApp',
+    cancelButtonText: 'Cancelar',
+  }).then((result) => {
+    if (result.isConfirmed) {
+      const message = generateMessage()
+      const url = `https://wa.me/554288642843?text=${encodeURIComponent(message)}`
+      window.open(url, '_blank')
+    }
+  })
 }
 
 async function copyOrder() {
@@ -221,12 +321,8 @@ async function copyOrder() {
     await navigator.clipboard.writeText(generateMessage())
     Swal.fire({
       icon: 'success',
-      title: 'Copiado!',
-      text: 'Mensagem copiada com sucesso. Agora é só encaminhar ao nosso Whatsapp.',
-      toast: true,
-      position: 'top-end',
-      timer: 3000,
-      showConfirmButton: false,
+      title: 'Pedido copiado com sucesso!',
+      html: 'Agora é só colar a mensagem no nosso WhatsApp ou Instagram.<br><br><strong>Esteja ciente de que o pedido só será realizado após o envio da mensagem em um desses canais.</strong>',
     })
   } catch (err) {
     Swal.fire({
@@ -253,6 +349,14 @@ const canSubmit = computed(() => {
 // Valor total com a entrega adicionada (se for Guarapuava)
 const totalWithDelivery = computed(() => {
   let total = cart.total
+  if (deliveryOption.value === 'deliver-guarapuava') {
+    total += deliveryCharge
+  }
+  return total
+})
+
+const totalOriginalWithDelivery = computed(() => {
+  let total = cart.items.reduce((sum, item) => sum + item.price * item.quantity, 0)
   if (deliveryOption.value === 'deliver-guarapuava') {
     total += deliveryCharge
   }
