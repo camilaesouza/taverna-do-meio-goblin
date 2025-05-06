@@ -28,7 +28,7 @@
           </multiselect>
         </div>
 
-        <div class="flex-1">
+        <div class="flex flex-col">
           <label for="search" class="gap-1 flex md:flex-row flex-col text-sm font-semibold text-green-2 mb-1 block">
             Pesquisar
             <span class="text-[11px] text-[#000000] font-normal">
@@ -64,6 +64,25 @@
             </span>
           </div>
         </div>
+
+        <div class="md:w-[360px] w-full">
+          <label class="block text-sm font-semibold text-green-2 mb-1">Ordenar por preço</label>
+          <multiselect
+              v-model="priceOrder"
+              :options="priceOrderOptions"
+              track-by="value"
+              label="label"
+              placeholder="Nenhuma ordenação"
+              class="multiselect-custom"
+              :searchable="false"
+              :allow-empty="true"
+              :show-labels="false"
+              :close-on-select="true"
+              :clear-on-select="false"
+              :hide-selected="false"
+              :show-clear="true"
+          />
+        </div>
       </div>
 
       <div class="bg-[#E2D6BF] rounded-lg shadow-lg p-3 border border-[#cac1ad] mt-[-11px] mb-[20px] md:text-[14px] text-[12px]">
@@ -81,7 +100,7 @@
       <!-- Card minis -->
       <div class="grid gap-6 grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
         <div
-            v-for="item in filteredCatalog"
+            v-for="item in sortedCatalog"
             :key="item.id"
             class="bg-[#E2D6BF] rounded shadow-lg p-3 flex flex-col justify-between h-full border border-[#cac1ad]"
         >
@@ -225,6 +244,13 @@ const selectedItemForModal = ref(null)
 const zoomActive = ref(false)
 const zoomDisabled = ref(false)
 const currentIndex = ref(0)
+const priceOrder = ref('');
+
+const priceOrderOptions = [
+  { value: '', label: 'Nenhuma ordenação' },
+  { value: 'asc', label: 'Do menor para o maior' },
+  { value: 'desc', label: 'Do maior para o menor' },
+];
 
 const typeOptions = [
   { key: '', label: 'Todas' },
@@ -234,6 +260,19 @@ const typeOptions = [
     return a.key.localeCompare(b.key);
   }),
 ];
+
+const sortedCatalog = computed(() => {
+  const sorted = [...filteredCatalog.value];
+  let orderSelected = priceOrder?.value;
+
+  if (orderSelected?.value === 'asc') {
+    return sorted.sort((a, b) => a.price - b.price);
+  } else if (orderSelected?.value === 'desc') {
+    return sorted.sort((a, b) => b.price - a.price);
+  }
+
+  return sorted;
+});
 
 const filteredCatalog = computed(() => {
   const search = removeAccents(searchTerm.value.toLowerCase().trim())
