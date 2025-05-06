@@ -33,7 +33,7 @@
         </div>
 
         <!-- Opções de entrega -->
-        <div class="mt-6" v-if="cart.items && cart.items.length > 0">
+        <div class="mt-6 border-b py-3" v-if="cart.items && cart.items.length > 0">
           <label class="block font-semibold mb-2">Escolha a forma de entrega:</label>
           <div class="space-y-2">
             <label
@@ -52,28 +52,16 @@
           </div>
 
           <div v-if="deliveryOption === 'deliver-guarapuava'" class="mt-4">
-            <p class="font-medium">Preencha os campos de endereço para entrega</p>
+            <p class="font-semibold">Preencha os campos de endereço para entrega</p>
 
             <AddressForm @update:addressData="onAddressDataUpdate" />
           </div>
         </div>
 
-        <!-- Observação adicional -->
-        <div v-if="cart.items && cart.items.length > 0" class="mt-6 w-full flex">
-          <div class="w-full">
-            <label for="observation" class="block font-semibold mb-1">Observação adicional (opcional):</label>
-            <textarea
-                id="observation"
-                v-model="observationOrder"
-                class="md:w-[480px] placeholder-black bg-[#D2C5AB] border border-[#cdc2ae] rounded text-black w-full p-2 resize-none text-sm"
-                rows="3"
-                placeholder="Digite aqui alguma informação adicional para o pedido..."
-            ></textarea>
-          </div>
-        </div>
+        <PaymentSelector v-if="cart.items.length > 0" class="mt-[15px] border-b py-3" :total="baseTotalWithoutInterest" ref="paymentRef" />
 
         <!-- Campo para aplicar cupom -->
-        <div v-if="cart.items.length > 0" class="mb-4">
+        <div v-if="cart.items.length > 0" class="mb-4 mt-[20px] border-b py-3">
           <label class="block font-semibold mb-1" for="coupon">Cupom de desconto:</label>
           <div class="flex gap-2 items-center">
             <input
@@ -81,7 +69,7 @@
                 v-model="couponCode"
                 type="text"
                 placeholder="Digite o código do cupom"
-                class="placeholder-black bg-[#D2C5AB] border border-[#cdc2ae] rounded p-2 text-sm w-full md:w-[250px]"
+                class="placeholder-black input-field bg-[#D2C5AB] border border-[#cdc2ae] rounded p-2 text-sm w-full md:w-[250px]"
             />
             <button
                 @click="applyCouponCode"
@@ -102,14 +90,45 @@
           </p>
         </div>
 
-        <div class="text-right font-bold mt-4 md:text-xl text-lg">
-          <p v-if="cart.appliedCoupon">
-            Total original:
-            <span class="line-through text-red-600">R$ {{ totalOriginalWithDelivery.toFixed(2) }}</span><br />
-            Total com desconto: R$ {{ totalWithDelivery.toFixed(2) }}
+        <!-- Observação adicional -->
+        <div v-if="cart.items && cart.items.length > 0" class="mt-6 w-full flex">
+          <div class="w-full">
+            <label for="observation" class="block font-semibold mb-1">Observação adicional (opcional):</label>
+            <textarea
+                id="observation"
+                v-model="observationOrder"
+                class="md:w-[480px] input-field placeholder-black bg-[#D2C5AB] border border-[#cdc2ae] rounded text-black w-full p-2 resize-none text-sm"
+                rows="3"
+                placeholder="Digite aqui alguma informação adicional para o pedido..."
+            ></textarea>
+          </div>
+        </div>
+
+        <div class="text-right font-bold mt-4 md:text-xl text-lg space-y-1">
+          <!-- Subtotal com descontos -->
+          <p class="text-[16px] text-[#000000b8]">
+            Subtotal: R$ {{ cart.subtotal.toFixed(2).replace('.', ',') }}
           </p>
-          <p v-else>
-            Total: R$ {{ totalWithDelivery.toFixed(2) }}
+
+          <!-- Entrega, se for o caso -->
+          <p class="text-[16px] text-[#000000b8]" v-if="deliveryOption === 'deliver-guarapuava'">
+            Entrega (Guarapuava): + R$ {{ deliveryCharge.toFixed(2).replace('.', ',') }}
+          </p>
+
+          <!-- Juros, se houver parcelamento -->
+          <p class="text-[16px] text-[#000000b8]" v-if="cart.paymentInterest > 0">
+            Juros (parcelamento): + R$ {{ cart.paymentInterest.toFixed(2).replace('.', ',') }}
+          </p>
+
+          <!-- Cupom aplicado -->
+          <p class="text-[16px] text-[#000000b8]" v-if="cart.appliedCoupon">
+            Desconto aplicado ({{ cart.appliedCoupon.code }}):
+            -R$ {{ cart.couponValue.toFixed(2).replace('.', ',') }}
+          </p>
+
+          <!-- Total final -->
+          <p class="mt-2 text-lg md:text-xl">
+            Total: <span class="text-emerald-600">R$ {{ totalWithDelivery.toFixed(2).replace('.', ',') }}</span>
           </p>
         </div>
 
@@ -158,6 +177,7 @@ import CartItem from '~/components/CartItem.vue'
 import Navbar from '~/layouts/navbar.vue'
 import { TypeEnumOptions } from '~/data/enums.js'
 import AddressForm from '~/components/AddressForm.vue'
+import PaymentSelector from '~/components/PaymentSelector.vue'
 
 const cart = useCartStore()
 const observationOrder = ref('')
@@ -168,9 +188,11 @@ const deliveryOptions = ref([
   {key: 'deliver-by-transport', label: 'Entregar por Correios/SEDEX (a combinar informações e valores do frete pelo WhatsApp ou Instagram)'},
 ])
 
+const paymentRef = ref()
+
 const couponCode = ref('')
 
-// Simule cupons válidos
+// Cupons
 const validCoupons = [
   { code: 'TAVERNA10', percentage: 10 },
 ]
@@ -242,19 +264,28 @@ function generateMessage() {
         \t- Valor total: R$ ${itemTotal}`
   }).join('\n\n')
 
-  const rawTotal = cart.items.reduce((acc, item) => acc + item.price * item.quantity, 0)
-  const totalWithDiscount = Number(cart.total).toFixed(2)
-  const discountAmount = rawTotal - cart.total
+  const rawSubtotal = cart.items.reduce((acc, item) => acc + item.price * item.quantity, 0)
+  const descontoCupom = cart.appliedCoupon ? rawSubtotal * (cart.appliedCoupon.percentage / 100) : 0
+  const juros = cart.paymentInterest || 0
+  const deliveryCharge = deliveryOption.value === 'deliver-guarapuava' ? 7 : 0
+  const totalFinal = rawSubtotal - descontoCupom + juros + deliveryCharge
 
-  let totalLine = `💰 Total do pedido: R$ ${totalWithDiscount}`
+  let totalLines = `💵 Subtotal: R$ ${rawSubtotal.toFixed(2)}\n`
+
+  if (deliveryCharge > 0) {
+    totalLines += `🚚 Entrega (Guarapuava): + R$ ${deliveryCharge.toFixed(2)}\n`
+  }
+
+  if (juros > 0) {
+    totalLines += `📈 Juros (parcelamento): + R$ ${juros.toFixed(2)}\n`
+  }
 
   if (cart.appliedCoupon) {
-    totalLine =
-        `💵 Total original: R$ ${rawTotal.toFixed(2)}\n` +
-        `🎟️ Cupom aplicado: ${cart.appliedCoupon.code} (${cart.appliedCoupon.percentage}% OFF)\n` +
-        `🧾 Desconto: -R$ ${discountAmount.toFixed(2)}\n` +
-        `💰 Total com desconto: R$ ${totalWithDiscount}`
+    totalLines += `🎟️ Desconto aplicado (${cart.appliedCoupon.code}): -R$ ${descontoCupom.toFixed(2)}\n`
   }
+
+  // 👉 AQUI movi a linha do total para ANTES do pagamento
+  const totalLineFinal = `💰 Total: R$ ${totalFinal.toFixed(2)}`
 
   const observationText = observationOrder.value.trim()
       ? `📝 Observação: ${observationOrder.value.trim()}\n\n`
@@ -265,16 +296,20 @@ function generateMessage() {
     const { address, number, neighborhood, complement } = deliveryData.value
     const fullAddress = `${address}, Nº ${number}${complement ? `, ${complement}` : ''}`
     deliveryText = `📦 Entrega em Guarapuava - Endereço: ${fullAddress}, Bairro: ${neighborhood}`
-    totalLine += ` (adicionados R$ ${deliveryCharge.toFixed(2)} de entrega)`
   } else {
     const deliverValue = deliveryOptions.value.find(option => option.key === deliveryOption.value)
     deliveryText = `📦 ${deliverValue?.label}` || ''
   }
 
+  const paymentComponent = paymentRef.value
+  const paymentText = paymentComponent.getPaymentSummary()
+
   return (
       `Olá! 👋 Vim pelo catálogo da Taverna e gostaria de fazer um pedido:\n\n` +
       `${formattedItems}\n\n` +
-      `${totalLine}\n\n` +
+      `${totalLines}` +
+      `${paymentText}\n\n` + // 👉 aqui já vem logo depois
+      `${totalLineFinal}\n\n` + // e o total final é jogado aqui depois do pagamento
       `${deliveryText}\n\n` +
       `${observationText}` +
       `Aguardo retorno para confirmar a encomenda 😊`
@@ -362,6 +397,15 @@ const totalOriginalWithDelivery = computed(() => {
   }
   return total
 })
+
+const baseTotalWithoutInterest = computed(() => {
+  let base = cart.subtotal // já considera desconto/cupom
+  if (deliveryOption.value === 'deliver-guarapuava') {
+    base += deliveryCharge
+  }
+  return base
+})
+
 </script>
 <style>
 .custom-radio {
@@ -399,5 +443,31 @@ label.flex.items-center {
   padding: 2px;
   border-radius: 0.5rem;
   transition: background 0.2s ease;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  box-shadow: 0 0 0px 1000px #D2C5AB inset !important;
+  -webkit-text-fill-color: black !important;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.input-field {
+  padding: 0.5rem;
+  background-color: #D2C5AB;
+  border: 1px solid #cdc2ae;
+  border-radius: 4px;
+  color: black;
+  font-size: 0.875rem;
+  transition: border-color 0.3s ease;
+}
+
+/* Remover a borda azul padrão do navegador ao focar */
+.input-field:focus {
+  border-color: #D2C5AB; /* Cor de borda ao focar no input */
+  outline: none;
+  background-color: #D2C5AB; /* Manter a cor de fundo consistente */
 }
 </style>

@@ -3,7 +3,8 @@ import { defineStore } from 'pinia'
 export const useCartStore = defineStore('cart', {
     state: () => ({
         items: [],
-        appliedCoupon: null // { code: 'PROMO10', percentage: 10 }
+        appliedCoupon: null, // { code: 'PROMO10', percentage: 10 }
+        paymentInterest: 0,
     }),
 
     getters: {
@@ -11,7 +12,6 @@ export const useCartStore = defineStore('cart', {
             return state.items.reduce((sum, item) => sum + item.quantity, 0)
         },
         subtotal(state) {
-            // Se há cupom, usar o valor cheio dos itens (sem desconto por quantidade)
             if (state.appliedCoupon) {
                 return state.items.reduce((sum, item) => sum + item.price * item.quantity, 0)
             }
@@ -22,10 +22,12 @@ export const useCartStore = defineStore('cart', {
         },
         total(state) {
             const rawTotal = state.items.reduce((sum, item) => sum + item.price * item.quantity, 0)
+            let total = rawTotal
             if (state.appliedCoupon) {
-                return rawTotal * (1 - state.appliedCoupon.percentage / 100)
+                total = rawTotal * (1 - state.appliedCoupon.percentage / 100)
             }
-            return this.subtotal
+            // Agora, somamos o valor dos juros corretamente
+            return total + state.paymentInterest
         },
 
         couponValue(state) {
@@ -36,6 +38,9 @@ export const useCartStore = defineStore('cart', {
     },
 
     actions: {
+        setPaymentInterest(interest: number) {
+            this.paymentInterest = interest // Ajusta o valor dos juros na store
+        },
         addItem(item) {
             const keyOption = item.option || ''
             const existing = this.items.find(i => i.id === item.id && i.option === keyOption)
