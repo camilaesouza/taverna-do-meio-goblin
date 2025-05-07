@@ -27,7 +27,7 @@ facilitar o trabalho, ao adicionar as imagens dentro da pasta correta na `public
 basta rodar o comando:
  
 ```
-node assets/js/convert-to-webp.cjs
+> node assets/js/convert-to-webp.cjs
 ```
 
 Ele irá converter as imagens `.png` para `.webp`.
@@ -69,4 +69,54 @@ discounts => Quais os descontos do item/mini com base em quantidades ou valores:
     { minQty: 10, percentage: 20, type: 'percentage' } => Quantidade 10, podemos aplicar uma prcentagem de 20% no valor
 image => Path da imagem (explicado anteriormente)
 ```
+
+## Adicionar cupons
+
+1. No arquivo `data/coupons.js` você adiciona o seu novo cupom. (Usamos um sistema servless com o Firebase e o banco firestore, então ao criar
+os cupons no arquivo, sera necessário rodar um comando node e então ele atualiza no banco de dados).
+
+Seguir os exemplos:
+
+Para cupom de uso unico:
+
+```
+{
+  code: 'TAVERNA20',
+  discount: 20,
+  expiresAt: null,
+  used: false
+},
+```
+
+Para cupom com data de expiração
+
+```
+{
+  code: 'TAVERNA10',
+  discount: 10,
+  expiresAt: '2025-05-07T23:59:59Z', (ano-mês-diaTHora:Minuto:SegundoZ)
+  used: false
+},
+```
+
+Explicação dos campos:
+
+```
+{
+  code => Código do cupom
+  discount => Desconto do cupom para porcentagem, se colocar 10, significa 10%
+  expiresAt => Data de expiração do cupom, se nao tiver deixar como 'null', se tiver usar datas no formato UTC
+  used => Se o cupom ja foi usado. Utilizado para cupons de uso unico, normalmente setar como false
+},
+```
+
+2. No terminal/console rodar o comando 
+
+```
+> node assets/js/sync-coupons.js
+```
+
+Ele irá criar os cupons na nossa base de dados. Ele também exclui cupons que não estão no 
+arquivo de cupons ou atualiza cupons ja existentes. Tome cuidado! 
+
 

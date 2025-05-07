@@ -178,6 +178,7 @@ import Navbar from '~/layouts/navbar.vue'
 import { TypeEnumOptions } from '~/data/enums.js'
 import AddressForm from '~/components/AddressForm.vue'
 import PaymentSelector from '~/components/PaymentSelector.vue'
+import {useCoupons} from "~/stores/useCoupons";
 
 const cart = useCartStore()
 const observationOrder = ref('')
@@ -189,13 +190,7 @@ const deliveryOptions = ref([
 ])
 
 const paymentRef = ref()
-
 const couponCode = ref('')
-
-// Cupons
-const validCoupons = [
-  { code: 'TAVERNA10', percentage: 10 },
-]
 
 // Definindo o valor extra para entrega em Guarapuava
 const deliveryCharge = 7.0
@@ -208,23 +203,41 @@ const deliveryData = ref({
   complement: ''
 })
 
-function applyCouponCode() {
-  const found = validCoupons.find(c => c.code.toUpperCase() === couponCode.value.toUpperCase())
-  if (!found) {
+async function applyCouponCode() {
+  const { validateCoupon } = useCoupons()
+
+  try {
+    const coupon = await validateCoupon(couponCode.value.toUpperCase())
+
+    if (!coupon.valid) {
+      Swal.fire({
+        icon: 'error',
+        title: 'Cupom inválido',
+        text: coupon.message
+      })
+      return
+    }
+
+    cart.applyCoupon({
+      code: couponCode.value,
+      percentage: coupon.discount,
+      couponId: coupon.couponId,
+      isOneTimeUse: coupon.isOneTimeUse,
+    })
+
+    Swal.fire({
+      icon: 'success',
+      title: 'Cupom aplicado!',
+      text: `Você ganhou ${coupon.discount}% de desconto no total.`
+    })
+  } catch (error) {
+    console.error('Erro ao validar cupom:', error)
     Swal.fire({
       icon: 'error',
-      title: 'Cupom inválido',
-      text: 'O código inserido não é válido.'
+      title: 'Erro',
+      text: 'Ocorreu um erro ao validar o cupom. Tente novamente mais tarde.'
     })
-    return
   }
-
-  cart.applyCoupon(found)
-  Swal.fire({
-    icon: 'success',
-    title: 'Cupom aplicado!',
-    text: `Você ganhou ${found.percentage}% de desconto no total.`
-  })
 }
 
 function removeCouponCode() {
@@ -284,7 +297,6 @@ function generateMessage() {
     totalLines += `🎟️ Desconto aplicado (${cart.appliedCoupon.code}): -R$ ${descontoCupom.toFixed(2)}\n`
   }
 
-  // 👉 AQUI movi a linha do total para ANTES do pagamento
   const totalLineFinal = `💰 Total: R$ ${totalFinal.toFixed(2)}`
 
   const observationText = observationOrder.value.trim()
@@ -308,15 +320,15 @@ function generateMessage() {
       `Olá! 👋 Vim pelo catálogo da Taverna e gostaria de fazer um pedido:\n\n` +
       `${formattedItems}\n\n` +
       `${totalLines}` +
-      `${paymentText}\n\n` + // 👉 aqui já vem logo depois
-      `${totalLineFinal}\n\n` + // e o total final é jogado aqui depois do pagamento
+      `${paymentText}\n\n` +
+      `${totalLineFinal}\n\n` +
       `${deliveryText}\n\n` +
       `${observationText}` +
       `Aguardo retorno para confirmar a encomenda 😊`
   )
 }
 
-function sendOrder() {
+async function sendOrder() {
   if (cart.items.length === 0) {
     Swal.fire({
       icon: 'warning',
@@ -333,11 +345,16 @@ function sendOrder() {
     showCancelButton: true,
     confirmButtonText: 'Abrir WhatsApp',
     cancelButtonText: 'Cancelar',
-  }).then((result) => {
+  }).then(async (result) => {
     if (result.isConfirmed) {
       const message = generateMessage()
       const url = `https://wa.me/554288642843?text=${encodeURIComponent(message)}`
       window.open(url, '_blank')
+
+      if (cart.appliedCoupon && cart.appliedCoupon.couponId) {
+        const { markCouponAsUsed } = useCoupons()
+        await markCouponAsUsed(cart.appliedCoupon.couponId)
+      }
     }
   })
 }
@@ -359,29 +376,39 @@ async function copyOrder() {
       title: 'Pedido copiado com sucesso!',
       html: 'Agora é só colar a mensagem no nosso WhatsApp ou Instagram.<br><br><strong>Esteja ciente de que o pedido só será realizado após o envio da mensagem em um desses canais.</strong>',
     })
+
+    if (cart.appliedCoupon && cart.appliedCoupon.couponId) {
+      const { markCouponAsUsed } = useCoupons()
+      await markCouponAsUsed(cart.appliedCoupon.couponId)
+    }
   } catch (err) {
     Swal.fire({
       icon: 'error',
       title: 'Erro ao copiar',
       text: 'Seu navegador pode não permitir a cópia. Tente manualmente.',
     })
-    console.error('Copy error:', err)
   }
 }
 
-// Computed para verificar se todos os campos foram preenchidos corretamente
 const canSubmit = computed(() => {
-  if (cart.items.length > 0 && deliveryOption.value) {
+  const payment = paymentRef.value?.selectedMethod;
+  const selectedInstallments = paymentRef.value?.selectedInstallments;
+
+  if (cart.items.length > 0 && deliveryOption.value && !!payment) {
     if (deliveryOption.value === 'deliver-guarapuava') {
       const { address, neighborhood, number } = deliveryData.value
       return address && neighborhood && number
     }
+
+    if (payment === 'credito') {
+      return !!selectedInstallments
+    }
+
     return true
   }
   return false
 })
 
-// Valor total com a entrega adicionada (se for Guarapuava)
 const totalWithDelivery = computed(() => {
   let total = cart.total
   if (deliveryOption.value === 'deliver-guarapuava') {
@@ -399,7 +426,7 @@ const totalOriginalWithDelivery = computed(() => {
 })
 
 const baseTotalWithoutInterest = computed(() => {
-  let base = cart.subtotal // já considera desconto/cupom
+  let base = cart.subtotal
   if (deliveryOption.value === 'deliver-guarapuava') {
     base += deliveryCharge
   }
@@ -464,10 +491,9 @@ input:-webkit-autofill:active {
   transition: border-color 0.3s ease;
 }
 
-/* Remover a borda azul padrão do navegador ao focar */
 .input-field:focus {
-  border-color: #D2C5AB; /* Cor de borda ao focar no input */
+  border-color: #D2C5AB;
   outline: none;
-  background-color: #D2C5AB; /* Manter a cor de fundo consistente */
+  background-color: #D2C5AB;
 }
 </style>

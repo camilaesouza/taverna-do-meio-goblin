@@ -1,8 +1,8 @@
 <template>
   <div class="space-y-4">
-    <h3 class="font-semibold">Forma de pagamento:</h3>
+    <h3 class="font-semibold -mb-[8px]">Forma de pagamento:</h3>
 
-    <div class="flex gap-4 mt-[8px]">
+    <div class="flex flex-col gap-2">
       <label class="flex items-center gap-2">
         <input class="custom-radio" type="radio" value="pix" v-model="selectedMethod" />
         PIX
