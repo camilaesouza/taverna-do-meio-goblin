@@ -62,7 +62,10 @@
 
         <!-- Campo para aplicar cupom -->
         <div v-if="cart.items.length > 0" class="mb-4 mt-[20px] border-b py-3">
-          <label class="block font-semibold mb-1" for="coupon">Cupom de desconto:</label>
+          <label class="block font-semibold mb-1 flex flex-col" for="coupon">
+            Cupom de desconto:
+            <span class="text-[13px] mb-[5px]">(Descontos por quantidade de miniaturas não são acumulativos com cupom)</span>
+          </label>
           <div class="flex gap-2 items-center">
             <input
                 id="coupon"
