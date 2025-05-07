@@ -348,7 +348,8 @@ async function sendOrder() {
   }).then(async (result) => {
     if (result.isConfirmed) {
       const message = generateMessage()
-      const url = `https://wa.me/554288642843?text=${encodeURIComponent(message)}`
+      const number = '554288642843';
+      const url = "https://api.whatsapp.com/send/?phone=" + number + "&text=" + encodeURIComponent(message);
       window.open(url, '_blank')
 
       if (cart.appliedCoupon && cart.appliedCoupon.couponId) {
