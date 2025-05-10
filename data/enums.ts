@@ -30,6 +30,8 @@ export const TypeEnum = {
     WARRIORS_AND_WIZARDS: 'warriors_and_wizards',
     WILDWOOD_SANCTUM: 'wildwood_sanctum',
     OTHERS: 'others',
+    CURSED_SANDS: 'cursed_sands',
+    HIGHBORNE_ELVES_AND_UNDEAD_DOMINION: 'highborne_elves_and_undead_dominion',
 } as const;
 
 export type TypeEnumKey = (typeof TypeEnum)[keyof typeof TypeEnum];
@@ -66,4 +68,6 @@ export const TypeEnumOptions = [
     { key: TypeEnum.WARRIORS_AND_WIZARDS, label: 'Warriors and wizards' },
     { key: TypeEnum.WILDWOOD_SANCTUM, label: 'Wildwood sanctum' },
     { key: TypeEnum.OTHERS, label: 'Outros' },
+    { key: TypeEnum.CURSED_SANDS, label: 'Cursed Sands' },
+    { key: TypeEnum.HIGHBORNE_ELVES_AND_UNDEAD_DOMINION, label: 'Highborne Elves And Undead Dominion' },
 ];
