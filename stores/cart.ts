@@ -26,7 +26,7 @@ export const useCartStore = defineStore('cart', {
             if (state.appliedCoupon) {
                 total = rawTotal * (1 - state.appliedCoupon.percentage / 100)
             }
-            // Agora, somamos o valor dos juros corretamente
+
             return total + state.paymentInterest
         },
 
@@ -39,7 +39,7 @@ export const useCartStore = defineStore('cart', {
 
     actions: {
         setPaymentInterest(interest: number) {
-            this.paymentInterest = interest // Ajusta o valor dos juros na store
+            this.paymentInterest = interest
         },
         addItem(item) {
             const keyOption = item.option || ''
@@ -47,28 +47,40 @@ export const useCartStore = defineStore('cart', {
 
             if (existing) {
                 existing.quantity += item.quantity
-                this.applyItemDiscount(existing)
+                this.items
+                    .filter(i => i.id === item.id)
+                    .forEach(i => this.applyItemDiscount(i))
             } else {
                 const newItem = {
                     ...item,
                     option: keyOption,
                     discountedPrice: item.price
                 }
-                this.applyItemDiscount(newItem)
                 this.items.push(newItem)
             }
+
+            this.items
+                .filter(i => i.id === item.id)
+                .forEach(i => this.applyItemDiscount(i))
         },
 
         updateQuantity(key, newQuantity) {
             const item = this.items.find(i => i.id === key.id && i.option === (key.option || ''))
             if (item) {
                 item.quantity = newQuantity
-                this.applyItemDiscount(item)
             }
+
+            this.items
+                .filter(i => i.id === item.id)
+                .forEach(i => this.applyItemDiscount(i))
         },
 
         removeItem(key) {
             this.items = this.items.filter(i => !(i.id === key.id && i.option === (key.option || '')))
+
+            this.items
+                .filter(i => i.id === key.id)
+                .forEach(i => this.applyItemDiscount(i))
         },
 
         decreaseQuantity(key) {
@@ -77,10 +89,12 @@ export const useCartStore = defineStore('cart', {
                 item.quantity -= 1
                 if (item.quantity <= 0) {
                     this.removeItem(key)
-                } else {
-                    this.applyItemDiscount(item)
                 }
             }
+
+            this.items
+                .filter(i => i.id === item.id)
+                .forEach(i => this.applyItemDiscount(i))
         },
 
         applyItemDiscount(item) {
@@ -94,9 +108,13 @@ export const useCartStore = defineStore('cart', {
                 return
             }
 
+            const totalQuantityForId = this.items
+                .filter(i => i.id === item.id)
+                .reduce((sum, i) => sum + i.quantity, 0)
+
             let appliedDiscount = null
             for (const discount of item.discounts) {
-                if (item.quantity >= discount.minQty) {
+                if (totalQuantityForId >= discount.minQty) {
                     if (!appliedDiscount || discount.minQty > appliedDiscount.minQty) {
                         appliedDiscount = discount
                     }

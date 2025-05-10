@@ -5,17 +5,23 @@ const glob = require('glob-promise');
 
 const convertToWebp = async () => {
     try {
-        // Use o glob para pegar todos os arquivos PNG
-        const files = await glob('public/img/catalog/**/*.png');
+        // Pega todos os arquivos PNG, JPG e JPEG
+        const pngFiles = await glob('public/img/catalog/**/*.png');
+        const jpgFiles = await glob('public/img/catalog/**/*.jpg');
+        const jpegFiles = await glob('public/img/catalog/**/*.jpeg');
 
-        // Loop para processar cada imagem
+        // Junta todos em um único array
+        const files = [...pngFiles, ...jpgFiles, ...jpegFiles];
+
+        // Processa cada imagem
         for (const file of files) {
-            const webpFile = file.replace(/\.png$/, '.webp'); // Cria o nome do arquivo WebP
-            await sharp(file)
-                .webp({ quality: 80 }) // Converte para WebP com qualidade 80
-                .toFile(webpFile); // Salva o arquivo WebP
+            const webpFile = file.replace(/\.(png|jpe?g)$/i, '.webp'); // Cria nome com extensão .webp
 
-            // Remove o arquivo PNG após a conversão
+            await sharp(file)
+                .webp({ quality: 80 }) // Converte para WebP
+                .toFile(webpFile);     // Salva arquivo WebP
+
+            // Remove o arquivo original
             fs.unlink(file, (err) => {
                 if (err) {
                     console.error(`Erro ao excluir o arquivo ${file}:`, err);
