@@ -236,6 +236,7 @@ import Multiselect from 'vue-multiselect'
 import 'vue-multiselect/dist/vue-multiselect.css'
 import AddToCartButton from '~/components/AddToCartButton.vue'
 import CartButton from '~/components/CartButton.vue'
+import { synonymMap } from '@/utils/synonymMap.js'
 
 const selectedType = ref(null)
 const searchTerm = ref('')
@@ -274,15 +275,27 @@ const sortedCatalog = computed(() => {
   return sorted;
 });
 
+function fallbackSingular(word) {
+  if (word.endsWith('s') && word.length > 4) {
+    return word.slice(0, -1)
+  }
+  return word
+}
+
+function normalizeWord(word) {
+  word = removeAccents(word.toLowerCase().replace(/-/g, ' ').trim())
+  return synonymMap[word] || fallbackSingular(word)
+}
+
 const filteredCatalog = computed(() => {
   const search = removeAccents(searchTerm.value.toLowerCase().trim())
-  const searchWords = search.split(/\s+/).filter(Boolean)
+  const searchWords = search.split(/\s+/).filter(Boolean).map(normalizeWord)
 
   return catalog.filter(item => {
     const name = removeAccents(item.name.toLowerCase())
     const tags = removeAccents(item.tag.toLowerCase().replace(/,/g, ''))
     const combined = `${name} ${tags}`
-    const combinedWords = combined.split(/\s+/).filter(Boolean)
+    const combinedWords = combined.split(/\s+/).filter(Boolean).map(normalizeWord)
 
     const matchesType =
         !selectedType.value || !selectedType.value.key || item.type === selectedType.value.key
