@@ -44,9 +44,9 @@ export const useCoupons = () => {
 
     const markCouponAsUsed = async (couponId: string) => {
         const { $firestore } = useNuxtApp()
-        await updateDoc(doc($firestore, 'coupons', couponId), {
+        await setDoc(doc($firestore, 'coupons', couponId), {
             used: true,
-        })
+        }, { merge: true })
     }
 
     return {

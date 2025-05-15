@@ -100,8 +100,9 @@
       <!-- Card minis -->
       <div class="grid gap-6 grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
         <div
-            v-for="item in sortedCatalog"
+            v-for="(item, index) in sortedCatalog"
             :key="item.id"
+            :ref="setItemRef(item, index)"
             class="bg-[#E2D6BF] rounded shadow-lg p-3 flex flex-col justify-between h-full border border-[#cac1ad]"
         >
           <!-- Conteúdo -->
@@ -228,7 +229,7 @@
 
 
 <script setup lang="ts">
-import {computed, ref} from 'vue'
+import {computed, ref, onMounted, onBeforeUnmount} from 'vue'
 import {catalog} from '~/data/catalog'
 import {TypeEnum, TypeEnumOptions} from '~/data/enums'
 import Navbar from '~/layouts/navbar.vue'
@@ -246,6 +247,7 @@ const zoomActive = ref(false)
 const zoomDisabled = ref(false)
 const currentIndex = ref(0)
 const priceOrder = ref('');
+const itemRefs = ref<HTMLElement[]>([])
 
 const priceOrderOptions = [
   { value: '', label: 'Nenhuma ordenação' },
@@ -274,6 +276,24 @@ const sortedCatalog = computed(() => {
 
   return sorted;
 });
+
+function setItemRef(item: any, index: number) {
+  return (el: HTMLElement | null) => {
+    if (el) itemRefs.value[index] = el
+  }
+}
+
+function handleKeyDown(e: KeyboardEvent) {
+  if (!showModal.value) return
+
+  if (e.key === 'ArrowLeft') {
+    prevImage()
+  } else if (e.key === 'ArrowRight') {
+    nextImage()
+  } else if (e.key === 'Escape') {
+    closeModal()
+  }
+}
 
 function fallbackSingular(word) {
   if (word.endsWith('s') && word.length > 4) {
@@ -315,9 +335,12 @@ const filteredCatalog = computed(() => {
 })
 
 function openModal(item) {
-  currentIndex.value = filteredCatalog.value.findIndex(itemCatalog => itemCatalog.id === item.id)
-  updateModalData()
-  showModal.value = true
+  const index = filteredCatalog.value.findIndex(i => i.id === item.id)
+  if (index !== -1) {
+    selectedItemForModal.value = item
+    currentIndex.value = index
+    showModal.value = true
+  }
 }
 
 function updateModalData() {
@@ -341,6 +364,13 @@ function prevImage() {
 function closeModal() {
   showModal.value = false
   zoomActive.value = false
+
+  nextTick(() => {
+    const el = itemRefs.value[currentIndex.value]
+    if (el?.scrollIntoView) {
+      el.scrollIntoView({ behavior: 'smooth', block: 'center' })
+    }
+  })
 }
 
 function toggleZoom() {
@@ -349,8 +379,13 @@ function toggleZoom() {
   }
 }
 
+onBeforeUnmount(() => {
+  window.removeEventListener('keydown', handleKeyDown)
+})
+
 onMounted(() => {
   zoomDisabled.value = 'ontouchstart' in window || navigator.maxTouchPoints > 0
+  window.addEventListener('keydown', handleKeyDown)
 })
 
 function removeAccents(str: string) {

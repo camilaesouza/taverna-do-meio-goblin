@@ -113,6 +113,12 @@
             Subtotal: R$ {{ cart.subtotal.toFixed(2).replace('.', ',') }}
           </p>
 
+          <!-- Cupom aplicado -->
+          <p class="text-[16px] text-[#000000b8]" v-if="cart.appliedCoupon">
+            Desconto aplicado ({{ cart.appliedCoupon.code }}):
+            -R$ {{ cart.couponValue.toFixed(2).replace('.', ',') }}
+          </p>
+
           <!-- Entrega, se for o caso -->
           <p class="text-[16px] text-[#000000b8]" v-if="deliveryOption === 'deliver-guarapuava'">
             Entrega (Guarapuava): + R$ {{ deliveryCharge.toFixed(2).replace('.', ',') }}
@@ -121,12 +127,6 @@
           <!-- Juros, se houver parcelamento -->
           <p class="text-[16px] text-[#000000b8]" v-if="cart.paymentInterest > 0">
             Juros (parcelamento): + R$ {{ cart.paymentInterest.toFixed(2).replace('.', ',') }}
-          </p>
-
-          <!-- Cupom aplicado -->
-          <p class="text-[16px] text-[#000000b8]" v-if="cart.appliedCoupon">
-            Desconto aplicado ({{ cart.appliedCoupon.code }}):
-            -R$ {{ cart.couponValue.toFixed(2).replace('.', ',') }}
           </p>
 
           <!-- Total final -->
@@ -288,16 +288,16 @@ function generateMessage() {
 
   let totalLines = `💵 Subtotal: R$ ${rawSubtotal.toFixed(2)}\n`
 
+  if (cart.appliedCoupon) {
+    totalLines += `🎟️ Desconto aplicado (${cart.appliedCoupon.code}): -R$ ${descontoCupom.toFixed(2)}\n`
+  }
+
   if (deliveryCharge > 0) {
     totalLines += `🚚 Entrega (Guarapuava): + R$ ${deliveryCharge.toFixed(2)}\n`
   }
 
   if (juros > 0) {
     totalLines += `📈 Juros (parcelamento): + R$ ${juros.toFixed(2)}\n`
-  }
-
-  if (cart.appliedCoupon) {
-    totalLines += `🎟️ Desconto aplicado (${cart.appliedCoupon.code}): -R$ ${descontoCupom.toFixed(2)}\n`
   }
 
   const totalLineFinal = `💰 Total: R$ ${totalFinal.toFixed(2)}`
@@ -414,10 +414,20 @@ const canSubmit = computed(() => {
 })
 
 const totalWithDelivery = computed(() => {
-  let total = cart.total
+  let total = cart.subtotal
+
   if (deliveryOption.value === 'deliver-guarapuava') {
     total += deliveryCharge
   }
+
+  if (cart.paymentInterest > 0) {
+    total += cart.paymentInterest
+  }
+
+  if (cart.appliedCoupon) {
+    total -= cart.couponValue
+  }
+
   return total
 })
 
