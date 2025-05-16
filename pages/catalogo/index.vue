@@ -1,6 +1,6 @@
 <template>
   <Navbar>
-    <div class="px-4 py-6">
+    <div id="topDiv" class="px-4 py-6">
       <breadcrumb label="Catálogo"></breadcrumb>
 
       <div class="mt-[30px] flex flex-col md:flex-row md:items-end gap-4 mb-8">
@@ -102,7 +102,7 @@
         <div
             v-for="(item, index) in sortedCatalog"
             :key="item.id"
-            :ref="setItemRef(item, index)"
+            :ref="el => setMiniRef(item.id, el)"
             class="bg-[#E2D6BF] rounded shadow-lg p-3 flex flex-col justify-between h-full border border-[#cac1ad]"
         >
           <!-- Conteúdo -->
@@ -131,7 +131,10 @@
       </div>
 
       <!-- Botão flutuante do carrinho -->
-      <CartButton />
+      <CartButton v-if="!showModal" />
+
+      <!-- Botão flutuante voltar ao topo -->
+      <ScrollToTopButton v-if=!showModal @scroll="scrollToTop"/>
 
 
       <!-- Modal de imagem -->
@@ -229,7 +232,7 @@
 
 
 <script setup lang="ts">
-import {computed, ref, onMounted, onBeforeUnmount} from 'vue'
+import {computed, ref, onMounted, onBeforeUnmount, watch} from 'vue'
 import {catalog} from '~/data/catalog'
 import {TypeEnum, TypeEnumOptions} from '~/data/enums'
 import Navbar from '~/layouts/navbar.vue'
@@ -237,6 +240,7 @@ import Multiselect from 'vue-multiselect'
 import 'vue-multiselect/dist/vue-multiselect.css'
 import AddToCartButton from '~/components/AddToCartButton.vue'
 import CartButton from '~/components/CartButton.vue'
+import ScrollToTopButton from '~/components/ScrollToTopButton.vue'
 import { synonymMap } from '@/utils/synonymMap.js'
 
 const selectedType = ref(null)
@@ -247,7 +251,7 @@ const zoomActive = ref(false)
 const zoomDisabled = ref(false)
 const currentIndex = ref(0)
 const priceOrder = ref('');
-const itemRefs = ref<HTMLElement[]>([])
+const miniRefs = ref<Record<number, HTMLElement | null>>({})
 
 const priceOrderOptions = [
   { value: '', label: 'Nenhuma ordenação' },
@@ -277,20 +281,23 @@ const sortedCatalog = computed(() => {
   return sorted;
 });
 
-function setItemRef(item: any, index: number) {
-  return (el: HTMLElement | null) => {
-    if (el) itemRefs.value[index] = el
-  }
+function setMiniRef(id: number, el: HTMLElement | null) {
+  if (el) miniRefs.value[id] = el
 }
 
-function handleKeyDown(e: KeyboardEvent) {
+function scrollToTop() {
+  const element = document.getElementById('topDiv');
+  element.scrollIntoView({ behavior: "smooth" })
+}
+
+function handleKeydown(event: KeyboardEvent) {
   if (!showModal.value) return
 
-  if (e.key === 'ArrowLeft') {
-    prevImage()
-  } else if (e.key === 'ArrowRight') {
+  if (event.key === 'ArrowRight') {
     nextImage()
-  } else if (e.key === 'Escape') {
+  } else if (event.key === 'ArrowLeft') {
+    prevImage()
+  } else if (event.key === 'Escape') {
     closeModal()
   }
 }
@@ -365,12 +372,30 @@ function closeModal() {
   showModal.value = false
   zoomActive.value = false
 
-  nextTick(() => {
-    const el = itemRefs.value[currentIndex.value]
-    if (el?.scrollIntoView) {
-      el.scrollIntoView({ behavior: 'smooth', block: 'center' })
-    }
-  })
+  const el = miniRefs.value[selectedItemForModal.value?.id]
+  if (!el) return
+
+  const rect = el.getBoundingClientRect()
+  const isVisible = rect.top >= 0 && rect.bottom <= window.innerHeight
+
+  if (!isVisible) {
+    const observer = new IntersectionObserver((entries) => {
+      const entry = entries[0]
+      if (entry.isIntersecting) {
+        el.classList.add('highlight-mini')
+        setTimeout(() => {
+          el.classList.remove('highlight-mini')
+        }, 1000)
+
+        observer.disconnect()
+      }
+    }, {
+      threshold: 0.5,
+    })
+
+    observer.observe(el)
+    el.scrollIntoView({ behavior: 'smooth', block: 'center' })
+  }
 }
 
 function toggleZoom() {
@@ -379,13 +404,13 @@ function toggleZoom() {
   }
 }
 
-onBeforeUnmount(() => {
-  window.removeEventListener('keydown', handleKeyDown)
+onUnmounted(() => {
+  window.removeEventListener('keydown', handleKeydown)
 })
 
 onMounted(() => {
   zoomDisabled.value = 'ontouchstart' in window || navigator.maxTouchPoints > 0
-  window.addEventListener('keydown', handleKeyDown)
+  window.addEventListener('keydown', handleKeydown)
 })
 
 function removeAccents(str: string) {
@@ -400,6 +425,23 @@ function getTypeLabel(typeKey: unknown): string {
 </script>
 
 <style>
+@keyframes blink-border {
+  0% {
+    box-shadow: 0 0 0px 3px rgba(112, 112, 112, 0.8);
+  }
+  50% {
+    box-shadow: 0 0 15px 3px rgba(112, 112, 112, 0.9);
+  }
+  100% {
+    box-shadow: 0 0 0px 3px rgba(112, 112, 112, 0.8);
+  }
+}
+
+.highlight-mini {
+  animation: blink-border 1s ease-out;
+  border-radius: 8px;
+}
+
 /* Tags selecionadas e menu dropdown */
 .multiselect-custom .multiselect__tags,
 .multiselect-custom .multiselect__content-wrapper {
