@@ -11,5 +11,6 @@ export default defineNuxtConfig({
     ],
     sitemap: {
         siteUrl: 'https://www.tavernadomeiogoblin.com.br',
+        trailingSlash: false,
     }
 })
