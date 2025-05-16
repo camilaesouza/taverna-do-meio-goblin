@@ -7,9 +7,15 @@ export default defineNuxtConfig({
         '@nuxtjs/tailwindcss',
         '@pinia/nuxt',
         'pinia-plugin-persistedstate/nuxt',
-        '@nuxtjs/sitemap'
+        'nuxt-simple-sitemap',
     ],
+    runtimeConfig: {
+        public: {
+            siteUrl: process.env.SITE_URL || 'https://taverna-do-meio-goblin.pages.dev'
+        }
+    },
     sitemap: {
-        siteUrl: process.env.SITE_URL || 'https://taverna-do-meio-goblin.pages.dev'
+        autoLastmod: true,
+        trailingSlash: false,
     }
 })
