@@ -10,7 +10,6 @@ export default defineNuxtConfig({
         '@nuxtjs/sitemap'
     ],
     sitemap: {
-        siteUrl: 'https://www.tavernadomeiogoblin.com.br',
-        trailingSlash: false,
+        siteUrl: () => useRuntimeConfig().public.siteUrl
     }
 })
