@@ -10,6 +10,6 @@ export default defineNuxtConfig({
         '@nuxtjs/sitemap'
     ],
     sitemap: {
-        siteUrl: () => useRuntimeConfig().public.siteUrl
+        siteUrl: process.env.SITE_URL || 'https://taverna-do-meio-goblin.pages.dev'
     }
 })
