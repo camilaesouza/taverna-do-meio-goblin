@@ -32,6 +32,8 @@ export const TypeEnum = {
     OTHERS: 'others',
     CURSED_SANDS: 'cursed_sands',
     HIGHBORNE_ELVES_AND_UNDEAD_DOMINION: 'highborne_elves_and_undead_dominion',
+    DRAGON_EMPIRE: 'dragon_empire',
+    HIGHBORNE_ELVES_AND_UNDEAD_DOMINION_2: 'highborne_elves_and_undead_dominion_2',
 } as const;
 
 export type TypeEnumKey = (typeof TypeEnum)[keyof typeof TypeEnum];
@@ -70,4 +72,6 @@ export const TypeEnumOptions = [
     { key: TypeEnum.OTHERS, label: 'Outros' },
     { key: TypeEnum.CURSED_SANDS, label: 'Cursed Sands' },
     { key: TypeEnum.HIGHBORNE_ELVES_AND_UNDEAD_DOMINION, label: 'Highborne Elves And Undead Dominion' },
+    { key: TypeEnum.DRAGON_EMPIRE, label: 'Dragon Empire' },
+    { key: TypeEnum.HIGHBORNE_ELVES_AND_UNDEAD_DOMINION_2, label: 'Highborne Elves And Undead Dominion 2' },
 ];
