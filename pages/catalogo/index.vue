@@ -319,7 +319,7 @@ const filteredCatalog = computed(() => {
   const searchWords = search.split(/\s+/).filter(Boolean).map(normalizeWord)
 
   return catalog.filter(item => {
-    const name = removeAccents(item.name.toLowerCase())
+    const name = removeAccents(item.name.toLowerCase().replace(/[^\w\s]/g, ''))
     const tags = removeAccents(item.tag.toLowerCase().replace(/,/g, ''))
     const combined = `${name} ${tags}`
     const combinedWords = combined.split(/\s+/).filter(Boolean).map(normalizeWord)

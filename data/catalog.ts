@@ -9597,7 +9597,7 @@ export const catalog: Catalogitem[] = [
 
     {
         id: 736,
-        name: 'Dwarf Warrior',
+        name: 'Set 61, Dwarf Warrior',
         size: '28mm|33mm',
         price: 25.00,
         type: TypeEnum.TITANS_OF_ADVENTURE,
@@ -9609,7 +9609,7 @@ export const catalog: Catalogitem[] = [
     },
     {
         id: 737,
-        name: 'Tiefling Artificer',
+        name: 'Set 61, Tiefling Artificer',
         size: '28mm|33mm',
         price: 25.00,
         type: TypeEnum.TITANS_OF_ADVENTURE,
@@ -9621,7 +9621,7 @@ export const catalog: Catalogitem[] = [
     },
     {
         id: 738,
-        name: 'Human Cleric',
+        name: 'Set 61, Human Cleric',
         size: '28mm|33mm',
         price: 25.00,
         type: TypeEnum.TITANS_OF_ADVENTURE,
