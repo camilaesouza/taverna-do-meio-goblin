@@ -25,7 +25,7 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de no mínimo 3 o preço diminui para 16 R$',
         options: ['a', 'b', 'c'],
         discounts: [
-            { minQty: 3, price: 16, type: 'fixed' },
+            {minQty: 3, price: 16, type: 'fixed'},
         ],
         image: '/img/catalog/everdark-elves/elves-assassin.webp',
     },
@@ -39,7 +39,7 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de no mínimo 3 o preço diminui para 16 R$',
         options: ['a', 'b', 'c'],
         discounts: [
-            { minQty: 3, price: 16, type: 'fixed' },
+            {minQty: 3, price: 16, type: 'fixed'},
         ],
         image: '/img/catalog/everdark-elves/flying-assassins.webp'
     },
@@ -149,7 +149,7 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de no mínimo 3 o preço diminui para 16 R$',
         options: ['a', 'b', 'c', 'd', 'e'],
         discounts: [
-            { minQty: 3, price: 16, type: 'fixed' },
+            {minQty: 3, price: 16, type: 'fixed'},
         ],
         image: '/img/catalog/everdark-elves/archmage.webp'
     },
@@ -673,7 +673,7 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de no mínimo 3 o preço diminui para 20 R$',
         options: ['a', 'b', 'c'],
         discounts: [
-            { minQty: 3, price: 20, type: 'fixed' },
+            {minQty: 3, price: 20, type: 'fixed'},
         ],
         image: '/img/catalog/bloodsail-ogres/anchor-bashers-1.webp'
     },
@@ -687,7 +687,7 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de no mínimo 3 o preço diminui para 25 R$',
         options: ['a', 'b', 'c'],
         discounts: [
-            { minQty: 3, price: 25, type: 'fixed' },
+            {minQty: 3, price: 25, type: 'fixed'},
         ],
         image: '/img/catalog/bloodsail-ogres/anchor-bashers-2.webp'
     },
@@ -737,7 +737,7 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de no mínimo 3 o preço diminui para 17 R$',
         options: ['a', 'b', 'c', 'd', 'e'],
         discounts: [
-            { minQty: 3, price: 17, type: 'fixed' },
+            {minQty: 3, price: 17, type: 'fixed'},
         ],
         image: '/img/catalog/bloodsail-ogres/tribesman.webp'
     },
@@ -826,7 +826,7 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de no mínimo 3 o preço diminui para 18R$',
         options: ['a', 'b', 'c', 'd', 'e'],
         discounts: [
-            { minQty: 3, price: 18, type: 'fixed' },
+            {minQty: 3, price: 18, type: 'fixed'},
         ],
         image: '/img/catalog/carnival-and-orcs/orc-1.webp'
     },
@@ -840,7 +840,7 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de no mínimo 3 o preço diminui para 18R$',
         options: ['a', 'b', 'c', 'd', 'e'],
         discounts: [
-            { minQty: 3, price: 18, type: 'fixed' },
+            {minQty: 3, price: 18, type: 'fixed'},
         ],
         image: '/img/catalog/carnival-and-orcs/orc-2.webp'
     },
@@ -854,7 +854,7 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de no mínimo 3 o preço diminui para 18R$',
         options: ['a', 'b', 'c', 'd', 'e'],
         discounts: [
-            { minQty: 3, price: 18, type: 'fixed' },
+            {minQty: 3, price: 18, type: 'fixed'},
         ],
         image: '/img/catalog/carnival-and-orcs/orc-3.webp'
     },
@@ -1063,7 +1063,7 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de no mínimo 3 o preço diminui para 40 R$',
         options: ['a', 'b', 'c', 'd', 'e', 'f'],
         discounts: [
-            { minQty: 3, price: 40, type: 'fixed' },
+            {minQty: 3, price: 40, type: 'fixed'},
         ],
         image: '/img/catalog/carnival-and-orcs-2/boar-riders.webp'
     },
@@ -1077,7 +1077,7 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de no mínimo 3 o preço diminui para 18 R$',
         options: ['a', 'b', 'c', 'd', 'e'],
         discounts: [
-            { minQty: 3, price: 18, type: 'fixed' },
+            {minQty: 3, price: 18, type: 'fixed'},
         ],
         image: '/img/catalog/carnival-and-orcs-2/wild-orcs-1.webp'
     },
@@ -1091,7 +1091,7 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de no mínimo 3 o preço diminui para 18 R$',
         options: ['a', 'b', 'c', 'd', 'e'],
         discounts: [
-            { minQty: 3, price: 18, type: 'fixed' },
+            {minQty: 3, price: 18, type: 'fixed'},
         ],
         image: '/img/catalog/carnival-and-orcs-2/wild-orcs-2.webp'
     },
@@ -1153,7 +1153,7 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de no mínimo 3 o preço diminui para 21 R$',
         options: ['a', 'b', 'c', 'd', 'e'],
         discounts: [
-            { minQty: 3, price: 21, type: 'fixed' },
+            {minQty: 3, price: 21, type: 'fixed'},
         ],
         image: '/img/catalog/carnival-and-orcs-2/filth-demons.webp'
     },
@@ -1227,7 +1227,7 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de no mínimo 3 o preço diminui para 21 R$',
         options: ['a', 'b', 'c', 'd'],
         discounts: [
-            { minQty: 3, price: 21, type: 'fixed' },
+            {minQty: 3, price: 21, type: 'fixed'},
         ],
         image: '/img/catalog/carnival-and-orcs-2/slaads.webp'
     },
@@ -1280,7 +1280,7 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de no mínimo 3 o preço diminui para 19 R$',
         options: ['a', 'b', 'c', 'd', 'e'],
         discounts: [
-            { minQty: 3, price: 19, type: 'fixed' },
+            {minQty: 3, price: 19, type: 'fixed'},
         ],
         image: '/img/catalog/dark-wood-beasts-and-swamps/goatman-warriors.webp'
     },
@@ -1294,7 +1294,7 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de no mínimo 3 o preço diminui para 19 R$',
         options: ['a', 'b', 'c', 'd', 'e'],
         discounts: [
-            { minQty: 3, price: 19, type: 'fixed' },
+            {minQty: 3, price: 19, type: 'fixed'},
         ],
         image: '/img/catalog/dark-wood-beasts-and-swamps/gnomes-infantry-gunners.webp'
     },
@@ -1308,7 +1308,7 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de no mínimo 3 o preço diminui para 12 R$',
         options: ['a', 'b', 'c', 'd', 'e'],
         discounts: [
-            { minQty: 3, price: 12, type: 'fixed' },
+            {minQty: 3, price: 12, type: 'fixed'},
         ],
         image: '/img/catalog/dark-wood-beasts-and-swamps/shrooms-1.webp'
     },
@@ -1322,7 +1322,7 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de no mínimo 3 o preço diminui para 12 R$',
         options: ['a', 'b', 'c', 'd', 'e'],
         discounts: [
-            { minQty: 3, price: 12, type: 'fixed' },
+            {minQty: 3, price: 12, type: 'fixed'},
         ],
         image: '/img/catalog/dark-wood-beasts-and-swamps/shrooms-2.webp'
     },
@@ -1354,7 +1354,7 @@ export const catalog: Catalogitem[] = [
         id: 108,
         name: 'Swamp Dragon',
         size: 'especial',
-        price: 220.00,
+        price: 185.00,
         type: TypeEnum.DARK_WOOD_BEASTS_AND_SWAMPS,
         tag: 'dragão, dragões, pântano, criatura, monstro,',
         observation: null,
@@ -1435,7 +1435,7 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de no mínimo 3 o preço diminui para 18 R$',
         options: ['a', 'b', 'c', 'd', 'e'],
         discounts: [
-            { minQty: 3, price: 18, type: 'fixed' },
+            {minQty: 3, price: 18, type: 'fixed'},
         ],
         image: '/img/catalog/dark-wood-beasts-and-swamps-2/deathknights.webp'
     },
@@ -1449,7 +1449,7 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de no mínimo 3 o preço diminui para 18 R$',
         options: ['a', 'b', 'c', 'd', 'e'],
         discounts: [
-            { minQty: 3, price: 18, type: 'fixed' },
+            {minQty: 3, price: 18, type: 'fixed'},
         ],
         image: '/img/catalog/dark-wood-beasts-and-swamps-2/goatman-light-warriors.webp'
     },
@@ -1457,7 +1457,7 @@ export const catalog: Catalogitem[] = [
         id: 116,
         name: 'Minotaur Warlord',
         size: 'especial',
-        price: 215.00,
+        price: 30.00,
         type: TypeEnum.DARK_WOOD_BEASTS_AND_SWAMPS_2,
         tag: 'guerreiro, minotauro',
         observation: null,
@@ -1469,7 +1469,7 @@ export const catalog: Catalogitem[] = [
         id: 117,
         name: 'Minotaur Warlord',
         size: 'especial',
-        price: 220.00,
+        price: 30.00,
         type: TypeEnum.DARK_WOOD_BEASTS_AND_SWAMPS_2,
         tag: 'guerreiro, minotauro',
         observation: null,
@@ -1535,7 +1535,7 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de no mínimo 3 o preço diminui para 15 R$',
         options: ['a', 'b', 'c', 'd', 'e'],
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
         ],
         image: '/img/catalog/dark-wood-beasts-and-swamps-2/frog-guardians-1.webp'
     },
@@ -1829,7 +1829,7 @@ export const catalog: Catalogitem[] = [
         observation: 'Estúdio DayBreak - Disponível no tamanho 54mm com aumento de 10 R$ - No tamanho 33mm a cada 5 miniaturas cada uma fica por 18 R$',
         options: null,
         discounts: [
-            { minQty: 5, price: 18, type: 'fixed' },
+            {minQty: 5, price: 18, type: 'fixed'},
         ],
         image: '/img/catalog/daybreak/benjammer-holt.webp'
     },
@@ -1843,7 +1843,7 @@ export const catalog: Catalogitem[] = [
         observation: 'Estúdio DayBreak - Disponível no tamanho 54mm com aumento de 10 R$ - No tamanho 33mm a cada 5 miniaturas cada uma fica por 18 R$',
         options: null,
         discounts: [
-            { minQty: 5, price: 18, type: 'fixed' },
+            {minQty: 5, price: 18, type: 'fixed'},
         ],
         image: '/img/catalog/daybreak/circer-malaar.webp'
     },
@@ -1857,7 +1857,7 @@ export const catalog: Catalogitem[] = [
         observation: 'Estúdio DayBreak - Disponível no tamanho 54mm com aumento de 10 R$ - No tamanho 33mm a cada 5 miniaturas cada uma fica por 18 R$',
         options: null,
         discounts: [
-            { minQty: 5, price: 18, type: 'fixed' },
+            {minQty: 5, price: 18, type: 'fixed'},
         ],
         image: '/img/catalog/daybreak/deathbringer-olan-troka.webp'
     },
@@ -1871,7 +1871,7 @@ export const catalog: Catalogitem[] = [
         observation: 'Estúdio DayBreak - Disponível no tamanho 54mm com aumento de 10 R$ - No tamanho 33mm a cada 5 miniaturas cada uma fica por 18 R$',
         options: null,
         discounts: [
-            { minQty: 5, price: 18, type: 'fixed' },
+            {minQty: 5, price: 18, type: 'fixed'},
         ],
         image: '/img/catalog/daybreak/doblar-grakk.webp'
     },
@@ -1885,7 +1885,7 @@ export const catalog: Catalogitem[] = [
         observation: 'Estúdio DayBreak - Disponível no tamanho 54mm com aumento de 10 R$ - No tamanho 33mm a cada 5 miniaturas cada uma fica por 18 R$',
         options: null,
         discounts: [
-            { minQty: 5, price: 18, type: 'fixed' },
+            {minQty: 5, price: 18, type: 'fixed'},
         ],
         image: '/img/catalog/daybreak/gartaz-the-halfed.webp'
     },
@@ -1899,7 +1899,7 @@ export const catalog: Catalogitem[] = [
         observation: 'Estúdio DayBreak - Disponível no tamanho 54mm com aumento de 10 R$ - No tamanho 33mm a cada 5 miniaturas cada uma fica por 18 R$',
         options: null,
         discounts: [
-            { minQty: 5, price: 18, type: 'fixed' },
+            {minQty: 5, price: 18, type: 'fixed'},
         ],
         image: '/img/catalog/daybreak/grasta-poka.webp'
     },
@@ -1913,7 +1913,7 @@ export const catalog: Catalogitem[] = [
         observation: 'Estúdio DayBreak - Disponível no tamanho 54mm com aumento de 10 R$ - No tamanho 33mm a cada 5 miniaturas cada uma fica por 18 R$',
         options: null,
         discounts: [
-            { minQty: 5, price: 18, type: 'fixed' },
+            {minQty: 5, price: 18, type: 'fixed'},
         ],
         image: '/img/catalog/daybreak/jakzo-stormer.webp'
     },
@@ -1927,7 +1927,7 @@ export const catalog: Catalogitem[] = [
         observation: 'Estúdio DayBreak - Disponível no tamanho 54mm com aumento de 10 R$ - No tamanho 33mm a cada 5 miniaturas cada uma fica por 18 R$',
         options: null,
         discounts: [
-            { minQty: 5, price: 18, type: 'fixed' },
+            {minQty: 5, price: 18, type: 'fixed'},
         ],
         image: '/img/catalog/daybreak/jolan-frak.webp'
     },
@@ -1941,7 +1941,7 @@ export const catalog: Catalogitem[] = [
         observation: 'Estúdio DayBreak - Disponível no tamanho 54mm com aumento de 10 R$ - No tamanho 33mm a cada 5 miniaturas cada uma fica por 18 R$',
         options: null,
         discounts: [
-            { minQty: 5, price: 18, type: 'fixed' },
+            {minQty: 5, price: 18, type: 'fixed'},
         ],
         image: '/img/catalog/daybreak/jorduz-hunter.webp'
     },
@@ -1955,7 +1955,7 @@ export const catalog: Catalogitem[] = [
         observation: 'Estúdio DayBreak - Disponível no tamanho 54mm com aumento de 10 R$ - No tamanho 33mm a cada 5 miniaturas cada uma fica por 18 R$',
         options: null,
         discounts: [
-            { minQty: 5, price: 18, type: 'fixed' },
+            {minQty: 5, price: 18, type: 'fixed'},
         ],
         image: '/img/catalog/daybreak/lieutenant-mitrog.webp'
     },
@@ -1969,7 +1969,7 @@ export const catalog: Catalogitem[] = [
         observation: 'Estúdio DayBreak - Disponível no tamanho 54mm com aumento de 10 R$ - No tamanho 33mm a cada 5 miniaturas cada uma fica por 18 R$',
         options: null,
         discounts: [
-            { minQty: 5, price: 18, type: 'fixed' },
+            {minQty: 5, price: 18, type: 'fixed'},
         ],
         image: '/img/catalog/daybreak/skull-summoner-paktas-blox-1.webp'
     },
@@ -1983,7 +1983,7 @@ export const catalog: Catalogitem[] = [
         observation: 'Estúdio DayBreak - Disponível no tamanho 54mm com aumento de 10 R$ - No tamanho 33mm a cada 5 miniaturas cada uma fica por 18 R$',
         options: null,
         discounts: [
-            { minQty: 5, price: 18, type: 'fixed' },
+            {minQty: 5, price: 18, type: 'fixed'},
         ],
         image: '/img/catalog/daybreak/skull-summoner-paktas-blox-2.webp'
     },
@@ -2203,7 +2203,7 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de no mínimo 3 o preço diminui para 15 R$',
         options: ['a', 'b', 'c', 'd', 'e', 'f', 'g'],
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
         ],
         image: '/img/catalog/death-knights/ironbeak-owlbear.webp',
     },
@@ -2223,7 +2223,7 @@ export const catalog: Catalogitem[] = [
         id: 177,
         name: 'Dread Dragon',
         size: 'especial',
-        price: 100.00,
+        price: 170.00,
         type: TypeEnum.DEATH_KNIGHTS,
         tag: 'dragão, dragões, morto vivo, voador, criatura, monstro',
         observation: null,
@@ -2235,7 +2235,7 @@ export const catalog: Catalogitem[] = [
         id: 178,
         name: 'Death Lord (Especial)',
         size: 'especial',
-        price: 110.00,
+        price: 180.00,
         type: TypeEnum.DEATH_KNIGHTS,
         tag: 'dragão, dragões, morto vivo, voador, criatura, monstro, cavaleiro, morte, guerreiro, masculino, homem, montaria',
         observation: null,
@@ -2401,7 +2401,7 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de no mínimo 3 o preço diminui para 16 R$',
         options: ['a', 'b', 'c', 'd', 'e'],
         discounts: [
-            { minQty: 3, price: 16, type: 'fixed' },
+            {minQty: 3, price: 16, type: 'fixed'},
         ],
         image: '/img/catalog/kingdom-of-equitaine-vol-2/footman.webp',
     },
@@ -2735,7 +2735,7 @@ export const catalog: Catalogitem[] = [
         id: 219,
         name: 'Steam Dragon',
         size: 'especial',
-        price: 280.00,
+        price: 180.00,
         type: TypeEnum.METAL_BEARDS,
         tag: 'dragão, dragões, metálico, metal, criatura, animal, animais, animais, monstro',
         observation: null,
@@ -2821,7 +2821,7 @@ export const catalog: Catalogitem[] = [
         id: 226,
         name: 'Ceratops with Priestess',
         size: 'especial',
-        price: 280.00,
+        price: 250.00,
         type: TypeEnum.OGRES_AND_AMAZONS,
         tag: 'dinossauro, animal, animais, animais, sacerdotisa, sacerdote, montaria, amazona, mulher, feminino',
         observation: null,
@@ -3045,7 +3045,7 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de no mínimo 3 o preço diminui para 16 R$',
         options: ['a', 'b', 'c', 'd', 'e'],
         discounts: [
-            { minQty: 3, price: 16, type: 'fixed' },
+            {minQty: 3, price: 16, type: 'fixed'},
         ],
         image: '/img/catalog/ogres-and-wizards/orc-scouts.webp',
     },
@@ -3531,7 +3531,7 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de no mínimo 3 o preço diminui para 15 R$',
         options: ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'],
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
         ],
         image: '/img/catalog/old-city/city-watch.webp',
     },
@@ -3939,7 +3939,7 @@ export const catalog: Catalogitem[] = [
         id: 318,
         name: 'Infernal Golem',
         size: 'especial',
-        price: 360.00,
+        price: 300.00,
         type: TypeEnum.SONS_OF_KASHAN,
         tag: 'gigante, criatura, minotauro, monstro, maquina, mecanico, metal, ferro',
         observation: null,
@@ -4263,8 +4263,8 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options: ['a', 'b', 'c'],
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/titans-of-adventure-41-ao-45/celestial-paladin.webp'
     },
@@ -4278,8 +4278,8 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options: ['a', 'b', 'c'],
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/titans-of-adventure-41-ao-45/human-warlock.webp'
     },
@@ -4293,8 +4293,8 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options: ['a', 'b', 'c'],
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/titans-of-adventure-41-ao-45/orc-monk.webp'
     },
@@ -4308,8 +4308,8 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options: ['a', 'b', 'c'],
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/titans-of-adventure-41-ao-45/dwarf-monk.webp'
     },
@@ -4321,10 +4321,10 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'elfo, patrulheiro, arqueiro, arco, masculino, homem',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
-        options:  ['a', 'b', 'c'],
+        options: ['a', 'b', 'c'],
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/titans-of-adventure-41-ao-45/elf-ranger.webp'
     },
@@ -4336,10 +4336,10 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'tiefling, bárbaro, chifres, masculino, homem',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
-        options:  ['a', 'b', 'c'],
+        options: ['a', 'b', 'c'],
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/titans-of-adventure-41-ao-45/tiefling-barbarian.webp'
     },
@@ -4351,10 +4351,10 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'humano, bárbaro, combate, força bruta, homem, masculino',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
-        options:  ['a', 'b', 'c'],
+        options: ['a', 'b', 'c'],
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/titans-of-adventure-41-ao-45/human-barbarian.webp'
     },
@@ -4366,10 +4366,10 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'halfling, bruxo, pequeno, magia, magico',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
-        options:  ['a', 'b', 'c'],
+        options: ['a', 'b', 'c'],
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/titans-of-adventure-41-ao-45/hafling-warlock.webp'
     },
@@ -4381,10 +4381,10 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'tiefling, ladino, ladina, chifres, mulher, feminino',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
-        options:  ['a', 'b', 'c'],
+        options: ['a', 'b', 'c'],
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/titans-of-adventure-41-ao-45/tiefling-rogue.webp'
     },
@@ -4396,10 +4396,10 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'guerreiro, guerreira, guerreiro, mulher, feminino',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
-        options:  ['a', 'b', 'c'],
+        options: ['a', 'b', 'c'],
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/titans-of-adventure-41-ao-45/githyanki-fighter.webp'
     },
@@ -4411,10 +4411,10 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'humano, alquimista, alquimia, frascos, poções, homem, masculino',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
-        options:  ['a', 'b', 'c'],
+        options: ['a', 'b', 'c'],
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/titans-of-adventure-41-ao-45/human-alchemist.webp'
     },
@@ -4426,10 +4426,10 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'lionfolk, licantropia, licantropo, leão, clérigo, clériga, cura, mulher, feminino',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
-        options:  ['a', 'b', 'c'],
+        options: ['a', 'b', 'c'],
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/titans-of-adventure-41-ao-45/lionfolk-cleric.webp'
     },
@@ -4441,10 +4441,10 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'githyanki, bárbaro, selvagem, homem, masculino, wolverine, garras',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
-        options:  ['a', 'b', 'c'],
+        options: ['a', 'b', 'c'],
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/titans-of-adventure-41-ao-45/githyanki-barbarian.webp'
     },
@@ -4456,10 +4456,10 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'humano, humana, guerreiro, guerreira, mulher, feminino, guarda, soldado, soldada',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
-        options:  ['a', 'b', 'c'],
+        options: ['a', 'b', 'c'],
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/titans-of-adventure-41-ao-45/human-fighter.webp'
     },
@@ -4471,10 +4471,10 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'halfling, bruxo, bruxa, pequeno, pequena, magia, magico',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13 - O cachorro é vendido separadamente',
-        options:  ['a', 'b', 'c'],
+        options: ['a', 'b', 'c'],
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/titans-of-adventure-41-ao-45/hafling-warlock-1.webp'
     },
@@ -4486,7 +4486,7 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'cachorro, cao, cães, animal, animais',
         observation: null,
-        options:  null,
+        options: null,
         discounts: null,
         image: '/img/catalog/titans-of-adventure-41-ao-45/hafling-warlock-dog.webp'
     },
@@ -4500,10 +4500,10 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'halfling, guerreiro, pequeno, lutador, masculino, homem',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
-        options:  ['a', 'b', 'c'],
+        options: ['a', 'b', 'c'],
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/titans-of-adventure-46-ao-49/hafling-fighter.webp'
     },
@@ -4515,10 +4515,10 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'humano, bardo, música, suporte, violão',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
-        options:  ['a', 'b', 'c'],
+        options: ['a', 'b', 'c'],
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/titans-of-adventure-46-ao-49/human-bard.webp'
     },
@@ -4530,10 +4530,10 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'tiefling, monge, artes marciais, chifres, masculino, homem',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
-        options:  ['a', 'b', 'c'],
+        options: ['a', 'b', 'c'],
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/titans-of-adventure-46-ao-49/tiefling-monk.webp'
     },
@@ -4545,10 +4545,10 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'draconato, monge, dragão, artes marciais, homem, masculino',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
-        options:  ['a', 'b', 'c'],
+        options: ['a', 'b', 'c'],
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/titans-of-adventure-46-ao-49/dragonborn-monk.webp'
     },
@@ -4560,10 +4560,10 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'meio orc, meio ogro, clérigo, clériga, cura, suporte, mulher, feminino',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
-        options:  ['a', 'b', 'c'],
+        options: ['a', 'b', 'c'],
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/titans-of-adventure-46-ao-49/half-orc-cleric.webp'
     },
@@ -4575,10 +4575,10 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'tiefling, mago, feiticeiro, chifres, magia, magico, homem, masculino',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
-        options:  ['a', 'b', 'c'],
+        options: ['a', 'b', 'c'],
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/titans-of-adventure-46-ao-49/tiefling-wizard.webp'
     },
@@ -4590,10 +4590,10 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'orc, ogro, druida, homem, masculino',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
-        options:  ['a', 'b', 'c'],
+        options: ['a', 'b', 'c'],
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/titans-of-adventure-46-ao-49/orc-druid.webp'
     },
@@ -4605,10 +4605,10 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'humano, humana, monge, artes marciais, mulher, feminino',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
-        options:  ['a', 'b', 'c'],
+        options: ['a', 'b', 'c'],
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/titans-of-adventure-46-ao-49/human-monk.webp'
     },
@@ -4620,10 +4620,10 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'humano, ladino, furtivo, espionagem, homem, masculino',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
-        options:  ['a', 'b', 'c'],
+        options: ['a', 'b', 'c'],
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/titans-of-adventure-46-ao-49/human-rogue.webp'
     },
@@ -4635,10 +4635,10 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'humano, arcanista, mago, magia, careca',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
-        options:  ['a', 'b', 'c'],
+        options: ['a', 'b', 'c'],
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/titans-of-adventure-46-ao-49/human-arcanist.webp'
     },
@@ -4650,10 +4650,10 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'golias, guerreiro, arqueiro, patrulheiro, paladino, homem, masculino',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
-        options:  ['a', 'b', 'c'],
+        options: ['a', 'b', 'c'],
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/titans-of-adventure-46-ao-49/goliath-guardian.webp'
     },
@@ -4665,10 +4665,10 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'coelho, monge, animal, animais, animais, antropomorfo, artes marciais, humano coelho, feminino, mulher, humana coelha',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
-        options:  ['a', 'b', 'c'],
+        options: ['a', 'b', 'c'],
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/titans-of-adventure-46-ao-49/rabbitfolk-monk.webp'
     },
@@ -4682,10 +4682,10 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'clérigo, clériga, elfo, elfa, divino, suporte, mulher, feminino, assasina, assasino, guerreira, guerreiro',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
-        options:  ['a', 'b', 'c'],
+        options: ['a', 'b', 'c'],
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/titans-of-adventure-50-ao-55/drow-cleric.webp'
     },
@@ -4697,10 +4697,10 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'anão, anões, anã, mago, maga, magia, livro, fogo, cajado',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
-        options:  ['a', 'b', 'c'],
+        options: ['a', 'b', 'c'],
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/titans-of-adventure-50-ao-55/dwarf-wizard.webp'
     },
@@ -4712,10 +4712,10 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'halfling, druida, passaro, natureza, mulher, feminino, cajado, escudo',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
-        options:  ['a', 'b', 'c'],
+        options: ['a', 'b', 'c'],
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/titans-of-adventure-50-ao-55/hafling-druid.webp'
     },
@@ -4727,10 +4727,10 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'felino, gato, gata, guerreiro, guerreira, animal, animais, animais, antropomorfo, licantropia, licantropo, licantropa, mulher, feminino',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
-        options:  ['a', 'b', 'c'],
+        options: ['a', 'b', 'c'],
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/titans-of-adventure-50-ao-55/catfolk-warrior.webp'
     },
@@ -4742,10 +4742,10 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'orc, ogro, ogra, bárbaro, bárbara, mulher, feminino, machado, espada',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
-        options:  ['a', 'b', 'c'],
+        options: ['a', 'b', 'c'],
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/titans-of-adventure-50-ao-55/orc-barbarian.webp'
     },
@@ -4757,10 +4757,10 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'tartaruga, paladino, paladina, escudo, divino, suporte, animal, animais, animais, criatura, machado, berrante',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
-        options:  ['a', 'b', 'c'],
+        options: ['a', 'b', 'c'],
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/titans-of-adventure-50-ao-55/tortle-paladin.webp'
     },
@@ -4772,10 +4772,10 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'halfling, clérigo, suporte, pequeno, cerveja, bebida, machado, escudo, masculino, homem',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
-        options:  ['a', 'b', 'c'],
+        options: ['a', 'b', 'c'],
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/titans-of-adventure-50-ao-55/hafling-cleric.webp'
     },
@@ -4787,10 +4787,10 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'humano, bruxo, invocador, magia, mago, humano, homem, masculino, capa, cajado, vira tempo, temporizador',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
-        options:  ['a', 'b', 'c'],
+        options: ['a', 'b', 'c'],
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/titans-of-adventure-50-ao-55/human-warlock-2.webp'
     },
@@ -4802,10 +4802,10 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'tiefling, bárbaro, bárbara, mulher, feminino, machado, adaga',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
-        options:  ['a', 'b', 'c'],
+        options: ['a', 'b', 'c'],
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/titans-of-adventure-50-ao-55/tiefling-barbarian-2.webp'
     },
@@ -4817,10 +4817,10 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'draconato, draconata, clérigo, clériga, dragão, mulher, feminino, besta, machado, escudo, lança',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
-        options:  ['a', 'b', 'c'],
+        options: ['a', 'b', 'c'],
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/titans-of-adventure-50-ao-55/dragonborn-cleric.webp'
     },
@@ -4832,10 +4832,10 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'elfo, elfa, arqueiro, arqueira, patrulheiro, patrulheira, arco, escudo, espada',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
-        options:  ['a', 'b', 'c'],
+        options: ['a', 'b', 'c'],
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/titans-of-adventure-50-ao-55/elf-ranger-2.webp'
     },
@@ -4847,10 +4847,10 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'draconato, guerreiro, espada, chifre, masculino, homem',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
-        options:  ['a', 'b', 'c'],
+        options: ['a', 'b', 'c'],
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/titans-of-adventure-50-ao-55/dragonborn-fighter.webp'
     },
@@ -4862,10 +4862,10 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'anão, anões, guerreiro, machado, armadura, cerveja, bebida, masculino, homem, lutador',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
-        options:  ['a', 'b', 'c'],
+        options: ['a', 'b', 'c'],
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/titans-of-adventure-50-ao-55/dwarf-fighter.webp'
     },
@@ -4877,10 +4877,10 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'halfling, paladino, escudo, pequeno, suporte, lança, soldado',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
-        options:  ['a', 'b', 'c'],
+        options: ['a', 'b', 'c'],
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/titans-of-adventure-50-ao-55/halfling-paladin.webp'
     },
@@ -4892,10 +4892,10 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'orc, ogro, ogra, ladino, ladina, furtivo, furtiva, mulher, feminino, corrente',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
-        options:  ['a', 'b', 'c'],
+        options: ['a', 'b', 'c'],
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/titans-of-adventure-50-ao-55/orc-rogue.webp'
     },
@@ -4907,10 +4907,10 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'meio orc, meio ogro, paladino, guerreiro, espada, chamas, fogo, machado, masculino, homem',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
-        options:  ['a', 'b', 'c'],
+        options: ['a', 'b', 'c'],
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/titans-of-adventure-50-ao-55/half-orc-paladin.webp'
     },
@@ -4922,10 +4922,10 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'meio orc, meio ogro, patrulheiro, floresta, rastreador, mulher, feminino, montaria, animal, animais, animais, lobo, arco, espada',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
-        options:  ['a', 'b', 'c'],
+        options: ['a', 'b', 'c'],
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/titans-of-adventure-50-ao-55/half-orc-ranger.webp'
     },
@@ -4937,10 +4937,10 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'tiefling, bruxo, magia, chifres, lança',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
-        options:  ['a', 'b', 'c'],
+        options: ['a', 'b', 'c'],
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/titans-of-adventure-50-ao-55/tiefling-warlock.webp'
     },
@@ -4954,10 +4954,10 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'orc, ogro, ogra, patrulheiro, patrulheira, floresta, mulher, feminino, guerreiro, guerreira, espada, arco, lança',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
-        options:  ['a', 'b', 'c'],
+        options: ['a', 'b', 'c'],
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/titans-of-adventure-56-ao-59/orc-ranger.webp'
     },
@@ -4969,10 +4969,10 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'anão, anões, anã, clérigo, clériga, suporte, mulher, feminino, escudo, machado, infinito',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
-        options:  ['a', 'b', 'c'],
+        options: ['a', 'b', 'c'],
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/titans-of-adventure-56-ao-59/dwarf-cleric.webp'
     },
@@ -4984,10 +4984,10 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'humano, humana, ladino, ladina, furtivo, furtiva, mulher, feminino, leque, espada, guerreiro, guerreira',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
-        options:  ['a', 'b', 'c'],
+        options: ['a', 'b', 'c'],
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/titans-of-adventure-56-ao-59/human-rogue-2.webp'
     },
@@ -4999,10 +4999,10 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'humano, patrulheiro, floresta, arqueiro, escudo, espada, machado, homem, masculino',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
-        options:  ['a', 'b', 'c'],
+        options: ['a', 'b', 'c'],
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/titans-of-adventure-56-ao-59/human-ranger.webp'
     },
@@ -5014,10 +5014,10 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'tiefling, clérigo, chifres, cajado, escudo, guerreiro, homem, masculino, lamparina',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
-        options:  ['a', 'b', 'c'],
+        options: ['a', 'b', 'c'],
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/titans-of-adventure-56-ao-59/tiefling-cleric.webp'
     },
@@ -5029,10 +5029,10 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'tartaruga, bardo, barda, música, músico, antropomorfo, violão, besta, gaita de fole, licantropo, licantropia',
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
-        options:  ['a', 'b', 'c'],
+        options: ['a', 'b', 'c'],
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/titans-of-adventure-56-ao-59/turtoise-bard.webp'
     },
@@ -5046,8 +5046,8 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13. Com o lobo fica R$25',
         options: ['a', 'b', 'c'],
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/titans-of-adventure-56-ao-59/spore-druid.webp'
     },
@@ -5073,8 +5073,8 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options: ['a', 'b', 'c'],
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/titans-of-adventure-56-ao-59/dwarf-druid.webp'
     },
@@ -5088,8 +5088,8 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options: ['a', 'b', 'c'],
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/titans-of-adventure-56-ao-59/human-fighter-2.webp'
     },
@@ -5103,8 +5103,8 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options: ['a', 'b', 'c'],
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/titans-of-adventure-56-ao-59/arakoa-hunter.webp'
     },
@@ -5118,8 +5118,8 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options: ['a', 'b', 'c'],
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/titans-of-adventure-56-ao-59/human-bard-2.webp'
     },
@@ -5133,8 +5133,8 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options: ['a', 'b', 'c'],
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/titans-of-adventure-56-ao-59/elf-rogue.webp'
     },
@@ -5150,8 +5150,8 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options: null,
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/titans-of-adventure-1-2-3-4-5-6-7-8-11-39-40/elf-mage.webp'
     },
@@ -5165,8 +5165,8 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options: null,
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/titans-of-adventure-1-2-3-4-5-6-7-8-11-39-40/human-paladin.webp'
     },
@@ -5180,8 +5180,8 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options: null,
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/titans-of-adventure-1-2-3-4-5-6-7-8-11-39-40/tiefling-warlock.webp'
     },
@@ -5195,8 +5195,8 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options: null,
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/titans-of-adventure-1-2-3-4-5-6-7-8-11-39-40/dwarf-priest.webp'
     },
@@ -5210,8 +5210,8 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options: null,
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/titans-of-adventure-1-2-3-4-5-6-7-8-11-39-40/dragonborn-warrior.webp'
     },
@@ -5225,8 +5225,8 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options: null,
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/titans-of-adventure-1-2-3-4-5-6-7-8-11-39-40/human-rogue-3.webp'
     },
@@ -5240,8 +5240,8 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options: null,
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/titans-of-adventure-1-2-3-4-5-6-7-8-11-39-40/halforc-barbarian.webp'
     },
@@ -5255,8 +5255,8 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options: null,
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/titans-of-adventure-1-2-3-4-5-6-7-8-11-39-40/gnome-mage.webp'
     },
@@ -5270,8 +5270,8 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options: null,
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/titans-of-adventure-1-2-3-4-5-6-7-8-11-39-40/halfling-rogue.webp'
     },
@@ -5285,8 +5285,8 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options: null,
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/titans-of-adventure-1-2-3-4-5-6-7-8-11-39-40/human-warrior.webp'
     },
@@ -5300,8 +5300,8 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options: null,
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/titans-of-adventure-1-2-3-4-5-6-7-8-11-39-40/elf-bard.webp'
     },
@@ -5315,8 +5315,8 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options: null,
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/titans-of-adventure-1-2-3-4-5-6-7-8-11-39-40/elf-monk.webp'
     },
@@ -5330,8 +5330,8 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options: null,
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/titans-of-adventure-1-2-3-4-5-6-7-8-11-39-40/human-warlock-3.webp'
     },
@@ -5345,8 +5345,8 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options: null,
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/titans-of-adventure-1-2-3-4-5-6-7-8-11-39-40/tiefling-sorcerer.webp'
     },
@@ -5360,8 +5360,8 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options: null,
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/titans-of-adventure-1-2-3-4-5-6-7-8-11-39-40/arakoa-monk.webp'
     },
@@ -5375,8 +5375,8 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options: null,
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/titans-of-adventure-1-2-3-4-5-6-7-8-11-39-40/dwarf-barbarian.webp'
     },
@@ -5390,8 +5390,8 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options: null,
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/titans-of-adventure-1-2-3-4-5-6-7-8-11-39-40/human-paladin-2.webp'
     },
@@ -5405,8 +5405,8 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options: null,
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/titans-of-adventure-1-2-3-4-5-6-7-8-11-39-40/dwarf-barbarian-2.webp'
     },
@@ -5420,8 +5420,8 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options: null,
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/titans-of-adventure-1-2-3-4-5-6-7-8-11-39-40/human-mage.webp'
     },
@@ -5435,8 +5435,8 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options: null,
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/titans-of-adventure-1-2-3-4-5-6-7-8-11-39-40/tiefling-bard.webp'
     },
@@ -5450,8 +5450,8 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options: null,
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/titans-of-adventure-1-2-3-4-5-6-7-8-11-39-40/dwarf-paladin.webp'
     },
@@ -5465,8 +5465,8 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options: null,
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/titans-of-adventure-1-2-3-4-5-6-7-8-11-39-40/goliath-fighter.webp'
     },
@@ -5480,8 +5480,8 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options: null,
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/titans-of-adventure-1-2-3-4-5-6-7-8-11-39-40/human-cleric.webp'
     },
@@ -5495,8 +5495,8 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options: null,
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/titans-of-adventure-1-2-3-4-5-6-7-8-11-39-40/half-orc-bard.webp'
     },
@@ -5510,8 +5510,8 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options: null,
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/titans-of-adventure-1-2-3-4-5-6-7-8-11-39-40/human-druid.webp'
     },
@@ -5525,8 +5525,8 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options: null,
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/titans-of-adventure-1-2-3-4-5-6-7-8-11-39-40/human-rogue-4.webp'
     },
@@ -5540,8 +5540,8 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options: null,
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/titans-of-adventure-1-2-3-4-5-6-7-8-11-39-40/dwarf-hunter.webp'
     },
@@ -5555,8 +5555,8 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options: null,
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/titans-of-adventure-1-2-3-4-5-6-7-8-11-39-40/human-cleric-2.webp'
     },
@@ -5570,8 +5570,8 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options: null,
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/titans-of-adventure-1-2-3-4-5-6-7-8-11-39-40/elf-barbarian.webp'
     },
@@ -5585,8 +5585,8 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options: null,
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/titans-of-adventure-1-2-3-4-5-6-7-8-11-39-40/gnome-warrior.webp'
     },
@@ -5600,8 +5600,8 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options: null,
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/titans-of-adventure-1-2-3-4-5-6-7-8-11-39-40/human-hunter.webp'
     },
@@ -5615,8 +5615,8 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options: null,
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/titans-of-adventure-1-2-3-4-5-6-7-8-11-39-40/feral-druid.webp'
     },
@@ -5630,8 +5630,8 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options: null,
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/titans-of-adventure-1-2-3-4-5-6-7-8-11-39-40/dwarf-mage.webp'
     },
@@ -5645,8 +5645,8 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options: null,
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/titans-of-adventure-1-2-3-4-5-6-7-8-11-39-40/human-druid-2.webp'
     },
@@ -5660,8 +5660,8 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options: null,
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/titans-of-adventure-1-2-3-4-5-6-7-8-11-39-40/human-fighter-3.webp'
     },
@@ -5676,8 +5676,8 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options: ['a', 'b', 'c'],
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/titans-of-adventure-1-2-3-4-5-6-7-8-11-39-40/dragonborn-mage.webp'
     },
@@ -5691,8 +5691,8 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options: ['a', 'b', 'c'],
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/titans-of-adventure-1-2-3-4-5-6-7-8-11-39-40/satyr-bard.webp'
     },
@@ -5706,8 +5706,8 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options: ['a', 'b', 'c'],
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/titans-of-adventure-1-2-3-4-5-6-7-8-11-39-40/tiefling-rogue.webp'
     },
@@ -5721,8 +5721,8 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options: ['a', 'b', 'c'],
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/titans-of-adventure-1-2-3-4-5-6-7-8-11-39-40/human-barbarian-2.webp'
     },
@@ -5736,8 +5736,8 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options: ['a', 'b', 'c'],
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/titans-of-adventure-1-2-3-4-5-6-7-8-11-39-40/gnome-cleric.webp'
     },
@@ -5751,8 +5751,8 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options: ['a', 'b', 'c'],
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/titans-of-adventure-1-2-3-4-5-6-7-8-11-39-40/halforc-rogue.webp'
     },
@@ -5974,8 +5974,8 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de no mínimo 5 o preço diminui para 13R$ e na compra de 10 o preço diminui para 10R$.',
         options: ['a', 'b', 'c', 'd', 'e'],
         discounts: [
-            { minQty: 5, price: 13, type: 'fixed' },
-            { minQty: 10, price: 10, type: 'fixed' },
+            {minQty: 5, price: 13, type: 'fixed'},
+            {minQty: 10, price: 10, type: 'fixed'},
         ],
         image: '/img/catalog/undying-dynasties-v1/skeletons-unit.webp',
     },
@@ -5989,8 +5989,8 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de no mínimo 5 o preço diminui para 13R$ e na compra de 10 o preço diminui para 10R$.',
         options: ['a', 'b', 'c', 'd', 'e'],
         discounts: [
-            { minQty: 5, price: 13, type: 'fixed' },
-            { minQty: 10, price: 10, type: 'fixed' },
+            {minQty: 5, price: 13, type: 'fixed'},
+            {minQty: 10, price: 10, type: 'fixed'},
         ],
         image: '/img/catalog/undying-dynasties-v1/skeletons-unit-bow.webp',
     },
@@ -6004,8 +6004,8 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de no mínimo 5 o preço diminui para 13R$ e na compra de 10 o preço diminui para 10R$.',
         options: ['a', 'b', 'c', 'd', 'e'],
         discounts: [
-            { minQty: 5, price: 13, type: 'fixed' },
-            { minQty: 10, price: 10, type: 'fixed' },
+            {minQty: 5, price: 13, type: 'fixed'},
+            {minQty: 10, price: 10, type: 'fixed'},
         ],
         image: '/img/catalog/undying-dynasties-v1/skeletons-unit-spear.webp',
     },
@@ -6019,8 +6019,8 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de no mínimo 3 o preço diminui para 22R$ e na compra de 9 o preço diminui para 20R$.',
         options: ['a', 'b', 'c'],
         discounts: [
-            { minQty: 5, price: 22, type: 'fixed' },
-            { minQty: 9, price: 20, type: 'fixed' },
+            {minQty: 5, price: 22, type: 'fixed'},
+            {minQty: 9, price: 20, type: 'fixed'},
         ],
         image: '/img/catalog/undying-dynasties-v1/shabti-scythe.webp',
     },
@@ -6034,8 +6034,8 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de no mínimo 3 o preço diminui para 22R$ e na compra de 9 o preço diminui para 20R$.',
         options: ['a', 'b', 'c'],
         discounts: [
-            { minQty: 3, price: 22, type: 'fixed' },
-            { minQty: 9, price: 20, type: 'fixed' },
+            {minQty: 3, price: 22, type: 'fixed'},
+            {minQty: 9, price: 20, type: 'fixed'},
         ],
         image: '/img/catalog/undying-dynasties-v1/shabti-spear.webp',
     },
@@ -6049,8 +6049,8 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de no mínimo 3 o preço diminui para 22R$ e na compra de 9 o preço diminui para 20R$.',
         options: ['a', 'b', 'c'],
         discounts: [
-            { minQty: 3, price: 22, type: 'fixed' },
-            { minQty: 9, price: 20, type: 'fixed' },
+            {minQty: 3, price: 22, type: 'fixed'},
+            {minQty: 9, price: 20, type: 'fixed'},
         ],
         image: '/img/catalog/undying-dynasties-v1/shabti-bow.webp',
     },
@@ -6064,8 +6064,8 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de no mínimo 4 o preço diminui para 42R$ e na compra de 10 o preço diminui para 38R$.',
         options: ['a', 'b', 'c', 'd'],
         discounts: [
-            { minQty: 4, price: 42, type: 'fixed' },
-            { minQty: 10, price: 38, type: 'fixed' },
+            {minQty: 4, price: 42, type: 'fixed'},
+            {minQty: 10, price: 38, type: 'fixed'},
         ],
         image: '/img/catalog/undying-dynasties-v1/skeletons-cavalry-bow.webp',
     },
@@ -6079,8 +6079,8 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de no mínimo 4 o preço diminui para 42R$ e na compra de 10 o preço diminui para 38R$.',
         options: ['a', 'b', 'c', 'd'],
         discounts: [
-            { minQty: 4, price: 42, type: 'fixed' },
-            { minQty: 10, price: 38, type: 'fixed' },
+            {minQty: 4, price: 42, type: 'fixed'},
+            {minQty: 10, price: 38, type: 'fixed'},
         ],
         image: '/img/catalog/undying-dynasties-v1/skeletons-cavalry-spear-a.webp',
     },
@@ -6204,8 +6204,8 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de no mínimo 3 o preço diminui para 15R$ e na compra de 9 o preço diminui para 12R$.',
         options: ['a', 'b', 'c', 'd', 'e'],
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 9, price: 12, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 9, price: 12, type: 'fixed'},
         ],
         image: '/img/catalog/undying-dynasties-v2/necropolis-guards-unit-shield.webp',
     },
@@ -6219,8 +6219,8 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de no mínimo 3 o preço diminui para 15R$ e na compra de 9 o preço diminui para 12R$.',
         options: ['a', 'b', 'c', 'd', 'e'],
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 9, price: 12, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 9, price: 12, type: 'fixed'},
         ],
         image: '/img/catalog/undying-dynasties-v2/necropolis-guards-unit-halbard.webp',
     },
@@ -6234,7 +6234,7 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de 3 o preço diminui para 40R$',
         options: ['a', 'b', 'c'],
         discounts: [
-            { minQty: 3, price: 40, type: 'fixed' },
+            {minQty: 3, price: 40, type: 'fixed'},
         ],
         image: '/img/catalog/undying-dynasties-v2/sand-stalkers.webp',
     },
@@ -6248,7 +6248,7 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de no mínimo 2 o preço diminui para 57R$',
         options: ['a', 'b', 'c'],
         discounts: [
-            { minQty: 2, price: 57, type: 'fixed' },
+            {minQty: 2, price: 57, type: 'fixed'},
         ],
         image: '/img/catalog/undying-dynasties-v2/vultures.webp',
     },
@@ -6262,7 +6262,7 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de 3 o preço diminui para 15R$',
         options: ['a', 'b', 'c'],
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
         ],
         image: '/img/catalog/undying-dynasties-v2/dragon-cultist.webp',
     },
@@ -6270,7 +6270,7 @@ export const catalog: Catalogitem[] = [
         id: 483,
         name: 'White Dragon',
         size: 'especial',
-        price: 80.00,
+        price: 110.00,
         type: TypeEnum.UNDYING_DYNASTIES,
         tag: 'areia, dragão, criatura, mágico, monstro, morto vivo, asa, criatura, demonio, deserto, egito, egpicio',
         observation: null,
@@ -6386,8 +6386,8 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de no mínimo 2 o preço diminui para 70R$ e na compra de 3 o preço diminui para 65R$.',
         options: ['a', 'b', 'c'],
         discounts: [
-            { minQty: 2, price: 70, type: 'fixed' },
-            { minQty: 3, price: 65, type: 'fixed' },
+            {minQty: 2, price: 70, type: 'fixed'},
+            {minQty: 3, price: 65, type: 'fixed'},
         ],
         image: '/img/catalog/undying-dynasties-v3/chariots.webp',
     },
@@ -6571,7 +6571,7 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de no mínimo 3 o preço diminui para R$15',
         options: ['a', 'b', 'c', 'd', 'e'],
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
         ],
         image: '/img/catalog/vampire-pirates-and-dark-wood-beasts/zombie-pirates.webp'
     },
@@ -6743,7 +6743,7 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de no mínimo 3 o preço diminui para R$13',
         options: ['a', 'b', 'c', 'd', 'e'],
         discounts: [
-            { minQty: 3, price: 13, type: 'fixed' },
+            {minQty: 3, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/vampires/zombies.webp'
     },
@@ -6795,7 +6795,7 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de no mínimo 3 o preço diminui para R$16',
         options: ['a', 'b', 'c', 'd', 'e', 'f'],
         discounts: [
-            { minQty: 3, price: 16, type: 'fixed' },
+            {minQty: 3, price: 16, type: 'fixed'},
         ],
         image: '/img/catalog/warriors-and-gnomes-v1/gnomes-infantry-spears.webp'
     },
@@ -6809,7 +6809,7 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de no mínimo 3 o preço diminui para R$16',
         options: ['a', 'b', 'c', 'd', 'e'],
         discounts: [
-            { minQty: 3, price: 16, type: 'fixed' },
+            {minQty: 3, price: 16, type: 'fixed'},
         ],
         image: '/img/catalog/warriors-and-gnomes-v1/gnomes-infantry-gunners-1.webp'
     },
@@ -6835,7 +6835,7 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de no mínimo 3 o preço diminui para R$22',
         options: ['a', 'b', 'c', 'd', 'e'],
         discounts: [
-            { minQty: 3, price: 22, type: 'fixed' },
+            {minQty: 3, price: 22, type: 'fixed'},
         ],
         image: '/img/catalog/warriors-and-gnomes-v1/norse-warriors-1.webp'
     },
@@ -6849,7 +6849,7 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de no mínimo 3 o preço diminui para R$22',
         options: ['a', 'b', 'c', 'd', 'e'],
         discounts: [
-            { minQty: 3, price: 22, type: 'fixed' },
+            {minQty: 3, price: 22, type: 'fixed'},
         ],
         image: '/img/catalog/warriors-and-gnomes-v1/norse-warriors-shield.webp'
     },
@@ -6863,7 +6863,7 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de no mínimo 2 o preço diminui para R$52',
         options: ['a', 'b', 'c', 'd', 'e'],
         discounts: [
-            { minQty: 2, price: 52, type: 'fixed' },
+            {minQty: 2, price: 52, type: 'fixed'},
         ],
         image: '/img/catalog/warriors-and-gnomes-v1/norse-knights-1.webp'
     },
@@ -6963,7 +6963,7 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de no mínimo 3 o preço diminui para R$16',
         options: ['a', 'b', 'c', 'd', 'e'],
         discounts: [
-            { minQty: 3, price: 16, type: 'fixed' },
+            {minQty: 3, price: 16, type: 'fixed'},
         ],
         image: '/img/catalog/warriors-and-gnomes-v2/good-boys.webp'
     },
@@ -6977,7 +6977,7 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de no mínimo 2 o preço diminui para R$22',
         options: ['a', 'b', 'c'],
         discounts: [
-            { minQty: 2, price: 22, type: 'fixed' },
+            {minQty: 2, price: 22, type: 'fixed'},
         ],
         image: '/img/catalog/warriors-and-gnomes-v2/gnomes-infantry-gunners-2.webp'
     },
@@ -6991,7 +6991,7 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de no mínimo 3 o preço diminui para R$22',
         options: ['a', 'b', 'c', 'd', 'e'],
         discounts: [
-            { minQty: 3, price: 22, type: 'fixed' },
+            {minQty: 3, price: 22, type: 'fixed'},
         ],
         image: '/img/catalog/warriors-and-gnomes-v2/gnomes-infantry-2.webp'
     },
@@ -7053,7 +7053,7 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de no mínimo 2 o preço diminui para R$52',
         options: ['a', 'b', 'c', 'd', 'e'],
         discounts: [
-            { minQty: 2, price: 52, type: 'fixed' },
+            {minQty: 2, price: 52, type: 'fixed'},
         ],
         image: '/img/catalog/warriors-and-gnomes-v2/norse-knights-2.webp'
     },
@@ -7067,7 +7067,7 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de no mínimo 3 o preço diminui para R$22',
         options: ['a', 'b', 'c', 'd', 'e'],
         discounts: [
-            { minQty: 3, price: 22, type: 'fixed' },
+            {minQty: 3, price: 22, type: 'fixed'},
         ],
         image: '/img/catalog/warriors-and-gnomes-v2/norse-knights-3.webp'
     },
@@ -7081,7 +7081,7 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de no mínimo 3 o preço diminui para R$22',
         options: ['a', 'b', 'c', 'd', 'e'],
         discounts: [
-            { minQty: 3, price: 22, type: 'fixed' },
+            {minQty: 3, price: 22, type: 'fixed'},
         ],
         image: '/img/catalog/warriors-and-gnomes-v2/norse-knights-4.webp'
     },
@@ -7101,7 +7101,7 @@ export const catalog: Catalogitem[] = [
         id: 549,
         name: 'ChoCho',
         size: 'especial',
-        price: 220.00,
+        price: 250.00,
         type: TypeEnum.WARRIORS_AND_GNOMES,
         tag: 'cenário, item, itens, gnomo, arma, arma de fogo, fogo, guerreiro, veiculo, montaria, trem',
         observation: null,
@@ -7181,7 +7181,7 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de no mínimo 3 o preço diminui para R$16',
         options: ['a', 'b', 'c', 'd', 'e'],
         discounts: [
-            { minQty: 3, price: 16, type: 'fixed' },
+            {minQty: 3, price: 16, type: 'fixed'},
         ],
         image: '/img/catalog/warriors-and-gnomes-v3/gnome-zappers.webp'
     },
@@ -7231,7 +7231,7 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de no mínimo 3 o preço diminui para R$17',
         options: null,
         discounts: [
-            { minQty: 3, price: 17, type: 'fixed' },
+            {minQty: 3, price: 17, type: 'fixed'},
         ],
         image: '/img/catalog/warriors-and-gnomes-v3/warhound.webp'
     },
@@ -7269,7 +7269,7 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de no mínimo 3 o preço diminui para R$22',
         options: ['a', 'b', 'c', 'd'],
         discounts: [
-            { minQty: 3, price: 22, type: 'fixed' },
+            {minQty: 3, price: 22, type: 'fixed'},
         ],
         image: '/img/catalog/warriors-and-gnomes-v3/lizardfolk.webp'
     },
@@ -7285,7 +7285,7 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de no mínimo 3 o preço diminui para R$16',
         options: ['a', 'b', 'c', 'd', 'e'],
         discounts: [
-            { minQty: 3, price: 16, type: 'fixed' },
+            {minQty: 3, price: 16, type: 'fixed'},
         ],
         image: '/img/catalog/warriors-and-wizards/mutated-warriors.webp'
     },
@@ -7335,7 +7335,7 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de no mínimo 3 o preço diminui para R$15',
         options: ['a', 'b', 'c', 'd', 'e', 'f', 'g'],
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
         ],
         image: '/img/catalog/warriors-and-wizards/apprentices.webp'
     },
@@ -7653,8 +7653,8 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
         options: null,
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/others-v1/kairn-warmonger.webp',
     },
@@ -7668,8 +7668,8 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
         options: null,
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/others-v1/lavinia-lastfall.webp',
     },
@@ -7683,8 +7683,8 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
         options: null,
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/others-v1/dwarf-veteran.webp',
     },
@@ -7698,8 +7698,8 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
         options: null,
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/others-v1/city-watch-sergeant.webp',
     },
@@ -7713,8 +7713,8 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
         options: null,
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/others-v1/lion-champion.webp',
     },
@@ -7728,8 +7728,8 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
         options: null,
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/others-v1/deathknight-berserker.webp',
     },
@@ -7743,8 +7743,8 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
         options: null,
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/others-v1/superior-nun.webp',
     },
@@ -7758,8 +7758,8 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
         options: null,
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/others-v1/abyssal-merfolks-lord.webp',
     },
@@ -7773,8 +7773,8 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
         options: null,
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/others-v1/armored-champion.webp',
     },
@@ -7788,8 +7788,8 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
         options: null,
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/others-v1/boyka.webp',
     },
@@ -7803,8 +7803,8 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
         options: null,
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/others-v1/dragon-empire-general.webp',
     },
@@ -7818,8 +7818,8 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
         options: null,
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/others-v1/everdark-elves-witch.webp',
     },
@@ -7833,8 +7833,8 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
         options: null,
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/others-v1/serpent-guard.webp',
     },
@@ -7848,8 +7848,8 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
         options: null,
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/others-v1/vampire.webp',
     },
@@ -7863,8 +7863,8 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
         options: null,
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/others-v1/highlander.webp',
     },
@@ -7878,8 +7878,8 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
         options: null,
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/others-v1/prophet.webp',
     },
@@ -7893,8 +7893,8 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
         options: null,
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/others-v1/scarlet-crusade-sniper.webp',
     },
@@ -7908,8 +7908,8 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
         options: null,
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/others-v1/marquize.webp',
     },
@@ -7923,8 +7923,8 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
         options: null,
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/others-v1/tanek-needletail.webp',
     },
@@ -7938,8 +7938,8 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
         options: null,
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/others-v1/war-lord.webp',
     },
@@ -7953,8 +7953,8 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
         options: null,
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/others-v1/verminspeaker.webp',
     },
@@ -7968,8 +7968,8 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
         options: null,
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/others-v1/wakaturu-spirit-walker.webp',
     },
@@ -7983,8 +7983,8 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
         options: null,
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/others-v1/human-monk.webp',
     },
@@ -7998,8 +7998,8 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
         options: null,
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/others-v1/human-barbarian-a.webp',
     },
@@ -8013,8 +8013,8 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
         options: null,
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/others-v1/human-barbarian-b.webp',
     },
@@ -8030,8 +8030,8 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
         options: null,
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/others-v2/elesar-painsinger.webp',
     },
@@ -8045,8 +8045,8 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
         options: null,
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/others-v2/elves-huntress.webp',
     },
@@ -8060,8 +8060,8 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
         options: null,
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/others-v2/garold-allfather.webp',
     },
@@ -8075,8 +8075,8 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
         options: null,
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/others-v2/linessa-waterfront.webp',
     },
@@ -8090,8 +8090,8 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
         options: null,
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/others-v2/lion-whiteclaw.webp',
     },
@@ -8105,8 +8105,8 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
         options: null,
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/others-v2/paradash-sundrop.webp',
     },
@@ -8120,8 +8120,8 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
         options: null,
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/others-v2/thalion-leafguard.webp',
     },
@@ -8135,8 +8135,8 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
         options: null,
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/others-v2/brother-tusk.webp',
     },
@@ -8150,8 +8150,8 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
         options: null,
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/others-v2/bunnavy.webp',
     },
@@ -8165,8 +8165,8 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
         options: null,
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/others-v2/burwing.webp',
     },
@@ -8180,8 +8180,8 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
         options: null,
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/others-v2/volver.webp',
     },
@@ -8195,8 +8195,8 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
         options: null,
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/others-v2/gnome-rogue.webp',
     },
@@ -8210,8 +8210,8 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
         options: null,
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/others-v2/goblin-a.webp',
     },
@@ -8225,8 +8225,8 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
         options: null,
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/others-v2/goblin-b.webp',
     },
@@ -8240,8 +8240,8 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
         options: null,
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/others-v2/goblin-c.webp',
     },
@@ -8255,8 +8255,8 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
         options: null,
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/others-v2/goblin-d.webp',
     },
@@ -8270,8 +8270,8 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
         options: null,
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/others-v2/goblin-f.webp',
     },
@@ -8285,8 +8285,8 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
         options: null,
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/others-v2/golias-barbarian.webp',
     },
@@ -8300,8 +8300,8 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
         options: ['a', 'b', 'c'],
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/others-v2/human-warrior.webp',
     },
@@ -8309,15 +8309,12 @@ export const catalog: Catalogitem[] = [
         id: 637,
         name: 'Mimic',
         size: '28mm|33mm',
-        price: 35.00,
+        price: 8.00,
         type: TypeEnum.OTHERS,
         tag: 'mimico, monstro, criatura, item, itens, cenário',
-        observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
+        observation: null,
         options: ['a', 'b'],
-        discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
-        ],
+        discounts: null,
         image: '/img/catalog/others-v2/mimic-a.webp',
     },
     {
@@ -8330,8 +8327,8 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
         options: null,
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/others-v2/dwarf-druid.webp',
     },
@@ -8345,8 +8342,8 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
         options: null,
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/others-v2/elf-ranger.webp',
     },
@@ -8360,8 +8357,8 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
         options: null,
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/others-v2/ghost-a.webp',
     },
@@ -8375,8 +8372,8 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
         options: null,
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/others-v2/ghost-b.webp',
     },
@@ -8390,8 +8387,8 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
         options: null,
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/others-v2/ghost-c.webp',
     },
@@ -8405,8 +8402,8 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
         options: null,
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/others-v2/elf-ranger-b.webp',
     },
@@ -8422,8 +8419,8 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de 3: 15 R$ e na compra de 10: 13 R$',
         options: null,
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/others-v3/mimic.webp',
     },
@@ -8551,7 +8548,7 @@ export const catalog: Catalogitem[] = [
         id: 655,
         name: 'Owlbear',
         size: 'especial',
-        price: 55.00,
+        price: 40.00,
         type: TypeEnum.OTHERS,
         tag: 'ursoruja, druida, criatura, monstro, urso, coruja, animal, animais',
         observation: null,
@@ -8563,7 +8560,7 @@ export const catalog: Catalogitem[] = [
         id: 656,
         name: 'Beholder',
         size: 'especial',
-        price: 55.00,
+        price: 35.00,
         type: TypeEnum.OTHERS,
         tag: 'beholder, olho, mágico, aberração, criatura, monstro',
         observation: null,
@@ -8683,7 +8680,7 @@ export const catalog: Catalogitem[] = [
         id: 666,
         name: 'Corpo Eliminator',
         size: 'especial',
-        price: 100.00,
+        price: 65.00,
         type: TypeEnum.OTHERS,
         tag: 'automato, metal, armadura, metralhadora, arma, robo, mecanico, cyberpunk',
         observation: null,
@@ -8727,8 +8724,8 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options: null,
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/titans-of-adventure-17-18-19-60/dragonborn-rogue.webp',
     },
@@ -8742,8 +8739,8 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options: null,
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/titans-of-adventure-17-18-19-60/elf-paladin.webp',
     },
@@ -8757,8 +8754,8 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options: ['a', 'b', 'c'],
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/titans-of-adventure-17-18-19-60/githyanki-druid.webp',
     },
@@ -8772,8 +8769,8 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options: null,
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/titans-of-adventure-17-18-19-60/gnome-mage.webp',
     },
@@ -8787,8 +8784,8 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options: null,
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/titans-of-adventure-17-18-19-60/gnome-rogue.webp',
     },
@@ -8802,8 +8799,8 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options: null,
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/titans-of-adventure-17-18-19-60/gnome-warrior.webp',
     },
@@ -8817,8 +8814,8 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options: ['a', 'b', 'c'],
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/titans-of-adventure-17-18-19-60/hafling-monk.webp',
     },
@@ -8832,8 +8829,8 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options: null,
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/titans-of-adventure-17-18-19-60/half-orc-fighter.webp',
     },
@@ -8847,8 +8844,8 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options: null,
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/titans-of-adventure-17-18-19-60/half-orc-hunter.webp',
     },
@@ -8862,8 +8859,8 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options: null,
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/titans-of-adventure-17-18-19-60/human-warrior.webp',
     },
@@ -8877,8 +8874,8 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options: null,
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/titans-of-adventure-17-18-19-60/tiefling-fighter.webp',
     },
@@ -8892,8 +8889,8 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de 3 o preço fica R$15 e na de 10 R$13',
         options: ['a', 'b', 'c'],
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/titans-of-adventure-17-18-19-60/tiefling-paladin.webp',
     },
@@ -8933,7 +8930,7 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de 3 o preço fica R$15',
         options: ['a', 'b', 'c'],
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
         ],
         image: '/img/catalog/cursed-sands/ancestral-skeletons-bow.webp',
     },
@@ -8947,7 +8944,7 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de 3 o preço fica R$15',
         options: ['a', 'b', 'c'],
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
         ],
         image: '/img/catalog/cursed-sands/ancestral-skeletons-spear.webp',
     },
@@ -8961,7 +8958,7 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de 3 o preço fica R$15',
         options: ['a', 'b', 'c'],
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
         ],
         image: '/img/catalog/cursed-sands/ancestral-skeletons-swords.webp',
     },
@@ -9133,7 +9130,7 @@ export const catalog: Catalogitem[] = [
         observation: 'Na compra de 3 o preço fica R$15',
         options: ['a', 'b', 'c'],
         discounts: [
-            { minQty: 3, price: 15, type: 'fixed' },
+            {minQty: 3, price: 15, type: 'fixed'},
         ],
         image: '/img/catalog/highborne-elves-and-undead-dominion/satyr.webp',
     },
@@ -9157,9 +9154,9 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.HIGHBORNE_ELVES_AND_UNDEAD_DOMINION,
         tag: 'fantasma, morto vivo, espirito, cavaleiro',
         observation: 'Na compra de 3 o preço fica R$35',
-        options: ['a', 'b', 'c','d','e'],
+        options: ['a', 'b', 'c', 'd', 'e'],
         discounts: [
-            { minQty: 3, price: 35, type: 'fixed' },
+            {minQty: 3, price: 35, type: 'fixed'},
         ],
         image: '/img/catalog/highborne-elves-and-undead-dominion/headless-horsemans.webp',
     },
@@ -9172,7 +9169,7 @@ export const catalog: Catalogitem[] = [
         tag: 'fantasma, morto vivo, espirito',
         observation: null,
         options: null,
-        discounts:null,
+        discounts: null,
         image: '/img/catalog/highborne-elves-and-undead-dominion/skeleton-giant.webp',
     },
     {
@@ -9184,7 +9181,7 @@ export const catalog: Catalogitem[] = [
         tag: 'fantasma, morto vivo, espirito',
         observation: null,
         options: null,
-        discounts:null,
+        discounts: null,
         image: '/img/catalog/highborne-elves-and-undead-dominion/soul-shepard.webp',
     },
     {
@@ -9196,7 +9193,7 @@ export const catalog: Catalogitem[] = [
         tag: 'fantasma, morto vivo, espirito',
         observation: null,
         options: ['a', 'b'],
-        discounts:null,
+        discounts: null,
         image: '/img/catalog/highborne-elves-and-undead-dominion/soul-swarm.webp',
     },
     {
@@ -9207,10 +9204,10 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.HIGHBORNE_ELVES_AND_UNDEAD_DOMINION,
         tag: 'elfo, guarda, realeza, guerreiro',
         observation: 'Na compra de 3 o preço fica R$16 e na de 10 R$13',
-        options: ['a', 'b', 'c','d','e'],
+        options: ['a', 'b', 'c', 'd', 'e'],
         discounts: [
-            { minQty: 3, price: 16, type: 'fixed' },
-            { minQty: 10, price: 13, type: 'fixed' },
+            {minQty: 3, price: 16, type: 'fixed'},
+            {minQty: 10, price: 13, type: 'fixed'},
         ],
         image: '/img/catalog/highborne-elves-and-undead-dominion/highborne-swordmasters.webp',
     },
@@ -9246,9 +9243,9 @@ export const catalog: Catalogitem[] = [
         type: TypeEnum.HIGHBORNE_ELVES_AND_UNDEAD_DOMINION,
         tag: 'elfo, montaria, aguia, arma de cerco, voador',
         observation: 'Na compra de 5 o preço fica R$12',
-        options: ['a', 'b', 'c','d','e'],
+        options: ['a', 'b', 'c', 'd', 'e'],
         discounts: [
-            { minQty: 5, price: 12, type: 'fixed' },
+            {minQty: 5, price: 12, type: 'fixed'},
         ],
         image: '/img/catalog/highborne-elves-and-undead-dominion/sky-barage.webp',
     },
@@ -9599,7 +9596,7 @@ export const catalog: Catalogitem[] = [
         id: 736,
         name: 'Set 61, Dwarf Warrior',
         size: '28mm|33mm',
-        price: 25.00,
+        price: 18.00,
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'anão, anões, guerreiro, machado, masculino, homem, besta',
         observation: null,
@@ -9611,7 +9608,7 @@ export const catalog: Catalogitem[] = [
         id: 737,
         name: 'Set 61, Tiefling Artificer',
         size: '28mm|33mm',
-        price: 25.00,
+        price: 18.00,
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'artesão, engenheiro, inventor, mecânico, tiefling, homem, masculino, chifre, arma, arma de fogo, furadeira',
         observation: null,
@@ -9623,12 +9620,256 @@ export const catalog: Catalogitem[] = [
         id: 738,
         name: 'Set 61, Human Cleric',
         size: '28mm|33mm',
-        price: 25.00,
+        price: 18.00,
         type: TypeEnum.TITANS_OF_ADVENTURE,
         tag: 'humano, humana, mulher, feminino, clérigo, sacerdote, suporte, cura, magia, cajado, orbe, espada, medalhão',
         observation: null,
         options: null,
         discounts: null,
         image: '/img/catalog/titans-of-adventure-61/human-cleric.webp',
+    },
+
+    // TITANS OF ADVENTURE 62
+    {
+        id: 739,
+        name: 'Set 62, Human Paladin',
+        size: '28mm|33mm',
+        price: 18.00,
+        type: TypeEnum.TITANS_OF_ADVENTURE,
+        tag: 'humano, paladin, paladino, feminino, clérigo, sacerdote, suporte, cura, magia, espada, tank',
+        observation: null,
+        options: ['a', 'b', 'c'],
+        discounts: null,
+        image: '/img/catalog/titans-of-adventure-62/human-paladin.webp',
+    },
+    {
+        id: 740,
+        name: 'Set 62, Elf Monk',
+        size: '28mm|33mm',
+        price: 18.00,
+        type: TypeEnum.TITANS_OF_ADVENTURE,
+        tag: 'elf, monk, elfo, monge, guerreiro',
+        observation: null,
+        options: ['a', 'b', 'c', 'd'],
+        discounts: null,
+        image: '/img/catalog/titans-of-adventure-62/elf-monk.webp',
+    },
+    {
+        id: 741,
+        name: 'Set 62, Hafling Druid',
+        size: '28mm|33mm',
+        price: 18.00,
+        type: TypeEnum.TITANS_OF_ADVENTURE,
+        tag: 'druida, natureza, coruja, druid, hafling',
+        observation: null,
+        options: ['a', 'b', 'c', 'd', 'e'],
+        discounts: null,
+        image: '/img/catalog/titans-of-adventure-62/hafling-druid.webp',
+    },
+
+    // ARABIAN NIGHTS
+    {
+        id: 742,
+        name: 'Ali Dhin',
+        size: '28mm|33mm',
+        price: 20.00,
+        type: TypeEnum.ARABIAN_NIGHTS,
+        tag: 'tapete, arma, magico, genio, macaco',
+        observation: null,
+        options: null,
+        discounts: null,
+        image: '/img/catalog/arabian-nights/hafling-druid.webp',
+    },
+    {
+        id: 743,
+        name: 'Cursed Cavalry',
+        size: '28mm|33mm',
+        price: 35.00,
+        type: TypeEnum.ARABIAN_NIGHTS,
+        tag: 'cavalo, montaria, cavalaria, arabe, deserto, areia, deserto',
+        observation: null,
+        options: null,
+        discounts: null,
+        image: '/img/catalog/arabian-nights/cursed-cavalry-1.webp',
+    },
+    {
+        id: 744,
+        name: 'Cursed Cavalry',
+        size: '28mm|33mm',
+        price: 35.00,
+        type: TypeEnum.ARABIAN_NIGHTS,
+        tag: 'cavalo, cavalaria, arabe, deserto, areia, montaria, deserto',
+        observation: null,
+        options: null,
+        discounts: null,
+        image: '/img/catalog/arabian-nights/cursed-cavalry-2.webp',
+    },
+    {
+        id: 745,
+        name: 'Cursed Cavalry',
+        size: '28mm|33mm',
+        price: 35.00,
+        type: TypeEnum.ARABIAN_NIGHTS,
+        tag: 'cavalo, cavalaria, arabe, deserto, areia, montaria',
+        observation: null,
+        options: null,
+        discounts: null,
+        image: '/img/catalog/arabian-nights/cursed-cavalry-3.webp',
+    },
+    {
+        id: 746,
+        name: 'Cursed Cavalry',
+        size: '28mm|33mm',
+        price: 35.00,
+        type: TypeEnum.ARABIAN_NIGHTS,
+        tag: 'cavalo, cavalaria, arabe, deserto, areia, montaria',
+        observation: null,
+        options: null,
+        discounts: null,
+        image: '/img/catalog/arabian-nights/cursed-cavalry-4.webp',
+    },
+    {
+        id: 747,
+        name: 'Emir Raheem IV',
+        size: '28mm|33mm',
+        price: 55.00,
+        type: TypeEnum.ARABIAN_NIGHTS,
+        tag: 'pegasus, cavalaria, arabe, deserto, areia, montaria',
+        observation: null,
+        options: null,
+        discounts: null,
+        image: '/img/catalog/arabian-nights/emir-Raheem-iv.webp',
+    },
+    {
+        id: 748,
+        name: 'Lalla Jareeza',
+        size: '28mm|33mm',
+        price: 18.00,
+        type: TypeEnum.ARABIAN_NIGHTS,
+        tag: 'humana, feminino, arabe, deserto, areia, mulher',
+        observation: null,
+        options: null,
+        discounts: null,
+        image: '/img/catalog/arabian-nights/lalla-jareeza.webp',
+    },
+    {
+        id: 749,
+        name: 'Modular Warrior 1',
+        size: '28mm|33mm',
+        price: 18.00,
+        type: TypeEnum.ARABIAN_NIGHTS,
+        tag: 'humano, guerreiro, arabe, deserto, areia',
+        observation: null,
+        options: null,
+        discounts: null,
+        image: '/img/catalog/arabian-nights/modular-warrior-1.webp',
+    },
+    {
+        id: 750,
+        name: 'Modular Warrior 2',
+        size: '28mm|33mm',
+        price: 18.00,
+        type: TypeEnum.ARABIAN_NIGHTS,
+        tag: 'humano, guerreiro, arabe, deserto, areia',
+        observation: null,
+        options: null,
+        discounts: null,
+        image: '/img/catalog/arabian-nights/modular-warrior-2.webp',
+    },
+    {
+        id: 751,
+        name: 'Modular Warrior 3',
+        size: '28mm|33mm',
+        price: 18.00,
+        type: TypeEnum.ARABIAN_NIGHTS,
+        tag: 'humano, guerreiro, arabe, deserto, areia',
+        observation: null,
+        options: null,
+        discounts: null,
+        image: '/img/catalog/arabian-nights/modular-warrior-3.webp',
+    },
+    {
+        id: 752,
+        name: 'Modular Warrior 4',
+        size: '28mm|33mm',
+        price: 18.00,
+        type: TypeEnum.ARABIAN_NIGHTS,
+        tag: 'humano, guerreiro, arabe, deserto, areia',
+        observation: null,
+        options: null,
+        discounts: null,
+        image: '/img/catalog/arabian-nights/modular-warrior-4.webp',
+    },
+    {
+        id: 753,
+        name: 'Modular Warrior 5',
+        size: '28mm|33mm',
+        price: 18.00,
+        type: TypeEnum.ARABIAN_NIGHTS,
+        tag: 'humano, guerreiro, arabe, deserto, areia',
+        observation: null,
+        options: null,
+        discounts: null,
+        image: '/img/catalog/arabian-nights/modular-warrior-5.webp',
+    },
+    {
+        id: 754,
+        name: 'Modular Warrior 6',
+        size: '28mm|33mm',
+        price: 18.00,
+        type: TypeEnum.ARABIAN_NIGHTS,
+        tag: 'humano, guerreiro, arabe, deserto, areia',
+        observation: null,
+        options: null,
+        discounts: null,
+        image: '/img/catalog/arabian-nights/modular-warrior-6.webp',
+    },
+    {
+        id: 755,
+        name: 'Modular Warrior 7',
+        size: '28mm|33mm',
+        price: 18.00,
+        type: TypeEnum.ARABIAN_NIGHTS,
+        tag: 'humano, guerreiro, arabe, deserto, areia',
+        observation: null,
+        options: null,
+        discounts: null,
+        image: '/img/catalog/arabian-nights/modular-warrior-7.webp',
+    },
+    {
+        id: 756,
+        name: 'Razz Mi_raj',
+        size: '28mm|33mm',
+        price: 20.00,
+        type: TypeEnum.ARABIAN_NIGHTS,
+        tag: 'genio, lampada, mistico, djinn, areia',
+        observation: null,
+        options: null,
+        discounts: null,
+        image: '/img/catalog/arabian-nights/razz-mi_raj.webp',
+    },
+    {
+        id: 757,
+        name: 'Sand Golem',
+        size: '28mm|33mm',
+        price: 200.00,
+        type: TypeEnum.ARABIAN_NIGHTS,
+        tag: 'golem, areia, deserto',
+        observation: null,
+        options: null,
+        discounts: null,
+        image: '/img/catalog/arabian-nights/sand-golem.webp',
+    },
+    {
+        id: 758,
+        name: 'Sheikh al-Hakim',
+        size: '28mm|33mm',
+        price: 20.00,
+        type: TypeEnum.ARABIAN_NIGHTS,
+        tag: 'genio, lampada, mistico, djinn, areia',
+        observation: null,
+        options: null,
+        discounts: null,
+        image: '/img/catalog/arabian-nights/sheikh-al-hakim.webp',
     },
 ];

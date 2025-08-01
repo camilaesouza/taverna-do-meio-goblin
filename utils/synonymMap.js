@@ -1,5 +1,6 @@
 export const synonymMap = {
     'mulheres': 'mulher',
+    'humana': 'mulher',
     'feminina': 'mulher',
     'feminino': 'mulher',
     'guerreira': 'guerreiro',

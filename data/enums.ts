@@ -34,6 +34,7 @@ export const TypeEnum = {
     HIGHBORNE_ELVES_AND_UNDEAD_DOMINION: 'highborne_elves_and_undead_dominion',
     DRAGON_EMPIRE: 'dragon_empire',
     HIGHBORNE_ELVES_AND_UNDEAD_DOMINION_2: 'highborne_elves_and_undead_dominion_2',
+    ARABIAN_NIGHTS: 'arabian_nights',
 } as const;
 
 export type TypeEnumKey = (typeof TypeEnum)[keyof typeof TypeEnum];
@@ -74,4 +75,5 @@ export const TypeEnumOptions = [
     { key: TypeEnum.HIGHBORNE_ELVES_AND_UNDEAD_DOMINION, label: 'Highborne Elves And Undead Dominion' },
     { key: TypeEnum.DRAGON_EMPIRE, label: 'Dragon Empire' },
     { key: TypeEnum.HIGHBORNE_ELVES_AND_UNDEAD_DOMINION_2, label: 'Highborne Elves And Undead Dominion 2' },
+    { key: TypeEnum.ARABIAN_NIGHTS, label: 'Arabian nights' },
 ];
