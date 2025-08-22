@@ -2297,7 +2297,7 @@ export const catalog: Catalogitem[] = [
         id: 183,
         name: 'Silver Dragon',
         size: 'especial',
-        price: 160.00,
+        price: 210.00,
         type: TypeEnum.HIGHBORN_ELVES_AND_VAMPIRE_PIRATES,
         tag: 'dragão, dragões, voador, criatura, monstro',
         observation: null,
